@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/XnaGameX1/!svn/ver/148/AI/EventLibrary/Manager
+END
+EventManager.cs
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/XnaGameX1/!svn/ver/148/AI/EventLibrary/Manager/EventManager.cs
+END
+EventAggregator.cs
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/XnaGameX1/!svn/ver/148/AI/EventLibrary/Manager/EventAggregator.cs
+END
+EventAggregatorListenerInterceptor.cs
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/XnaGameX1/!svn/ver/148/AI/EventLibrary/Manager/EventAggregatorListenerInterceptor.cs
+END

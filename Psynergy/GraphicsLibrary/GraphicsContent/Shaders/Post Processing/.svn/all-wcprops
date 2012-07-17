@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/XnaGameX1/!svn/ver/246/AI/GraphicsLibrary/GraphicsContent/Shaders/Post%20Processing
+END
+GaussianBlurPostProcessor.fx
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/XnaGameX1/!svn/ver/209/AI/GraphicsLibrary/GraphicsContent/Shaders/Post%20Processing/GaussianBlurPostProcessor.fx
+END
+SSAO.fx
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/XnaGameX1/!svn/ver/258/AI/GraphicsLibrary/GraphicsContent/Shaders/Post%20Processing/SSAO.fx
+END
+SSAOMerge.fx
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/XnaGameX1/!svn/ver/258/AI/GraphicsLibrary/GraphicsContent/Shaders/Post%20Processing/SSAOMerge.fx
+END
+EdgeDetectionPostProcessor.fx
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/XnaGameX1/!svn/ver/245/AI/GraphicsLibrary/GraphicsContent/Shaders/Post%20Processing/EdgeDetectionPostProcessor.fx
+END
+FilmMappingPostProcessor.fx
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/XnaGameX1/!svn/ver/245/AI/GraphicsLibrary/GraphicsContent/Shaders/Post%20Processing/FilmMappingPostProcessor.fx
+END
+SSAOBlur.fx
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/XnaGameX1/!svn/ver/258/AI/GraphicsLibrary/GraphicsContent/Shaders/Post%20Processing/SSAOBlur.fx
+END
+BWPostProcessor.fx
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/XnaGameX1/!svn/ver/209/AI/GraphicsLibrary/GraphicsContent/Shaders/Post%20Processing/BWPostProcessor.fx
+END
+DOFPostProcessor.fx
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/XnaGameX1/!svn/ver/210/AI/GraphicsLibrary/GraphicsContent/Shaders/Post%20Processing/DOFPostProcessor.fx
+END
+BloomPostProcessor.fx
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/XnaGameX1/!svn/ver/211/AI/GraphicsLibrary/GraphicsContent/Shaders/Post%20Processing/BloomPostProcessor.fx
+END
+MergeBloomPostProcessor.fx
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/XnaGameX1/!svn/ver/211/AI/GraphicsLibrary/GraphicsContent/Shaders/Post%20Processing/MergeBloomPostProcessor.fx
+END
+Filmgrain.fxh
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/XnaGameX1/!svn/ver/246/AI/GraphicsLibrary/GraphicsContent/Shaders/Post%20Processing/Filmgrain.fxh
+END
+MLAAPostProcessor.fx
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/XnaGameX1/!svn/ver/245/AI/GraphicsLibrary/GraphicsContent/Shaders/Post%20Processing/MLAAPostProcessor.fx
+END

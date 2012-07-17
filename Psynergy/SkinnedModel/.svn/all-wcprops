@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/XnaGameX1/!svn/ver/245/AI/SkinnedModel
+END
+MeshMetaData.cs
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/XnaGameX1/!svn/ver/254/AI/SkinnedModel/MeshMetaData.cs
+END
+KeyFrame.cs
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/XnaGameX1/!svn/ver/99/AI/SkinnedModel/KeyFrame.cs
+END
+AnimationClip.cs
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/XnaGameX1/!svn/ver/284/AI/SkinnedModel/AnimationClip.cs
+END
+SkinnedModel.csproj
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/XnaGameX1/!svn/ver/236/AI/SkinnedModel/SkinnedModel.csproj
+END
+SkinnedAnimationPlayer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/XnaGameX1/!svn/ver/165/AI/SkinnedModel/SkinnedAnimationPlayer.cs
+END
+SkinningData.cs
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/XnaGameX1/!svn/ver/99/AI/SkinnedModel/SkinningData.cs
+END

@@ -1,0 +1,77 @@
+10
+
+dir
+0
+http://xp-dev.com/svn/XnaGameX1/Middleware/Psynergy/Engine/Content/Models/FBX
+http://xp-dev.com/svn/XnaGameX1
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+
+
+
+
+
+
+
+
+
+
+
+ba6f3427-77d8-42c7-95e4-65bf7dcb1cb9
+
+Dice
+dir
+
+
+
+add
+
+Ship1
+dir
+
+
+
+add
+
+cubemodel.xnb
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+Board
+dir
+
+
+
+add
+
+Table
+dir
+
+
+
+add
+
+Skinned
+dir
+
+
+
+add
+

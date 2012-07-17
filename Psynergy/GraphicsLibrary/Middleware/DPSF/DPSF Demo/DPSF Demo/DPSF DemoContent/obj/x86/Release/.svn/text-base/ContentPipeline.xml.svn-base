@@ -1,0 +1,643 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent xmlns:Pipeline="Microsoft.Xna.Framework.Content.Pipeline" xmlns:Framework="Microsoft.Xna.Framework" xmlns:Processors="Microsoft.Xna.Framework.Content.Pipeline.Processors">
+  <Asset Type="Pipeline:BuildItemCollection">
+    <Item>
+      <Source>Fonts\font.spritefont</Source>
+      <Name>Fonts\font</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\My Documents\Programming Files\My Stuff\DPSF Project\XNA 4.0\Installer\Installer Files\DPSF Demo\DPSF Demo\DPSF Demo\bin\x86\Release\Content\Fonts\font.xnb</Output>
+      <Time>2011-03-05T18:16:45.9454038-06:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\AnimatedButterfly.png</Source>
+      <Name>Textures\AnimatedButterfly</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\My Documents\Programming Files\My Stuff\DPSF Project\XNA 4.0\Installer\Installer Files\DPSF Demo\DPSF Demo\DPSF Demo\bin\x86\Release\Content\Textures\AnimatedButterfly.xnb</Output>
+      <Time>2011-03-05T18:16:45.6173851-06:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\AnimatedExplosion.tga</Source>
+      <Name>Textures\AnimatedExplosion</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\My Documents\Programming Files\My Stuff\DPSF Project\XNA 4.0\Installer\Installer Files\DPSF Demo\DPSF Demo\DPSF Demo\bin\x86\Release\Content\Textures\AnimatedExplosion.xnb</Output>
+      <Time>2011-03-05T18:16:45.598384-06:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\Arrow.png</Source>
+      <Name>Textures\Arrow</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\My Documents\Programming Files\My Stuff\DPSF Project\XNA 4.0\Installer\Installer Files\DPSF Demo\DPSF Demo\DPSF Demo\bin\x86\Release\Content\Textures\Arrow.xnb</Output>
+      <Time>2011-03-05T18:16:45.6253855-06:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\Arrow2.png</Source>
+      <Name>Textures\Arrow2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\My Documents\Programming Files\My Stuff\DPSF Project\XNA 4.0\Installer\Installer Files\DPSF Demo\DPSF Demo\DPSF Demo\bin\x86\Release\Content\Textures\Arrow2.xnb</Output>
+      <Time>2011-03-05T18:16:45.6663879-06:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\Arrow3.png</Source>
+      <Name>Textures\Arrow3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\My Documents\Programming Files\My Stuff\DPSF Project\XNA 4.0\Installer\Installer Files\DPSF Demo\DPSF Demo\DPSF Demo\bin\x86\Release\Content\Textures\Arrow3.xnb</Output>
+      <Time>2011-03-05T18:16:45.669388-06:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\Arrow4.png</Source>
+      <Name>Textures\Arrow4</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\My Documents\Programming Files\My Stuff\DPSF Project\XNA 4.0\Installer\Installer Files\DPSF Demo\DPSF Demo\DPSF Demo\bin\x86\Release\Content\Textures\Arrow4.xnb</Output>
+      <Time>2011-03-05T18:16:45.6773885-06:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\Arrow5.png</Source>
+      <Name>Textures\Arrow5</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\My Documents\Programming Files\My Stuff\DPSF Project\XNA 4.0\Installer\Installer Files\DPSF Demo\DPSF Demo\DPSF Demo\bin\x86\Release\Content\Textures\Arrow5.xnb</Output>
+      <Time>2011-03-05T18:16:45.6953895-06:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\Ball.png</Source>
+      <Name>Textures\Ball</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\My Documents\Programming Files\My Stuff\DPSF Project\XNA 4.0\Installer\Installer Files\DPSF Demo\DPSF Demo\DPSF Demo\bin\x86\Release\Content\Textures\Ball.xnb</Output>
+      <Time>2011-03-05T18:16:45.6633877-06:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\Bubble.tga</Source>
+      <Name>Textures\Bubble</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\My Documents\Programming Files\My Stuff\DPSF Project\XNA 4.0\Installer\Installer Files\DPSF Demo\DPSF Demo\DPSF Demo\bin\x86\Release\Content\Textures\Bubble.xnb</Output>
+      <Time>2011-03-05T18:16:45.6073845-06:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\Cloud.tga</Source>
+      <Name>Textures\Cloud</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\My Documents\Programming Files\My Stuff\DPSF Project\XNA 4.0\Installer\Installer Files\DPSF Demo\DPSF Demo\DPSF Demo\bin\x86\Release\Content\Textures\Cloud.xnb</Output>
+      <Time>2011-03-05T18:16:45.6323859-06:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\CrossArrow.png</Source>
+      <Name>Textures\CrossArrow</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\My Documents\Programming Files\My Stuff\DPSF Project\XNA 4.0\Installer\Installer Files\DPSF Demo\DPSF Demo\DPSF Demo\bin\x86\Release\Content\Textures\CrossArrow.xnb</Output>
+      <Time>2011-03-05T18:16:45.581383-06:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\Dog.jpg</Source>
+      <Name>Textures\Dog</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\My Documents\Programming Files\My Stuff\DPSF Project\XNA 4.0\Installer\Installer Files\DPSF Demo\DPSF Demo\DPSF Demo\bin\x86\Release\Content\Textures\Dog.xnb</Output>
+      <Time>2011-03-05T18:16:45.6553872-06:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\Donut.png</Source>
+      <Name>Textures\Donut</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\My Documents\Programming Files\My Stuff\DPSF Project\XNA 4.0\Installer\Installer Files\DPSF Demo\DPSF Demo\DPSF Demo\bin\x86\Release\Content\Textures\Donut.xnb</Output>
+      <Time>2011-03-05T18:16:45.7633934-06:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\DPSFText.png</Source>
+      <Name>Textures\DPSFText</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\My Documents\Programming Files\My Stuff\DPSF Project\XNA 4.0\Installer\Installer Files\DPSF Demo\DPSF Demo\DPSF Demo\bin\x86\Release\Content\Textures\DPSFText.xnb</Output>
+      <Time>2011-03-05T18:16:45.6473868-06:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\ExplosionParticles.png</Source>
+      <Name>Textures\ExplosionParticles</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\My Documents\Programming Files\My Stuff\DPSF Project\XNA 4.0\Installer\Installer Files\DPSF Demo\DPSF Demo\DPSF Demo\bin\x86\Release\Content\Textures\ExplosionParticles.xnb</Output>
+      <Time>2011-03-05T18:16:45.6223854-06:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\Fire.png</Source>
+      <Name>Textures\Fire</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\My Documents\Programming Files\My Stuff\DPSF Project\XNA 4.0\Installer\Installer Files\DPSF Demo\DPSF Demo\DPSF Demo\bin\x86\Release\Content\Textures\Fire.xnb</Output>
+      <Time>2011-03-05T18:16:45.739392-06:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\Flower.png</Source>
+      <Name>Textures\Flower</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\My Documents\Programming Files\My Stuff\DPSF Project\XNA 4.0\Installer\Installer Files\DPSF Demo\DPSF Demo\DPSF Demo\bin\x86\Release\Content\Textures\Flower.xnb</Output>
+      <Time>2011-03-05T18:16:45.6393863-06:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\Flower2.png</Source>
+      <Name>Textures\Flower2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\My Documents\Programming Files\My Stuff\DPSF Project\XNA 4.0\Installer\Installer Files\DPSF Demo\DPSF Demo\DPSF Demo\bin\x86\Release\Content\Textures\Flower2.xnb</Output>
+      <Time>2011-03-05T18:16:45.6993898-06:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\Flower3.png</Source>
+      <Name>Textures\Flower3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\My Documents\Programming Files\My Stuff\DPSF Project\XNA 4.0\Installer\Installer Files\DPSF Demo\DPSF Demo\DPSF Demo\bin\x86\Release\Content\Textures\Flower3.xnb</Output>
+      <Time>2011-03-05T18:16:45.720391-06:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\Flower4.png</Source>
+      <Name>Textures\Flower4</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\My Documents\Programming Files\My Stuff\DPSF Project\XNA 4.0\Installer\Installer Files\DPSF Demo\DPSF Demo\DPSF Demo\bin\x86\Release\Content\Textures\Flower4.xnb</Output>
+      <Time>2011-03-05T18:16:45.7273914-06:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\Flower5.png</Source>
+      <Name>Textures\Flower5</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\My Documents\Programming Files\My Stuff\DPSF Project\XNA 4.0\Installer\Installer Files\DPSF Demo\DPSF Demo\DPSF Demo\bin\x86\Release\Content\Textures\Flower5.xnb</Output>
+      <Time>2011-03-05T18:16:45.7313916-06:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\Gear.png</Source>
+      <Name>Textures\Gear</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\My Documents\Programming Files\My Stuff\DPSF Project\XNA 4.0\Installer\Installer Files\DPSF Demo\DPSF Demo\DPSF Demo\bin\x86\Release\Content\Textures\Gear.xnb</Output>
+      <Time>2011-03-05T18:16:45.6733883-06:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\Gear2.png</Source>
+      <Name>Textures\Gear2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\My Documents\Programming Files\My Stuff\DPSF Project\XNA 4.0\Installer\Installer Files\DPSF Demo\DPSF Demo\DPSF Demo\bin\x86\Release\Content\Textures\Gear2.xnb</Output>
+      <Time>2011-03-05T18:16:45.5543815-06:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\Gear3.png</Source>
+      <Name>Textures\Gear3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\My Documents\Programming Files\My Stuff\DPSF Project\XNA 4.0\Installer\Installer Files\DPSF Demo\DPSF Demo\DPSF Demo\bin\x86\Release\Content\Textures\Gear3.xnb</Output>
+      <Time>2011-03-05T18:16:45.563382-06:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\Gear4.png</Source>
+      <Name>Textures\Gear4</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\My Documents\Programming Files\My Stuff\DPSF Project\XNA 4.0\Installer\Installer Files\DPSF Demo\DPSF Demo\DPSF Demo\bin\x86\Release\Content\Textures\Gear4.xnb</Output>
+      <Time>2011-03-05T18:16:45.5693823-06:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\Gear5.png</Source>
+      <Name>Textures\Gear5</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\My Documents\Programming Files\My Stuff\DPSF Project\XNA 4.0\Installer\Installer Files\DPSF Demo\DPSF Demo\DPSF Demo\bin\x86\Release\Content\Textures\Gear5.xnb</Output>
+      <Time>2011-03-05T18:16:45.5763827-06:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\MoveArrow.png</Source>
+      <Name>Textures\MoveArrow</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\My Documents\Programming Files\My Stuff\DPSF Project\XNA 4.0\Installer\Installer Files\DPSF Demo\DPSF Demo\DPSF Demo\bin\x86\Release\Content\Textures\MoveArrow.xnb</Output>
+      <Time>2011-03-05T18:16:45.7143906-06:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\Paper.png</Source>
+      <Name>Textures\Paper</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\My Documents\Programming Files\My Stuff\DPSF Project\XNA 4.0\Installer\Installer Files\DPSF Demo\DPSF Demo\DPSF Demo\bin\x86\Release\Content\Textures\Paper.xnb</Output>
+      <Time>2011-03-05T18:16:45.6593875-06:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\Particle.bmp</Source>
+      <Name>Textures\Particle</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\My Documents\Programming Files\My Stuff\DPSF Project\XNA 4.0\Installer\Installer Files\DPSF Demo\DPSF Demo\DPSF Demo\bin\x86\Release\Content\Textures\Particle.xnb</Output>
+      <Time>2011-03-05T18:16:45.6363862-06:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\RedCircle.png</Source>
+      <Name>Textures\RedCircle</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\My Documents\Programming Files\My Stuff\DPSF Project\XNA 4.0\Installer\Installer Files\DPSF Demo\DPSF Demo\DPSF Demo\bin\x86\Release\Content\Textures\RedCircle.xnb</Output>
+      <Time>2011-03-05T18:16:45.6293858-06:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\Shape1.png</Source>
+      <Name>Textures\Shape1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\My Documents\Programming Files\My Stuff\DPSF Project\XNA 4.0\Installer\Installer Files\DPSF Demo\DPSF Demo\DPSF Demo\bin\x86\Release\Content\Textures\Shape1.xnb</Output>
+      <Time>2011-03-05T18:16:45.7093903-06:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\Shape2.png</Source>
+      <Name>Textures\Shape2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\My Documents\Programming Files\My Stuff\DPSF Project\XNA 4.0\Installer\Installer Files\DPSF Demo\DPSF Demo\DPSF Demo\bin\x86\Release\Content\Textures\Shape2.xnb</Output>
+      <Time>2011-03-05T18:16:45.7233911-06:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\Smoke.png</Source>
+      <Name>Textures\Smoke</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\My Documents\Programming Files\My Stuff\DPSF Project\XNA 4.0\Installer\Installer Files\DPSF Demo\DPSF Demo\DPSF Demo\bin\x86\Release\Content\Textures\Smoke.xnb</Output>
+      <Time>2011-03-05T18:16:45.6913893-06:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\Spark.png</Source>
+      <Name>Textures\Spark</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\My Documents\Programming Files\My Stuff\DPSF Project\XNA 4.0\Installer\Installer Files\DPSF Demo\DPSF Demo\DPSF Demo\bin\x86\Release\Content\Textures\Spark.xnb</Output>
+      <Time>2011-03-05T18:16:45.70439-06:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\Splat.png</Source>
+      <Name>Textures\Splat</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\My Documents\Programming Files\My Stuff\DPSF Project\XNA 4.0\Installer\Installer Files\DPSF Demo\DPSF Demo\DPSF Demo\bin\x86\Release\Content\Textures\Splat.xnb</Output>
+      <Time>2011-03-05T18:16:45.6143849-06:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\Star.png</Source>
+      <Name>Textures\Star</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\My Documents\Programming Files\My Stuff\DPSF Project\XNA 4.0\Installer\Installer Files\DPSF Demo\DPSF Demo\DPSF Demo\bin\x86\Release\Content\Textures\Star.xnb</Output>
+      <Time>2011-03-05T18:16:45.5943838-06:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\Star2.png</Source>
+      <Name>Textures\Star2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\My Documents\Programming Files\My Stuff\DPSF Project\XNA 4.0\Installer\Installer Files\DPSF Demo\DPSF Demo\DPSF Demo\bin\x86\Release\Content\Textures\Star2.xnb</Output>
+      <Time>2011-03-05T18:16:45.7813945-06:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\Star3.png</Source>
+      <Name>Textures\Star3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\My Documents\Programming Files\My Stuff\DPSF Project\XNA 4.0\Installer\Installer Files\DPSF Demo\DPSF Demo\DPSF Demo\bin\x86\Release\Content\Textures\Star3.xnb</Output>
+      <Time>2011-03-05T18:16:45.5403807-06:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\Star4.png</Source>
+      <Name>Textures\Star4</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\My Documents\Programming Files\My Stuff\DPSF Project\XNA 4.0\Installer\Installer Files\DPSF Demo\DPSF Demo\DPSF Demo\bin\x86\Release\Content\Textures\Star4.xnb</Output>
+      <Time>2011-03-05T18:16:45.5443809-06:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\Star5.png</Source>
+      <Name>Textures\Star5</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\My Documents\Programming Files\My Stuff\DPSF Project\XNA 4.0\Installer\Installer Files\DPSF Demo\DPSF Demo\DPSF Demo\bin\x86\Release\Content\Textures\Star5.xnb</Output>
+      <Time>2011-03-05T18:16:45.5473811-06:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\Star6.png</Source>
+      <Name>Textures\Star6</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\My Documents\Programming Files\My Stuff\DPSF Project\XNA 4.0\Installer\Installer Files\DPSF Demo\DPSF Demo\DPSF Demo\bin\x86\Release\Content\Textures\Star6.xnb</Output>
+      <Time>2011-03-05T18:16:45.5513813-06:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\Star7.png</Source>
+      <Name>Textures\Star7</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\My Documents\Programming Files\My Stuff\DPSF Project\XNA 4.0\Installer\Installer Files\DPSF Demo\DPSF Demo\DPSF Demo\bin\x86\Release\Content\Textures\Star7.xnb</Output>
+      <Time>2011-03-05T18:16:45.5593818-06:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\Star8.png</Source>
+      <Name>Textures\Star8</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\My Documents\Programming Files\My Stuff\DPSF Project\XNA 4.0\Installer\Installer Files\DPSF Demo\DPSF Demo\DPSF Demo\bin\x86\Release\Content\Textures\Star8.xnb</Output>
+      <Time>2011-03-05T18:16:45.5663822-06:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\Star9.png</Source>
+      <Name>Textures\Star9</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\My Documents\Programming Files\My Stuff\DPSF Project\XNA 4.0\Installer\Installer Files\DPSF Demo\DPSF Demo\DPSF Demo\bin\x86\Release\Content\Textures\Star9.xnb</Output>
+      <Time>2011-03-05T18:16:45.5723825-06:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\StarFish.png</Source>
+      <Name>Textures\StarFish</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\My Documents\Programming Files\My Stuff\DPSF Project\XNA 4.0\Installer\Installer Files\DPSF Demo\DPSF Demo\DPSF Demo\bin\x86\Release\Content\Textures\StarFish.xnb</Output>
+      <Time>2011-03-05T18:16:45.7353918-06:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\Sun.png</Source>
+      <Name>Textures\Sun</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\My Documents\Programming Files\My Stuff\DPSF Project\XNA 4.0\Installer\Installer Files\DPSF Demo\DPSF Demo\DPSF Demo\bin\x86\Release\Content\Textures\Sun.xnb</Output>
+      <Time>2011-03-05T18:16:45.5873834-06:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\Sun2.png</Source>
+      <Name>Textures\Sun2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\My Documents\Programming Files\My Stuff\DPSF Project\XNA 4.0\Installer\Installer Files\DPSF Demo\DPSF Demo\DPSF Demo\bin\x86\Release\Content\Textures\Sun2.xnb</Output>
+      <Time>2011-03-05T18:16:45.7423922-06:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\Sun3.png</Source>
+      <Name>Textures\Sun3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\My Documents\Programming Files\My Stuff\DPSF Project\XNA 4.0\Installer\Installer Files\DPSF Demo\DPSF Demo\DPSF Demo\bin\x86\Release\Content\Textures\Sun3.xnb</Output>
+      <Time>2011-03-05T18:16:45.7543929-06:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\ThrowingStar.png</Source>
+      <Name>Textures\ThrowingStar</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\My Documents\Programming Files\My Stuff\DPSF Project\XNA 4.0\Installer\Installer Files\DPSF Demo\DPSF Demo\DPSF Demo\bin\x86\Release\Content\Textures\ThrowingStar.xnb</Output>
+      <Time>2011-03-05T18:16:45.7843946-06:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\Wheel.png</Source>
+      <Name>Textures\Wheel</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\My Documents\Programming Files\My Stuff\DPSF Project\XNA 4.0\Installer\Installer Files\DPSF Demo\DPSF Demo\DPSF Demo\bin\x86\Release\Content\Textures\Wheel.xnb</Output>
+      <Time>2011-03-05T18:16:45.5843832-06:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\WhiteSquare.png</Source>
+      <Name>Textures\WhiteSquare</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\My Documents\Programming Files\My Stuff\DPSF Project\XNA 4.0\Installer\Installer Files\DPSF Demo\DPSF Demo\DPSF Demo\bin\x86\Release\Content\Textures\WhiteSquare.xnb</Output>
+      <Time>2011-03-05T18:16:45.6433866-06:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\WhiteSquare1.png</Source>
+      <Name>Textures\WhiteSquare1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\My Documents\Programming Files\My Stuff\DPSF Project\XNA 4.0\Installer\Installer Files\DPSF Demo\DPSF Demo\DPSF Demo\bin\x86\Release\Content\Textures\WhiteSquare1.xnb</Output>
+      <Time>2011-03-05T18:16:45.6033843-06:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\WhiteSquare10.png</Source>
+      <Name>Textures\WhiteSquare10</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\My Documents\Programming Files\My Stuff\DPSF Project\XNA 4.0\Installer\Installer Files\DPSF Demo\DPSF Demo\DPSF Demo\bin\x86\Release\Content\Textures\WhiteSquare10.xnb</Output>
+      <Time>2011-03-05T18:16:45.651387-06:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\WhiteSquare2.png</Source>
+      <Name>Textures\WhiteSquare2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\My Documents\Programming Files\My Stuff\DPSF Project\XNA 4.0\Installer\Installer Files\DPSF Demo\DPSF Demo\DPSF Demo\bin\x86\Release\Content\Textures\WhiteSquare2.xnb</Output>
+      <Time>2011-03-05T18:16:45.6113847-06:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\WordBubble.png</Source>
+      <Name>Textures\WordBubble</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\My Documents\Programming Files\My Stuff\DPSF Project\XNA 4.0\Installer\Installer Files\DPSF Demo\DPSF Demo\DPSF Demo\bin\x86\Release\Content\Textures\WordBubble.xnb</Output>
+      <Time>2011-03-05T18:16:45.7483926-06:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\X.png</Source>
+      <Name>Textures\X</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\My Documents\Programming Files\My Stuff\DPSF Project\XNA 4.0\Installer\Installer Files\DPSF Demo\DPSF Demo\DPSF Demo\bin\x86\Release\Content\Textures\X.xnb</Output>
+      <Time>2011-03-05T18:16:45.5903835-06:00</Time>
+    </Item>
+    <Item>
+      <Source>checker.bmp</Source>
+      <Name>checker</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\My Documents\Programming Files\My Stuff\DPSF Project\XNA 4.0\Installer\Installer Files\DPSF Demo\DPSF Demo\DPSF Demo\bin\x86\Release\Content\checker.xnb</Output>
+      <Time>2011-03-05T18:16:45.9744055-06:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\CloudLight.tga</Source>
+      <Name>Textures\CloudLight</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\My Documents\Programming Files\My Stuff\DPSF Project\XNA 4.0\Installer\Installer Files\DPSF Demo\DPSF Demo\DPSF Demo\bin\x86\Release\Content\Textures\CloudLight.xnb</Output>
+      <Time>2011-04-03T22:37:10.6101797-06:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\DPSFLogo.png</Source>
+      <Name>Textures\DPSFLogo</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\My Documents\Programming Files\My Stuff\DPSF Project\XNA 4.0\Installer\Installer Files\DPSF Demo\DPSF Demo\DPSF Demo\bin\x86\Release\Content\Textures\DPSFLogo.xnb</Output>
+      <Time>2011-06-12T17:20:32.1878174-06:00</Time>
+    </Item>
+    <Item>
+      <Source>grid.x</Source>
+      <Name>grid</Name>
+      <Importer>XImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\My Documents\Programming Files\My Stuff\DPSF Project\XNA 4.0\Installer\Installer Files\DPSF Demo\DPSF Demo\DPSF Demo\bin\x86\Release\Content\grid.xnb</Output>
+      <Time>2011-03-05T18:16:45.9824059-06:00</Time>
+      <Dependency>
+        <Key>obj\x86\Release\grid_0.xml</Key>
+        <Value>2011-12-10T10:10:43.7653294-06:00</Value>
+      </Dependency>
+      <Request>D:\My Documents\Programming Files\My Stuff\DPSF Project\XNA 4.0\Installer\Installer Files\DPSF Demo\DPSF Demo\DPSF Demo\bin\x86\Release\Content\checker_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>SphereHighPoly.fbx</Source>
+      <Name>SphereHighPoly</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\My Documents\Programming Files\My Stuff\DPSF Project\XNA 4.0\Installer\Installer Files\DPSF Demo\DPSF Demo\DPSF Demo\bin\x86\Release\Content\SphereHighPoly.xnb</Output>
+      <Time>2011-03-05T18:16:45.9794058-06:00</Time>
+      <Dependency>
+        <Key>obj\x86\Release\SphereHighPoly_0.xml</Key>
+        <Value>2011-12-10T10:10:44.6463798-06:00</Value>
+      </Dependency>
+    </Item>
+    <Item>
+      <Source>grid.x</Source>
+      <Importer>XImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Release\grid_0.xml</Output>
+      <Time>2011-03-05T18:16:45.9824059-06:00</Time>
+    </Item>
+    <Item>
+      <Source>checker.bmp</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>D:\My Documents\Programming Files\My Stuff\DPSF Project\XNA 4.0\Installer\Installer Files\DPSF Demo\DPSF Demo\DPSF Demo\bin\x86\Release\Content\checker_0.xnb</Output>
+      <Time>2011-03-05T18:16:45.9744055-06:00</Time>
+    </Item>
+    <Item>
+      <Source>SphereHighPoly.fbx</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Release\SphereHighPoly_0.xml</Output>
+      <Time>2011-03-05T18:16:45.9794058-06:00</Time>
+    </Item>
+    <BuildSuccessful>true</BuildSuccessful>
+    <Settings>
+      <TargetPlatform>Windows</TargetPlatform>
+      <TargetProfile>HiDef</TargetProfile>
+      <BuildConfiguration>Release</BuildConfiguration>
+      <CompressContent>true</CompressContent>
+      <RootDirectory>D:\My Documents\Programming Files\My Stuff\DPSF Project\XNA 4.0\Installer\Installer Files\DPSF Demo\DPSF Demo\DPSF DemoContent\</RootDirectory>
+      <LoggerRootDirectory>D:\My Documents\Programming Files\My Stuff\DPSF Project\XNA 4.0\Installer\Installer Files\DPSF Demo\DPSF Demo\DPSF Demo\</LoggerRootDirectory>
+      <IntermediateDirectory>D:\My Documents\Programming Files\My Stuff\DPSF Project\XNA 4.0\Installer\Installer Files\DPSF Demo\DPSF Demo\DPSF DemoContent\obj\x86\Release\</IntermediateDirectory>
+      <OutputDirectory>D:\My Documents\Programming Files\My Stuff\DPSF Project\XNA 4.0\Installer\Installer Files\DPSF Demo\DPSF Demo\DPSF Demo\bin\x86\Release\Content\</OutputDirectory>
+    </Settings>
+    <Assemblies>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.XImporter.dll</Key>
+        <Value>2010-08-23T12:41:18-06:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.VideoImporters.dll</Key>
+        <Value>2010-08-23T12:41:18-06:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.TextureImporter.dll</Key>
+        <Value>2010-08-23T12:41:18-06:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.FBXImporter.dll</Key>
+        <Value>2010-08-23T12:41:18-06:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.EffectImporter.dll</Key>
+        <Value>2010-08-23T12:41:18-06:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.AudioImporters.dll</Key>
+        <Value>2010-08-23T12:41:18-06:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
+        <Value>2010-09-16T23:45:05.3321478-06:00</Value>
+      </Assembly>
+    </Assemblies>
+  </Asset>
+</XnaContent>

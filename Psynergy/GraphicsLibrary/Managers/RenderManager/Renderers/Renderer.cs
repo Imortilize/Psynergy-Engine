@@ -1,0 +1,403 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Diagnostics;
+using System.Linq;
+using System.Text;
+
+using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Content;
+using Microsoft.Xna.Framework.Graphics;
+using Microsoft.Xna.Framework.Input;
+
+using Psynergy.Camera;
+
+namespace Psynergy.Graphics
+{
+    public class PsynergyRenderer
+    {
+        protected ContentManager m_ContentManager = null;
+        protected GraphicsDeviceManager m_Graphics = null;
+
+        // Main target to render to, replaces the back buffer.
+        protected RenderTarget2D m_MainRenderTarget = null;
+        protected Vector2 m_ScreenSize = new Vector2(0, 0);
+        protected Vector2 m_HalfPixel = Vector2.Zero;
+        protected SpriteBatch m_SpriteBatch = null;
+
+        // Graphics device variables
+        protected BlendState m_BlendState = BlendState.NonPremultiplied;
+        protected DepthStencilState m_DepthStencil = DepthStencilState.Default;
+        protected CullMode m_CullMode = CullMode.CullCounterClockwiseFace;
+
+        // Camera Manager
+        protected CameraManager m_CameraManager = null;
+
+        // List of models, lights and the camera
+        protected List<RenderNode> m_RenderNodes = new List<RenderNode>();
+        public List<Light> m_Lights = new List<Light>();
+
+        #region Graphics Properties
+        protected FogProperties m_FogProperties = new FogProperties();
+
+        // Lighting
+        private Vector3 m_AmbientLighting = Vector3.Zero;
+
+        #region Post Processing
+        protected bool m_UsePostProcessing = false;
+        #endregion
+        #endregion
+
+        public PsynergyRenderer()
+        {
+        }
+
+        public PsynergyRenderer(ContentManager contentManager, GraphicsDeviceManager graphicsDevice)
+        {
+            m_ContentManager = contentManager;
+            m_Graphics = graphicsDevice;
+        }
+
+        public virtual void Load()
+        {
+            // load the camera manager
+            if (m_CameraManager != null)
+                m_CameraManager.Load();
+        }
+
+        public virtual void Initialise()
+        {
+            if ( GraphicsDevice != null )
+            {
+                // Create the camera manager
+                m_CameraManager = new CameraManager(m_Graphics.GraphicsDevice);
+
+                // Set screen size
+                m_ScreenSize = new Vector2(GraphicsDevice.PresentationParameters.BackBufferWidth, GraphicsDevice.PresentationParameters.BackBufferHeight);
+
+                // Setup the render targets
+                SetupRenderTargets();
+
+                // Save the half pixel value
+                SetupHalfPixelValue();
+
+                // Initialise the camera manager
+                if (m_CameraManager != null)
+                    m_CameraManager.Initialise();
+            }
+        }
+
+        protected virtual void SetupRenderTargets()
+        {
+            // Replaces drawing to back buffer
+            m_MainRenderTarget = new RenderTarget2D(GraphicsDevice, (int)m_ScreenSize.X, (int)m_ScreenSize.Y, false, SurfaceFormat.Color, GraphicsDevice.PresentationParameters.DepthStencilFormat, GraphicsDevice.PresentationParameters.MultiSampleCount, RenderTargetUsage.DiscardContents);
+        }
+
+        protected virtual void SetupHalfPixelValue()
+        {
+            // Save the half pixel value
+            m_HalfPixel.X = (0.5f / (float)m_ScreenSize.X);
+            m_HalfPixel.Y = (0.5f / (float)m_ScreenSize.Y);
+        }
+
+        public virtual void Reset()
+        {
+            if (GraphicsDevice != null)
+            {
+                PresentationParameters pp = GraphicsDevice.PresentationParameters;
+
+                if ((pp.BackBufferWidth != m_ScreenSize.X) || (pp.BackBufferHeight != m_ScreenSize.Y))
+                {
+                    m_ScreenSize.X = pp.BackBufferWidth;
+                    m_ScreenSize.Y = pp.BackBufferHeight;
+
+                    // Setup the render targets
+                    SetupRenderTargets();
+
+                    // Reset the half pixel values
+                    SetupHalfPixelValue();
+                }
+            }
+        }
+
+        public virtual void Update(GameTime deltaTime)
+        {
+            // Update the game camera
+            if (m_CameraManager != null)
+                m_CameraManager.Update(deltaTime);
+        }
+
+        public virtual void Begin()
+        {
+            if (m_Graphics != null)
+            {
+                if (m_Graphics.GraphicsDevice != null)
+                {
+                    GraphicsDevice.SetRenderTarget(m_MainRenderTarget);
+                    GraphicsDevice.Clear(Color.Black);
+
+                    // Update Render options
+                    SetRenderOptions();
+                }
+            }
+        }
+
+        public virtual void Draw(GameTime deltaTime)
+        {
+            if (m_Graphics != null)
+            {
+                if (m_Graphics.GraphicsDevice != null)
+                {
+                    // Run any camera related render code
+                    RenderCamera(deltaTime);
+                }
+            }
+        }
+
+        public virtual void End()
+        {
+            if (m_Graphics != null)
+            {
+                if (m_Graphics.GraphicsDevice != null)
+                    m_Graphics.GraphicsDevice.SetRenderTarget(null);
+            }
+
+            Texture2D finalRenderTexture = m_MainRenderTarget;
+
+            // If post processing is to be used
+            if (m_UsePostProcessing)
+            {
+                // Post process functions
+                finalRenderTexture = PostProcess(finalRenderTexture);
+            }
+
+            // Draw main render target
+            DrawFinal(finalRenderTexture);
+        }
+
+        protected virtual Texture2D PostProcess(Texture2D inTexture)
+        {
+            // Any post process equations go into this overloaded function
+            // Assuming there was a main target to start with
+            return inTexture;
+        }
+
+        protected void DrawFinal(Texture2D finalRender)
+        {
+            if ((m_SpriteBatch != null) && (finalRender != null))
+            {
+                if (GraphicsDevice != null)
+                {
+                    // Begin the sprite batch
+                    m_SpriteBatch.Begin(SpriteSortMode.Immediate, BlendState.Opaque);
+
+                    // Make sure sampler is set to point for rendering final hdrblendable image
+                    GraphicsDevice.SamplerStates[0] = SamplerState.AnisotropicClamp;
+
+                    // Draw the image 
+                    m_SpriteBatch.Draw(finalRender, Vector2.Zero, Color.White);
+
+                    // End the sprite batch
+                    m_SpriteBatch.End();
+                }
+            }
+        }
+
+        protected void SetRenderOptions()
+        {
+            GraphicsDevice.BlendState = m_BlendState;
+            GraphicsDevice.DepthStencilState = m_DepthStencil;
+        }
+
+        private void UpdateRasterizerState()
+        {
+            BaseCamera activeCamera = m_CameraManager.ActiveCamera;
+
+            if (activeCamera != null)
+            {
+                if (activeCamera.InheritsFrom(typeof(Camera3D)))
+                {
+                    Camera3D camera3D = (activeCamera as Camera3D);
+                    camera3D.CullMode = m_CullMode;
+
+                    // Set rasterizer state
+                    camera3D.SetRasterizerState();
+
+                    // Now retrieve this new rasterizer state and save to the renderer
+                    GraphicsDevice.RasterizerState = camera3D.RasterizerState;
+                }
+            }
+        }
+
+        private void RenderCamera(GameTime deltaTime)
+        {
+            // Render the current state
+            if (m_CameraManager != null)
+                m_CameraManager.Render(deltaTime);
+        }
+
+        public void SetBackBufferTarget()
+        {
+            if (m_Graphics != null)
+            {
+                if (m_Graphics.GraphicsDevice != null)
+                    m_Graphics.GraphicsDevice.SetRenderTarget(m_MainRenderTarget);
+            }
+        }
+
+        #region Defer functions
+        public virtual void DeferRenderable(RenderNode renderable)
+        {
+            if (!m_RenderNodes.Contains(renderable))
+                m_RenderNodes.Add(renderable);
+        }
+
+        public void DeferRenderableGroup(List<RenderNode> renderableGroup)
+        {
+            foreach (RenderNode renderNode in renderableGroup)
+            {
+                if (!m_RenderNodes.Contains(renderNode))
+                    DeferRenderable(renderNode);
+            }
+        }
+
+        public virtual void DeferLight(Light light)
+        {
+            if (!m_Lights.Contains(light))
+                m_Lights.Add(light);
+        }
+
+        public void DeferLightGroup(List<Light> lightGroup)
+        {
+            foreach (Light light in lightGroup)
+                DeferLight(light);
+        }
+        #endregion
+
+        #region RenderNode Management
+
+        public bool HasRenderNode(RenderNode renderNode)
+        {
+            bool toRet = false;
+
+            if (m_RenderNodes.Count > 0)
+            {
+                if (m_RenderNodes.Contains(renderNode))
+                    toRet = true;
+            }
+
+            return toRet;
+        }
+
+        public bool RemoveRenderNode(RenderNode renderNode)
+        {
+            bool toRet = false;
+
+            if (m_RenderNodes.Contains(renderNode))
+            {
+                m_RenderNodes.Remove(renderNode);
+                toRet = true;
+            }
+
+            return toRet;
+        }
+        #endregion
+
+        #region Flush Renderer
+        public void Flush()
+        {
+            m_RenderNodes.Clear();
+            m_Lights.Clear();
+        }
+        #endregion
+
+        #region Rendering Technique Setters
+        public virtual void UseShadows( bool use )
+        {
+            Console.WriteLine("[WARNING] - SHADOW MAPS NOT SUPPORTED ON THE BASE RENDERER!");
+            EnableShadowMapping = false;
+        }
+
+        public virtual void ResetAntiAliasing()
+        {
+            m_MainRenderTarget = new RenderTarget2D(m_Graphics.GraphicsDevice, GraphicsDevice.PresentationParameters.BackBufferWidth, GraphicsDevice.PresentationParameters.BackBufferHeight, false, m_Graphics.GraphicsDevice.PresentationParameters.BackBufferFormat, m_Graphics.GraphicsDevice.PresentationParameters.DepthStencilFormat, m_Graphics.GraphicsDevice.PresentationParameters.MultiSampleCount, RenderTargetUsage.DiscardContents);
+        }
+
+        public void EnableFog(bool enable)
+        {
+            m_FogProperties.Enabled = enable;
+        }
+
+        public void SetFogColour(Color color)
+        {
+            m_FogProperties.FogColor = color;
+        }
+
+        public virtual void SetFogProperties(FogProperties properties)
+        {
+            m_FogProperties = properties;
+        }
+
+        public void UsePostProcessing(bool use)
+        {
+            m_UsePostProcessing = use;
+        }
+
+        public virtual void SetToneMappingProperties(ToneMappingProperties properties)
+        {
+            Console.WriteLine("[WARNING] - TONE MAPPING IS NOT SUPPORTED ON THE BASE RENDERER!");
+        }
+
+        public virtual void SetFXAAProperties(FXAAProperties properties)
+        {
+            Console.WriteLine("[WARNING] - FXAA IS NOT SUPPORTED ON THE BASE RENDERER!");
+        }
+
+        public virtual void SetDepthOfFieldProperties(DepthOfFieldProperties properties)
+        {
+            Console.WriteLine("[WARNING] - DEPTH OF FIELD IS NOT SUPPORTED ON THE BASE RENDERER!");
+        }
+
+        public virtual void SetBloomProperties(BloomProperties properties)
+        {
+            Console.WriteLine("[WARNING] - BLOOM IS NOT SUPPORTED ON THE BASE RENDERER!");
+        }
+
+        public virtual void SetFilmGrainProperties(FilmGrainProperties properties)
+        {
+            Console.WriteLine("[WARNING] - FILM GRAIN IS NOT SUPPORTED ON THE BASE RENDERER!");
+        }
+        #endregion
+
+        #region Property Set / Gets
+        public ContentManager ContentManager { get { return m_ContentManager; } set { m_ContentManager = value; } }
+        public GraphicsDeviceManager GraphicsDeviceManager { get { return m_Graphics; } set { m_Graphics = value; } }
+        public GraphicsDevice GraphicsDevice { get { return m_Graphics.GraphicsDevice; } }
+        public SpriteBatch SpriteBatch { get { return m_SpriteBatch; } set { m_SpriteBatch = value; } }
+        public BlendState BlendState { get { return m_BlendState; } set { m_BlendState = value; SetRenderOptions(); } }
+        public DepthStencilState DepthStencilState { get { return m_DepthStencil; } set { m_DepthStencil = value; SetRenderOptions(); } }
+        public CullMode CullMode
+        {
+            get
+            {
+                return m_CullMode;
+            }
+            set
+            {
+                // Set Cull Mode
+                m_CullMode = value;
+
+                // Update rasterizer state 
+                UpdateRasterizerState();
+            }
+        }
+        
+        #endregion
+
+        #region Rendering Technique Get / Sets
+        public bool EnableShadowMapping { get; set; }
+        public Vector3 AmbientLighting { get { return m_AmbientLighting; } set { m_AmbientLighting = value; }  }
+        public FogProperties FogProperties { get { return m_FogProperties; } }
+        public Vector2 ScreenSize { get { return m_ScreenSize; } }
+        #endregion
+    }
+}

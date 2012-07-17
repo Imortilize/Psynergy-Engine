@@ -1,0 +1,145 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Diagnostics;
+using System.Threading;
+
+using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Audio;
+using Microsoft.Xna.Framework.Content;
+using Microsoft.Xna.Framework.GamerServices;
+using Microsoft.Xna.Framework.Graphics;
+using Microsoft.Xna.Framework.Input;
+using Microsoft.Xna.Framework.Media;
+
+using Psynergy;
+using Psynergy.Graphics;
+using Psynergy.Menus;
+using Psynergy.Input;
+using Psynergy.Sound;
+using Psynergy.Physics;
+using Psynergy.Events;
+using Psynergy.AI;
+
+namespace XnaGame
+{
+    /// <summary>
+    /// This is the main type for your game
+    /// </summary>
+    public class Game : Microsoft.Xna.Framework.Game
+    {
+        // Psynergy Engine
+        private PsynergyEngine m_PsynergyEngine = null;
+
+        // Original Graphics device manager
+        protected GraphicsDeviceManager m_Graphics;
+       
+        public Game()
+        {
+            m_Graphics = new GraphicsDeviceManager(this);
+
+            // Initialise the psynergy engine
+            m_PsynergyEngine = new PsynergyEngine(this, m_Graphics);
+        }
+
+        /// <summary>
+        /// Allows the game to perform any initialization it needs to before starting to run.
+        /// This is where it can query for any required services and load any non-graphic
+        /// related content.  Calling base.Initialize will enumerate through any components
+        /// and initialize them as well.
+        /// </summary>
+        protected override void Initialize()
+        {
+            // Could cause performance drop but ensures that draw is called after update
+            IsFixedTimeStep = true;
+
+            //m_Graphics.PreferredBackBufferFormat = SurfaceFormat.Color;
+           // m_Graphics.PreferredDepthStencilFormat = DepthFormat.Depth24Stencil8;
+
+            // Set bigger screen size
+            if (m_Graphics != null)
+            {
+                m_Graphics.PreferredBackBufferWidth = (int)RenderManager.Instance.BaseResolution.X;
+                m_Graphics.PreferredBackBufferHeight = (int)RenderManager.Instance.BaseResolution.Y;
+
+                // Apply Vsync and multisampling
+                m_Graphics.PreferMultiSampling = true;
+                m_Graphics.SynchronizeWithVerticalRetrace = true;
+
+                m_Graphics.ApplyChanges();
+            }
+
+            // Set mouse visible for now.
+            this.IsMouseVisible = true;
+
+            // THESE CURRENTLY COME BEFORE THE BASE INITIALISE CALL
+            if ( m_PsynergyEngine != null )
+            {
+                // Set what sound and physics engine to use
+                m_PsynergyEngine.SetSoundEngine(SoundEngineType.XACT);
+                m_PsynergyEngine.SetPhysicsEngine(PhysicsEngineType.eJibLibX);
+                m_PsynergyEngine.SetParticleEngine(ParticleEngineType.Mercury);
+
+                // Initial Graphics Settings
+                m_PsynergyEngine.useShadows(false);
+                m_PsynergyEngine.SetAntiAliasing(0);
+                m_PsynergyEngine.SetFogProperties(new FogProperties(Color.LightYellow, 200, 900));
+            }
+
+            // Initialise base content
+            base.Initialize();
+
+            // THESE CURRENTLY COME AFTER THE BASE INITIALISE CALL
+            if (m_PsynergyEngine != null)
+            {
+                // Post Processing
+                m_PsynergyEngine.UsePostProcessing(false);
+                m_PsynergyEngine.SetDepthOfFieldProperties(new DepthOfFieldProperties(100, 300, 1));
+                m_PsynergyEngine.SetBloomProperties(new BloomProperties(0.7f, 1.2f));
+                m_PsynergyEngine.SetFilmGrainProperties(new FilmGrainProperties(0.1f, 1, 2));
+
+                // Show FPS
+                m_PsynergyEngine.ShowFPS(true);
+            }
+        }
+
+        /// <summary>
+        /// LoadContent will be called once per game and is the place to load
+        /// all of your content.
+        /// </summary>
+        protected override void LoadContent()
+        {
+        }
+
+        /// <summary>
+        /// UnloadContent will be called once per game and is the place to unload
+        /// all content.
+        /// </summary>
+        protected override void UnloadContent()
+        {
+        }
+
+        /// <summary>
+        /// Allows the game to run logic such as updating the world,
+        /// checking for collisions, gathering input, and playing audio.
+        /// </summary>
+        /// <param name="gameTime">Provides a snapshot of timing values.</param>
+        protected override void Update(GameTime gameTime)
+        {
+            // Update base 
+            base.Update(gameTime);     
+        }
+
+        /// <summary>
+        /// This is called when the game should draw itself.
+        /// </summary>
+        /// <param name="gameTime">Provides a snapshot of timing values.</param>
+        protected override void Draw(GameTime gameTime)
+        {
+            GraphicsDevice.Clear(Color.DarkSlateBlue);
+
+            // Update base draw
+            base.Draw(gameTime);
+        }
+    }
+}

@@ -1,0 +1,70 @@
+10
+
+dir
+0
+http://xp-dev.com/svn/XnaGameX1/Middleware/Middleware/Middleware/Middleware/Content/Shaders
+http://xp-dev.com/svn/XnaGameX1
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+
+
+
+
+
+
+
+
+
+
+
+ba6f3427-77d8-42c7-95e4-65bf7dcb1cb9
+
+Post Processing
+dir
+
+
+
+add
+
+Textures
+dir
+
+
+
+add
+
+Others
+dir
+
+
+
+add
+
+Shadows
+dir
+
+
+
+add
+
+CubeMap
+dir
+
+
+
+add
+
+Deferred Rendering
+dir
+
+
+
+add
+

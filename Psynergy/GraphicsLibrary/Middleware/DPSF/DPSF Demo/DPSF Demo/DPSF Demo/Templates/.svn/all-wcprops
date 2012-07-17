@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/XnaGameX1/!svn/ver/189/AI/GraphicsLibrary/Middleware/DPSF/DPSF%20Demo/DPSF%20Demo/DPSF%20Demo/Templates
+END
+SpriteParticleSystemTemplate.cs
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/XnaGameX1/!svn/ver/189/AI/GraphicsLibrary/Middleware/DPSF/DPSF%20Demo/DPSF%20Demo/DPSF%20Demo/Templates/SpriteParticleSystemTemplate.cs
+END
+Sprite3DBillboardParticleSystemTemplate.cs
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/svn/XnaGameX1/!svn/ver/189/AI/GraphicsLibrary/Middleware/DPSF/DPSF%20Demo/DPSF%20Demo/DPSF%20Demo/Templates/Sprite3DBillboardParticleSystemTemplate.cs
+END
+QuadParticleSystemTemplate.cs
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/XnaGameX1/!svn/ver/189/AI/GraphicsLibrary/Middleware/DPSF/DPSF%20Demo/DPSF%20Demo/DPSF%20Demo/Templates/QuadParticleSystemTemplate.cs
+END
+DefaultSpriteParticleSystemTemplate.cs
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svn/XnaGameX1/!svn/ver/189/AI/GraphicsLibrary/Middleware/DPSF/DPSF%20Demo/DPSF%20Demo/DPSF%20Demo/Templates/DefaultSpriteParticleSystemTemplate.cs
+END
+DefaultSprite3DBillboardParticleSystemTemplate.cs
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/svn/XnaGameX1/!svn/ver/189/AI/GraphicsLibrary/Middleware/DPSF/DPSF%20Demo/DPSF%20Demo/DPSF%20Demo/Templates/DefaultSprite3DBillboardParticleSystemTemplate.cs
+END
+DefaultQuadParticleSystemTemplate.cs
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/XnaGameX1/!svn/ver/189/AI/GraphicsLibrary/Middleware/DPSF/DPSF%20Demo/DPSF%20Demo/DPSF%20Demo/Templates/DefaultQuadParticleSystemTemplate.cs
+END
+TexturedQuadParticleSystemTemplate.cs
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/XnaGameX1/!svn/ver/189/AI/GraphicsLibrary/Middleware/DPSF/DPSF%20Demo/DPSF%20Demo/DPSF%20Demo/Templates/TexturedQuadParticleSystemTemplate.cs
+END
+DefaultTexturedQuadParticleSystemTemplate.cs
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/svn/XnaGameX1/!svn/ver/189/AI/GraphicsLibrary/Middleware/DPSF/DPSF%20Demo/DPSF%20Demo/DPSF%20Demo/Templates/DefaultTexturedQuadParticleSystemTemplate.cs
+END

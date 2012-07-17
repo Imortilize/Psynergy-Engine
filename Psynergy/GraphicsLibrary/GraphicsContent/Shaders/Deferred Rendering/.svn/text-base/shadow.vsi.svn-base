@@ -1,0 +1,100 @@
+//------- Helper Functions ---------
+float SampleShadowMap( sampler2D shadowSampler, float2 UV )
+{
+	if ( UV.x < 0 || UV.x > 1 || UV.y < 0 || UV.y > 1 )
+		return 1;
+
+	return  tex2D( shadowSampler, UV ).r;
+}
+
+float2 SampleShadowMapGaussian( sampler2D shadowSampler, float2 UV )
+{
+	if ( UV.x < 0 || UV.x > 1 || UV.y < 0 || UV.y > 1 )
+		return float2( 1, 1 );
+
+	return  tex2D( shadowSampler, UV ).rg;
+}
+
+// Calculates the shadow occlusion using bilinear PCF
+float SampleShadowMapPCF( sampler shadowSampler, float realDepth, float2 UV, float2 shadowMapSize, float shadowMultiplier, float shadowBias )
+{
+	if ( UV.x < 0 || UV.x > 1 || UV.y < 0 || UV.y > 1 )
+		return 1;
+
+	float shadow = 0.0f;
+	float2 vShadowMapCoord = shadowMapSize * UV;
+
+	// Determine the lerp amounts           
+	float2 vLerps = frac(vShadowMapCoord);
+
+	float samples[4];	
+	samples[0] = (tex2D( shadowSampler, UV).x + shadowBias < realDepth) ? 0.0f: 1.0f;  
+	samples[1] = (tex2D( shadowSampler, UV + float2(1.0/shadowMapSize.x, 0)).x + shadowBias < realDepth) ? 0.0f: 1.0f;  
+	samples[2] = (tex2D( shadowSampler, UV + float2(0, 1.0/shadowMapSize.y)).x + shadowBias < realDepth) ? 0.0f: 1.0f;  
+	samples[3] = (tex2D( shadowSampler, UV + float2( 1.0/shadowMapSize.x, 1.0/shadowMapSize.y)).x + shadowBias < realDepth) ? 0.0f: 1.0f;  
+    
+	// lerp between the shadow values to calculate our light amount
+	shadow += lerp(lerp(samples[0], samples[1], vLerps.x), lerp( samples[2], samples[3], vLerps.x), vLerps.y);	
+
+	// Cap it to a certain degree of colour dimming
+	if ( shadow < shadowMultiplier )
+		shadow = shadowMultiplier;
+
+	// Return the shadow values				
+	return shadow;								 
+}
+
+// Calculates the shadow term using PCF soft-shadowing
+float SampleShadowMapPCFSoft( sampler2D shadowSampler, float realDepth, float2 UV, int samples, float2 shadowMapSize, float shadowMultiplier, float shadowBias )
+{
+	if ( UV.x < 0 || UV.x > 1 || UV.y < 0 || UV.y > 1 )
+		return 1;
+
+	float shadow = 0.0f;  
+		
+	float radius = (samples - 1.0f) / 2;
+	float weighAccum = 0.0f;
+	
+	for (float y = -radius; y <= radius; y++)
+	{
+		for (float x = -radius; x <= radius; x++)
+		{
+			float2 vOffset = 0;
+			vOffset = float2(x, y);				
+			vOffset /= shadowMapSize;
+			float2 samplePoint = UV + vOffset;			
+			float depth = tex2D(shadowSampler, samplePoint).x;
+
+			if ( realDepth <= (depth + shadowBias) )
+			{
+				float sample = (realDepth <= depth + shadowBias);
+			
+				// Edge tap smoothing
+				float xWeight = 1;
+				float yWeight = 1;
+			
+				if (x == -radius)
+					xWeight = 1 - frac(UV.x * shadowMapSize.x);
+				else if (x == radius)
+					xWeight = frac(UV.x * shadowMapSize.x);
+				
+				if (y == -radius)
+					yWeight = 1 - frac(UV.y * shadowMapSize.y);
+				else if (y == radius)
+					yWeight = frac(UV.y * shadowMapSize.y);
+				
+				shadow += sample * xWeight * yWeight;
+				weighAccum = xWeight * yWeight;
+			}
+		}											
+	}		
+	
+	shadow /= (samples * samples);
+	shadow *= 1.55f;	
+
+	// Cap it to a certain degree of colour dimming
+	if ( shadow < shadowMultiplier )
+		shadow = shadowMultiplier;
+	
+	return shadow;
+}

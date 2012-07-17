@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/XnaGameX1/!svn/ver/149/AI/AILibrary/Managers/StateManager
+END
+StateManager.cs
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/XnaGameX1/!svn/ver/149/AI/AILibrary/Managers/StateManager/StateManager.cs
+END
+State.cs
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/XnaGameX1/!svn/ver/149/AI/AILibrary/Managers/StateManager/State.cs
+END
+AbstractState.cs
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/XnaGameX1/!svn/ver/149/AI/AILibrary/Managers/StateManager/AbstractState.cs
+END

@@ -1,0 +1,246 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{C34454E6-D368-4570-9A2B-AB3A697223B4}</ProjectGuid>
+    <ProjectTypeGuids>{6D335F3A-9D43-41b4-9D22-F6F17C4BE596};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GraphicsLibrary</RootNamespace>
+    <AssemblyName>GraphicsLibrary</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <XnaFrameworkVersion>v4.0</XnaFrameworkVersion>
+    <XnaPlatform>Windows</XnaPlatform>
+    <XnaProfile>HiDef</XnaProfile>
+    <XnaCrossPlatformGroupID>bcf258f4-5f05-4e2d-8f15-e661dd29ffb0</XnaCrossPlatformGroupID>
+    <XnaOutputType>Library</XnaOutputType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\x86\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;WINDOWS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <PlatformTarget>x86</PlatformTarget>
+    <XnaCompressContent>false</XnaCompressContent>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\x86\Release</OutputPath>
+    <DefineConstants>TRACE;WINDOWS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <PlatformTarget>x86</PlatformTarget>
+    <XnaCompressContent>true</XnaCompressContent>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DPSF">
+      <HintPath>Middleware\DPSF\DPSF.dll</HintPath>
+    </Reference>
+    <Reference Include="JigLibX">
+      <HintPath>..\XnaGame\XnaGame\Middleware\JigLibX\JigLibX.dll</HintPath>
+    </Reference>
+    <Reference Include="LTreesLibrary">
+      <HintPath>Middleware\LTree Generator\LTreesLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86" />
+    <Reference Include="Microsoft.Xna.Framework.Game, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86" />
+    <Reference Include="Microsoft.Xna.Framework.Graphics, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86" />
+    <Reference Include="Microsoft.Xna.Framework.GamerServices, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86" />
+    <Reference Include="mscorlib" />
+    <Reference Include="ProjectMercury">
+      <HintPath>Middleware\Mercury Particle Engine 3.1 for XNA 4.0 (Binaries)\References\X86\ProjectMercury.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Management.Instrumentation" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Net" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AI\Controllers\Node3DController.cs" />
+    <Compile Include="Events\Events.cs" />
+    <Compile Include="Main\Helpers.cs" />
+    <Compile Include="Main\QuadRenderer.cs" />
+    <Compile Include="Main\SplineAsset.cs" />
+    <Compile Include="Managers\ParticleManager\Manager\ParticleManager.cs" />
+    <Compile Include="Managers\ParticleManager\Systems\Base\ParticleSystemEffect.cs" />
+    <Compile Include="Managers\ParticleManager\Systems\Mercury\MercuryParticleEffect.cs" />
+    <Compile Include="Managers\ParticleManager\Systems\ParticleSystem.cs" />
+    <Compile Include="Managers\ParticleManager\Systems\ParticleSystemDPSF.cs" />
+    <Compile Include="Managers\ParticleManager\Systems\ParticleSystemMercury.cs" />
+    <Compile Include="Managers\RenderManager\DebugRender.cs" />
+    <Compile Include="Managers\RenderManager\Renderers\DeferredRenderer.cs" />
+    <Compile Include="Managers\RenderManager\Renderers\Renderable Management\AbstractMesh.cs" />
+    <Compile Include="Managers\RenderManager\Renderers\Renderable Management\BaseRenderEffect.cs" />
+    <Compile Include="Managers\RenderManager\Renderers\Renderable Management\Mesh.cs" />
+    <Compile Include="Managers\RenderManager\Renderers\Renderable Management\SkinnedMesh.cs" />
+    <Compile Include="Managers\RenderManager\Renderers\Renderable Management\SubMesh.cs" />
+    <Compile Include="Managers\RenderManager\Renderers\Renderer.cs" />
+    <Compile Include="Managers\RenderManager\RenderGroup.cs" />
+    <Compile Include="Managers\RenderManager\RenderManager.cs" />
+    <Compile Include="Managers\SceneManager\SceneManager.cs" />
+    <Compile Include="Post Processing\AbstractPostProcessor.cs" />
+    <Compile Include="Post Processing\FXAA.cs" />
+    <Compile Include="Post Processing\Properties\AbstractPostProcessorProperties.cs" />
+    <Compile Include="Post Processing\Properties\BasicProperties.cs" />
+    <Compile Include="Post Processing\EdgeDetection.cs" />
+    <Compile Include="Post Processing\Bloom.cs" />
+    <Compile Include="Post Processing\DepthOfField.cs" />
+    <Compile Include="Post Processing\FilmGrain.cs" />
+    <Compile Include="Post Processing\GaussianBlur.cs" />
+    <Compile Include="Post Processing\Merge.cs" />
+    <Compile Include="Post Processing\MLAA.cs" />
+    <Compile Include="Post Processing\PostProcessor.cs" />
+    <Compile Include="Post Processing\Properties\BloomProperties.cs" />
+    <Compile Include="Post Processing\Properties\DepthOfFieldProperties.cs" />
+    <Compile Include="Post Processing\Properties\FilmGrainProperties.cs" />
+    <Compile Include="Post Processing\Properties\FogProperties.cs" />
+    <Compile Include="Post Processing\Properties\FXAAProperties.cs" />
+    <Compile Include="Post Processing\Properties\ToneMappingProperties.cs" />
+    <Compile Include="Post Processing\Render Capturing\MultiPassRenderCapture.cs" />
+    <Compile Include="Post Processing\Render Capturing\MultiRenderCapture.cs" />
+    <Compile Include="Post Processing\Render Capturing\RenderCapture.cs" />
+    <Compile Include="Post Processing\SSAO.cs" />
+    <Compile Include="Post Processing\SSAOBlur.cs" />
+    <Compile Include="Post Processing\SSAOMerge.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SceneGraph\2D\SpriteNode.cs" />
+    <Compile Include="SceneGraph\3D\3D Sprites\BillboardSystem.cs" />
+    <Compile Include="SceneGraph\3D\3D Sprites\PointSpriteNode.cs" />
+    <Compile Include="SceneGraph\3D\Base\Node3D.cs" />
+    <Compile Include="SceneGraph\3D\Base\PivotNode.cs" />
+    <Compile Include="SceneGraph\3D\CubeMap\SkySphere.cs" />
+    <Compile Include="SceneGraph\3D\CubeMap\SkySphereMesh.cs" />
+    <Compile Include="SceneGraph\3D\CubeMap\SkySphereSubMesh.cs" />
+    <Compile Include="SceneGraph\3D\Lights\Base\Light.cs" />
+    <Compile Include="SceneGraph\3D\Lights\DirectionalLight\DirectionalLight.cs" />
+    <Compile Include="SceneGraph\3D\Lights\Others\MultiLight.cs" />
+    <Compile Include="SceneGraph\3D\Lights\PointLight\PointLight.cs" />
+    <Compile Include="SceneGraph\3D\Lights\SpotLight\SpotLight.cs" />
+    <Compile Include="SceneGraph\3D\Models\Base\ModelNode.cs" />
+    <Compile Include="SceneGraph\3D\Models\Base\Player3D.cs" />
+    <Compile Include="SceneGraph\3D\Models\Box\BoxModel.cs" />
+    <Compile Include="SceneGraph\3D\Models\Trees\LTree.cs" />
+    <Compile Include="SceneGraph\3D\Models\Trees\Manager\TreeManager.cs" />
+    <Compile Include="SceneGraph\3D\Non-Models\CubeNode.cs" />
+    <Compile Include="SceneGraph\3D\Non-Models\Custom3DObject.cs" />
+    <Compile Include="SceneGraph\3D\Non-Models\LinkedTriangles.cs" />
+    <Compile Include="SceneGraph\3D\Non-Models\Physics Objects\Dice\Base\CustomDice.cs" />
+    <Compile Include="SceneGraph\3D\Non-Models\Physics Objects\Dice\CustomDiceJibLibX.cs" />
+    <Compile Include="SceneGraph\3D\Non-Models\TriangleNode.cs" />
+    <Compile Include="SceneGraph\3D\Scene\Scene3D.cs" />
+    <Compile Include="SceneGraph\3D\Terrain\TerrainNode.cs" />
+    <Compile Include="SceneGraph\3D\Vision\VisionNode.cs" />
+    <Compile Include="SceneGraph\Base\Hierarchy.cs" />
+    <Compile Include="SceneGraph\Base\RenderNode.cs" />
+    <Compile Include="SceneGraph\Base\Scene.cs" />
+    <Compile Include="XML\Fragments\SceneFragment.cs" />
+    <Compile Include="XML\Resources\RenderGroupResource.cs" />
+    <Compile Include="XML\Resources\SceneResource.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AILibrary\AILibrary.csproj">
+      <Project>{4881C6EF-7B5F-4732-A756-597A68E4E55A}</Project>
+      <Name>AILibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CameraLibrary\CameraLibrary.csproj">
+      <Project>{F20F853D-EA75-4409-8044-DE95DB61E358}</Project>
+      <Name>CameraLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EventLibrary\EventLibrary.csproj">
+      <Project>{2D81DF63-99CF-461F-B012-768CC256B033}</Project>
+      <Name>EventLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\InputLibrary\InputLibrary.csproj">
+      <Project>{75A3629E-8FB5-4CF9-8A5F-AA562A93DB74}</Project>
+      <Name>InputLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MainLibrary\MainLibrary.csproj">
+      <Project>{A2113989-0A0E-422E-881C-57744917AD51}</Project>
+      <Name>MainLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PhysicsLibrary\PhysicsLibrary.csproj">
+      <Project>{D2764F7F-3DA9-44D9-BFF0-B557FB9D6680}</Project>
+      <Name>PhysicsLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SkinnedModel\SkinnedModel.csproj">
+      <Project>{6FF3544E-25C8-49A7-BDFE-1A43B8799584}</Project>
+      <Name>SkinnedModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="GraphicsContent\GraphicsContent.contentproj">
+      <Project>{32EDA971-8CA0-4E8B-BA93-BC25AFE0F9A9}</Project>
+      <Name>GraphicsContent %28Content%29</Name>
+      <XnaReferenceType>Content</XnaReferenceType>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Managers\ParticleManager\.svn\dir-props" />
+    <None Include="Managers\ParticleManager\.svn\entries" />
+    <None Include="Managers\ParticleManager\Manager\.svn\dir-props" />
+    <None Include="Managers\ParticleManager\Manager\.svn\entries" />
+    <None Include="Managers\ParticleManager\Systems\.svn\dir-props" />
+    <None Include="Managers\ParticleManager\Systems\.svn\entries" />
+    <None Include="Managers\ParticleManager\Systems\Base\.svn\dir-props" />
+    <None Include="Managers\ParticleManager\Systems\Base\.svn\entries" />
+    <None Include="Managers\ParticleManager\Systems\Mercury\.svn\dir-props" />
+    <None Include="Managers\ParticleManager\Systems\Mercury\.svn\entries" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Managers\ParticleManager\.svn\prop-base\" />
+    <Folder Include="Managers\ParticleManager\.svn\props\" />
+    <Folder Include="Managers\ParticleManager\.svn\text-base\" />
+    <Folder Include="Managers\ParticleManager\.svn\tmp\prop-base\" />
+    <Folder Include="Managers\ParticleManager\.svn\tmp\props\" />
+    <Folder Include="Managers\ParticleManager\.svn\tmp\text-base\" />
+    <Folder Include="Managers\ParticleManager\Manager\.svn\prop-base\" />
+    <Folder Include="Managers\ParticleManager\Manager\.svn\props\" />
+    <Folder Include="Managers\ParticleManager\Manager\.svn\text-base\" />
+    <Folder Include="Managers\ParticleManager\Manager\.svn\tmp\prop-base\" />
+    <Folder Include="Managers\ParticleManager\Manager\.svn\tmp\props\" />
+    <Folder Include="Managers\ParticleManager\Manager\.svn\tmp\text-base\" />
+    <Folder Include="Managers\ParticleManager\Systems\.svn\prop-base\" />
+    <Folder Include="Managers\ParticleManager\Systems\.svn\props\" />
+    <Folder Include="Managers\ParticleManager\Systems\.svn\text-base\" />
+    <Folder Include="Managers\ParticleManager\Systems\.svn\tmp\prop-base\" />
+    <Folder Include="Managers\ParticleManager\Systems\.svn\tmp\props\" />
+    <Folder Include="Managers\ParticleManager\Systems\.svn\tmp\text-base\" />
+    <Folder Include="Managers\ParticleManager\Systems\Base\.svn\prop-base\" />
+    <Folder Include="Managers\ParticleManager\Systems\Base\.svn\props\" />
+    <Folder Include="Managers\ParticleManager\Systems\Base\.svn\text-base\" />
+    <Folder Include="Managers\ParticleManager\Systems\Base\.svn\tmp\prop-base\" />
+    <Folder Include="Managers\ParticleManager\Systems\Base\.svn\tmp\props\" />
+    <Folder Include="Managers\ParticleManager\Systems\Base\.svn\tmp\text-base\" />
+    <Folder Include="Managers\ParticleManager\Systems\Mercury\.svn\prop-base\" />
+    <Folder Include="Managers\ParticleManager\Systems\Mercury\.svn\props\" />
+    <Folder Include="Managers\ParticleManager\Systems\Mercury\.svn\text-base\" />
+    <Folder Include="Managers\ParticleManager\Systems\Mercury\.svn\tmp\prop-base\" />
+    <Folder Include="Managers\ParticleManager\Systems\Mercury\.svn\tmp\props\" />
+    <Folder Include="Managers\ParticleManager\Systems\Mercury\.svn\tmp\text-base\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\Microsoft.Xna.GameStudio.targets" />
+  <!--
+      To modify your build process, add your task inside one of the targets below and uncomment it. 
+      Other similar extension points exist, see Microsoft.Common.targets.
+      <Target Name="BeforeBuild">
+      </Target>
+      <Target Name="AfterBuild">
+      </Target>
+    -->
+</Project>

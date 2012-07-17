@@ -1,0 +1,25 @@
+<VSTemplate Version="3.0.0" Type="ProjectGroup" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+  <TemplateData>
+    <Name>Psynergy Game Project</Name>
+    <Description>A basic Psynergy Game Engine template for XNA 4.0</Description>
+    <Icon>__TemplateIcon.png</Icon>
+    <ProjectType>CSharp</ProjectType>
+    <SortOrder>12000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>MyPsynergyGame</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <PromptForSaveOnCreation>true</PromptForSaveOnCreation>
+  </TemplateData>
+  <TemplateContent>
+    <ProjectCollection>
+      <ProjectTemplateLink ProjectName="PsynergyGame">
+        PsynergyGame\MyTemplate.vstemplate
+      </ProjectTemplateLink>
+      <ProjectTemplateLink ProjectName="Content">
+        PsynergyContent\MyTemplate.vstemplate
+      </ProjectTemplateLink>
+    </ProjectCollection>
+  </TemplateContent>
+</VSTemplate>

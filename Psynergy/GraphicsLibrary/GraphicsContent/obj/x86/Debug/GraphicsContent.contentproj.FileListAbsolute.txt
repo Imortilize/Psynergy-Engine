@@ -1,0 +1,2 @@
+C:\Users\Dominic\Documents\Psynergy\AI\GraphicsLibrary\GraphicsContent\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\dominicbrittain\Documents\Psynergy\AI\GraphicsLibrary\GraphicsContent\obj\x86\Debug\ResolveAssemblyReference.cache

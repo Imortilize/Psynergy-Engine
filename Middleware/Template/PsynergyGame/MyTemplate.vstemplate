@@ -1,0 +1,149 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>PsynergyGame</Name>
+    <Description>A basic XNA 4.0 project using the Psynergy Game Engine.</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>PsynergyGame</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <Icon>__TemplateIcon.png</Icon>
+    <PreviewImage>__PreviewImage.png</PreviewImage>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="Middleware.csproj" File="Middleware.csproj" ReplaceParameters="true">
+      <Folder Name="Content" TargetFolderName="Content">
+        <Folder Name="Fonts" TargetFolderName="Fonts">
+          <ProjectItem ReplaceParameters="false" TargetFileName="defaultfont.xnb">defaultfont.xnb</ProjectItem>
+        </Folder>
+        <Folder Name="LTreeShaders" TargetFolderName="LTreeShaders">
+          <ProjectItem ReplaceParameters="false" TargetFileName="Leaves.xnb">Leaves.xnb</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="Trunk.xnb">Trunk.xnb</ProjectItem>
+        </Folder>
+        <Folder Name="Models" TargetFolderName="Models">
+          <Folder Name="FBX" TargetFolderName="FBX">
+            <Folder Name="Ship1" TargetFolderName="Ship1">
+              <ProjectItem ReplaceParameters="false" TargetFileName="ship1.xnb">ship1.xnb</ProjectItem>
+              <ProjectItem ReplaceParameters="false" TargetFileName="ship1_c_0.xnb">ship1_c_0.xnb</ProjectItem>
+              <ProjectItem ReplaceParameters="false" TargetFileName="ship1_n_0.xnb">ship1_n_0.xnb</ProjectItem>
+              <ProjectItem ReplaceParameters="false" TargetFileName="ship1_s_0.xnb">ship1_s_0.xnb</ProjectItem>
+            </Folder>
+          </Folder>
+          <ProjectItem ReplaceParameters="false" TargetFileName="null_diffuse.xnb">null_diffuse.xnb</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="null_diffuse_0.xnb">null_diffuse_0.xnb</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="null_emissive.xnb">null_emissive.xnb</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="null_emissive_0.xnb">null_emissive_0.xnb</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="null_normal.xnb">null_normal.xnb</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="null_specular.xnb">null_specular.xnb</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="null_specular_0.xnb">null_specular_0.xnb</ProjectItem>
+          <Folder Name="X" TargetFolderName="X">
+            <ProjectItem ReplaceParameters="false" TargetFileName="boardnormal_0.xnb">boardnormal_0.xnb</ProjectItem>
+            <ProjectItem ReplaceParameters="false" TargetFileName="Ground.xnb">Ground.xnb</ProjectItem>
+            <ProjectItem ReplaceParameters="false" TargetFileName="ground_diffuse_0.xnb">ground_diffuse_0.xnb</ProjectItem>
+            <ProjectItem ReplaceParameters="false" TargetFileName="sphere.xnb">sphere.xnb</ProjectItem>
+          </Folder>
+        </Folder>
+        <Folder Name="Shaders" TargetFolderName="Shaders">
+          <Folder Name="CubeMap" TargetFolderName="CubeMap">
+            <ProjectItem ReplaceParameters="false" TargetFileName="cubemap.xnb">cubemap.xnb</ProjectItem>
+          </Folder>
+          <Folder Name="Deferred Rendering" TargetFolderName="Deferred Rendering">
+            <ProjectItem ReplaceParameters="false" TargetFileName="ClearGBuffer.xnb">ClearGBuffer.xnb</ProjectItem>
+            <ProjectItem ReplaceParameters="false" TargetFileName="CombineFinal.xnb">CombineFinal.xnb</ProjectItem>
+            <ProjectItem ReplaceParameters="false" TargetFileName="DirectionalLight.xnb">DirectionalLight.xnb</ProjectItem>
+            <ProjectItem ReplaceParameters="false" TargetFileName="PointLight.xnb">PointLight.xnb</ProjectItem>
+            <ProjectItem ReplaceParameters="false" TargetFileName="RenderGBuffer.xnb">RenderGBuffer.xnb</ProjectItem>
+            <ProjectItem ReplaceParameters="false" TargetFileName="RenderGBuffer_0.xnb">RenderGBuffer_0.xnb</ProjectItem>
+          </Folder>
+          <Folder Name="Others" TargetFolderName="Others">
+            <ProjectItem ReplaceParameters="false" TargetFileName="Billboard.xnb">Billboard.xnb</ProjectItem>
+            <ProjectItem ReplaceParameters="false" TargetFileName="pointsprite.xnb">pointsprite.xnb</ProjectItem>
+          </Folder>
+          <Folder Name="Post Processing" TargetFolderName="Post Processing">
+            <ProjectItem ReplaceParameters="false" TargetFileName="BloomPostProcessor.xnb">BloomPostProcessor.xnb</ProjectItem>
+            <ProjectItem ReplaceParameters="false" TargetFileName="BWPostProcessor.xnb">BWPostProcessor.xnb</ProjectItem>
+            <ProjectItem ReplaceParameters="false" TargetFileName="DOFPostProcessor.xnb">DOFPostProcessor.xnb</ProjectItem>
+            <ProjectItem ReplaceParameters="false" TargetFileName="EdgeDetectionPostProcessor.xnb">EdgeDetectionPostProcessor.xnb</ProjectItem>
+            <ProjectItem ReplaceParameters="false" TargetFileName="FilmMappingPostProcessor.xnb">FilmMappingPostProcessor.xnb</ProjectItem>
+            <ProjectItem ReplaceParameters="false" TargetFileName="GaussianBlurPostProcessor.xnb">GaussianBlurPostProcessor.xnb</ProjectItem>
+            <ProjectItem ReplaceParameters="false" TargetFileName="MergeBloomPostProcessor.xnb">MergeBloomPostProcessor.xnb</ProjectItem>
+            <ProjectItem ReplaceParameters="false" TargetFileName="MLAAPostProcessor.xnb">MLAAPostProcessor.xnb</ProjectItem>
+            <ProjectItem ReplaceParameters="false" TargetFileName="SSAO.xnb">SSAO.xnb</ProjectItem>
+            <ProjectItem ReplaceParameters="false" TargetFileName="SSAOBlur.xnb">SSAOBlur.xnb</ProjectItem>
+            <ProjectItem ReplaceParameters="false" TargetFileName="SSAOMerge.xnb">SSAOMerge.xnb</ProjectItem>
+          </Folder>
+          <Folder Name="Shadows" TargetFolderName="Shadows">
+            <ProjectItem ReplaceParameters="false" TargetFileName="ShadowDepthMap.xnb">ShadowDepthMap.xnb</ProjectItem>
+          </Folder>
+          <Folder Name="Textures" TargetFolderName="Textures">
+            <Folder Name="Cell Shading" TargetFolderName="Cell Shading">
+              <ProjectItem ReplaceParameters="false" TargetFileName="celMap.xnb">celMap.xnb</ProjectItem>
+            </Folder>
+            <Folder Name="MLAA" TargetFolderName="MLAA">
+              <ProjectItem ReplaceParameters="false" TargetFileName="AreaMap32.xnb">AreaMap32.xnb</ProjectItem>
+            </Folder>
+            <Folder Name="SSAO" TargetFolderName="SSAO">
+              <ProjectItem ReplaceParameters="false" TargetFileName="randomNormal.xnb">randomNormal.xnb</ProjectItem>
+            </Folder>
+          </Folder>
+        </Folder>
+        <Folder Name="Textures" TargetFolderName="Textures">
+          <ProjectItem ReplaceParameters="false" TargetFileName="BirchBark.xnb">BirchBark.xnb</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="BirchLeaf.xnb">BirchLeaf.xnb</ProjectItem>
+          <Folder Name="CubeMaps" TargetFolderName="CubeMaps">
+            <ProjectItem ReplaceParameters="false" TargetFileName="Canyon.xnb">Canyon.xnb</ProjectItem>
+            <ProjectItem ReplaceParameters="false" TargetFileName="cube.xnb">cube.xnb</ProjectItem>
+          </Folder>
+          <ProjectItem ReplaceParameters="false" TargetFileName="Grass.xnb">Grass.xnb</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="GrayBark.xnb">GrayBark.xnb</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="GraywoodLeaf.xnb">GraywoodLeaf.xnb</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="OakLeaf.xnb">OakLeaf.xnb</ProjectItem>
+          <Folder Name="Others" TargetFolderName="Others">
+            <ProjectItem ReplaceParameters="false" TargetFileName="controlpoint.xnb">controlpoint.xnb</ProjectItem>
+          </Folder>
+          <ProjectItem ReplaceParameters="false" TargetFileName="PineBark.xnb">PineBark.xnb</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="PineLeaf.xnb">PineLeaf.xnb</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="randomNormal.xnb">randomNormal.xnb</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="WillowLeaf.xnb">WillowLeaf.xnb</ProjectItem>
+        </Folder>
+        <Folder Name="Trees" TargetFolderName="Trees">
+          <ProjectItem ReplaceParameters="false" TargetFileName="Birch.xnb">Birch.xnb</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="Gardenwood.xnb">Gardenwood.xnb</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="Graywood.xnb">Graywood.xnb</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="Pine.xnb">Pine.xnb</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="Rug.xnb">Rug.xnb</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="Willow.xnb">Willow.xnb</ProjectItem>
+        </Folder>
+      </Folder>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Game.cs">Game.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="Game.ico">Game.ico</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="GameThumbnail.png">GameThumbnail.png</ProjectItem>
+      <Folder Name="Managers" TargetFolderName="Managers">
+        <Folder Name="StateManager" TargetFolderName="StateManager">
+          <Folder Name="States" TargetFolderName="States">
+            <ProjectItem ReplaceParameters="true" TargetFileName="GameState.cs">GameState.cs</ProjectItem>
+          </Folder>
+        </Folder>
+      </Folder>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Program.cs">Program.cs</ProjectItem>
+      <Folder Name="Properties" TargetFolderName="Properties">
+        <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Resources" TargetFolderName="Resources">
+        <ProjectItem ReplaceParameters="true" TargetFileName="ClassRegistry.xml">ClassRegistry.xml</ProjectItem>
+        <Folder Name="Game" TargetFolderName="Game" />
+        <ProjectItem ReplaceParameters="true" TargetFileName="Game.xml">Game.xml</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="GameCameras.xml">GameCameras.xml</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="GameMenus.xml">GameMenus.xml</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="GameScenes.xml">GameScenes.xml</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="RenderGroups.xml">RenderGroups.xml</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="State.xml">State.xml</ProjectItem>
+        <Folder Name="StateMachines" TargetFolderName="StateMachines" />
+      </Folder>
+    </Project>
+  </TemplateContent>
+</VSTemplate>

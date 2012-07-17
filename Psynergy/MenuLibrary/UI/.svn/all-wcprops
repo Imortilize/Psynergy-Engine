@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/XnaGameX1/!svn/ver/217/AI/MenuLibrary/UI
+END
+UIObjectEffectFadeInFadeOut.cs
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/XnaGameX1/!svn/ver/166/AI/MenuLibrary/UI/UIObjectEffectFadeInFadeOut.cs
+END
+UIObjectEffect.cs
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/XnaGameX1/!svn/ver/166/AI/MenuLibrary/UI/UIObjectEffect.cs
+END
+UIObject.cs
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/XnaGameX1/!svn/ver/179/AI/MenuLibrary/UI/UIObject.cs
+END
+UIObjectTimed.cs
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/XnaGameX1/!svn/ver/154/AI/MenuLibrary/UI/UIObjectTimed.cs
+END
+UIObjectSelectable.cs
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/XnaGameX1/!svn/ver/168/AI/MenuLibrary/UI/UIObjectSelectable.cs
+END
+UIObjectEffectRiseUp.cs
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/XnaGameX1/!svn/ver/159/AI/MenuLibrary/UI/UIObjectEffectRiseUp.cs
+END

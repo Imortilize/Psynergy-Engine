@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent>
+  <Asset Type="ProjectMercury.ParticleEffect">
+    <Name Null="true" />
+    <Author Null="true" />
+    <Description Null="true" />
+    <Emitters>
+      <Item Type="ProjectMercury.Emitters.CylinderEmitter">
+        <Name>Cylindrical Emitter</Name>
+        <Enabled>true</Enabled>
+        <Budget>100</Budget>
+        <Term>1</Term>
+        <ReleaseQuantity>10</ReleaseQuantity>
+        <BillboardStyle>None</BillboardStyle>
+        <BillboardRotationalAxis>0 0 0</BillboardRotationalAxis>
+        <ReleaseSpeed>[0,0]</ReleaseSpeed>
+        <ReleaseOpacity>[0.3,0.3]</ReleaseOpacity>
+        <ReleaseScale>[24,36]</ReleaseScale>
+        <ReleaseColour>
+          <Red>[1,1]</Red>
+          <Green>[1,1]</Green>
+          <Blue>[1,1]</Blue>
+        </ReleaseColour>
+        <ReleaseRotation>
+          <Pitch>[0,0]</Pitch>
+          <Yaw>[-3,0]</Yaw>
+          <Roll>[0,0]</Roll>
+        </ReleaseRotation>
+        <BlendMode>Add</BlendMode>
+        <ParticleTextureAssetPath>Spikey001</ParticleTextureAssetPath>
+        <Modifiers>
+          <Item Type="ProjectMercury.Modifiers.OpacityInterpolator2">
+            <InitialOpacity>0.6</InitialOpacity>
+            <FinalOpacity>0</FinalOpacity>
+          </Item>
+          <Item Type="ProjectMercury.Modifiers.RotationModifier">
+            <RotationRate>0 0 2</RotationRate>
+          </Item>
+          <Item Type="ProjectMercury.Modifiers.ScaleInterpolator2">
+            <InitialScale>0</InitialScale>
+            <FinalScale>32</FinalScale>
+          </Item>
+          <Item Type="ProjectMercury.Modifiers.ColourInterpolator2">
+            <InitialColour>1 0 0</InitialColour>
+            <FinalColour>1 1 1</FinalColour>
+          </Item>
+        </Modifiers>
+        <Controllers>
+          <Item Type="ProjectMercury.Controllers.CooldownController">
+            <CooldownPeriod>0.5</CooldownPeriod>
+          </Item>
+        </Controllers>
+        <UseVelocityAsBillboardAxis>false</UseVelocityAsBillboardAxis>
+        <ConstrainToPlane>true</ConstrainToPlane>
+        <Radius>1</Radius>
+        <Shell>false</Shell>
+        <Radiate>true</Radiate>
+        <Height>1</Height>
+      </Item>
+    </Emitters>
+  </Asset>
+</XnaContent>

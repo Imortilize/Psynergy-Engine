@@ -1,0 +1,20 @@
+//------- Shared shader variables and functions --------
+
+float viewportWidth;
+float viewportHeight;
+
+// Calculate the 2D screen position of a 3D position
+float2 PostProjToScreen( float4 position )
+{
+	float2 screenPos = (position.xy / position.w );
+	
+	return (0.5f * (float2(screenPos.x, -screenPos.y) + 1));
+}
+
+// Calculate the 2D screen position of a 3D position
+float2 PostProjToScreenShadow( float4 position )
+{
+	float2 screenPos = (position.xy / position.w );
+	
+	return (float2(screenPos.x, -screenPos.y) / 2) ;
+}

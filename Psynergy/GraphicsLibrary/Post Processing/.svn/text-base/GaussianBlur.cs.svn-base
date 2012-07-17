@@ -1,0 +1,172 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Diagnostics;
+using System.Linq;
+using System.Text;
+
+using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Content;
+using Microsoft.Xna.Framework.Graphics;
+
+namespace Psynergy.Graphics
+{
+    public class GaussianBlur : PostProcessor<BasicProperties>
+    {
+        private float m_BlurAmount = 0.0f;
+        private float[] m_WeightsH;
+        private float[] m_WeightsV;
+        private Vector2[] m_OffsetsH;
+        private Vector2[] m_OffsetsV;
+
+        public GaussianBlur(GraphicsDevice graphicsDevice, float blurAmount)
+            : base(graphicsDevice, new BasicProperties())
+        {
+            m_BlurAmount = blurAmount;
+
+            if (graphicsDevice != null)
+            {
+                int width = graphicsDevice.Viewport.Width;
+                int height = graphicsDevice.Viewport.Height;
+
+                // Calculate the weights and offsets of the horizontal pass
+                CalculateSettings((1.0f / width), 0, out m_WeightsH, out m_OffsetsH);
+
+                // Calculate the weights and offsets of the vertical pass
+                CalculateSettings(0, (1.0f / height), out m_WeightsV, out m_OffsetsV);
+            }
+        }
+
+        public GaussianBlur(GraphicsDevice graphicsDevice, Effect effect, float blurAmount)
+            : base(graphicsDevice, effect, new BasicProperties())
+        {
+            m_BlurAmount = blurAmount;
+
+            // Calculate settings up front
+            RecalculateSettings();
+        }
+
+        private void RecalculateSettings()
+        {
+            if (m_GraphicsDevice != null)
+            {
+                int width = m_GraphicsDevice.Viewport.Width;
+                int height = m_GraphicsDevice.Viewport.Height;
+
+                // Calculate the weights and offsets of the horizontal pass
+                CalculateSettings((1.0f / width), 0, out m_WeightsH, out m_OffsetsH);
+
+                // Calculate the weights and offsets of the vertical pass
+                CalculateSettings(0, (1.0f / height), out m_WeightsV, out m_OffsetsV);
+            }
+        }
+
+        protected override void CreateRenderCapture()
+        {
+            m_RenderCapture = new MultiPassRenderCapture(m_GraphicsDevice);
+            m_RenderCapture.AddRenderTarget();
+            m_RenderCapture.AddRenderTarget();
+        }
+
+        private void CalculateSettings(float width, float height, out float[] weights, out Vector2[] offsets)
+        {
+            // 15 Samples
+            weights = new float[15];
+            offsets = new Vector2[15];
+
+            // If blur is actually assigned then calculate the blur factor
+            if (m_BlurAmount > 0)
+            {
+                // Calculate values for center pixel
+                weights[0] = GaussianFunction(0);
+                offsets[0] = Vector2.Zero;
+
+                float total = weights[0];
+
+                // Calculate samples in pairs
+                for (int i = 0; i < 7; i++)
+                {
+                    // Weight each pair of samples according to Gaussian Function
+                    float weight = GaussianFunction(i + 1);
+
+                    int firstOffset = (i * 2 + 1);
+                    int secondOffset = (i * 2 + 2);
+
+                    weights[firstOffset] = weight;
+                    weights[secondOffset] = weight;
+                    total += (weight * 2);
+
+                    // Samples are offset by 1.5 pixels, to make use of 
+                    // filtering halfway between pixels
+                    float offset = (i * 2 + 1.5f);
+                    Vector2 offsetVec = (new Vector2(width, height) * offset);
+                    offsets[firstOffset] = offsetVec;
+                    offsets[secondOffset] = -offsetVec;
+                }
+
+                // Divide all weights by total so they will add up to 1
+                for (int i = 0; i < weights.Length; i++)
+                    weights[i] /= total;
+            }
+        }
+    
+        public override void Draw(Texture2D input)
+        {
+            Texture2D copy = input;
+            if (m_RenderCapture != null)
+            {
+                // Draw gaussian blur
+                // Set values for horizontal pass
+                if (Effect != null)
+                {
+                    m_GraphicsDevice.SamplerStates[0] = SamplerState.PointClamp;
+
+                    Effect.Parameters["xOffsets"].SetValue(m_OffsetsH);
+                    Effect.Parameters["xWeights"].SetValue(m_WeightsH);
+
+                    // Draw the base post processor items
+                    base.Draw(copy);
+
+                    // Set values for the vertical pass
+                    Effect.Parameters["xOffsets"].SetValue(m_OffsetsV);
+                    Effect.Parameters["xWeights"].SetValue(m_WeightsV);
+
+                    // Draw the base post processor items for the second time
+                    base.Draw(GetProcessedImage(0));
+                }
+            }
+        }
+
+        #region Helper Functions
+        private float GaussianFunction(float x)
+        {
+            return (float)((1.0f / Math.Sqrt(2 * Math.PI * m_BlurAmount * m_BlurAmount)) * Math.Exp(-(x * x) / (2 * m_BlurAmount * m_BlurAmount)));
+        }
+
+        #endregion
+
+        #region Setter Functions
+        protected override void SetEffectParameters()
+        {
+        }
+        #endregion
+
+        #region Property Set / Gets
+        public float BlurFactor 
+        { 
+            set 
+            {
+                if (value != m_BlurAmount)
+                {
+                    m_BlurAmount = value;
+
+                    // Recalculate settings
+                    RecalculateSettings();
+                }
+            } 
+        }
+        #endregion
+
+        #region Set / Get
+        #endregion
+    }
+}

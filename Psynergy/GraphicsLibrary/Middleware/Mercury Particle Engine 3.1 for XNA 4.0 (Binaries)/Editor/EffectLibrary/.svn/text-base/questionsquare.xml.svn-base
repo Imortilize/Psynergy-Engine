@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent>
+  <Asset Type="ProjectMercury.ParticleEffect">
+    <Name>Beam Me Up</Name>
+    <Author>Matt Davey</Author>
+    <Description></Description>
+    <Emitters>
+      <Item Type="ProjectMercury.Emitters.BoxEmitter">
+        <Name>Particles</Name>
+        <Budget>500</Budget>
+        <Term>1</Term>
+        <ReleaseQuantity>1</ReleaseQuantity>
+        <Enabled>true</Enabled>
+        <ReleaseSpeed>[-12.5,12.5]</ReleaseSpeed>
+        <ReleaseColour>
+          <Red>[0,1]</Red>
+          <Green>[0.752,0.252]</Green>
+          <Blue>[0.252,0.752]</Blue>
+        </ReleaseColour>
+        <ReleaseOpacity>[1,1]</ReleaseOpacity>
+        <ReleaseScale>[16,16]</ReleaseScale>
+        <ReleaseRotation>
+          <Pitch>[0,0]</Pitch>
+          <Yaw>[0,0]</Yaw>
+          <Roll>[0,0]</Roll>
+        </ReleaseRotation>
+        <ParticleTextureAssetPath>LensFlare</ParticleTextureAssetPath>
+        <BlendMode>Add</BlendMode>
+        <Width>10</Width>
+        <Height>25</Height>
+        <Depth>10</Depth>
+        <Rotation>0 0 0</Rotation>
+        <Modifiers>
+          <Modifier Type="ProjectMercury.Modifiers.LinearGravityModifier">
+            <GravityVector>0 1 0</GravityVector>
+            <Strength>15</Strength>
+          </Modifier>
+          <Modifier Type="ProjectMercury.Modifiers.OpacityInterpolator3">
+            <InitialOpacity>0</InitialOpacity>
+            <Median>0.5</Median>
+            <MedianOpacity>1</MedianOpacity>
+            <FinalOpacity>0</FinalOpacity>
+          </Modifier>
+          <Modifier Type="ProjectMercury.Modifiers.ScaleInterpolator3">
+            <InitialScale>1.6</InitialScale>
+            <Median>0.5</Median>
+            <MedianScale>3.2</MedianScale>
+            <FinalScale>1.6</FinalScale>
+          </Modifier>
+        </Modifiers>
+        <Controllers />
+      </Item>
+      <Item Type="ProjectMercury.Emitters.BoxEmitter">
+        <Name>Fast Beams</Name>
+        <Budget>500</Budget>
+        <Term>0.5</Term>
+        <ReleaseQuantity>3</ReleaseQuantity>
+        <Enabled>true</Enabled>
+        <ReleaseSpeed>[0,0]</ReleaseSpeed>
+        <ReleaseColour>
+          <Red>[0,0]</Red>
+          <Green>[0.5,0.5]</Green>
+          <Blue>[0.55,0.55]</Blue>
+        </ReleaseColour>
+        <ReleaseOpacity>[1,1]</ReleaseOpacity>
+        <ReleaseScale>[25.6,25.6]</ReleaseScale>
+        <ReleaseRotation>
+          <Pitch>[0,0]</Pitch>
+          <Yaw>[0,0]</Yaw>
+          <Roll>[0,0]</Roll>
+        </ReleaseRotation>
+        <ParticleTextureAssetPath>Beam</ParticleTextureAssetPath>
+        <BlendMode>Add</BlendMode>
+        <Width>10</Width>
+        <Height>5</Height>
+        <Depth>10</Depth>
+        <Rotation>0 0 0</Rotation>
+        <Modifiers>
+          <Modifier Type="ProjectMercury.Modifiers.OpacityInterpolator3">
+            <InitialOpacity>0</InitialOpacity>
+            <Median>0.5</Median>
+            <MedianOpacity>0.1</MedianOpacity>
+            <FinalOpacity>0</FinalOpacity>
+          </Modifier>
+        </Modifiers>
+        <Controllers>
+          <Controller Type="ProjectMercury.Controllers.CooldownController">
+            <CooldownPeriod>0.05</CooldownPeriod>
+          </Controller>
+        </Controllers>
+      </Item>
+      <Item Type="ProjectMercury.Emitters.BoxEmitter">
+        <Name>Slow Beams</Name>
+        <Budget>100</Budget>
+        <Term>1.5</Term>
+        <ReleaseQuantity>3</ReleaseQuantity>
+        <Enabled>true</Enabled>
+        <ReleaseSpeed>[0,0]</ReleaseSpeed>
+        <ReleaseColour>
+          <Red>[0,0]</Red>
+          <Green>[0.5,0.5]</Green>
+          <Blue>[0.45,0.55]</Blue>
+        </ReleaseColour>
+        <ReleaseOpacity>[1,1]</ReleaseOpacity>
+        <ReleaseScale>[35,35]</ReleaseScale>
+        <ReleaseRotation>
+          <Pitch>[0,0]</Pitch>
+          <Yaw>[0,0]</Yaw>
+          <Roll>[0,0]</Roll>
+        </ReleaseRotation>
+        <ParticleTextureAssetPath>BeamBlurred</ParticleTextureAssetPath>
+        <BlendMode>Alpha</BlendMode>
+        <Width>12</Width>
+        <Height>10</Height>
+        <Depth>12</Depth>
+        <Rotation>0 0 0</Rotation>
+        <Modifiers>
+          <Modifier Type="ProjectMercury.Modifiers.OpacityInterpolator3">
+            <InitialOpacity>0</InitialOpacity>
+            <Median>0.5</Median>
+            <MedianOpacity>0.3</MedianOpacity>
+            <FinalOpacity>0</FinalOpacity>
+          </Modifier>
+          <Modifier Type="ProjectMercury.Modifiers.ColourInterpolator2">
+            <InitialColour>0 0.5 0.55</InitialColour>
+            <FinalColour>1 1 1</FinalColour>
+          </Modifier>
+        </Modifiers>
+        <Controllers>
+          <Controller Type="ProjectMercury.Controllers.CooldownController">
+            <CooldownPeriod>0.25</CooldownPeriod>
+          </Controller>
+        </Controllers>
+      </Item>
+    </Emitters>
+  </Asset>
+</XnaContent>

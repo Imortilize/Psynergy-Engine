@@ -1,0 +1,65 @@
+// Input textures (just 1 in this case)
+sampler2D xBloomTarget[1];
+
+// Our original SceneTexture
+texture xColorMap;
+ 
+// Create a sampler for the ColorMap texture using lianear filtering and clamping
+sampler xColorMapSampler = sampler_state
+{
+   Texture = <xColorMap>;
+   MinFilter = Linear;
+   MagFilter = Linear;
+   MipFilter = Linear;  
+   AddressU  = Clamp;
+   AddressV  = Clamp;
+};
+
+// Controls the Intensity of the bloom texture
+float xBloomIntensity = 0.7f;
+ 
+// Controls the Intensity of the original scene texture
+float xOriginalIntensity = 1.0f;
+ 
+// Saturation amount on bloom
+float xBloomSaturation = 1.2f;
+ 
+// Saturation amount on original scene
+float xOriginalSaturation = 1.0f;
+
+/* Helper Functions */
+float4 AdjustSaturation(float4 color, float saturation)
+{
+    // We define gray as the same color we used in the grayscale shader
+    float grey = dot(color, float3(0.3f, 0.59f, 0.11f));
+   
+    return lerp(grey, color, saturation);
+}
+/**/
+
+float4 MergeBloomPixelShader(float2 UV : TEXCOORD0) : COLOR0
+{
+	// Get our bloom pixel from bloom texture
+	float4 bloomColor = tex2D(xBloomTarget[0], UV);
+ 
+	// Get our original pixel from ColorMap
+	float4 originalColor = tex2D(xColorMapSampler, UV);
+   
+	// Adjust color saturation and intensity based on the input variables to the shader
+	bloomColor = AdjustSaturation(bloomColor, xBloomSaturation) * xBloomIntensity;
+	originalColor = AdjustSaturation(originalColor, xOriginalSaturation) * xOriginalIntensity;
+   
+	// make the originalColor darker in very bright areas, avoiding these areas look burned-out
+	originalColor *= (1 - saturate(bloomColor));
+   
+	// Combine the two images.
+	return (originalColor + bloomColor);
+}
+
+technique MergeBloom
+{
+    pass Pass1
+    {
+        PixelShader = compile ps_2_0 MergeBloomPixelShader();
+    }
+}

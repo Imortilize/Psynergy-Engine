@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<MenuResource>
+	<Menu id="MainMenu">
+		<Background id="" >
+			<property texturefile="mainmenubackground" />
+			<property music="main-theme" />
+		</Background>
+		<Transition type="MenuTransitionFadeInFadeOut" >
+			<property optionfadedelay="0.1" />
+		</Transition>
+		<MenuOption id="Play">
+			<Link id="MenuLink" menu="NumPlayersMenu" input="select" sound="menuselect" />
+			<property texturefile="StartText" />
+			<property selectedtexturefile="StartTextSelect" />
+			<property pos="333 235 0" />
+		</MenuOption>
+		<MenuOption id="Options">
+			<Link id="MenuLink" menu="Options" input="select" sound="menuselect" />
+			<property texturefile="OptionsText" />
+			<property selectedtexturefile="OptionTextSelect" />
+			<property pos="336 330 0" />
+		</MenuOption>
+		<MenuOption id="Credits">
+			<Link id="MenuLink" menu="Credits" input="select" sound="menuselect" />
+			<property texturefile="CreditsText" />
+			<property selectedtexturefile="CreditsTextSelect" />
+			<property pos="333 425 0" />
+		</MenuOption>
+		<MenuOption id="Exit">
+			<Action id="ExitGame" input="select" sound="menuback" />
+			<property texturefile="ExitTest" />
+			<property selectedtexturefile="ExitTextSelect" />
+			<property pos="333 520 0" />
+		</MenuOption>
+	</Menu>
+	
+	<!-- PauseMenu -->
+	<Menu id="PauseMenu">
+		<Background id="" >
+			<property texturefile="mainmenubackground"/>
+			<property music="main-theme" />
+		</Background>
+		<Transition type="MenuTransitionFadeInFadeOut" >
+			<property optionfadedelay="0.1" />
+			<property backgroundstartfade="0.0" />
+		</Transition>
+		<MenuOption id="Return">
+			<Action id="ReturnToGame" input="select" sound="menuback" />
+			<property texturefile="returntogame" />
+			<property selectedtexturefile="returntogameselected" />
+			<property pos="340 250 0" />
+		</MenuOption>
+		<MenuOption id="Options">
+			<Link id="MenuLink" menu="GameOptions" input="select" sound="menuselect" />
+			<property texturefile="OptionsText" />
+			<property selectedtexturefile="OptionTextSelect" />
+			<property pos="339 340 0" />
+		</MenuOption>
+		<MenuOption id="MainMenu">
+			<Action id="ReturnToMainMenu" input="select" sound="menuback" />
+			<property texturefile="MainMenuText" />
+			<property selectedtexturefile="MainMenuTextselect" />
+			<property pos="335 525 0" />
+		</MenuOption>
+	</Menu>
+	
+	<!-- Main Menu Options -->
+	<Menu id="Options">
+		<Link menu="MainMenu" input="return" sound="menuback" />
+		<Background id="" >
+			<property texturefile="mainmenubackground" />
+			<property music="main-theme" />
+		</Background>
+		<Transition type="MenuTransitionFadeInFadeOut" >
+			<property optionfadedelay="0.1" />
+		</Transition>
+		<!--<MenuOption id="Option1">
+			<Action id="ToggleFullScreen" input="select" sound="menuselect" />
+			<property texturefile="Windowed" />
+			<property texturefile="FullScreen" />
+			<property selectedtexturefile="WindowedSelected" />
+			<property selectedtexturefile="FullScreenSelected" />
+			<property pos="335 230 0" />
+		</MenuOption>-->
+		<MenuOption id="Option2">
+			<Action id="ToggleGraphics" input="select" sound="menuselect" />
+			<property texturefile="GraphicsLow" />
+			<property texturefile="GraphicsHigh" />
+			<property selectedtexturefile="GraphicsLowSelected" />
+			<property selectedtexturefile="GraphicsHighSelected" />
+			<property pos="335 230 0" />
+		</MenuOption>
+		<MenuOption id="Option3">
+			<Action id="ToggleMute" input="select" sound="menuselect" />
+			<property texturefile="SoundsOn" />
+			<property texturefile="SoundsOff" />
+			<property selectedtexturefile="SoundsOnSelected" />
+			<property selectedtexturefile="SoundsOffSelected" />
+			<property pos="340 325 0" />
+		</MenuOption>
+		<MenuOption id="Return">
+			<Link menu="MainMenu" input="select" sound="menuback" />
+			<property texturefile="BackText" />
+			<property selectedtexturefile="BackTextSelect" />
+			<property pos="332 515 0" />
+		</MenuOption>
+	</Menu>
+	
+	<!-- In Game Options -->
+	<Menu id="GameOptions">
+		<Link menu="PauseMenu" input="return" resetbackgroundtransition="false" sound="menuback" />
+		<Background id="" >
+			<property texturefile="mainmenubackground" />
+			<property music="main-theme" />
+		</Background>
+		<Transition type="MenuTransitionFadeInFadeOut" >
+			<property optionfadedelay="0.1" />
+		</Transition>
+		<!--<MenuOption id="Option1">
+			<Action id="ToggleFullScreen" input="select" sound="menuselect" />
+			<property texturefile="Windowed" />
+			<property texturefile="FullScreen" />
+			<property selectedtexturefile="WindowedSelected" />
+			<property selectedtexturefile="FullScreenSelected" />
+			<property pos="335 230 0" />
+		</MenuOption>-->
+		<MenuOption id="Option2">
+			<Action id="ToggleGraphics" input="select" sound="menuselect" />
+			<property texturefile="GraphicsLow" />
+			<property texturefile="GraphicsHigh" />
+			<property selectedtexturefile="GraphicsLowSelected" />
+			<property selectedtexturefile="GraphicsHighSelected" />
+			<property pos="335 230 0" />
+		</MenuOption>
+		<MenuOption id="Option3">
+			<Action id="ToggleMute" input="select" sound="menuselect" />
+			<property texturefile="SoundsOn" />
+			<property texturefile="SoundsOff" />
+			<property selectedtexturefile="SoundsOnSelected" />
+			<property selectedtexturefile="SoundsOffSelected" />
+			<property pos="340 325 0" />
+		</MenuOption>
+		<MenuOption id="Return">
+			<Link menu="PauseMenu" input="select" resetbackgroundtransition="false" sound="menuback" />
+			<property texturefile="BackText" />
+			<property selectedtexturefile="BackTextSelect" />
+			<property pos="332 515 0" />
+		</MenuOption>
+	</Menu>
+
+	<Menu id="Credits">
+		<Link menu="MainMenu" input="return" sound="menuback" />
+		<Background id="" >
+		  <property texturefile="CreditsBackground" />
+		  <property music="main-theme" />
+		</Background>
+		<Transition type="MenuTransitionFadeInFadeOut" >
+		  <property optionfadedelay="0.1" />
+		</Transition>
+		<MenuOption id="ReturnToMainMenu">
+		  <property texturefile="credits" />
+		  <property selectedtexturefile="credits" />
+		  <property pos="250 190 0" />
+		</MenuOption>
+		<MenuOption id="ReturnToMainMenu">
+		  <Link menu="MainMenu" input="select" sound="menuback" />
+		  <property texturefile="BackText" />
+		  <property selectedtexturefile="BackTextSelect" />
+		  <property pos="330 590 0" />
+		</MenuOption>
+	</Menu>
+	
+	<!-- Number Players Menu -->
+	<Menu id="NumPlayersMenu">
+		<Link menu="MainMenu" input="return" resetbackgroundtransition="false" sound="menuback" />
+		<Background id="" >
+			<property texturefile="mainmenubackground" />
+			<property music="main-theme" />
+		</Background>
+		<Transition type="MenuTransitionFadeInFadeOut" >
+			<property optionfadedelay="0.1" />
+		</Transition>
+		<MenuOption id="1Player">
+			<Action id="PlayGameOnePlayer" input="select" sound="menuselect" />
+			<property texturefile="1Player" />
+			<property selectedtexturefile="1PlayerSelected" />
+			<property pos="323 230 0" />
+		</MenuOption>
+		<MenuOption id="2Player">
+			<Action id="PlayGameTwoPlayer" input="select" sound="menuselect" />
+			<property texturefile="2Player" />
+			<property selectedtexturefile="2PlayerSelected" />
+			<property pos="328 325 0" />
+		</MenuOption>
+		<MenuOption id="Return">
+			<Link menu="MainMenu" input="select" sound="menuback" />
+			<property texturefile="BackText" />
+			<property selectedtexturefile="BackTextSelect" />
+			<property pos="335 515 0" />
+		</MenuOption>
+		<property showloading="true" />
+	</Menu>
+	
+	<Menu id="LoadingMenu">
+		<Background id="" >
+			<property texturefile="mainmenubackground" />
+			<property music="main-theme" />
+		</Background>
+		<Transition type="MenuTransitionFadeInFadeOut" >
+			<property optionfadedelay="0.1" />
+		</Transition>
+	</Menu>
+	
+	<!-- End Game Menu -->
+	<Menu id="EndGameMenuPlayer1">
+		<Background id="" >
+			<property texturefile="mainmenubackground" />
+			<property music="main-theme" />
+		</Background>
+		<Transition type="MenuTransitionFadeInFadeOut" >
+			<property optionfadedelay="0.1" />
+		</Transition>
+		<MenuOption id="player1wins">
+			<property texturefile="player1wins" />
+			<property selectedtexturefile="player1wins" />
+			<property pos="290 260 0" />
+		</MenuOption>		
+		<MenuOption id="MainMenu">
+			<Action id="ReturnToMainMenu" input="select" sound="menuback" />
+			<property texturefile="MainMenuText" />
+			<property selectedtexturefile="MainMenuTextselect" />
+			<property pos="335 525 0" />
+		</MenuOption>
+	</Menu>
+	
+	<Menu id="EndGameMenuPlayer2">
+		<Background id="" >
+			<property texturefile="mainmenubackground" />
+			<property music="main-theme" />
+		</Background>
+		<Transition type="MenuTransitionFadeInFadeOut" >
+			<property optionfadedelay="0.1" />
+		</Transition>	
+		<MenuOption id="player2wins">
+			<property texturefile="player2wins" />
+			<property selectedtexturefile="player2wins" />
+			<property pos="290 260 0" />
+		</MenuOption>
+		<MenuOption id="MainMenu">
+			<Action id="ReturnToMainMenu" input="select" sound="menuback" />
+			<property texturefile="MainMenuText" />
+			<property selectedtexturefile="MainMenuTextselect" />
+			<property pos="335 525 0" />
+		</MenuOption>
+	</Menu>
+</MenuResource>

@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/XnaGameX1/!svn/ver/240/AI/Deferred%20Pipeline
+END
+DeferredPipeline.csproj
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/XnaGameX1/!svn/ver/237/AI/Deferred%20Pipeline/DeferredPipeline.csproj
+END
+DeferredRendererModelSkinned.cs
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/XnaGameX1/!svn/ver/238/AI/Deferred%20Pipeline/DeferredRendererModelSkinned.cs
+END
+DeferredRendererFXProcessor.cs
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/XnaGameX1/!svn/ver/237/AI/Deferred%20Pipeline/DeferredRendererFXProcessor.cs
+END
+MeshData.cs
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/XnaGameX1/!svn/ver/230/AI/Deferred%20Pipeline/MeshData.cs
+END
+DeferredRendererMaterialProcessor.cs
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/XnaGameX1/!svn/ver/237/AI/Deferred%20Pipeline/DeferredRendererMaterialProcessor.cs
+END
+DeferredRendererModel.cs
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/XnaGameX1/!svn/ver/284/AI/Deferred%20Pipeline/DeferredRendererModel.cs
+END

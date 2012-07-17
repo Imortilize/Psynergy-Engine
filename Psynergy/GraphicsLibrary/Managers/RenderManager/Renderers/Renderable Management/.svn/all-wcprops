@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/XnaGameX1/!svn/ver/246/AI/GraphicsLibrary/Managers/RenderManager/Renderers/Renderable%20Management
+END
+Mesh.cs
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/XnaGameX1/!svn/ver/254/AI/GraphicsLibrary/Managers/RenderManager/Renderers/Renderable%20Management/Mesh.cs
+END
+AbstractMesh.cs
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/XnaGameX1/!svn/ver/241/AI/GraphicsLibrary/Managers/RenderManager/Renderers/Renderable%20Management/AbstractMesh.cs
+END
+SubMesh.cs
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/XnaGameX1/!svn/ver/240/AI/GraphicsLibrary/Managers/RenderManager/Renderers/Renderable%20Management/SubMesh.cs
+END
+BaseRenderEffect.cs
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/XnaGameX1/!svn/ver/254/AI/GraphicsLibrary/Managers/RenderManager/Renderers/Renderable%20Management/BaseRenderEffect.cs
+END
+SkinnedMesh.cs
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/XnaGameX1/!svn/ver/238/AI/GraphicsLibrary/Managers/RenderManager/Renderers/Renderable%20Management/SkinnedMesh.cs
+END

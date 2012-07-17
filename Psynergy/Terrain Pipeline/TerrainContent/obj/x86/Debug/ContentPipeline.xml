@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent xmlns:Pipeline="Microsoft.Xna.Framework.Content.Pipeline" xmlns:Framework="Microsoft.Xna.Framework" xmlns:Processors="Microsoft.Xna.Framework.Content.Pipeline.Processors">
+  <Asset Type="Pipeline:BuildItemCollection">
+    <Item>
+      <Source>Textures\HeightMaps\rocks.bmp</Source>
+      <Name>Textures\HeightMaps\rocks</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\dominicbrittain\Documents\Psynergy\AI\TerrainLibrary\bin\x86\Debug\Content\Textures\HeightMaps\rocks.xnb</Output>
+      <Time>2010-09-20T13:52:56+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\HeightMaps\terrain.bmp</Source>
+      <Name>Textures\HeightMaps\terrain</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TerrainProcessor</Processor>
+      <Parameters>
+        <Data Key="TexCoordScale">0.2</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\dominicbrittain\Documents\Psynergy\AI\TerrainLibrary\bin\x86\Debug\Content\Textures\HeightMaps\terrain.xnb</Output>
+      <Time>2012-07-06T22:21:30+01:00</Time>
+      <Request>C:\Users\dominicbrittain\Documents\Psynergy\AI\TerrainLibrary\bin\x86\Debug\Content\Textures\HeightMaps\rocks_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Textures\HeightMaps\rocks.bmp</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\dominicbrittain\Documents\Psynergy\AI\TerrainLibrary\bin\x86\Debug\Content\Textures\HeightMaps\rocks_0.xnb</Output>
+      <Time>2010-09-20T13:52:56+01:00</Time>
+    </Item>
+    <BuildSuccessful>true</BuildSuccessful>
+    <Settings>
+      <TargetPlatform>Windows</TargetPlatform>
+      <TargetProfile>HiDef</TargetProfile>
+      <BuildConfiguration>Debug</BuildConfiguration>
+      <CompressContent>false</CompressContent>
+      <RootDirectory>C:\Users\dominicbrittain\Documents\Psynergy\AI\Terrain Pipeline\TerrainContent\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\dominicbrittain\Documents\Psynergy\AI\TerrainLibrary\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\dominicbrittain\Documents\Psynergy\AI\Terrain Pipeline\TerrainContent\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\dominicbrittain\Documents\Psynergy\AI\TerrainLibrary\bin\x86\Debug\Content\</OutputDirectory>
+    </Settings>
+    <Assemblies>
+      <Assembly>
+        <Key>C:\Users\dominicbrittain\Documents\Psynergy\AI\Terrain Pipeline\bin\x86\Debug\Psynergy.TerrainPipeline.dll</Key>
+        <Value>2012-07-13T12:19:00.9900746+01:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.XImporter.dll</Key>
+        <Value>2010-08-23T13:41:18+01:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.VideoImporters.dll</Key>
+        <Value>2010-08-23T13:41:18+01:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.TextureImporter.dll</Key>
+        <Value>2010-08-23T13:41:18+01:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.FBXImporter.dll</Key>
+        <Value>2010-08-23T13:41:18+01:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.EffectImporter.dll</Key>
+        <Value>2010-08-23T13:41:18+01:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.AudioImporters.dll</Key>
+        <Value>2010-08-23T13:41:18+01:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Users\dominicbrittain\Documents\Psynergy\AI\Deferred Pipeline\bin\x86\Debug\Deferred Pipeline.dll</Key>
+        <Value>2012-07-13T12:18:59.3469807+01:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
+        <Value>2012-02-16T14:45:05.9973636+00:00</Value>
+      </Assembly>
+    </Assemblies>
+  </Asset>
+</XnaContent>

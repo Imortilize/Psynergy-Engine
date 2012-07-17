@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ClassRegistry>
+	<!-- Generic classes -->
+	<Class id="SpriteNode" />
+	<Class id="Player" />
+	
+	<!-- Cameras -->
+	<Class id="Camera3D" />
+	<Class id="FreeCamera" />
+	<Class id="ArcBallCamera" />
+	<Class id="WorldCamera" />
+
+	<!-- 3D classes -->
+	<Class id="SkySphere" />
+	<Class id="ModelNode" />
+	<Class id="CubeNode" />
+	
+	<!-- Menus -->
+	<Class id="Menu" />
+	<Class id="MenuOption" />
+	<Class id="MenuBackground" />
+	
+	<!-- Menu Actions -->
+	<Class id="MenuAction" />
+	<Class id="MenuActionMenuLink" />
+	<Class id="MenuActionPlayGame" />
+	<Class id="MenuActionOptions" />
+	<Class id="MenuActionExitGame" />
+	<Class id="MenuActionReturnToGame" />
+	<Class id="MenuActionReturnToMainMenu" />
+	<Class id="MenuActionRunTestState" />
+	<Class id="MenuActionPlayGameOnePlayer" />
+	<Class id="MenuActionPlayGameTwoPlayer" />
+	<Class id="MenuActionReplayGame" />
+	<Class id="MenuActionToggleFullScreen" />
+	<Class id="MenuActionToggleMute" />
+	<Class id="MenuActionToggleGraphics" />
+	
+	<!-- Menu Transitions -->
+	<Class id="MenuTransitionFadeInFadeOut" />
+	
+	<!-- Game States -->
+	<Class id="GameState" />
+	<Class id="MainMenuState" />
+	
+	<!-- Lights -->
+	<Class id="Light" />
+	<Class id="DirectionalLight" />
+	<Class id="PointLight" />
+	
+	<!-- Controllers -->
+	<Class id="Node3DController" />
+
+	<!-- Game Classes -->
+	
+	<!-- Game Object States -->
+	
+</ClassRegistry>

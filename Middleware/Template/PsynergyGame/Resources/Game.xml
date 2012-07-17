@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<SceneFragment>
+  <ModelNode id="Ground" >
+    <property parent="Base" />
+    <property pos="0 -20 0" />
+    <property scale="3.25 2.5 3.25" />
+    <property file="Models/X/Ground" />
+    <property setfocus="false" />
+  </ModelNode>
+  
+  <ModelNode id="Ship" >
+    <property parent="Base" />
+    <property pos="0 0 0" />
+    <property scale="0.5 0.5 0.5" />
+    <property setfocus="true" />
+    <property file="Models/FBX/Ship1/ship1" />
+  </ModelNode>
+
+  <!-- Lights ( under work at the moment ) -->
+  <DirectionalLight>
+    <property parent="Base" />
+    <property pos="0 0 0" />
+    <property direction="0.5 -0.5 0" />
+    <property diffuse="200 200 174" />
+  </DirectionalLight>
+  <PointLight>
+    <property parent="Base" />
+    <property pos="-700 900 100" />
+    <property radius="1500" />
+    <property intensity="2" />
+    <property diffuse="75 75 67" />
+  </PointLight>
+</SceneFragment>

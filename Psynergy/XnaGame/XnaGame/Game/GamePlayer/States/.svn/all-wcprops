@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/XnaGameX1/!svn/ver/269/AI/XnaGame/XnaGame/Game/GamePlayer/States
+END
+GamePlayerStateEndOfBoard.cs
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/XnaGameX1/!svn/ver/281/AI/XnaGame/XnaGame/Game/GamePlayer/States/GamePlayerStateEndOfBoard.cs
+END
+GamePlayerStateWon.cs
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/XnaGameX1/!svn/ver/284/AI/XnaGame/XnaGame/Game/GamePlayer/States/GamePlayerStateWon.cs
+END
+GamePlayerStateEndOfTurn.cs
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/XnaGameX1/!svn/ver/144/AI/XnaGame/XnaGame/Game/GamePlayer/States/GamePlayerStateEndOfTurn.cs
+END
+GamePlayerStateQuestion.cs
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/XnaGameX1/!svn/ver/284/AI/XnaGame/XnaGame/Game/GamePlayer/States/GamePlayerStateQuestion.cs
+END
+GamePlayerStateSelected.cs
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/XnaGameX1/!svn/ver/266/AI/XnaGame/XnaGame/Game/GamePlayer/States/GamePlayerStateSelected.cs
+END
+GamePlayerStateMovement.cs
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/XnaGameX1/!svn/ver/284/AI/XnaGame/XnaGame/Game/GamePlayer/States/GamePlayerStateMovement.cs
+END
+GamePlayerStateJump.cs
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/XnaGameX1/!svn/ver/281/AI/XnaGame/XnaGame/Game/GamePlayer/States/GamePlayerStateJump.cs
+END
+GamePlayerStateIdle.cs
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/XnaGameX1/!svn/ver/284/AI/XnaGame/XnaGame/Game/GamePlayer/States/GamePlayerStateIdle.cs
+END
+GamePlayerStateRollDice.cs
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/XnaGameX1/!svn/ver/187/AI/XnaGame/XnaGame/Game/GamePlayer/States/GamePlayerStateRollDice.cs
+END
+GamePlayerState.cs
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/XnaGameX1/!svn/ver/150/AI/XnaGame/XnaGame/Game/GamePlayer/States/GamePlayerState.cs
+END
+GamePlayerStateDeselected.cs
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/XnaGameX1/!svn/ver/266/AI/XnaGame/XnaGame/Game/GamePlayer/States/GamePlayerStateDeselected.cs
+END
+GamePlayerStatePreMovement.cs
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/XnaGameX1/!svn/ver/284/AI/XnaGame/XnaGame/Game/GamePlayer/States/GamePlayerStatePreMovement.cs
+END
+GamePlayerStateLost.cs
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/XnaGameX1/!svn/ver/159/AI/XnaGame/XnaGame/Game/GamePlayer/States/GamePlayerStateLost.cs
+END

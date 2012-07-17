@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/XnaGameX1/!svn/ver/272/AI/XnaGame/XnaGameContent/Shaders/Deferred%20Rendering
+END
+ppshared.vsi
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/XnaGameX1/!svn/ver/272/AI/XnaGame/XnaGameContent/Shaders/Deferred%20Rendering/ppshared.vsi
+END
+RenderGBuffer.fx
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/XnaGameX1/!svn/ver/272/AI/XnaGame/XnaGameContent/Shaders/Deferred%20Rendering/RenderGBuffer.fx
+END

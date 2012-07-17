@@ -1,0 +1,448 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{98D35CCC-594E-4F74-9A7D-A157009B38FD}</ProjectGuid>
+    <ProjectTypeGuids>{6D335F3A-9D43-41b4-9D22-F6F17C4BE596};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>XnaGame</RootNamespace>
+    <AssemblyName>XnaGame</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <XnaFrameworkVersion>v4.0</XnaFrameworkVersion>
+    <XnaPlatform>Windows</XnaPlatform>
+    <XnaProfile>HiDef</XnaProfile>
+    <XnaCrossPlatformGroupID>a18d7ce8-2947-42b2-9078-c0a0ade8b7ab</XnaCrossPlatformGroupID>
+    <XnaOutputType>Game</XnaOutputType>
+    <ApplicationIcon>Main\Game.ico</ApplicationIcon>
+    <Thumbnail>Main\GameThumbnail.png</Thumbnail>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ProductName>Project BoardCode</ProductName>
+    <PublisherName>Psynetic</PublisherName>
+    <ApplicationRevision>3</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\x86\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;WINDOWS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <PlatformTarget>x86</PlatformTarget>
+    <XnaCompressContent>false</XnaCompressContent>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\x86\Release</OutputPath>
+    <DefineConstants>TRACE;WINDOWS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <PlatformTarget>x86</PlatformTarget>
+    <XnaCompressContent>true</XnaCompressContent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>7D13B9EFC2901A8055B0369AC5DB8B47E252F1CB</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>XnaGame_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="JigLibX">
+      <HintPath>Middleware\JigLibX\JigLibX.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Game, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Graphics, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.GamerServices, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Xact, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Video, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Avatar, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Net, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Storage, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="mscorlib">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Management.Instrumentation" />
+    <Reference Include="System.Xml">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Net">
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Game\FixedThirdPersonCamera.cs" />
+    <Compile Include="Game\GamePlayer\GamePawn.cs" />
+    <Compile Include="Game\GamePlayer\States\GamePlayerState.cs" />
+    <Compile Include="Game\GamePlayer\States\GamePlayerStateDeselected.cs" />
+    <Compile Include="Game\GamePlayer\States\GamePlayerStateEndOfBoard.cs" />
+    <Compile Include="Game\GamePlayer\States\GamePlayerStateEndOfTurn.cs" />
+    <Compile Include="Game\GamePlayer\States\GamePlayerStateIdle.cs" />
+    <Compile Include="Game\GamePlayer\States\GamePlayerStateJump.cs" />
+    <Compile Include="Game\GamePlayer\States\GamePlayerStateLost.cs" />
+    <Compile Include="Game\GamePlayer\States\GamePlayerStatePreMovement.cs" />
+    <Compile Include="Game\GamePlayer\States\GamePlayerStateQuestion.cs" />
+    <Compile Include="Game\GamePlayer\States\GamePlayerStateRollDice.cs" />
+    <Compile Include="Game\GamePlayer\States\GamePlayerStateSelected.cs" />
+    <Compile Include="Game\GamePlayer\States\GamePlayerStateMovement.cs" />
+    <Compile Include="Game\GamePlayer\States\GamePlayerStateWon.cs" />
+    <Compile Include="Game\Menus\GameMenuActions.cs" />
+    <Compile Include="Game\Props\Board\AdditionSquare.cs" />
+    <Compile Include="Game\Props\Board\AddXToXSquare.cs" />
+    <Compile Include="Game\Props\Board\ArithmeticSquare.cs" />
+    <Compile Include="Game\Props\Board\BoardSquare.cs" />
+    <Compile Include="Game\Props\Board\BoardTrail.cs" />
+    <Compile Include="Game\Props\Board\BreakSquare.cs" />
+    <Compile Include="Game\Props\Board\Case1Square.cs" />
+    <Compile Include="Game\Props\Board\Case2Square.cs" />
+    <Compile Include="Game\Props\Board\Case3Square.cs" />
+    <Compile Include="Game\Props\Board\CaseDefaultSquare.cs" />
+    <Compile Include="Game\Props\Board\CloseBracketSquare.cs" />
+    <Compile Include="Game\Props\Board\ContinueSquare.cs" />
+    <Compile Include="Game\Props\Board\DecrementSquare.cs" />
+    <Compile Include="Game\Props\Board\DivideXByXSquare.cs" />
+    <Compile Include="Game\Props\Board\DivisionSquare.cs" />
+    <Compile Include="Game\Props\Board\ElseSquare.cs" />
+    <Compile Include="Game\Props\Board\EndSquare.cs" />
+    <Compile Include="Game\Props\Board\GameBoard.cs" />
+    <Compile Include="Game\GamePlayer\GamePlayer.cs" />
+    <Compile Include="Game\Props\Board\GotoSquare.cs" />
+    <Compile Include="Game\Props\Board\IfSquare.cs" />
+    <Compile Include="Game\Props\Board\IncrementSquare.cs" />
+    <Compile Include="Game\Props\Board\IntXSquare.cs" />
+    <Compile Include="Game\Props\Board\JumpSquare.cs" />
+    <Compile Include="Game\Props\Board\MainSquare.cs" />
+    <Compile Include="Game\Props\Board\Model\GameBoardModel.cs" />
+    <Compile Include="Game\Props\Board\Model\GameBoardModelJibLibX.cs" />
+    <Compile Include="Game\Props\Board\Model\TableModel.cs" />
+    <Compile Include="Game\Props\Board\Model\TableModelJibLibXcs.cs" />
+    <Compile Include="Game\Props\Board\MultiplicationSquare.cs" />
+    <Compile Include="Game\Props\Board\MultiplyXbyXSquare.cs" />
+    <Compile Include="Game\Props\Board\OpenBracketSquare.cs" />
+    <Compile Include="Game\Props\Board\ReturnSquare.cs" />
+    <Compile Include="Game\Props\Board\StartSquare.cs" />
+    <Compile Include="Game\Props\Board\SubtractionSquare.cs" />
+    <Compile Include="Game\Props\Board\SwitchSquare.cs" />
+    <Compile Include="Game\Props\Board\WhileSquare.cs" />
+    <Compile Include="Game\Props\Board\Xml\GameBoardResource.cs" />
+    <Compile Include="Game\Props\Dice\Dice.cs" />
+    <Compile Include="Game\Props\Dice\DiceController.cs" />
+    <Compile Include="Game\Props\Dice\DiceJigLibX.cs" />
+    <Compile Include="Game\Questions\Question.cs" />
+    <Compile Include="Game\Questions\QuestionManager.cs" />
+    <Compile Include="Game\Questions\XML\QuestionResource.cs" />
+    <Compile Include="Game\ThirdPersonCamera.cs" />
+    <Compile Include="Game\Tutorial\Tutorial.cs" />
+    <Compile Include="Game\Tutorial\TutorialManager.cs" />
+    <Compile Include="Managers\EventManager\Events.cs" />
+    <Compile Include="Managers\PlayerManager\Player.cs" />
+    <Compile Include="Managers\PlayerManager\Player2D.cs" />
+    <Compile Include="Managers\PlayerManager\PlayerManager.cs" />
+    <Compile Include="Managers\StateManager\States\MainMenuState.cs" />
+    <Compile Include="SceneGraph\Extensions\3D\Custom\GameNode.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Main\Program.cs" />
+    <Compile Include="Main\Game.cs" />
+    <Compile Include="Managers\StateManager\States\GameState.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Main\Game.ico" />
+    <Content Include="Main\GameThumbnail.png" />
+    <Content Include="Resources\ClassRegistry.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Game.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\GameCameras.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\GameMenus.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\GameScenes.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Game\Gameboard\GameBoard2.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Game\Questions.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\RenderGroups.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\State.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\StateMachines\GamePlayerStates.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\AILibrary\AILibrary.csproj">
+      <Project>{4881C6EF-7B5F-4732-A756-597A68E4E55A}</Project>
+      <Name>AILibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\CameraLibrary\CameraLibrary.csproj">
+      <Project>{F20F853D-EA75-4409-8044-DE95DB61E358}</Project>
+      <Name>CameraLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\EventLibrary\EventLibrary.csproj">
+      <Project>{2D81DF63-99CF-461F-B012-768CC256B033}</Project>
+      <Name>EventLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\GraphicsLibrary\GraphicsLibrary.csproj">
+      <Project>{C34454E6-D368-4570-9A2B-AB3A697223B4}</Project>
+      <Name>GraphicsLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\InputLibrary\InputLibrary.csproj">
+      <Project>{75A3629E-8FB5-4CF9-8A5F-AA562A93DB74}</Project>
+      <Name>InputLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\MainLibrary\MainLibrary.csproj">
+      <Project>{A2113989-0A0E-422E-881C-57744917AD51}</Project>
+      <Name>MainLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\MenuLibrary\MenuLibrary.csproj">
+      <Project>{61A196D6-92B6-481C-B52C-7107708664A8}</Project>
+      <Name>MenuLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\PhysicsLibrary\PhysicsLibrary.csproj">
+      <Project>{D2764F7F-3DA9-44D9-BFF0-B557FB9D6680}</Project>
+      <Name>PhysicsLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\PsynergyLibrary\PsynergyLibrary.csproj">
+      <Project>{9BFB0E0F-C010-48BB-B1EE-ADA60D3FA5E8}</Project>
+      <Name>PsynergyLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\SkinnedModel\SkinnedModel.csproj">
+      <Project>{6FF3544E-25C8-49A7-BDFE-1A43B8799584}</Project>
+      <Name>SkinnedModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\SoundLibrary\SoundLibrary.csproj">
+      <Project>{3CC34DF1-1522-4D57-8623-073F75791B3F}</Project>
+      <Name>SoundLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\XnaGameContent\XnaGameContent.contentproj">
+      <Project>{407ECFAA-9ABE-4D8A-80DC-BB3E6684E497}</Project>
+      <Name>XnaGameContent %28Content%29</Name>
+      <XnaReferenceType>Content</XnaReferenceType>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Xna.Framework.4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft XNA Framework Redistributable 4.0</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="SceneGraph\Base\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Properties\app.manifest" />
+    <None Include="XnaGame_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="Resources\ClassRegistry.xml">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Resources\Game.xml">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Resources\GameCameras.xml">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Resources\GameMenus.xml">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Resources\GameScenes.xml">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Resources\Game\Gameboard\GameBoard2.xml">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Resources\Game\Questions.xml">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Resources\RenderGroups.xml">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Resources\State.xml">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Resources\StateMachines\GamePlayerStates.xml">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\Microsoft.Xna.GameStudio.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <!--
+      To modify your build process, add your task inside one of the targets below and uncomment it. 
+      Other similar extension points exist, see Microsoft.Common.targets.
+      <Target Name="BeforeBuild">
+      </Target>
+      <Target Name="AfterBuild">
+      </Target>
+    -->
+</Project>

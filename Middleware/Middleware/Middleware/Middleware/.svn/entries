@@ -1,0 +1,147 @@
+10
+
+dir
+0
+http://xp-dev.com/svn/XnaGameX1/Middleware/Middleware/Middleware/Middleware
+http://xp-dev.com/svn/XnaGameX1
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+
+
+
+
+
+
+
+
+
+
+
+ba6f3427-77d8-42c7-95e4-65bf7dcb1cb9
+
+Game.ico
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+app.config
+file
+
+
+
+add
+
+Middleware.csproj.user
+file
+
+
+
+add
+
+Properties
+dir
+
+
+
+add
+
+NewTech
+dir
+
+
+
+add
+
+Middleware.csproj.Release.cachefile
+file
+
+
+
+add
+
+Managers
+dir
+
+
+
+add
+
+GameThumbnail.png
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+Middleware.csproj.Debug.cachefile
+file
+
+
+
+add
+
+Game
+dir
+
+
+
+add
+
+Resources
+dir
+
+
+
+add
+
+Content
+dir
+
+
+
+add
+
+Program.cs
+file
+
+
+
+add
+
+Middleware.csproj
+file
+
+
+
+add
+
+Game.cs
+file
+
+
+
+add
+

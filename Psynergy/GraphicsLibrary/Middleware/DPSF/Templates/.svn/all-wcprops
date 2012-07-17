@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/XnaGameX1/!svn/ver/189/AI/GraphicsLibrary/Middleware/DPSF/Templates
+END
+SpriteParticleSystemTemplate.cs
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/XnaGameX1/!svn/ver/189/AI/GraphicsLibrary/Middleware/DPSF/Templates/SpriteParticleSystemTemplate.cs
+END
+Sprite3DBillboardParticleSystemTemplate.cs
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/XnaGameX1/!svn/ver/189/AI/GraphicsLibrary/Middleware/DPSF/Templates/Sprite3DBillboardParticleSystemTemplate.cs
+END
+QuadParticleSystemTemplate.cs
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/XnaGameX1/!svn/ver/189/AI/GraphicsLibrary/Middleware/DPSF/Templates/QuadParticleSystemTemplate.cs
+END
+DefaultSpriteParticleSystemTemplate.cs
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/XnaGameX1/!svn/ver/189/AI/GraphicsLibrary/Middleware/DPSF/Templates/DefaultSpriteParticleSystemTemplate.cs
+END
+DefaultSprite3DBillboardParticleSystemTemplate.cs
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/XnaGameX1/!svn/ver/189/AI/GraphicsLibrary/Middleware/DPSF/Templates/DefaultSprite3DBillboardParticleSystemTemplate.cs
+END
+DefaultQuadParticleSystemTemplate.cs
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/XnaGameX1/!svn/ver/189/AI/GraphicsLibrary/Middleware/DPSF/Templates/DefaultQuadParticleSystemTemplate.cs
+END
+TexturedQuadParticleSystemTemplate.cs
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/XnaGameX1/!svn/ver/189/AI/GraphicsLibrary/Middleware/DPSF/Templates/TexturedQuadParticleSystemTemplate.cs
+END
+DPSFDefaultEffect.fx
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/XnaGameX1/!svn/ver/189/AI/GraphicsLibrary/Middleware/DPSF/Templates/DPSFDefaultEffect.fx
+END
+DefaultQuadParticleSystem.cs
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/XnaGameX1/!svn/ver/189/AI/GraphicsLibrary/Middleware/DPSF/Templates/DefaultQuadParticleSystem.cs
+END
+DefaultTexturedQuadParticleSystemTemplate.cs
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/XnaGameX1/!svn/ver/189/AI/GraphicsLibrary/Middleware/DPSF/Templates/DefaultTexturedQuadParticleSystemTemplate.cs
+END

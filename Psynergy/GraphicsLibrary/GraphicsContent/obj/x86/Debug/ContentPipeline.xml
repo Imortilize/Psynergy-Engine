@@ -1,0 +1,861 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent xmlns:Pipeline="Microsoft.Xna.Framework.Content.Pipeline" xmlns:Framework="Microsoft.Xna.Framework" xmlns:Processors="Microsoft.Xna.Framework.Content.Pipeline.Processors">
+  <Asset Type="Pipeline:BuildItemCollection">
+    <Item>
+      <Source>Textures\BirchBark.png</Source>
+      <Name>Textures\BirchBark</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="GenerateMipmaps">True</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\dominicbrittain\Documents\Psynergy\AI\GraphicsLibrary\bin\x86\Debug\Content\Textures\BirchBark.xnb</Output>
+      <Time>2012-06-08T16:13:54+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\BirchLeaf.png</Source>
+      <Name>Textures\BirchLeaf</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="GenerateMipmaps">True</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\dominicbrittain\Documents\Psynergy\AI\GraphicsLibrary\bin\x86\Debug\Content\Textures\BirchLeaf.xnb</Output>
+      <Time>2012-06-08T16:13:52+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\Grass.jpg</Source>
+      <Name>Textures\Grass</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="GenerateMipmaps">True</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\dominicbrittain\Documents\Psynergy\AI\GraphicsLibrary\bin\x86\Debug\Content\Textures\Grass.xnb</Output>
+      <Time>2012-06-08T16:13:54+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\GrayBark.JPG</Source>
+      <Name>Textures\GrayBark</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="GenerateMipmaps">True</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\dominicbrittain\Documents\Psynergy\AI\GraphicsLibrary\bin\x86\Debug\Content\Textures\GrayBark.xnb</Output>
+      <Time>2012-06-08T16:13:52+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\GraywoodLeaf.png</Source>
+      <Name>Textures\GraywoodLeaf</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="GenerateMipmaps">True</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\dominicbrittain\Documents\Psynergy\AI\GraphicsLibrary\bin\x86\Debug\Content\Textures\GraywoodLeaf.xnb</Output>
+      <Time>2012-06-08T16:13:54+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\OakLeaf.png</Source>
+      <Name>Textures\OakLeaf</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="GenerateMipmaps">True</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\dominicbrittain\Documents\Psynergy\AI\GraphicsLibrary\bin\x86\Debug\Content\Textures\OakLeaf.xnb</Output>
+      <Time>2012-06-08T16:13:54+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\PineBark.png</Source>
+      <Name>Textures\PineBark</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="GenerateMipmaps">True</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\dominicbrittain\Documents\Psynergy\AI\GraphicsLibrary\bin\x86\Debug\Content\Textures\PineBark.xnb</Output>
+      <Time>2012-06-08T16:13:54+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\PineLeaf.png</Source>
+      <Name>Textures\PineLeaf</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="GenerateMipmaps">True</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\dominicbrittain\Documents\Psynergy\AI\GraphicsLibrary\bin\x86\Debug\Content\Textures\PineLeaf.xnb</Output>
+      <Time>2012-06-08T16:13:54+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\WillowLeaf.png</Source>
+      <Name>Textures\WillowLeaf</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="GenerateMipmaps">True</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\dominicbrittain\Documents\Psynergy\AI\GraphicsLibrary\bin\x86\Debug\Content\Textures\WillowLeaf.xnb</Output>
+      <Time>2012-06-08T16:13:54+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\null_normal.tga</Source>
+      <Name>Models\null_normal</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\dominicbrittain\Documents\Psynergy\AI\GraphicsLibrary\bin\x86\Debug\Content\Models\null_normal.xnb</Output>
+      <Time>2012-06-08T16:13:52+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\null_specular.tga</Source>
+      <Name>Models\null_specular</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\dominicbrittain\Documents\Psynergy\AI\GraphicsLibrary\bin\x86\Debug\Content\Models\null_specular.xnb</Output>
+      <Time>2012-06-08T16:13:52+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\null_diffuse.tga</Source>
+      <Name>Models\null_diffuse</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\dominicbrittain\Documents\Psynergy\AI\GraphicsLibrary\bin\x86\Debug\Content\Models\null_diffuse.xnb</Output>
+      <Time>2012-06-08T16:13:52+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\null_emissive.tga</Source>
+      <Name>Models\null_emissive</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\dominicbrittain\Documents\Psynergy\AI\GraphicsLibrary\bin\x86\Debug\Content\Models\null_emissive.xnb</Output>
+      <Time>2012-06-08T16:13:52+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Shaders\Textures\Cell Shading\celMap.bmp</Source>
+      <Name>Shaders\Textures\Cell Shading\celMap</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\dominicbrittain\Documents\Psynergy\AI\GraphicsLibrary\bin\x86\Debug\Content\Shaders\Textures\Cell Shading\celMap.xnb</Output>
+      <Time>2012-06-08T16:13:54+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Shaders\Textures\MLAA\AreaMap32.dds</Source>
+      <Name>Shaders\Textures\MLAA\AreaMap32</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\dominicbrittain\Documents\Psynergy\AI\GraphicsLibrary\bin\x86\Debug\Content\Shaders\Textures\MLAA\AreaMap32.xnb</Output>
+      <Time>2012-06-08T16:13:54+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\randomNormal.png</Source>
+      <Name>Textures\randomNormal</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\dominicbrittain\Documents\Psynergy\AI\GraphicsLibrary\bin\x86\Debug\Content\Textures\randomNormal.xnb</Output>
+      <Time>2012-06-08T16:13:54+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Shaders\Textures\SSAO\randomNormal.png</Source>
+      <Name>Shaders\Textures\SSAO\randomNormal</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\dominicbrittain\Documents\Psynergy\AI\GraphicsLibrary\bin\x86\Debug\Content\Shaders\Textures\SSAO\randomNormal.xnb</Output>
+      <Time>2012-06-08T16:13:54+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\Others\controlpoint.png</Source>
+      <Name>Textures\Others\controlpoint</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\dominicbrittain\Documents\Psynergy\AI\GraphicsLibrary\bin\x86\Debug\Content\Textures\Others\controlpoint.xnb</Output>
+      <Time>2012-06-08T16:13:52+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\GrassNormalMap.png</Source>
+      <Name>Textures\GrassNormalMap</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\dominicbrittain\Documents\Psynergy\AI\GraphicsLibrary\bin\x86\Debug\Content\Textures\GrassNormalMap.xnb</Output>
+      <Time>2012-07-11T00:49:48+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Trees\Willow.ltree</Source>
+      <Name>Trees\Willow</Name>
+      <Importer>TreeGeneratorImporter</Importer>
+      <Processor>TreeProfileProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\dominicbrittain\Documents\Psynergy\AI\GraphicsLibrary\bin\x86\Debug\Content\Trees\Willow.xnb</Output>
+      <Time>2012-06-08T16:13:50+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Trees\Rug.ltree</Source>
+      <Name>Trees\Rug</Name>
+      <Importer>TreeGeneratorImporter</Importer>
+      <Processor>TreeProfileProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\dominicbrittain\Documents\Psynergy\AI\GraphicsLibrary\bin\x86\Debug\Content\Trees\Rug.xnb</Output>
+      <Time>2012-06-08T16:13:50+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Trees\Pine.ltree</Source>
+      <Name>Trees\Pine</Name>
+      <Importer>TreeGeneratorImporter</Importer>
+      <Processor>TreeProfileProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\dominicbrittain\Documents\Psynergy\AI\GraphicsLibrary\bin\x86\Debug\Content\Trees\Pine.xnb</Output>
+      <Time>2012-06-08T16:13:50+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Trees\Graywood.ltree</Source>
+      <Name>Trees\Graywood</Name>
+      <Importer>TreeGeneratorImporter</Importer>
+      <Processor>TreeProfileProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\dominicbrittain\Documents\Psynergy\AI\GraphicsLibrary\bin\x86\Debug\Content\Trees\Graywood.xnb</Output>
+      <Time>2012-06-08T16:13:50+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Trees\Gardenwood.ltree</Source>
+      <Name>Trees\Gardenwood</Name>
+      <Importer>TreeGeneratorImporter</Importer>
+      <Processor>TreeProfileProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\dominicbrittain\Documents\Psynergy\AI\GraphicsLibrary\bin\x86\Debug\Content\Trees\Gardenwood.xnb</Output>
+      <Time>2012-06-08T16:13:50+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Trees\Birch.ltree</Source>
+      <Name>Trees\Birch</Name>
+      <Importer>TreeGeneratorImporter</Importer>
+      <Processor>TreeProfileProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\dominicbrittain\Documents\Psynergy\AI\GraphicsLibrary\bin\x86\Debug\Content\Trees\Birch.xnb</Output>
+      <Time>2012-06-08T16:13:50+01:00</Time>
+    </Item>
+    <Item>
+      <Source>LTreeShaders\Leaves.fx</Source>
+      <Name>LTreeShaders\Leaves</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\dominicbrittain\Documents\Psynergy\AI\GraphicsLibrary\bin\x86\Debug\Content\LTreeShaders\Leaves.xnb</Output>
+      <Time>2012-06-08T16:13:54+01:00</Time>
+    </Item>
+    <Item>
+      <Source>LTreeShaders\Trunk.fx</Source>
+      <Name>LTreeShaders\Trunk</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\dominicbrittain\Documents\Psynergy\AI\GraphicsLibrary\bin\x86\Debug\Content\LTreeShaders\Trunk.xnb</Output>
+      <Time>2012-06-08T16:13:54+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Shaders\Post Processing\BWPostProcessor.fx</Source>
+      <Name>Shaders\Post Processing\BWPostProcessor</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+      <Parameters>
+        <Data Key="DebugMode">Optimize</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\dominicbrittain\Documents\Psynergy\AI\GraphicsLibrary\bin\x86\Debug\Content\Shaders\Post Processing\BWPostProcessor.xnb</Output>
+      <Time>2012-06-08T16:13:54+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Shaders\Post Processing\GaussianBlurPostProcessor.fx</Source>
+      <Name>Shaders\Post Processing\GaussianBlurPostProcessor</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+      <Parameters>
+        <Data Key="DebugMode">Optimize</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\dominicbrittain\Documents\Psynergy\AI\GraphicsLibrary\bin\x86\Debug\Content\Shaders\Post Processing\GaussianBlurPostProcessor.xnb</Output>
+      <Time>2012-06-08T16:13:54+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Shaders\Post Processing\DOFPostProcessor.fx</Source>
+      <Name>Shaders\Post Processing\DOFPostProcessor</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+      <Parameters>
+        <Data Key="DebugMode">Optimize</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\dominicbrittain\Documents\Psynergy\AI\GraphicsLibrary\bin\x86\Debug\Content\Shaders\Post Processing\DOFPostProcessor.xnb</Output>
+      <Time>2012-06-08T16:13:54+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Shaders\Post Processing\BloomPostProcessor.fx</Source>
+      <Name>Shaders\Post Processing\BloomPostProcessor</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+      <Parameters>
+        <Data Key="DebugMode">Optimize</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\dominicbrittain\Documents\Psynergy\AI\GraphicsLibrary\bin\x86\Debug\Content\Shaders\Post Processing\BloomPostProcessor.xnb</Output>
+      <Time>2012-06-08T16:13:54+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Shaders\Post Processing\MergeBloomPostProcessor.fx</Source>
+      <Name>Shaders\Post Processing\MergeBloomPostProcessor</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+      <Parameters>
+        <Data Key="DebugMode">Optimize</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\dominicbrittain\Documents\Psynergy\AI\GraphicsLibrary\bin\x86\Debug\Content\Shaders\Post Processing\MergeBloomPostProcessor.xnb</Output>
+      <Time>2012-07-05T10:45:52+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Shaders\Deferred Rendering\ClearGBuffer.fx</Source>
+      <Name>Shaders\Deferred Rendering\ClearGBuffer</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+      <Parameters>
+        <Data Key="DebugMode">Optimize</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\dominicbrittain\Documents\Psynergy\AI\GraphicsLibrary\bin\x86\Debug\Content\Shaders\Deferred Rendering\ClearGBuffer.xnb</Output>
+      <Time>2012-06-08T16:13:54+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Shaders\Deferred Rendering\RenderGBuffer.fx</Source>
+      <Name>Shaders\Deferred Rendering\RenderGBuffer</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+      <Parameters>
+        <Data Key="DebugMode">Optimize</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\dominicbrittain\Documents\Psynergy\AI\GraphicsLibrary\bin\x86\Debug\Content\Shaders\Deferred Rendering\RenderGBuffer.xnb</Output>
+      <Time>2012-07-13T02:31:54+01:00</Time>
+      <Dependency>
+        <Key>Shaders\Deferred Rendering\ppshared.vsi</Key>
+        <Value>2012-06-08T16:13:54+01:00</Value>
+      </Dependency>
+      <Dependency>
+        <Key>Shaders\Deferred Rendering\ToneMapping.fxh</Key>
+        <Value>2012-07-04T15:55:40+01:00</Value>
+      </Dependency>
+    </Item>
+    <Item>
+      <Source>Shaders\Deferred Rendering\DirectionalLight.fx</Source>
+      <Name>Shaders\Deferred Rendering\DirectionalLight</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+      <Parameters>
+        <Data Key="DebugMode">Optimize</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\dominicbrittain\Documents\Psynergy\AI\GraphicsLibrary\bin\x86\Debug\Content\Shaders\Deferred Rendering\DirectionalLight.xnb</Output>
+      <Time>2012-07-10T21:05:36+01:00</Time>
+      <Dependency>
+        <Key>Shaders\Deferred Rendering\ppshared.vsi</Key>
+        <Value>2012-06-08T16:13:54+01:00</Value>
+      </Dependency>
+      <Dependency>
+        <Key>Shaders\Deferred Rendering\shadow.vsi</Key>
+        <Value>2012-06-08T16:13:54+01:00</Value>
+      </Dependency>
+    </Item>
+    <Item>
+      <Source>Shaders\Deferred Rendering\CombineFinal.fx</Source>
+      <Name>Shaders\Deferred Rendering\CombineFinal</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+      <Parameters>
+        <Data Key="DebugMode">Optimize</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\dominicbrittain\Documents\Psynergy\AI\GraphicsLibrary\bin\x86\Debug\Content\Shaders\Deferred Rendering\CombineFinal.xnb</Output>
+      <Time>2012-07-05T23:45:34+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Shaders\Deferred Rendering\PointLight.fx</Source>
+      <Name>Shaders\Deferred Rendering\PointLight</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+      <Parameters>
+        <Data Key="DebugMode">Optimize</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\dominicbrittain\Documents\Psynergy\AI\GraphicsLibrary\bin\x86\Debug\Content\Shaders\Deferred Rendering\PointLight.xnb</Output>
+      <Time>2012-07-05T23:45:20+01:00</Time>
+      <Dependency>
+        <Key>Shaders\Helpers\Discard.fxh</Key>
+        <Value>2012-06-08T16:13:54+01:00</Value>
+      </Dependency>
+    </Item>
+    <Item>
+      <Source>Shaders\Post Processing\EdgeDetectionPostProcessor.fx</Source>
+      <Name>Shaders\Post Processing\EdgeDetectionPostProcessor</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+      <Parameters>
+        <Data Key="DebugMode">Optimize</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\dominicbrittain\Documents\Psynergy\AI\GraphicsLibrary\bin\x86\Debug\Content\Shaders\Post Processing\EdgeDetectionPostProcessor.xnb</Output>
+      <Time>2012-06-08T16:13:54+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Shaders\Post Processing\MLAAPostProcessor.fx</Source>
+      <Name>Shaders\Post Processing\MLAAPostProcessor</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+      <Parameters>
+        <Data Key="DebugMode">Optimize</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\dominicbrittain\Documents\Psynergy\AI\GraphicsLibrary\bin\x86\Debug\Content\Shaders\Post Processing\MLAAPostProcessor.xnb</Output>
+      <Time>2012-06-08T16:13:54+01:00</Time>
+      <Dependency>
+        <Key>Shaders\Helpers\Discard.fxh</Key>
+        <Value>2012-06-08T16:13:54+01:00</Value>
+      </Dependency>
+    </Item>
+    <Item>
+      <Source>Shaders\Post Processing\FilmMappingPostProcessor.fx</Source>
+      <Name>Shaders\Post Processing\FilmMappingPostProcessor</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+      <Parameters>
+        <Data Key="DebugMode">Optimize</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\dominicbrittain\Documents\Psynergy\AI\GraphicsLibrary\bin\x86\Debug\Content\Shaders\Post Processing\FilmMappingPostProcessor.xnb</Output>
+      <Time>2012-06-08T16:13:54+01:00</Time>
+      <Dependency>
+        <Key>Shaders\Post Processing\Filmgrain.fxh</Key>
+        <Value>2012-06-08T16:13:54+01:00</Value>
+      </Dependency>
+    </Item>
+    <Item>
+      <Source>Shaders\Post Processing\SSAO.fx</Source>
+      <Name>Shaders\Post Processing\SSAO</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+      <Parameters>
+        <Data Key="DebugMode">Optimize</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\dominicbrittain\Documents\Psynergy\AI\GraphicsLibrary\bin\x86\Debug\Content\Shaders\Post Processing\SSAO.xnb</Output>
+      <Time>2012-06-08T16:13:54+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Shaders\Post Processing\SSAOBlur.fx</Source>
+      <Name>Shaders\Post Processing\SSAOBlur</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+      <Parameters>
+        <Data Key="DebugMode">Optimize</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\dominicbrittain\Documents\Psynergy\AI\GraphicsLibrary\bin\x86\Debug\Content\Shaders\Post Processing\SSAOBlur.xnb</Output>
+      <Time>2012-06-08T16:13:54+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Shaders\Post Processing\SSAOMerge.fx</Source>
+      <Name>Shaders\Post Processing\SSAOMerge</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+      <Parameters>
+        <Data Key="DebugMode">Optimize</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\dominicbrittain\Documents\Psynergy\AI\GraphicsLibrary\bin\x86\Debug\Content\Shaders\Post Processing\SSAOMerge.xnb</Output>
+      <Time>2012-06-08T16:13:54+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Shaders\Others\Billboard.fx</Source>
+      <Name>Shaders\Others\Billboard</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\dominicbrittain\Documents\Psynergy\AI\GraphicsLibrary\bin\x86\Debug\Content\Shaders\Others\Billboard.xnb</Output>
+      <Time>2012-06-08T16:13:54+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Shaders\Others\pointsprite.fx</Source>
+      <Name>Shaders\Others\pointsprite</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\dominicbrittain\Documents\Psynergy\AI\GraphicsLibrary\bin\x86\Debug\Content\Shaders\Others\pointsprite.xnb</Output>
+      <Time>2012-06-08T16:13:54+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Shaders\Shadows\ShadowDepthMap.fx</Source>
+      <Name>Shaders\Shadows\ShadowDepthMap</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+      <Parameters>
+        <Data Key="DebugMode">Optimize</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\dominicbrittain\Documents\Psynergy\AI\GraphicsLibrary\bin\x86\Debug\Content\Shaders\Shadows\ShadowDepthMap.xnb</Output>
+      <Time>2012-06-08T16:13:54+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Shaders\CubeMap\cubemap.fx</Source>
+      <Name>Shaders\CubeMap\cubemap</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+      <Parameters>
+        <Data Key="DebugMode">Optimize</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\dominicbrittain\Documents\Psynergy\AI\GraphicsLibrary\bin\x86\Debug\Content\Shaders\CubeMap\cubemap.xnb</Output>
+      <Time>2012-07-06T12:25:54+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Shaders\Deferred Rendering\WaterGBuffer.fx</Source>
+      <Name>Shaders\Deferred Rendering\WaterGBuffer</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+      <Parameters>
+        <Data Key="DebugMode">Optimize</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\dominicbrittain\Documents\Psynergy\AI\GraphicsLibrary\bin\x86\Debug\Content\Shaders\Deferred Rendering\WaterGBuffer.xnb</Output>
+      <Time>2012-07-13T02:47:28+01:00</Time>
+      <Dependency>
+        <Key>Shaders\Deferred Rendering\ppshared.vsi</Key>
+        <Value>2012-06-08T16:13:54+01:00</Value>
+      </Dependency>
+      <Dependency>
+        <Key>Shaders\Deferred Rendering\ToneMapping.fxh</Key>
+        <Value>2012-07-04T15:55:40+01:00</Value>
+      </Dependency>
+    </Item>
+    <Item>
+      <Source>Models\X\sphere.x</Source>
+      <Name>Models\X\sphere</Name>
+      <Importer>XImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\dominicbrittain\Documents\Psynergy\AI\GraphicsLibrary\bin\x86\Debug\Content\Models\X\sphere.xnb</Output>
+      <Time>2012-06-08T16:13:52+01:00</Time>
+      <Dependency>
+        <Key>obj\x86\Debug\Models\X\sphere_0.xml</Key>
+        <Value>2012-07-13T12:19:14.5518503+01:00</Value>
+      </Dependency>
+    </Item>
+    <Item>
+      <Source>Models\X\Ground.x</Source>
+      <Name>Models\X\Ground</Name>
+      <Importer>XImporter</Importer>
+      <Processor>DeferredRendererModel</Processor>
+      <Parameters>
+        <Data Key="ShadowCullMode">CullClockwiseFace</Data>
+        <Data Key="EnableNormalMap">True</Data>
+        <Data Key="NormalMapTexture">boardnormal.png</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\dominicbrittain\Documents\Psynergy\AI\GraphicsLibrary\bin\x86\Debug\Content\Models\X\Ground.xnb</Output>
+      <Time>2012-06-08T16:13:52+01:00</Time>
+      <Dependency>
+        <Key>obj\x86\Debug\Models\X\Ground_0.xml</Key>
+        <Value>2012-07-13T12:19:15.2638911+01:00</Value>
+      </Dependency>
+      <Request>C:\Users\dominicbrittain\Documents\Psynergy\AI\GraphicsLibrary\bin\x86\Debug\Content\Shaders\Deferred Rendering\RenderGBuffer_0.xnb</Request>
+      <Request>C:\Users\dominicbrittain\Documents\Psynergy\AI\GraphicsLibrary\bin\x86\Debug\Content\Models\X\ground_diffuse_0.xnb</Request>
+      <Request>C:\Users\dominicbrittain\Documents\Psynergy\AI\GraphicsLibrary\bin\x86\Debug\Content\Models\null_diffuse_0.xnb</Request>
+      <Request>C:\Users\dominicbrittain\Documents\Psynergy\AI\GraphicsLibrary\bin\x86\Debug\Content\Models\X\boardnormal_0.xnb</Request>
+      <Request>C:\Users\dominicbrittain\Documents\Psynergy\AI\GraphicsLibrary\bin\x86\Debug\Content\Models\null_specular_0.xnb</Request>
+      <Request>C:\Users\dominicbrittain\Documents\Psynergy\AI\GraphicsLibrary\bin\x86\Debug\Content\Models\null_emissive_0.xnb</Request>
+      <Request>C:\Users\dominicbrittain\Documents\Psynergy\AI\GraphicsLibrary\bin\x86\Debug\Content\Shaders\Deferred Rendering\RenderGBuffer_1.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Models\FBX\Ship1\ship1.fbx</Source>
+      <Name>Models\FBX\Ship1\ship1</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>DeferredRendererModel</Processor>
+      <Parameters>
+        <Data Key="NormalMapTexture">ship1_n.tga</Data>
+        <Data Key="SpecularMapTexture">ship1_s.tga</Data>
+        <Data Key="EnableNormalMap">True</Data>
+        <Data Key="RenderQueue">Default</Data>
+        <Data Key="CastShadows">True</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\dominicbrittain\Documents\Psynergy\AI\GraphicsLibrary\bin\x86\Debug\Content\Models\FBX\Ship1\ship1.xnb</Output>
+      <Time>2012-06-08T16:13:52+01:00</Time>
+      <Dependency>
+        <Key>obj\x86\Debug\Models\FBX\Ship1\ship1_0.xml</Key>
+        <Value>2012-07-13T12:19:18.8620969+01:00</Value>
+      </Dependency>
+      <Request>C:\Users\dominicbrittain\Documents\Psynergy\AI\GraphicsLibrary\bin\x86\Debug\Content\Shaders\Deferred Rendering\RenderGBuffer_0.xnb</Request>
+      <Request>C:\Users\dominicbrittain\Documents\Psynergy\AI\GraphicsLibrary\bin\x86\Debug\Content\Models\FBX\Ship1\ship1_c_0.xnb</Request>
+      <Request>C:\Users\dominicbrittain\Documents\Psynergy\AI\GraphicsLibrary\bin\x86\Debug\Content\Models\null_diffuse_0.xnb</Request>
+      <Request>C:\Users\dominicbrittain\Documents\Psynergy\AI\GraphicsLibrary\bin\x86\Debug\Content\Models\FBX\Ship1\ship1_n_0.xnb</Request>
+      <Request>C:\Users\dominicbrittain\Documents\Psynergy\AI\GraphicsLibrary\bin\x86\Debug\Content\Models\FBX\Ship1\ship1_s_0.xnb</Request>
+      <Request>C:\Users\dominicbrittain\Documents\Psynergy\AI\GraphicsLibrary\bin\x86\Debug\Content\Models\null_emissive_0.xnb</Request>
+      <Request>C:\Users\dominicbrittain\Documents\Psynergy\AI\GraphicsLibrary\bin\x86\Debug\Content\Shaders\Deferred Rendering\RenderGBuffer_1.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Fonts\defaultfont.spritefont</Source>
+      <Name>Fonts\defaultfont</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\dominicbrittain\Documents\Psynergy\AI\GraphicsLibrary\bin\x86\Debug\Content\Fonts\defaultfont.xnb</Output>
+      <Time>2012-06-08T16:13:54+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\X\sphere.x</Source>
+      <Importer>XImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Debug\Models\X\sphere_0.xml</Output>
+      <Time>2012-06-08T16:13:52+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\X\Ground.x</Source>
+      <Importer>XImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Debug\Models\X\Ground_0.xml</Output>
+      <Time>2012-06-08T16:13:52+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Shaders\Deferred Rendering\RenderGBuffer.fx</Source>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\dominicbrittain\Documents\Psynergy\AI\GraphicsLibrary\bin\x86\Debug\Content\Shaders\Deferred Rendering\RenderGBuffer_0.xnb</Output>
+      <Time>2012-07-13T02:31:54+01:00</Time>
+      <Dependency>
+        <Key>Shaders\Deferred Rendering\ppshared.vsi</Key>
+        <Value>2012-06-08T16:13:54+01:00</Value>
+      </Dependency>
+      <Dependency>
+        <Key>Shaders\Deferred Rendering\ToneMapping.fxh</Key>
+        <Value>2012-07-04T15:55:40+01:00</Value>
+      </Dependency>
+    </Item>
+    <Item>
+      <Source>Models\X\ground_diffuse.png</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\dominicbrittain\Documents\Psynergy\AI\GraphicsLibrary\bin\x86\Debug\Content\Models\X\ground_diffuse_0.xnb</Output>
+      <Time>2012-06-08T16:13:52+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\null_diffuse.tga</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\dominicbrittain\Documents\Psynergy\AI\GraphicsLibrary\bin\x86\Debug\Content\Models\null_diffuse_0.xnb</Output>
+      <Time>2012-06-08T16:13:52+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\X\boardnormal.png</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\dominicbrittain\Documents\Psynergy\AI\GraphicsLibrary\bin\x86\Debug\Content\Models\X\boardnormal_0.xnb</Output>
+      <Time>2012-06-08T16:13:52+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\null_specular.tga</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\dominicbrittain\Documents\Psynergy\AI\GraphicsLibrary\bin\x86\Debug\Content\Models\null_specular_0.xnb</Output>
+      <Time>2012-06-08T16:13:52+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\null_emissive.tga</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\dominicbrittain\Documents\Psynergy\AI\GraphicsLibrary\bin\x86\Debug\Content\Models\null_emissive_0.xnb</Output>
+      <Time>2012-06-08T16:13:52+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Shaders\Deferred Rendering\RenderGBuffer.fx</Source>
+      <Importer>EffectImporter</Importer>
+      <Processor>DeferredRendererFXProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\dominicbrittain\Documents\Psynergy\AI\GraphicsLibrary\bin\x86\Debug\Content\Shaders\Deferred Rendering\RenderGBuffer_1.xnb</Output>
+      <Time>2012-07-13T02:31:54+01:00</Time>
+      <Dependency>
+        <Key>Shaders\Deferred Rendering\ppshared.vsi</Key>
+        <Value>2012-06-08T16:13:54+01:00</Value>
+      </Dependency>
+      <Dependency>
+        <Key>Shaders\Deferred Rendering\ToneMapping.fxh</Key>
+        <Value>2012-07-04T15:55:40+01:00</Value>
+      </Dependency>
+    </Item>
+    <Item>
+      <Source>Models\FBX\Ship1\ship1.fbx</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Debug\Models\FBX\Ship1\ship1_0.xml</Output>
+      <Time>2012-06-08T16:13:52+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\FBX\Ship1\ship1_c.tga</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\dominicbrittain\Documents\Psynergy\AI\GraphicsLibrary\bin\x86\Debug\Content\Models\FBX\Ship1\ship1_c_0.xnb</Output>
+      <Time>2012-06-08T16:13:52+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\FBX\Ship1\ship1_n.tga</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\dominicbrittain\Documents\Psynergy\AI\GraphicsLibrary\bin\x86\Debug\Content\Models\FBX\Ship1\ship1_n_0.xnb</Output>
+      <Time>2012-06-08T16:13:52+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\FBX\Ship1\ship1_s.tga</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\dominicbrittain\Documents\Psynergy\AI\GraphicsLibrary\bin\x86\Debug\Content\Models\FBX\Ship1\ship1_s_0.xnb</Output>
+      <Time>2012-06-08T16:13:52+01:00</Time>
+    </Item>
+    <BuildSuccessful>true</BuildSuccessful>
+    <Settings>
+      <TargetPlatform>Windows</TargetPlatform>
+      <TargetProfile>HiDef</TargetProfile>
+      <BuildConfiguration>Debug</BuildConfiguration>
+      <CompressContent>false</CompressContent>
+      <RootDirectory>C:\Users\dominicbrittain\Documents\Psynergy\AI\GraphicsLibrary\GraphicsContent\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\dominicbrittain\Documents\Psynergy\AI\GraphicsLibrary\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\dominicbrittain\Documents\Psynergy\AI\GraphicsLibrary\GraphicsContent\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\dominicbrittain\Documents\Psynergy\AI\GraphicsLibrary\bin\x86\Debug\Content\</OutputDirectory>
+    </Settings>
+    <Assemblies>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.XImporter.dll</Key>
+        <Value>2010-08-23T13:41:18+01:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.VideoImporters.dll</Key>
+        <Value>2010-08-23T13:41:18+01:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.TextureImporter.dll</Key>
+        <Value>2010-08-23T13:41:18+01:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.FBXImporter.dll</Key>
+        <Value>2010-08-23T13:41:18+01:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.EffectImporter.dll</Key>
+        <Value>2010-08-23T13:41:18+01:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.AudioImporters.dll</Key>
+        <Value>2010-08-23T13:41:18+01:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Users\dominicbrittain\Documents\Psynergy\AI\GraphicsLibrary\Middleware\LTree Generator\LTreesPipeline.dll</Key>
+        <Value>2012-06-08T16:13:56+01:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Users\dominicbrittain\Documents\Psynergy\AI\Deferred Pipeline\bin\x86\Debug\Deferred Pipeline.dll</Key>
+        <Value>2012-07-13T12:18:59.3469807+01:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
+        <Value>2012-02-16T14:45:05.9973636+00:00</Value>
+      </Assembly>
+    </Assemblies>
+  </Asset>
+</XnaContent>

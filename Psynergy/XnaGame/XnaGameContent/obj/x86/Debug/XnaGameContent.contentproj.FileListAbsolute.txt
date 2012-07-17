@@ -1,0 +1,4 @@
+C:\Users\Dominic\Documents\Psynergy\AI\XnaGame\XnaGameContent\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Dominic\Documents\Psynergy\AI\XnaGame\XnaGameContent\obj\x86\Debug\Sounds\sounds.xml
+C:\Users\dominicbrittain\Documents\Psynergy\AI\XnaGame\XnaGameContent\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\dominicbrittain\Documents\Psynergy\AI\XnaGame\XnaGameContent\obj\x86\Debug\Sounds\sounds.xml

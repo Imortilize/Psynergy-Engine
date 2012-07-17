@@ -1,0 +1,7 @@
+C:\Users\Dominic\Documents\Projects\XNA\XnaGame\XnaGame\XnaGame\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Dominic\Documents\Projects\XNA\XnaGame\XnaGame\XnaGame\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Dominic\Documents\Projects\XNA\XnaGame\XnaGame\XnaGame\bin\x86\Debug\XnaGame.exe
+C:\Users\Dominic\Documents\Projects\XNA\XnaGame\XnaGame\XnaGame\bin\x86\Debug\XnaGame.pdb
+C:\Users\Dominic\Documents\Projects\XNA\XnaGame\XnaGame\XnaGame\obj\x86\Debug\XnaGame.exe
+C:\Users\Dominic\Documents\Projects\XNA\XnaGame\XnaGame\XnaGame\obj\x86\Debug\XnaGame.pdb
+C:\Users\Dominic\Documents\Projects\XNA\XnaGame\XnaGame\XnaGame\bin\x86\Debug\Content\testPic.xnb

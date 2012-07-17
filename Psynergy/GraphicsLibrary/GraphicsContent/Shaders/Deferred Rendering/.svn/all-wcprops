@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/XnaGameX1/!svn/ver/243/AI/GraphicsLibrary/GraphicsContent/Shaders/Deferred%20Rendering
+END
+DirectionalLight.fx
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/XnaGameX1/!svn/ver/251/AI/GraphicsLibrary/GraphicsContent/Shaders/Deferred%20Rendering/DirectionalLight.fx
+END
+CombineFinal.fx
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/XnaGameX1/!svn/ver/240/AI/GraphicsLibrary/GraphicsContent/Shaders/Deferred%20Rendering/CombineFinal.fx
+END
+ClearGBuffer.fx
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/XnaGameX1/!svn/ver/258/AI/GraphicsLibrary/GraphicsContent/Shaders/Deferred%20Rendering/ClearGBuffer.fx
+END
+shadow.vsi
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/XnaGameX1/!svn/ver/242/AI/GraphicsLibrary/GraphicsContent/Shaders/Deferred%20Rendering/shadow.vsi
+END
+ppshared.vsi
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/XnaGameX1/!svn/ver/243/AI/GraphicsLibrary/GraphicsContent/Shaders/Deferred%20Rendering/ppshared.vsi
+END
+RenderGBuffer.fx
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/XnaGameX1/!svn/ver/259/AI/GraphicsLibrary/GraphicsContent/Shaders/Deferred%20Rendering/RenderGBuffer.fx
+END
+PointLight.fx
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/XnaGameX1/!svn/ver/255/AI/GraphicsLibrary/GraphicsContent/Shaders/Deferred%20Rendering/PointLight.fx
+END

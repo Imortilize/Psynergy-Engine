@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/XnaGameX1/!svn/ver/246/AI/GraphicsLibrary/Post%20Processing/Properties
+END
+BasicProperties.cs
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/XnaGameX1/!svn/ver/246/AI/GraphicsLibrary/Post%20Processing/Properties/BasicProperties.cs
+END
+BloomProperties.cs
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/XnaGameX1/!svn/ver/246/AI/GraphicsLibrary/Post%20Processing/Properties/BloomProperties.cs
+END
+FilmGrainProperties.cs
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/XnaGameX1/!svn/ver/246/AI/GraphicsLibrary/Post%20Processing/Properties/FilmGrainProperties.cs
+END
+AbstractPostProcessorProperties.cs
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/XnaGameX1/!svn/ver/246/AI/GraphicsLibrary/Post%20Processing/Properties/AbstractPostProcessorProperties.cs
+END
+FogProperties.cs
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/XnaGameX1/!svn/ver/246/AI/GraphicsLibrary/Post%20Processing/Properties/FogProperties.cs
+END
+DepthOfFieldProperties.cs
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/XnaGameX1/!svn/ver/246/AI/GraphicsLibrary/Post%20Processing/Properties/DepthOfFieldProperties.cs
+END

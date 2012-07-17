@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<SceneFragment>
+  <!-- CubeMap ( Should be the first thing to be rendered) -->
+  <SkySphere id="Sky" >
+    <property parent="Base" />
+    <property pos="180 0 210" />
+    <property skysize="1250" />
+    <property file="Textures/CubeMaps/cube" />
+    <property skytexture="Textures/CubeMaps/Canyon" />
+    <property setfocus="false" />
+  </SkySphere>
+  
+ <!-- <ModelNode id="Ground" >
+    <property parent="Base" />
+    <property pos="0 -20 0" />
+    <property scale="3.25 2.5 3.25" />
+    <property file="Models/X/Ground" />
+    <property setfocus="false" />
+  </ModelNode>-->
+  
+  <!--<CustomSpaceship id="Ship" >
+    <property parent="Base" />
+    <property pos="-200 -125 0" />
+    <property scale="0.25 0.25 0.25" />
+    <property setfocus="true" />
+    <property file="Models/FBX/Ship1/ship1" />
+  </CustomSpaceship>
+
+  <CustomSpaceship id="Ship" >
+    <property parent="Base" />
+    <property pos="-200 -125 -300" />
+    <property scale="0.25 0.25 0.25" />
+    <property setfocus="true" />
+    <property file="Models/FBX/Ship1/ship1" />
+  </CustomSpaceship>-->
+
+  <CustomSpaceship id="Ship" >
+    <property parent="Base" />
+    <property pos="-100 -125 -400" />
+    <property scale="0.25 0.25 0.25" />
+    <property setfocus="true" />
+    <property file="Models/FBX/Ship1/ship1" />
+  </CustomSpaceship>
+
+  <!--<ModelNode id="Ship" >
+    <property parent="Base" />
+    <property pos="150 0 0" />
+    <property scale="0.5 0.5 0.5" />
+    <property setfocus="true" />
+    <property file="Models/FBX/Ship1/ship1" />
+  </ModelNode>
+
+  <ModelNode id="Ship" >
+    <property parent="Base" />
+    <property pos="-150 0 0" />
+    <property scale="0.5 0.5 0.5" />
+    <property setfocus="true" />
+    <property file="Models/FBX/Ship1/ship1" />
+  </ModelNode>
+
+  <ModelNode id="Ship" >
+    <property parent="Base" />
+    <property pos="-150 0 -150" />
+    <property scale="0.5 0.5 0.5" />
+    <property setfocus="true" />
+    <property file="Models/FBX/Ship1/ship1" />
+  </ModelNode>
+
+  <ModelNode id="Ship" >
+    <property parent="Base" />
+    <property pos="150 0 150" />
+    <property scale="0.5 0.5 0.5" />
+    <property setfocus="true" />
+    <property file="Models/FBX/Ship1/ship1" />
+  </ModelNode>
+
+  <ModelNode id="Ship" >
+    <property parent="Base" />
+    <property pos="-150 0 150" />
+    <property scale="0.5 0.5 0.5" />
+    <property setfocus="true" />
+    <property file="Models/FBX/Ship1/ship1" />
+  </ModelNode>
+
+  <ModelNode id="Ship" >
+    <property parent="Base" />
+    <property pos="150 0 -150" />
+    <property scale="0.5 0.5 0.5" />
+    <property setfocus="true" />
+    <property file="Models/FBX/Ship1/ship1" />
+  </ModelNode>-->
+
+  <Terrain id="Terrain" >
+    <property parent="Base" />
+    <property pos="0 125 0" />
+    <property scale="0.25 0.25 0.25" />
+    <property texture="Textures/Grass" />
+    <property heightmap="testHeightMap" />>
+  </Terrain>
+
+  <Water id="Water" >
+    <property parent="Base" />
+    <property pos="0 0 0" />
+    <property scale="1 1 1" />
+    <property texture="Textures/waterMap" />
+  </Water>
+
+  <!-- Lights ( under work at the moment ) -->
+  <DirectionalLight>
+    <property parent="Base" />
+    <property pos="0 0 0" />
+    <property direction="0.5 -0.5 0" />
+    <property diffuse="200 200 174" />
+  </DirectionalLight>
+  <PointLight>
+    <property parent="Base" />
+    <property pos="-700 900 100" />
+    <property radius="1500" />
+    <property intensity="2" />
+    <property diffuse="75 75 67" />
+  </PointLight>
+</SceneFragment>

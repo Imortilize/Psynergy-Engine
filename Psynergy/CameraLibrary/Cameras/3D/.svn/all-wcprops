@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/XnaGameX1/!svn/ver/210/AI/CameraLibrary/Cameras/3D
+END
+ChaseCamera.cs
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/XnaGameX1/!svn/ver/148/AI/CameraLibrary/Cameras/3D/ChaseCamera.cs
+END
+Camera3D.cs
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/XnaGameX1/!svn/ver/210/AI/CameraLibrary/Cameras/3D/Camera3D.cs
+END
+TargetCamera.cs
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/XnaGameX1/!svn/ver/148/AI/CameraLibrary/Cameras/3D/TargetCamera.cs
+END
+WorldCamera.cs
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/XnaGameX1/!svn/ver/148/AI/CameraLibrary/Cameras/3D/WorldCamera.cs
+END
+ArcBallCamera.cs
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/XnaGameX1/!svn/ver/170/AI/CameraLibrary/Cameras/3D/ArcBallCamera.cs
+END
+FreeCamera.cs
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/XnaGameX1/!svn/ver/148/AI/CameraLibrary/Cameras/3D/FreeCamera.cs
+END
