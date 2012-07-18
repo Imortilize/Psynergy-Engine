@@ -49,15 +49,8 @@ namespace Psynergy
         {
             base.Initialise();
 
-            // Register node events
-            RegisterEvents();
-
             // Reset the controller
             Reset();
-        }
-
-        protected virtual void RegisterEvents()
-        {
         }
 
         public override void Reset()

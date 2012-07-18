@@ -42,13 +42,13 @@ namespace Psynergy
                 m_ClassResource = new ClassRegistryResource("Resources/ClassRegistry.xml");
 
             base.Initialise();
+
+            // Load assemblies
+            LoadAssemblies();
         }
 
         public override void Load()
         {
-            // Load assemblies
-            LoadAssemblies();
-
             // Load the menu resources
             if (m_ClassResource != null)
                 m_ClassResource.Load();
@@ -56,30 +56,44 @@ namespace Psynergy
             base.Load();
         }
 
+        #region Assembly management
         private void LoadAssemblies()
         {
             if (m_Assembly != null)
             {
                 // Get all assembly names
                 AssemblyName[] assemblies = m_Assembly.GetReferencedAssemblies();
+                Assembly[] assembliesTest = AppDomain.CurrentDomain.GetAssemblies();
+
+                List<Assembly> assemblyList = assembliesTest.ToList<Assembly>();
 
                 foreach (AssemblyName name in assemblies)
                 {
-                    Assembly assembly = Assembly.Load(name);
-
-                    //Assembly assembly = Assembly.GetAssembly(asmType);
-
-                    if (assembly != null)
+                    for (int i = 0; i < assemblyList.Count; i++ )
                     {
-                        String FullName = assembly.FullName;
+                        Assembly assembly = assemblyList[i];
+                        Assembly assemblyToAdd = null;
 
-                        if (FullName.Contains("Library"))
+                        if ( assembly.GetName().Name == name.Name )
+                            assemblyToAdd = assembly;
+                        else if (assembly == assemblyList[assemblyList.Count - 1] )
+                            assemblyToAdd = Assembly.Load(name);
+
+                        // Add the assembly
+                        if (assemblyToAdd != null)
                         {
-                            List<Type> newTypes = new List<Type>();
-                            newTypes.AddRange(assembly.GetTypes());
+                            String FullName = assemblyToAdd.FullName;
 
-                            // Add the types
-                            m_AllTypes.Add(name, newTypes);
+                            if (FullName.Contains("Library"))
+                            {
+                                List<Type> newTypes = new List<Type>();
+                                newTypes.AddRange(assembly.GetTypes());
+
+                                // Add the types
+                                m_AllTypes.Add(assemblyToAdd.GetName(), newTypes);
+                            }
+
+                            break;
                         }
                     }
                 }
@@ -91,14 +105,13 @@ namespace Psynergy
             }
         }
 
-        public void Register(String typeName)
+        public Type FindType(String typeName, out Assembly assemblyToUse)
         {
-            Assembly assemblyToUse = null;
-
             // Now check for the type
             Type type = null;
+            assemblyToUse = null;
 
-            foreach ( KeyValuePair<AssemblyName, List<Type>> types in m_AllTypes )
+            foreach (KeyValuePair<AssemblyName, List<Type>> types in m_AllTypes)
             {
                 foreach (Type typeToCheck in types.Value)
                 {
@@ -109,8 +122,80 @@ namespace Psynergy
                         break;
                     }
                 }
+
+                if (type != null)
+                    break;
             }
 
+            return type;
+        }
+
+        public List<Type> GetTypesUsingInterface(String typeName, bool genericArguement)
+        {
+            // Find the type
+            Assembly assembly = null;
+            Type interfaceType = FindType(typeName, out assembly);
+            List<Type> typesToRet = new List<Type>();// FindType(typeName, out assemblyToUse);     
+
+            foreach (KeyValuePair<AssemblyName, List<Type>> types in m_AllTypes)
+            {
+                foreach (Type typeToCheck in types.Value)
+                {
+                    foreach (var i in typeToCheck.GetInterfaces())
+                    {
+                        if (genericArguement && i.IsGenericType && i.GetGenericTypeDefinition() == interfaceType)
+                        {
+                            Type test1 = i.GetGenericArguments()[0];
+
+                            if (test1 != null)
+                            {
+                                typesToRet.Add(typeToCheck);
+
+                                break;
+                            }
+                        }
+                    }
+                }
+            }
+
+            return typesToRet;
+        }
+
+        public object CreateInstance(Type type)
+        {
+            object instance = null;
+
+            // If it exists...
+            if (type != null)
+            {
+                foreach (AssemblyName assemblyName in m_AllTypes.Keys)
+                {
+                    Assembly assembly = Assembly.Load(assemblyName);
+
+                    // Try create an instance of the object from this assembly
+                    instance = assembly.CreateInstance(type.FullName, true, BindingFlags.CreateInstance, null, null, null, null);
+
+                    // If an instance was created then break.
+                    if (instance != null)
+                        break;
+                }
+
+                // check it instantiated ok.
+                if (instance == null)
+                    throw new NullReferenceException("Null product instance. Unable to create neccesary product class.");
+            }
+
+            return instance;
+        }
+        #endregion
+
+        public void Register(String typeName)
+        {
+            Assembly assemblyToUse = null;
+
+            // Find the type
+            Type type = FindType(typeName, out assemblyToUse);
+            
             if (type != null)
             {
                 // Now register accordingly

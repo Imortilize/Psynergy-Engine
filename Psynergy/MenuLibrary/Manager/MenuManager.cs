@@ -55,14 +55,6 @@ namespace Psynergy.Menus
             base.Initialise();
         }
 
-        protected override void RegisterEvents()
-        {
-            base.RegisterEvents();
-
-            // Register to this event
-            EventManager.Instance.Subscribe<PauseGameEvent>(this);
-        }
-
         public override void Load()
         {
             // Load the menu resources

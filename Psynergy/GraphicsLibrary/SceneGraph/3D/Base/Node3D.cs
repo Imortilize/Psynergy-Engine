@@ -121,9 +121,6 @@ namespace Psynergy.Graphics
             m_PivotNode.Position = m_Position;
             m_PivotNode.Rotation = Rotation;
 
-            // Register any events
-            RegisterEvents();
-
             // Initialise the base class
             base.Initialise();
         }
@@ -149,10 +146,6 @@ namespace Psynergy.Graphics
                     cameraFocusEvent.Fire();
                 }
             }
-        }
-
-        protected virtual void RegisterEvents()
-        {
         }
 
         public override void Reset()

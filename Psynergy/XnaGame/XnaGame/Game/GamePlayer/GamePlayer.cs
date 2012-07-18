@@ -94,9 +94,6 @@ namespace XnaGame
 
         public override void Initialise()
         {
-            // Register events
-            RegisterEvents();
-
             // Create the game pawn controller
             Controller = new Node3DController(this);
             Controller.MovementSpeed = 8.0f;
@@ -208,14 +205,6 @@ namespace XnaGame
 
             // UnFocus the player object to start
             UnFocusUIInterfaceObject(UIInterfaceObject.PlayerIndicator);
-        }
-
-        protected override void RegisterEvents()
-        {
-            base.RegisterEvents();
-
-            // Register won event
-            EventManager.Instance.Subscribe<PlayerWonEvent>(this);
         }
 
         public override void Load()
@@ -631,14 +620,17 @@ namespace XnaGame
         {
             BaseCamera camera = CameraManager.Instance.ActiveCamera;
 
-            if (camera.GetType().IsSubclassOf(typeof(Camera3D)))
+            if (camera != null)
             {
-                if (camera.GetType() == typeof(FixedThirdPersonCamera))
+                if (camera.GetType().IsSubclassOf(typeof(Camera3D)))
                 {
-                    FixedThirdPersonCamera fixedThirdPersonCamera = (camera as FixedThirdPersonCamera);
-                    fixedThirdPersonCamera.DesiredDistance = 175;
-                    fixedThirdPersonCamera.DesiredPitch = 345;
-                    fixedThirdPersonCamera.Tween = true;
+                    if (camera.GetType() == typeof(FixedThirdPersonCamera))
+                    {
+                        FixedThirdPersonCamera fixedThirdPersonCamera = (camera as FixedThirdPersonCamera);
+                        fixedThirdPersonCamera.DesiredDistance = 175;
+                        fixedThirdPersonCamera.DesiredPitch = 345;
+                        fixedThirdPersonCamera.Tween = true;
+                    }
                 }
             }
         }

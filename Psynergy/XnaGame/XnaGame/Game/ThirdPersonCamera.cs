@@ -88,14 +88,6 @@ namespace XnaGame
             m_DesiredDistance = MathHelper.Clamp(m_DesiredDistance, m_MinDistance, m_MaxDistance);
         }
 
-        protected override void RegisterEvents()
-        {
-            base.RegisterEvents();
-
-            // All Node3DContollers listen for terrain load events
-            EventManager.Instance.Subscribe<TerrainSetEvent>(this);
-        }
-
         public override void Reset()
         {
             base.Reset();

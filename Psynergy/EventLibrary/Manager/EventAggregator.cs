@@ -76,7 +76,8 @@ namespace Psynergy.Events
 
         public virtual void Subscribe<T>( IListener<T> listener ) where T : IEvent
         {
-            Subscribe( typeof(T), listener );
+            if (!HasListener(typeof(T), listener))
+                Subscribe( typeof(T), listener );
         }
 
         protected virtual void Subscribe( Type typeOfEvent, IListener listener )

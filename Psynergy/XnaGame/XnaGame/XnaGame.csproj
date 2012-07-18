@@ -214,6 +214,7 @@
     <Content Include="Main\GameThumbnail.png" />
     <Content Include="Resources\ClassRegistry.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
     </Content>
     <Content Include="Resources\Game.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

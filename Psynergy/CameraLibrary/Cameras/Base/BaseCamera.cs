@@ -62,15 +62,6 @@ namespace Psynergy.Camera
 
             // Default transform to identity matrix
             Transform = Matrix.Identity;
-
-
-
-            // Register any camera events
-            RegisterEvents();
-        }
-
-        protected virtual void RegisterEvents()
-        {
         }
 
         public override void Reset()

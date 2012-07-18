@@ -157,8 +157,12 @@ namespace Psynergy
 
             // Initialise psynergy engine components
             Factory.Instance.Initialise();
-            MenuManager.Instance.Initialise();
+
+            // This must come second so that  singleton classes don't get broken by the auto even registration
             EventManager.Instance.Initialise();
+            /**/
+            
+            MenuManager.Instance.Initialise();
             RenderManager.Instance.Initialise();
 
             if (m_Graphics.GraphicsDevice != null)
@@ -199,6 +203,7 @@ namespace Psynergy
 
             // Set render manager sprite batch
             Factory.Instance.Load();
+            EventManager.Instance.Load();
             MenuManager.Instance.Load();
             RenderManager.Instance.Load();
             UIManager.Instance.Load();
@@ -299,17 +304,6 @@ namespace Psynergy
         public void useShadows(bool useShadows)
         {
             RenderManager.Instance.UseShadows(useShadows);
-        }
-
-        public void SetAntiAliasing(int samples)
-        {
-            if (samples < 0)
-                samples = 0;
-            else if (samples > 8)
-                samples = 8;
-
-            // Set sample count 
-            RenderManager.Instance.SetAntiAliasing(samples);
         }
 
         public void SetFogProperties(FogProperties fogProperties)

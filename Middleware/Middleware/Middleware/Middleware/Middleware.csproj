@@ -64,69 +64,58 @@
     <StartupObject>Middleware.Program</StartupObject>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="AILibrary, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\Psynergy Game Engine\Engine\AILibrary.dll</HintPath>
+    <Reference Include="AILibrary">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\Psynergy Game Engine\Engine\AILibrary.dll</HintPath>
     </Reference>
-    <Reference Include="CameraLibrary, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\Psynergy Game Engine\Engine\CameraLibrary.dll</HintPath>
+    <Reference Include="CameraLibrary">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\Psynergy Game Engine\Engine\CameraLibrary.dll</HintPath>
     </Reference>
-    <Reference Include="EventLibrary, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\Psynergy Game Engine\Engine\EventLibrary.dll</HintPath>
+    <Reference Include="DPSF">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\Psynergy Game Engine\Engine\DPSF.dll</HintPath>
     </Reference>
-    <Reference Include="GraphicsLibrary, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\Psynergy Game Engine\Engine\GraphicsLibrary.dll</HintPath>
+    <Reference Include="EventLibrary">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\Psynergy Game Engine\Engine\EventLibrary.dll</HintPath>
     </Reference>
-    <Reference Include="InputLibrary, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\Psynergy Game Engine\Engine\InputLibrary.dll</HintPath>
+    <Reference Include="GraphicsLibrary">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\Psynergy Game Engine\Engine\GraphicsLibrary.dll</HintPath>
     </Reference>
-    <Reference Include="JigLibX, Version=0.3.1.0, Culture=neutral, processorArchitecture=x86">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\Psynergy Game Engine\Engine\JigLibX.dll</HintPath>
+    <Reference Include="InputLibrary">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\Psynergy Game Engine\Engine\InputLibrary.dll</HintPath>
     </Reference>
-    <Reference Include="LTreesLibrary, Version=2.1.0.0, Culture=neutral, processorArchitecture=x86">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\Psynergy Game Engine\Engine\LTreesLibrary.dll</HintPath>
+    <Reference Include="JigLibX">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\Psynergy Game Engine\Engine\JigLibX.dll</HintPath>
     </Reference>
-    <Reference Include="MainLibrary, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\Psynergy Game Engine\Engine\MainLibrary.dll</HintPath>
+    <Reference Include="LTreesLibrary">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\Psynergy Game Engine\Engine\LTreesLibrary.dll</HintPath>
     </Reference>
-    <Reference Include="MenuLibrary, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\Psynergy Game Engine\Engine\MenuLibrary.dll</HintPath>
+    <Reference Include="MainLibrary">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\Psynergy Game Engine\Engine\MainLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="MenuLibrary">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\Psynergy Game Engine\Engine\MenuLibrary.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Xna.Framework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86" />
     <Reference Include="Microsoft.Xna.Framework.Game, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86" />
     <Reference Include="Microsoft.Xna.Framework.Graphics, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86" />
     <Reference Include="Microsoft.Xna.Framework.GamerServices, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86" />
     <Reference Include="mscorlib" />
-    <Reference Include="PhysicsLibrary, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\Psynergy Game Engine\Engine\PhysicsLibrary.dll</HintPath>
+    <Reference Include="PhysicsLibrary">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\Psynergy Game Engine\Engine\PhysicsLibrary.dll</HintPath>
     </Reference>
-    <Reference Include="ProjectMercury, Version=4.0.0.0, Culture=neutral, processorArchitecture=x86">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\Psynergy Game Engine\Engine\ProjectMercury.dll</HintPath>
+    <Reference Include="ProjectMercury">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\Psynergy Game Engine\Engine\ProjectMercury.dll</HintPath>
     </Reference>
     <Reference Include="Psynergy.TerrainPipeline">
-      <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\Psynergy Game Engine\Engine\ContentPipeline\Psynergy.TerrainPipeline.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\Psynergy Game Engine\Engine\ContentPipeline\Psynergy.TerrainPipeline.dll</HintPath>
     </Reference>
-    <Reference Include="PsynergyLibrary, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\Psynergy Game Engine\Engine\PsynergyLibrary.dll</HintPath>
+    <Reference Include="PsynergyLibrary">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\Psynergy Game Engine\Engine\PsynergyLibrary.dll</HintPath>
     </Reference>
-    <Reference Include="SkinnedModel, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\Psynergy Game Engine\Engine\SkinnedModel.dll</HintPath>
+    <Reference Include="SkinnedModel">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\Psynergy Game Engine\Engine\SkinnedModel.dll</HintPath>
     </Reference>
-    <Reference Include="SoundLibrary, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\Psynergy Game Engine\Engine\SoundLibrary.dll</HintPath>
+    <Reference Include="SoundLibrary">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\Psynergy Game Engine\Engine\SoundLibrary.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Management" />
@@ -135,7 +124,7 @@
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Net" />
     <Reference Include="TerrainLibrary">
-      <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\Psynergy Game Engine\Engine\TerrainLibrary.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\Psynergy Game Engine\Engine\TerrainLibrary.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

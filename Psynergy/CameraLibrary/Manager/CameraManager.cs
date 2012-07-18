@@ -46,14 +46,6 @@ namespace Psynergy.Camera
             m_CameraResource = new CameraResource("Resources/GameCameras.xml", m_GraphicsDevice);
         }
 
-        protected override void RegisterEvents()
-        {
-            base.RegisterEvents();
-
-            // All Node3DContollers listen for terrain load events
-            EventManager.Instance.Subscribe<CameraFocusEvent>(this);
-        }
-
         public override void Load()
         {
             base.Load();

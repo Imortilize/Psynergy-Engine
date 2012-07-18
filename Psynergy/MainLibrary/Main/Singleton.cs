@@ -41,12 +41,6 @@ namespace Psynergy
 
         public virtual void Initialise()
         {
-            // Register node events
-            RegisterEvents();
-        }
-
-        protected virtual void RegisterEvents()
-        {
         }
 
         protected virtual void Setup()

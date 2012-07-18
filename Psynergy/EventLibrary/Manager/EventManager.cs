@@ -31,6 +31,9 @@ namespace Psynergy.Events
         public override void Initialise()
         {
             base.Initialise();
+
+            // Auto register events
+            AutoRegisterEvents();
         }
 
         public override void Reset()
@@ -48,13 +51,12 @@ namespace Psynergy.Events
             base.UnLoad();
         }
 
-        public void Subscribe<T>(IListener<T> listener) where T : IEvent
+        public void Subscribe(IListener listener)
         {
-            if ( !m_EventAggregator.HasListener(typeof(T), listener) )
-                m_EventAggregator.Subscribe(listener);
+            m_EventAggregator.Subscribe(listener);
         }
 
-        public void UnSubscribe<T>(IListener<T> listener) where T : IEvent
+        public void UnSubscribe(IListener listener)
         {
             m_EventAggregator.UnSubscribe(listener);
         }
@@ -64,14 +66,20 @@ namespace Psynergy.Events
             m_EventAggregator.SendMessage(message);
         }
 
-        public override void Update(GameTime deltaTime)
+        #region Auto Registeration of event subscribers
+        private void AutoRegisterEvents()
         {
-            base.Update(deltaTime);
-        }
+            List<Type> types = Factory.Instance.GetTypesUsingInterface("IListener`1", true);
 
-        public override void Render(GameTime deltaTime)
-        {
-            base.Render(deltaTime);
+            foreach (Type type in types)
+            {
+                // Create an instance of the object type
+                IListener dummyObj = (Factory.Instance.CreateInstance(type) as IListener);
+
+                // Register the event subscriber
+                Subscribe(dummyObj);
+            }
         }
+        #endregion
     }
 }

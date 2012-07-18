@@ -131,13 +131,6 @@ namespace XnaGame
             m_Rotation = Quaternion.CreateFromRotationMatrix(rot);
         }
 
-        protected override void RegisterEvents()
-        {
-            base.RegisterEvents();
-
-            EventManager.Instance.Subscribe<FirstQuestionPassedEvent>(this);
-        }
-
         protected override void LoadTextures()
         {
             base.LoadTextures();

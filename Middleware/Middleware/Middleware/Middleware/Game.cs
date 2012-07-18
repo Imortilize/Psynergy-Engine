@@ -68,8 +68,6 @@ namespace Middleware
             // THESE CURRENTLY COME AFTER THE BASE INITIALISE CALL
             if (m_PsynergyEngine != null)
             {
-                m_PsynergyEngine.SetAntiAliasing(0);
-
                 // Post Processing
                 m_PsynergyEngine.UsePostProcessing(true);
                 m_PsynergyEngine.SetFXAAProperties(new FXAAProperties(true));

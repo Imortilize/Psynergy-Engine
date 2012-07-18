@@ -10,7 +10,8 @@
     <RootNamespace>GraphicsLibrary</RootNamespace>
     <AssemblyName>GraphicsLibrary</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
-    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
     <XnaFrameworkVersion>v4.0</XnaFrameworkVersion>
     <XnaPlatform>Windows</XnaPlatform>
     <XnaProfile>HiDef</XnaProfile>
@@ -200,6 +201,24 @@
     <None Include="Managers\ParticleManager\Systems\Base\.svn\entries" />
     <None Include="Managers\ParticleManager\Systems\Mercury\.svn\dir-props" />
     <None Include="Managers\ParticleManager\Systems\Mercury\.svn\entries" />
+    <None Include="Managers\RenderManager\.svn\all-wcprops" />
+    <None Include="Managers\RenderManager\.svn\entries" />
+    <None Include="Managers\RenderManager\.svn\text-base\DebugRender.cs.svn-base" />
+    <None Include="Managers\RenderManager\.svn\text-base\RenderGroup.cs.svn-base" />
+    <None Include="Managers\RenderManager\.svn\text-base\RenderManager.cs.svn-base" />
+    <None Include="Managers\RenderManager\Renderers\.svn\all-wcprops" />
+    <None Include="Managers\RenderManager\Renderers\.svn\dir-prop-base" />
+    <None Include="Managers\RenderManager\Renderers\.svn\entries" />
+    <None Include="Managers\RenderManager\Renderers\.svn\text-base\DeferredRenderer.cs.svn-base" />
+    <None Include="Managers\RenderManager\Renderers\.svn\text-base\Renderer.cs.svn-base" />
+    <None Include="Managers\RenderManager\Renderers\Renderable Management\.svn\all-wcprops" />
+    <None Include="Managers\RenderManager\Renderers\Renderable Management\.svn\dir-prop-base" />
+    <None Include="Managers\RenderManager\Renderers\Renderable Management\.svn\entries" />
+    <None Include="Managers\RenderManager\Renderers\Renderable Management\.svn\text-base\AbstractMesh.cs.svn-base" />
+    <None Include="Managers\RenderManager\Renderers\Renderable Management\.svn\text-base\BaseRenderEffect.cs.svn-base" />
+    <None Include="Managers\RenderManager\Renderers\Renderable Management\.svn\text-base\Mesh.cs.svn-base" />
+    <None Include="Managers\RenderManager\Renderers\Renderable Management\.svn\text-base\SkinnedMesh.cs.svn-base" />
+    <None Include="Managers\RenderManager\Renderers\Renderable Management\.svn\text-base\SubMesh.cs.svn-base" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Managers\ParticleManager\.svn\prop-base\" />

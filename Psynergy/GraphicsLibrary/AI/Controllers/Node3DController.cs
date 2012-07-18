@@ -69,15 +69,6 @@ namespace Psynergy.Graphics
             }
         }
 
-        protected override void RegisterEvents()
-        {
-            base.RegisterEvents();
-
-            // All Node3DContollers listen for terrain load events
-            EventManager.Instance.Subscribe<TerrainSetEvent>(this);
-            EventManager.Instance.Subscribe<TerrainLoadedEvent>(this);
-        }
-
         public override void Reset()
         {
             base.Reset();

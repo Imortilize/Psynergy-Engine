@@ -61,7 +61,6 @@ namespace XnaGame
 
                 // Initial Graphics Settings
                 m_PsynergyEngine.useShadows(true);
-                m_PsynergyEngine.SetAntiAliasing(0);
                 m_PsynergyEngine.SetFogProperties(new FogProperties(Color.LightYellow, 200, 900));
 
                 // Show FPS
@@ -76,6 +75,7 @@ namespace XnaGame
             {
                 // Post Processing
                 m_PsynergyEngine.UsePostProcessing(true);
+                m_PsynergyEngine.SetFXAAProperties(new FXAAProperties(true));
                 m_PsynergyEngine.SetToneMappingProperties(new ToneMappingProperties(true));
                 m_PsynergyEngine.SetDepthOfFieldProperties(new DepthOfFieldProperties(100, 300, 1));
                 m_PsynergyEngine.SetBloomProperties(new BloomProperties(0.7f, 1.2f));

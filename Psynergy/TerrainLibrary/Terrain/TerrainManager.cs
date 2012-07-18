@@ -15,15 +15,11 @@ namespace Psynergy.Graphics.Terrain
 
         public TerrainManager() : base()
         {
-            int spug = 0;
         }
 
-        protected override void RegisterEvents()
+        public override void Initialise()
         {
-            base.RegisterEvents();
-
-            // All Node3DContollers listen for terrain load events
-            EventManager.Instance.Subscribe<TerrainLoadedEvent>(this);
+            base.Initialise();
         }
 
         public virtual void Handle(TerrainLoadedEvent message)

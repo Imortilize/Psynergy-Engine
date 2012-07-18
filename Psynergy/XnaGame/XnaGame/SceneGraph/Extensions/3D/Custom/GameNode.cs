@@ -44,11 +44,6 @@ namespace XnaGame
                 m_Spline.Reset();
         }
 
-        protected override void RegisterEvents()
-        {
-            base.RegisterEvents();
-        }
-
         public override void Update(GameTime deltaTime)
         {
             base.Update(deltaTime);

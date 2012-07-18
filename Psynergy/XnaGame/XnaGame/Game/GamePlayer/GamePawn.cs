@@ -59,9 +59,6 @@ namespace XnaGame
 
             base.Initialise();
 
-            // Register events
-            RegisterEvents();
-
             // Create the game pawn controller
             Controller = new Node3DController(this);
             Controller.MovementSpeed = 50.0f;
@@ -100,14 +97,6 @@ namespace XnaGame
                 if (m_CurrentSquare != null)
                     Position = m_CurrentSquare.EnterSquare(this);
             }
-        }
-
-        protected override void RegisterEvents()
-        {
-            base.RegisterEvents();
-
-            // All AISkinnedNode's want to be selectable for now
-            EventManager.Instance.Subscribe<SelectObjectEvent>(this);
         }
 
         public override void Load()
