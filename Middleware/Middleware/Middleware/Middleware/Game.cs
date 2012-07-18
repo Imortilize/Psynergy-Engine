@@ -73,10 +73,10 @@ namespace Middleware
                 // Post Processing
                 m_PsynergyEngine.UsePostProcessing(true);
                 m_PsynergyEngine.SetFXAAProperties(new FXAAProperties(true));
-                m_PsynergyEngine.SetToneMappingProperties(new ToneMappingProperties(true)); 
+                /*m_PsynergyEngine.SetToneMappingProperties(new ToneMappingProperties(true)); 
                 m_PsynergyEngine.SetDepthOfFieldProperties(new DepthOfFieldProperties(200, 300, 1));
                 m_PsynergyEngine.SetBloomProperties(new BloomProperties(0.7f, 1.2f));
-                m_PsynergyEngine.SetFilmGrainProperties(new FilmGrainProperties(0.1f, 1, 2));
+                m_PsynergyEngine.SetFilmGrainProperties(new FilmGrainProperties(0.1f, 1, 2));*/
             }
         }
 

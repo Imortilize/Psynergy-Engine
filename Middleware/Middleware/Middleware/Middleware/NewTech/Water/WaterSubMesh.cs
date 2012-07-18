@@ -61,7 +61,7 @@ namespace Middleware
 
                     // Generate a reflection plane
                     Plane reflectionPlane = CreatePlane(camera, (waterHeight - 0.5f), new Vector3(0, -1, 0), reflectionViewMatrix, true);
-                    Plane refractionPlane = CreatePlane(camera, ((waterHeight + 2) - 0.5f), new Vector3(0, -1, 0), camera.View, false);
+                    Plane refractionPlane = CreatePlane(camera, (waterHeight - 0.5f), new Vector3(0, -1, 0), camera.View, false);
 
                     /*Vector4 testPlane = new Vector4(0, 1, 0, -(waterHeight - 0.5f));
                     reflectionPlane.Normal = new Vector3(testPlane.X, testPlane.Y, testPlane.Z);

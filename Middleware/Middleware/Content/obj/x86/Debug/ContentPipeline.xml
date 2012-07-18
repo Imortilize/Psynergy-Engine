@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent xmlns:Pipeline="Microsoft.Xna.Framework.Content.Pipeline">
+  <Asset Type="Pipeline:BuildItemCollection">
+    <Item>
+      <Source>Textures\water.png</Source>
+      <Name>Textures\water</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>WaterProcessor</Processor>
+      <Parameters>
+        <Data Key="WaterLength">32</Data>
+        <Data Key="WaterWidth">32</Data>
+        <Data Key="WaterScale">30</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\bin\x86\Debug\Content\Textures\water.xnb</Output>
+      <Time>2012-07-18T12:22:55.8594041+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\waterMap.jpg</Source>
+      <Name>Textures\waterMap</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\bin\x86\Debug\Content\Textures\waterMap.xnb</Output>
+      <Time>2012-07-18T12:22:55.8614042+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\WaterDUDV.png</Source>
+      <Name>Textures\WaterDUDV</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\bin\x86\Debug\Content\Textures\WaterDUDV.xnb</Output>
+      <Time>2012-07-18T12:22:55.8544038+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\WaterNormal.png</Source>
+      <Name>Textures\WaterNormal</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\bin\x86\Debug\Content\Textures\WaterNormal.xnb</Output>
+      <Time>2012-07-18T12:22:55.8584041+01:00</Time>
+    </Item>
+    <BuildSuccessful>true</BuildSuccessful>
+    <Settings>
+      <TargetPlatform>Windows</TargetPlatform>
+      <TargetProfile>HiDef</TargetProfile>
+      <BuildConfiguration>Debug</BuildConfiguration>
+      <CompressContent>false</CompressContent>
+      <RootDirectory>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Content\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Content\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\bin\x86\Debug\Content\</OutputDirectory>
+    </Settings>
+    <Assemblies>
+      <Assembly>
+        <Key>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\WaterPipeline\bin\x86\Debug\Psynergy.WaterPipeline.dll</Key>
+        <Value>2012-07-18T13:07:08.1261051+01:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.XImporter.dll</Key>
+        <Value>2010-08-23T13:41:18+01:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.VideoImporters.dll</Key>
+        <Value>2010-08-23T13:41:18+01:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.TextureImporter.dll</Key>
+        <Value>2010-08-23T13:41:18+01:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.FBXImporter.dll</Key>
+        <Value>2010-08-23T13:41:18+01:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.EffectImporter.dll</Key>
+        <Value>2010-08-23T13:41:18+01:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.AudioImporters.dll</Key>
+        <Value>2010-08-23T13:41:18+01:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
+        <Value>2012-02-16T14:45:05.9973636+00:00</Value>
+      </Assembly>
+    </Assemblies>
+  </Asset>
+</XnaContent>

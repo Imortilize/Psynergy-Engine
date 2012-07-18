@@ -46,6 +46,7 @@ Content\Shaders\Others\pointsprite.xnb
 Content\Shaders\Shadows\ShadowDepthMap.xnb
 Content\Shaders\CubeMap\cubemap.xnb
 Content\Shaders\Deferred Rendering\WaterGBuffer.xnb
+Content\Shaders\Post Processing\Fxaa.xnb
 Content\Models\X\sphere.xnb
 Content\Models\X\Ground.xnb
 Content\Models\FBX\Ship1\ship1.xnb
@@ -60,4 +61,3 @@ Content\Shaders\Deferred Rendering\RenderGBuffer_1.xnb
 Content\Models\FBX\Ship1\ship1_c_0.xnb
 Content\Models\FBX\Ship1\ship1_n_0.xnb
 Content\Models\FBX\Ship1\ship1_s_0.xnb
-Content\Shaders\Post Processing\Fxaa.xnb

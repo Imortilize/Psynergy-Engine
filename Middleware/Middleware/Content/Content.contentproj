@@ -16,9 +16,6 @@
     <RootNamespace>Content</RootNamespace>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Deferred Pipeline">
-      <HintPath>..\..\..\AI\Deferred Pipeline\bin\x86\Debug\Deferred Pipeline.dll</HintPath>
-    </Reference>
     <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.EffectImporter, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=MSIL">
       <Private>False</Private>
     </Reference>
@@ -36,9 +33,6 @@
     </Reference>
     <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.VideoImporters, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=MSIL">
       <Private>False</Private>
-    </Reference>
-    <Reference Include="ProjectMercury.ContentPipeline">
-      <HintPath>..\..\..\AI\GraphicsLibrary\Middleware\Mercury Particle Engine 3.1 for XNA 4.0 (Binaries)\References\X86\ProjectMercury.ContentPipeline.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

@@ -240,7 +240,7 @@ PixelShaderOutput PixelShaderRenderToGBuffer(VertexShaderOutput input)
     output.Depth.r = clamp((input.Depth.x / input.Depth.y), 0, 1);
 
 	// Max Depth Target using camera far plane depth
-	output.MaxDepth.r = clamp(length(input.ViewPos) / xMaxDepth, 0, 1); //clamp((input.Depth.x / xMaxDepth), 0, 1);
+	output.MaxDepth.r = clamp(length(input.ViewPos) / xMaxDepth, 0, 1);
 
 	// Store View Space depth for SSAO
 	//output.MaxDepth.g = input.Depth.z;

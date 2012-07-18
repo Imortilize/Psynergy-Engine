@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ClassRegistry>
+	<!-- Generic classes -->
+	<Class id="SpriteNode" />
+	<Class id="Player" />
+	
+	<!-- Cameras -->
+	<Class id="Camera3D" />
+	<Class id="FreeCamera" />
+	<Class id="ThirdPersonCamera" />
+	<Class id="WorldCamera" />
+	<Class id="FixedThirdPersonCamera" />
+	
+	<!-- 3D classes -->
+	<Class id="Scene3D" />
+	<Class id="TerrainNode" />
+	<Class id="SkySphere" />
+	<Class id="ModelNode" />
+	<Class id="SkinnedModel" />
+	<Class id="CubeNode" />
+	
+	<!-- Menus -->
+	<Class id="Menu" />
+	<Class id="MenuOption" />
+	<Class id="MenuBackground" />
+	
+	<!-- Menu Actions -->
+	<Class id="MenuAction" />
+	<Class id="MenuActionMenuLink" />
+	<Class id="MenuActionPlayGame" />
+	<Class id="MenuActionOptions" />
+	<Class id="MenuActionExitGame" />
+	<Class id="MenuActionReturnToGame" />
+	<Class id="MenuActionReturnToMainMenu" />
+	<Class id="MenuActionRunTestState" />
+	<Class id="MenuActionPlayGameOnePlayer" />
+	<Class id="MenuActionPlayGameTwoPlayer" />
+	<Class id="MenuActionReplayGame" />
+	<Class id="MenuActionToggleFullScreen" />
+	<Class id="MenuActionToggleMute" />
+	<Class id="MenuActionToggleGraphics" />
+	
+	<!-- Menu Transitions -->
+	<Class id="MenuTransitionFadeInFadeOut" />
+	
+	<!-- Game States -->
+	<Class id="GameState" />
+  <Class id="CustomGameState" />
+	<Class id="MainMenuState" />
+	
+	<!-- Lights -->
+	<Class id="Light" />
+	<Class id="DirectionalLight" />
+	<Class id="PointLight" />
+	
+	<!-- Controllers -->
+	<Class id="Node3DController" />
+	<Class id="SoldierController" />
+	
+	<!-- Controller used classes -->
+	<Class id="VisionNode" />
+	
+	<!-- Game Classes -->
+	<Class id="GamePawn" />
+	<Class id="GameBoard" />
+	<Class id="BoardSquare" />
+	<Class id="StartSquare" />
+	<Class id="EndSquare" />
+	<Class id="ArithmeticSquare" />
+	<Class id="AdditionSquare" />
+	<Class id="SubtractionSquare" />
+	<Class id="MultiplicationSquare" />
+	<Class id="DivisionSquare" />
+	<Class id="IncrementSquare" />
+	<Class id="DecrementSquare" />
+	<Class id="IfSquare" />
+	<Class id="WhileSquare" />
+	<Class id="BoardTrail" />
+	<Class id="AddXToXSquare" />
+	<Class id="SwitchSquare" />
+	<Class id="DivideXByXSquare" />
+	<Class id="MultiplyXByXSquare" />
+	<Class id="IntXSquare" />
+	<Class id="MainSquare" />
+	<Class id="OpenBracketSquare" />
+	<Class id="CloseBracketSquare" />
+	<Class id="ElseSquare" />
+	<Class id="JumpSquare" />
+	<Class id="ContinueSquare" />
+	<Class id="Case1Square" />
+	<Class id="Case2Square" />
+	<Class id="Case3Square" />
+	<Class id="DefaultSquare" />
+	<Class id="GotoSquare" />
+	<Class id="ReturnSquare" />
+	<Class id="BreakSquare" />
+	<Class id="GameBoardModelJibLibX" />
+	<Class id="TableModelJibLibX" />
+	<Class id="Question" />
+	
+	<!-- Game Object States -->
+	<!-- GamePlayer -->
+	<Class id="GamePlayerStateIdle" />
+	<Class id="GamePlayerStateSelected" />
+	<Class id="GamePlayerStateDeselected" />
+	<Class id="GamePlayerStatePreMovement" />
+	<Class id="GamePlayerStateMovement" />
+	<Class id="GamePlayerStateEndOfTurn" />
+	<Class id="GamePlayerStateJump" />
+	<Class id="GamePlayerStateEndOfGame" />
+	<Class id="GamePlayerStateRollDice" />
+	<Class id="GamePlayerStateEndOfBoard" />
+	<Class id="GamePlayerStateWon" />
+	<Class id="GamePlayerStateLost" />
+	<Class id="GamePlayerStateQuestion" />
+</ClassRegistry>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<QuestionResource id="Questions">
+	<Question id="Question1" texture="Questions/question1" faderate="1.0" >
+		<property answer="0"/>
+		<property answer1texture="Questions/answertrue"/>
+		<property answer1selectedtexture="Questions/answertrueselected"/>
+		<property answer2texture="Questions/answerfalse"/>
+		<property answer2selectedtexture="Questions/answerfalseselected"/>
+	</Question>
+	<Question id="Question2" texture="Questions/question2" faderate="1.0" >
+		<property answer="0"/>
+		<property answer1texture="Questions/answertrue"/>
+		<property answer1selectedtexture="Questions/answertrueselected"/>
+		<property answer2texture="Questions/answerfalse"/>
+		<property answer2selectedtexture="Questions/answerfalseselected"/>
+	</Question>
+	<Question id="Question3" texture="Questions/question3" faderate="1.0" >
+		<property answer="0"/>
+		<property answer1texture="Questions/answertrue"/>
+		<property answer1selectedtexture="Questions/answertrueselected"/>
+		<property answer2texture="Questions/answerfalse"/>
+		<property answer2selectedtexture="Questions/answerfalseselected"/>
+	</Question>
+	<Question id="Question4" texture="Questions/question4" faderate="1.0" >
+		<property answer="1"/>
+		<property answer1texture="Questions/answertrue"/>
+		<property answer1selectedtexture="Questions/answertrueselected"/>
+		<property answer2texture="Questions/answerfalse"/>
+		<property answer2selectedtexture="Questions/answerfalseselected"/>
+	</Question>
+	<Question id="Question5" texture="Questions/question5" faderate="1.0" >
+		<property answer="1"/>
+		<property answer1texture="Questions/answertrue"/>
+		<property answer1selectedtexture="Questions/answertrueselected"/>
+		<property answer2texture="Questions/answerfalse"/>
+		<property answer2selectedtexture="Questions/answerfalseselected"/>
+	</Question>
+	<Question id="Question6" texture="Questions/question6" faderate="1.0" >
+		<property answer="0"/>
+		<property answer1texture="Questions/answertrue"/>
+		<property answer1selectedtexture="Questions/answertrueselected"/>
+		<property answer2texture="Questions/answerfalse"/>
+		<property answer2selectedtexture="Questions/answerfalseselected"/>
+	</Question>
+	<Question id="Question7" texture="Questions/question7" faderate="1.0" >
+		<property answer="0"/>
+		<property answer1texture="Questions/answertrue"/>
+		<property answer1selectedtexture="Questions/answertrueselected"/>
+		<property answer2texture="Questions/answerfalse"/>
+		<property answer2selectedtexture="Questions/answerfalseselected"/>
+	</Question>
+	<Question id="Question8" texture="Questions/question8" faderate="1.0" >
+		<property answer="1"/>
+		<property answer1texture="Questions/answertrue"/>
+		<property answer1selectedtexture="Questions/answertrueselected"/>
+		<property answer2texture="Questions/answerfalse"/>
+		<property answer2selectedtexture="Questions/answerfalseselected"/>
+	</Question>
+	<Question id="Question9" texture="Questions/question9" faderate="1.0" >
+		<property answer="0"/>
+		<property answer1texture="Questions/answertrue"/>
+		<property answer1selectedtexture="Questions/answertrueselected"/>
+		<property answer2texture="Questions/answerfalse"/>
+		<property answer2selectedtexture="Questions/answerfalseselected"/>
+	</Question>
+	<Question id="Question10" texture="Questions/question10" faderate="1.0" >
+		<property answer="1"/>
+		<property answer1texture="Questions/answertrue"/>
+		<property answer1selectedtexture="Questions/answertrueselected"/>
+		<property answer2texture="Questions/answerfalse"/>
+		<property answer2selectedtexture="Questions/answerfalseselected"/>
+	</Question>
+	<Question id="Question11" texture="Questions/question11" faderate="1.0" >
+		<property answer="0"/>
+		<property answer1texture="Questions/answerx"/>
+		<property answer1selectedtexture="Questions/answerxselected"/>
+		<property answer2texture="Questions/answery"/>
+		<property answer2selectedtexture="Questions/answeryselected"/>
+	</Question>
+	<Question id="Question12" texture="Questions/question12" faderate="1.0" >
+		<property answer="1"/>
+		<property answer1texture="Questions/answerif"/>
+		<property answer1selectedtexture="Questions/answerifselected"/>
+		<property answer2texture="Questions/answerswitch"/>
+		<property answer2selectedtexture="Questions/answerswitchselected"/>
+	</Question>
+	<Question id="Question13" texture="Questions/question13" faderate="1.0" >
+		<property answer="1"/>
+		<property answer1texture="Questions/answercontinue"/>
+		<property answer1selectedtexture="Questions/answercontinueselected"/>
+		<property answer2texture="Questions/answerreturn"/>
+		<property answer2selectedtexture="Questions/answerreturnselected"/>
+	</Question>
+	<Question id="Question14" texture="Questions/question14" faderate="1.0" >
+		<property answer="0"/>
+		<property answer1texture="Questions/answer2"/>
+		<property answer1selectedtexture="Questions/answer2selected"/>
+		<property answer2texture="Questions/answer3"/>
+		<property answer2selectedtexture="Questions/answer3selected"/>
+	</Question>
+	<Question id="Question15" texture="Questions/question15" faderate="1.0" >
+		<property answer="1"/>
+		<property answer1texture="Questions/answer1"/>
+		<property answer1selectedtexture="Questions/answer1selected"/>
+		<property answer2texture="Questions/answer4"/>
+		<property answer2selectedtexture="Questions/answer4selected"/>
+	</Question>
+	<Question id="Question16" texture="Questions/question16" faderate="1.0" >
+		<property answer="0"/>
+		<property answer1texture="Questions/answerx++"/>
+		<property answer1selectedtexture="Questions/answerx++selected"/>
+		<property answer2texture="Questions/answerx--"/>
+		<property answer2selectedtexture="Questions/answerx--selected"/>
+	</Question>
+	<Question id="Question17" texture="Questions/question17" faderate="1.0" >
+		<property answer="0"/>
+		<property answer1texture="Questions/answerx--"/>
+		<property answer1selectedtexture="Questions/answerx--selected"/>
+		<property answer2texture="Questions/answerx++"/>
+		<property answer2selectedtexture="Questions/answerx++selected"/>
+	</Question>
+	<Question id="Question18" texture="Questions/question18" faderate="1.0" >
+		<property answer="1"/>
+		<property answer1texture="Questions/answer3"/>
+		<property answer1selectedtexture="Questions/answer3selected"/>
+		<property answer2texture="Questions/answer4"/>
+		<property answer2selectedtexture="Questions/answer4selected"/>
+	</Question>
+	<Question id="Question19" texture="Questions/question19" faderate="1.0" >
+		<property answer="0"/>
+		<property answer1texture="Questions/answer2"/>
+		<property answer1selectedtexture="Questions/answer2selected"/>
+		<property answer2texture="Questions/answer3"/>
+		<property answer2selectedtexture="Questions/answer3selected"/>
+	</Question>
+	<Question id="Question20" texture="Questions/question20" faderate="1.0" >
+		<property answer="0"/>
+		<property answer1texture="Questions/answerwhile"/>
+		<property answer1selectedtexture="Questions/answerwhileselected"/>
+		<property answer2texture="Questions/answerif"/>
+		<property answer2selectedtexture="Questions/answerifselected"/>
+	</Question>
+</QuestionResource>
