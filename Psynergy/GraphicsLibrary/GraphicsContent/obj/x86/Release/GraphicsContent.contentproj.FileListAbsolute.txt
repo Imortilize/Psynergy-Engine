@@ -1,2 +1,0 @@
-C:\Users\dominicbrittain\Documents\Psynergy\AI\GraphicsLibrary\GraphicsContent\obj\x86\Release\ResolveAssemblyReference.cache
-C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\GraphicsContent\obj\x86\Release\ResolveAssemblyReference.cache

@@ -1,9 +1,0 @@
-C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\Terrain Pipeline\bin\x86\Release\Psynergy.TerrainPipeline.dll
-C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\Terrain Pipeline\bin\x86\Release\Psynergy.TerrainPipeline.pdb
-C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\Terrain Pipeline\bin\x86\Release\Deferred Pipeline.dll
-C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\Terrain Pipeline\bin\x86\Release\SkinnedModel.dll
-C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\Terrain Pipeline\bin\x86\Release\Deferred Pipeline.pdb
-C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\Terrain Pipeline\bin\x86\Release\SkinnedModel.pdb
-C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\Terrain Pipeline\obj\x86\Release\ResolveAssemblyReference.cache
-C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\Terrain Pipeline\obj\x86\Release\Psynergy.TerrainPipeline.dll
-C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\Terrain Pipeline\obj\x86\Release\Psynergy.TerrainPipeline.pdb

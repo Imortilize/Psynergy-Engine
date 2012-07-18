@@ -1,8 +1,0 @@
-C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\AILibrary\bin\x86\Release\AILibrary.dll
-C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\AILibrary\bin\x86\Release\AILibrary.pdb
-C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\AILibrary\bin\x86\Release\MainLibrary.dll
-C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\AILibrary\bin\x86\Release\MainLibrary.pdb
-C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\AILibrary\obj\x86\Release\ResolveAssemblyReference.cache
-C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\AILibrary\obj\x86\Release\Microsoft.Xna.Framework.RuntimeProfile.txt
-C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\AILibrary\obj\x86\Release\AILibrary.dll
-C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\AILibrary\obj\x86\Release\AILibrary.pdb
