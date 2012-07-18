@@ -65,39 +65,52 @@ namespace Psynergy
                 AssemblyName[] assemblies = m_Assembly.GetReferencedAssemblies();
                 Assembly[] assembliesTest = AppDomain.CurrentDomain.GetAssemblies();
 
-                List<Assembly> assemblyList = assembliesTest.ToList<Assembly>();
+                List<Assembly> assemblyList = new List<Assembly>();
 
                 foreach (AssemblyName name in assemblies)
                 {
-                    for (int i = 0; i < assemblyList.Count; i++ )
+                    String fullName = name.FullName;
+
+                    if (fullName.Contains("Library"))
                     {
-                        Assembly assembly = assemblyList[i];
-                        Assembly assemblyToAdd = null;
+                        Assembly assemblyToAdd = Assembly.Load(name);
 
-                        if ( assembly.GetName().Name == name.Name )
-                            assemblyToAdd = assembly;
-                        else if (assembly == assemblyList[assemblyList.Count - 1] )
-                            assemblyToAdd = Assembly.Load(name);
+                        // Add the types
+                        List<Type> newTypes = new List<Type>();
+                        newTypes.AddRange(assemblyToAdd.GetTypes());
 
-                        // Add the assembly
-                        if (assemblyToAdd != null)
+                        // Add the types
+                        m_AllTypes.Add(assemblyToAdd.GetName(), newTypes);
+                    }
+                }
+
+                for (int i = 0; i < assembliesTest.Length; i++)
+                {
+                    Assembly assembly = assembliesTest[i];
+
+                    String fullName = assembly.GetName().FullName;
+
+                    if (fullName.Contains("Library"))
+                    {
+                        for (int j = 0; j < m_AllTypes.Count; j++)
                         {
-                            String FullName = assemblyToAdd.FullName;
+                            AssemblyName assemblyName = m_AllTypes.ElementAt(j).Key;
 
-                            if (FullName.Contains("Library"))
+                            if (assemblyName.Name == assembly.GetName().Name)
+                                break;
+                            else if (j == (m_AllTypes.Count - 1))
                             {
+                                // Add the types
                                 List<Type> newTypes = new List<Type>();
                                 newTypes.AddRange(assembly.GetTypes());
 
                                 // Add the types
-                                m_AllTypes.Add(assemblyToAdd.GetName(), newTypes);
+                                m_AllTypes.Add(assembly.GetName(), newTypes);
                             }
-
-                            break;
                         }
                     }
                 }
-
+   
                 // Add the excuting library assembly classes too
                 List<Type> excuteTypes = new List<Type>();
                 excuteTypes.AddRange(m_Assembly.GetTypes());

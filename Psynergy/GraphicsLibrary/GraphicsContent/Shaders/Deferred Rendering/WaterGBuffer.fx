@@ -334,7 +334,7 @@ float4 PixelShaderReconstructShading(ReconstructVertexShaderOutput input) : COLO
 	float2 reflectTexCoords = float2(0.5, -0.5) * (float2(input.ReflClipPos.x, input.ReflClipPos.y) / input.ReflClipPos.w) + 0.5f;
 	reflectTexCoords = (reflectTexCoords + perturbation);
 	
-	float3 reflection = tex2D(reflectionSampler, reflectTexCoords) * 0.5f;
+	float3 reflection = tex2D(reflectionSampler, reflectTexCoords) * 0.3f;
 	/**/
 
 	// Colour based on how much reflection vs refraction
@@ -347,7 +347,7 @@ float4 PixelShaderReconstructShading(ReconstructVertexShaderOutput input) : COLO
 	color = lerp(refraction, color, alpha) + (specular * alpha);
 
 	// Return final colour
-    return float4(color, alpha);
+    return float4(color, 1);
 }
 
 /* */

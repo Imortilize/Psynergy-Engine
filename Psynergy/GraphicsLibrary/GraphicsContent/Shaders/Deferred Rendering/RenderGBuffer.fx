@@ -320,7 +320,7 @@ float4 PixelShaderReconstructShading(ReconstructVertexShaderOutput input) : COLO
 	float3 diffuseColor = pow( tex2D(diffuseSampler, input.TexCoord).rgb, 2.2);
 	float3 lighting = diffuseColor;
 
-	if ( xEnableLighting && !xUseReflectionClipPlane && !xUseRefractionClipPlane )
+	if ( xEnableLighting )// && !xUseReflectionClipPlane && !xUseRefractionClipPlane )
 	{
 		float4 light = tex2D(lightSampler, screenPos);
 
