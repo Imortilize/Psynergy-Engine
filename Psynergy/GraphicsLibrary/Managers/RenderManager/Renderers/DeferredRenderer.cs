@@ -138,7 +138,7 @@ namespace Psynergy.Graphics
             m_ColorTarget = new RenderTarget2D(GraphicsDevice, (int)m_ScreenSize.X, (int)m_ScreenSize.Y, true, SurfaceFormat.Color, DepthFormat.Depth24);
             m_NormalTarget = new RenderTarget2D(GraphicsDevice, (int)m_ScreenSize.X, (int)m_ScreenSize.Y, false, SurfaceFormat.Color, DepthFormat.Depth24Stencil8);
             m_DepthTarget = new RenderTarget2D(GraphicsDevice, (int)m_ScreenSize.X, (int)m_ScreenSize.Y, false, SurfaceFormat.Single, DepthFormat.Depth24Stencil8);
-            m_SecondaryDepthTarget = new RenderTarget2D(GraphicsDevice, (int)m_ScreenSize.X, (int)m_ScreenSize.Y, false, SurfaceFormat.Single, DepthFormat.Depth24Stencil8);
+            m_SecondaryDepthTarget = new RenderTarget2D(GraphicsDevice, (int)m_ScreenSize.X, (int)m_ScreenSize.Y, false, SurfaceFormat.HalfVector2, DepthFormat.Depth24Stencil8);
             m_LightTarget = new RenderTarget2D(GraphicsDevice, (int)m_ScreenSize.X, (int)m_ScreenSize.Y, true, SurfaceFormat.Color, DepthFormat.Depth24Stencil8);
 
             // Add render target bindings
@@ -324,7 +324,7 @@ namespace Psynergy.Graphics
             //DebugRender.Instance.AddTexture2D(m_ColorTarget, new Vector2(100, 0), spritescaler);
             //DebugRender.Instance.AddTexture2D(m_ReflectionTarget, new Vector2(100 + (m_ColorTarget.Width * spritescaler), 0), spritescaler);
             //DebugRender.Instance.AddTexture2D(m_RefractionTarget, new Vector2((100 + (m_ColorTarget.Width * spritescaler) + (m_NormalTarget.Width * spritescaler)), 0), spritescaler);
-            //DebugRender.Instance.AddTexture2D(m_ShadowDepthTarget, new Vector2((100 + (m_ColorTarget.Width * spritescaler) + (m_NormalTarget.Width * spritescaler) + (m_DepthTarget.Width * spritescaler)), 0), spritescaler);
+            DebugRender.Instance.AddTexture2D(m_SecondaryDepthTarget, new Vector2((100 + (m_ColorTarget.Width * spritescaler) + (m_NormalTarget.Width * spritescaler) + (m_DepthTarget.Width * spritescaler)), 0), spritescaler);
         }
         #endregion
 
@@ -853,6 +853,7 @@ namespace Psynergy.Graphics
                         subMesh.RenderEffect.SetToneMappingProperties(m_ToneMappingProperties);
                         subMesh.RenderEffect.EnableLighting(subMesh.MetaData.EnableLighting);
                         subMesh.RenderEffect.EnableNormalMap(subMesh.MetaData.UseNormalMap);
+                        subMesh.RenderEffect.SetDepthBuffer(m_SecondaryDepthTarget);
 
                         if (camera != null)
                             subMesh.RenderEffect.SetFarClip(camera.FarPlane);

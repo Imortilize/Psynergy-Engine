@@ -92,7 +92,7 @@
 
   <Terrain id="Terrain" >
     <property parent="Base" />
-    <property pos="0 125 0" />
+    <property pos="0 100 0" />
     <property scale="0.25 0.25 0.25" />
     <property texture="Textures/Grass" />
     <property heightmap="testHeightMap" />>

@@ -129,7 +129,7 @@ float3 xCameraPosition = float3(0, 0, 0);
 float3 xLightDirection = float3(0.5f, -0.5f, 0);
 float3 xSurfaceColor = float3(0.36f, 0.664f, 0.608f);
 float3 xDeepColor = float3(0.09f, 0.166f, 0.177f);
-float xDeepDepth = 50.0f;
+float xDeepDepth = 75.0f;
 /**/
 
 struct VertexShaderInput
@@ -304,14 +304,14 @@ float4 PixelShaderReconstructShading(ReconstructVertexShaderOutput input) : COLO
 	float3 viewDir = normalize( input.WorldPos - xCameraPosition );
 
 	// Get the reflection factor using fresnel term	
-	float fresnelTerm = FresnelApproximation(viewDir, normalWorld, 0.3f);//dot(viewDir, normal.rbg);
+	float fresnelTerm = FresnelApproximation(viewDir, normalWorld, 0.0f);//dot(viewDir, normal.rbg);
 
 	// Get the range of depth from waterplane to terrain
     float depthRange = (sceneViewZ - viewLen);
 
 	// Shore values ( could be global )
 	const float shoreFalloff = 2.0f;
-    const float shoreScale = 5.0f;
+    const float shoreScale = 10.0f;
 
 	// calculate a transparency value using a power function
     float alpha = saturate(max(pow(depthRange / xMaxDepth, shoreFalloff) * xMaxDepth * shoreScale, 0.0f));
@@ -332,7 +332,7 @@ float4 PixelShaderReconstructShading(ReconstructVertexShaderOutput input) : COLO
 
 	// Get reflection coords
 	float2 reflectTexCoords = float2(0.5, -0.5) * (float2(input.ReflClipPos.x, input.ReflClipPos.y) / input.ReflClipPos.w) + 0.5f;
-	reflectTexCoords = (reflectTexCoords + perturbation);//ClipSpaceToTexCoordPerturb(input.ReflClipPos, dudv);
+	reflectTexCoords = (reflectTexCoords + perturbation);
 	
 	float3 reflection = tex2D(reflectionSampler, reflectTexCoords) * 0.5f;
 	/**/
@@ -347,7 +347,7 @@ float4 PixelShaderReconstructShading(ReconstructVertexShaderOutput input) : COLO
 	color = lerp(refraction, color, alpha) + (specular * alpha);
 
 	// Return final colour
-    return float4(color, 1);
+    return float4(color, alpha);
 }
 
 /* */
@@ -355,8 +355,8 @@ technique ReconstructShadingTemp
 {
     pass Pass1
     {
-        VertexShader = compile vs_3_0 VertexShaderReconstructShading();
-        PixelShader = compile ps_3_0 PixelShaderReconstructShading();
+        /*VertexShader = compile vs_3_0 VertexShaderReconstructShading();
+        PixelShader = compile ps_3_0 PixelShaderReconstructShading();*/
     }
 }
 

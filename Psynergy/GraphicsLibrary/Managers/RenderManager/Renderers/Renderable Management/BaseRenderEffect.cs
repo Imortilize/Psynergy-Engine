@@ -49,9 +49,11 @@ namespace Psynergy.Graphics
         /* */
 
         // Reflection Map params
+        private EffectParameter m_DepthBufferParameter;
         private EffectParameter m_ReflectionBufferParameter;
         private EffectParameter m_ClipPlaneParameter;
         private EffectParameter m_UseReflectionClipPlaneParameter;
+        private EffectParameter m_InvertViewProjectionParameter;
         /* */
 
         // Refraction Map params
@@ -84,6 +86,7 @@ namespace Psynergy.Graphics
             m_ProjectionParameter = m_Effect.Parameters["xProjection"];
             m_WorldViewParameter = m_Effect.Parameters["xWorldView"];
             m_WorldViewProjectionParameter = m_Effect.Parameters["xWorldViewProjection"];
+            m_InvertViewProjectionParameter = m_Effect.Parameters["xInvertViewProjection"];
             m_CameraPositionParameter = m_Effect.Parameters["xCameraPosition"];
             m_LightViewProjParameter = m_Effect.Parameters["xLightViewProjection"];
             m_FarClipParameter = m_Effect.Parameters["xMaxDepth"];
@@ -106,6 +109,7 @@ namespace Psynergy.Graphics
             m_EnableToneMappingParameter = m_Effect.Parameters["xToneMap"];
 
             // Reflection map
+            m_DepthBufferParameter = m_Effect.Parameters["DepthMap"];
             m_ReflectionBufferParameter = m_Effect.Parameters["xReflectionMap"];
             m_ClipPlaneParameter = m_Effect.Parameters["xClipPlane"];
             m_UseReflectionClipPlaneParameter = m_Effect.Parameters["xUseReflectionClipPlane"];
@@ -133,6 +137,9 @@ namespace Psynergy.Graphics
 
             if (m_ProjectionParameter != null)
                 m_ProjectionParameter.SetValue(projection);
+
+            if (m_InvertViewProjectionParameter != null)
+                m_InvertViewProjectionParameter.SetValue(Matrix.Invert(view * projection));
 
             if (m_WorldViewParameter != null)
                 m_WorldViewParameter.SetValue(worldView);
@@ -220,6 +227,12 @@ namespace Psynergy.Graphics
         {
             if (m_ColorBufferParameter != null)
                 m_ColorBufferParameter.SetValue(color);
+        }
+
+        public void SetDepthBuffer(Texture2D color)
+        {
+            if (m_DepthBufferParameter != null)
+                m_DepthBufferParameter.SetValue(color);
         }
 
         public void SetAmbientColor(Vector3 color)
