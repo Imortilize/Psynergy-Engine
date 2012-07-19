@@ -69,7 +69,7 @@ namespace Psynergy.Events
         #region Auto Registeration of event subscribers
         private void AutoRegisterEvents()
         {
-            List<Type> types = Factory.Instance.GetTypesUsingInterface("IListener`1", true);
+            List<Type> types = Factory.Instance.GetTypesUsingInterfaceWithGenericParameter("IListener`1", false);
 
             foreach (Type type in types)
             {

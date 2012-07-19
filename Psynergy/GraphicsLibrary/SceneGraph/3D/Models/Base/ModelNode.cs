@@ -20,7 +20,7 @@ using Psynergy.Input;
 
 namespace Psynergy.Graphics
 {
-    public class ModelNode : Node3D
+    public class ModelNode : Node3D, IRegister<ModelNode>
     {
         #region Factory Property setting
         protected override void ClassProperties(Factory factory)

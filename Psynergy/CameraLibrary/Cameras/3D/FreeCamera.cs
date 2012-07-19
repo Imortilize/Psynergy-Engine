@@ -13,7 +13,7 @@ using Psynergy.Input;
 
 namespace Psynergy.Camera
 {
-    public class FreeCamera : Camera3D
+    public class FreeCamera : Camera3D, IRegister<FreeCamera>
     {
         public FreeCamera() : base("")
         {

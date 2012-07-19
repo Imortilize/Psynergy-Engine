@@ -7,12 +7,13 @@ using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 
 using SkinnedModel;
+using Psynergy;
 using Psynergy.Graphics;
 using Psynergy.WaterPipeline;
 
 namespace Middleware
 {
-    public class Water : ModelNode
+    public class Water : ModelNode, IRegister<Water>
     {
         private WaterInfo m_WaterInfo = null;
 

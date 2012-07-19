@@ -9,11 +9,12 @@ using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Graphics;
 
 /* Input Library */
+using Psynergy;
 using Psynergy.Input;
 
 namespace Psynergy.Camera
 {
-    public class Camera3D : BaseCamera, ICamera3D
+    public class Camera3D : BaseCamera, ICamera3D, IRegister<Camera3D>
     {
         #region Factory Property setting
         protected override void ClassProperties(Factory factory)

@@ -14,7 +14,7 @@ using Psynergy.Input;
 
 namespace Psynergy.Menus
 {
-    class MenuActionPlayGame : MenuAction
+    class MenuActionPlayGame : MenuAction, IRegister<MenuActionPlayGame>
     {
         public MenuActionPlayGame() 
             : base()
@@ -29,7 +29,7 @@ namespace Psynergy.Menus
         }
     }
 
-    class MenuActionOptions : MenuAction
+    class MenuActionOptions : MenuAction, IRegister<MenuActionOptions>
     {
         public MenuActionOptions()
             : base()
@@ -44,7 +44,7 @@ namespace Psynergy.Menus
         }
     }
 
-    class MenuActionExitGame : MenuAction
+    class MenuActionExitGame : MenuAction, IRegister<MenuActionExitGame>
     {
         public MenuActionExitGame() 
             : base()
@@ -59,7 +59,7 @@ namespace Psynergy.Menus
         }
     }
 
-    class MenuActionReturnToGame : MenuAction
+    class MenuActionReturnToGame : MenuAction, IRegister<MenuActionReturnToGame>
     {
         public MenuActionReturnToGame() 
             : base()
@@ -75,7 +75,7 @@ namespace Psynergy.Menus
         }
     }
 
-    class MenuActionReturnToMainMenu : MenuAction
+    class MenuActionReturnToMainMenu : MenuAction, IRegister<MenuActionReturnToMainMenu>
     {
         public MenuActionReturnToMainMenu() : base()
         {
@@ -93,7 +93,7 @@ namespace Psynergy.Menus
         }
     }
 
-    class MenuActionRunTestState : MenuAction
+    class MenuActionRunTestState : MenuAction, IRegister<MenuActionRunTestState>
     {
         public MenuActionRunTestState() : base()
         {

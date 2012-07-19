@@ -16,7 +16,7 @@ using Psynergy.AI;
 
 namespace Psynergy.Graphics
 {
-    public class Node3DController : Abstract3DController, IListener<TerrainSetEvent>, IListener<TerrainLoadedEvent>
+    public class Node3DController : Abstract3DController, IRegister<Node3DController>, IListener<TerrainSetEvent>, IListener<TerrainLoadedEvent>
     {
         #region Factory Property setting
         protected override void ClassProperties(Factory factory)

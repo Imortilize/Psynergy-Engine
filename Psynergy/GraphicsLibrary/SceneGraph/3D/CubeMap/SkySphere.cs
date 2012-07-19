@@ -15,7 +15,7 @@ using SkinnedModel;
 
 namespace Psynergy.Graphics
 {
-    class SkySphere : ModelNode
+    class SkySphere : ModelNode, IRegister<SkySphere>
     {
         #region Factory Property setting
         protected override void ClassProperties(Factory factory)

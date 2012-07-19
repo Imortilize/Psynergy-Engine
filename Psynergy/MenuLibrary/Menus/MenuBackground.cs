@@ -19,7 +19,7 @@ using Psynergy.Graphics;
 
 namespace Psynergy.Menus
 {
-    public class MenuBackground : SpriteNode
+    public class MenuBackground : SpriteNode, IRegister<MenuBackground>
     {
         #region Factory Property setting
         protected override void ClassProperties(Factory factory)

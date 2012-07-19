@@ -10,7 +10,7 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace Psynergy.Camera
 {
-    public class WorldCamera : FreeCamera, IFocusable
+    public class WorldCamera : FreeCamera, IFocusable, IRegister<WorldCamera>
     {
         #region Factory Property setting
         protected override void ClassProperties(Factory factory)

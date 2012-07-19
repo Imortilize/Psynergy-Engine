@@ -8,12 +8,13 @@ using Microsoft.Xna.Framework.Graphics;
 
 using SkinnedModel;
 
+using Psynergy;
 using Psynergy.Graphics;
 using Psynergy.TerrainPipeline;
 
 namespace Psynergy.Graphics.Terrain
 {
-    public class Terrain : ModelNode
+    public class Terrain : ModelNode, IRegister<Terrain>
     {
         private TerrainInfo m_TerrainInfo = null;
 

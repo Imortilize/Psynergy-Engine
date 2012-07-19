@@ -17,7 +17,7 @@ using Psynergy.Menus;
 
 namespace XnaGame
 {
-    public class CustomGameState : GameState
+    public class CustomGameState : GameState, IRegister<CustomGameState>
     {
         public CustomGameState() : base()
         {

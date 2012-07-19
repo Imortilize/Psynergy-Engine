@@ -6,13 +6,14 @@ using System.Text;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Input;
 
+using Psynergy;
 using Psynergy.Graphics;
 using Psynergy.Graphics.Terrain;
 using Psynergy.Input;
 
 namespace Middleware
 {
-    public class CustomSpaceship : ModelNode
+    public class CustomSpaceship : ModelNode, IRegister<CustomSpaceship>
     {
         public CustomSpaceship()
             : base("")

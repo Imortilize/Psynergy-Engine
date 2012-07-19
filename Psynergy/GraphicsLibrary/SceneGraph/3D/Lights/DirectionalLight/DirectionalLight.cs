@@ -15,7 +15,7 @@ using Psynergy.Camera;
 
 namespace Psynergy.Graphics
 {
-    public class DirectionalLight : Light
+    public class DirectionalLight : Light, IRegister<DirectionalLight>
     {
         #region Factory Property setting
         protected override void ClassProperties(Factory factory)

@@ -12,7 +12,7 @@ using Psynergy.Input;
 
 namespace Psynergy.Camera
 {
-    public class ArcBallCamera : Camera3D
+    public class ArcBallCamera : Camera3D, IRegister<ArcBallCamera>
     {
         #region Factory Property setting
         protected override void ClassProperties(Factory factory)

@@ -16,7 +16,7 @@ using Psynergy.Menus;
 
 namespace Psynergy
 {
-    public class GameState : State<GameObject>
+    public class GameState : State<GameObject>, IRegister<GameState>
     {
         // Scene Manager
         protected SceneManager m_SceneManager = null;

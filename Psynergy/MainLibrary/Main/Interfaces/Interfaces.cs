@@ -48,4 +48,8 @@ namespace Psynergy
     {
         void RunAction();
     }
+
+    public interface IRegister<T>
+    {
+    }
 }

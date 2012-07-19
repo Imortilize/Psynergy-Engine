@@ -25,7 +25,7 @@ using Psynergy.Graphics;
 
 namespace XnaGame
 {
-    public class ThirdPersonCamera : ArcBallCamera, IListener<TerrainSetEvent>
+    public class ThirdPersonCamera : ArcBallCamera, IListener<TerrainSetEvent>, IRegister<ThirdPersonCamera>
     {
         #region Factory Property setting
         protected override void ClassProperties(Factory factory)

@@ -14,7 +14,7 @@ using Psynergy.Input;
 
 namespace Psynergy.Menus
 {
-    public class MenuOption : SpriteNode
+    public class MenuOption : SpriteNode, IRegister<MenuOption>
     {
         #region Factory Property setting
         protected override void ClassProperties(Factory factory)

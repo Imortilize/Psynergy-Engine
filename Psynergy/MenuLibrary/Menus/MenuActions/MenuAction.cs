@@ -18,7 +18,7 @@ using Psynergy.Input;
 
 namespace Psynergy.Menus
 {
-    public class MenuAction : GameObject, IMenuAction
+    public class MenuAction : GameObject, IMenuAction, IRegister<MenuAction>
     {
         protected bool m_RunAction = false;
 

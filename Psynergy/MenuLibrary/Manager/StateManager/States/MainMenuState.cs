@@ -14,7 +14,7 @@ using Psynergy.AI;
 
 namespace Psynergy.Menus
 {
-    public class MainMenuState : State<GameObject>
+    public class MainMenuState : State<GameObject>, IRegister<MainMenuState>
     {
         private MenuManager.Menus m_MenuToCheck = MenuManager.Menus.NumPlayersMenu;
 

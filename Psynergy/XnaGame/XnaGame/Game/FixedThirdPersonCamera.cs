@@ -13,7 +13,7 @@ using Psynergy;
 
 namespace XnaGame
 {
-    class FixedThirdPersonCamera : ThirdPersonCamera
+    class FixedThirdPersonCamera : ThirdPersonCamera, IRegister<FixedThirdPersonCamera>
     {
         #region Factory Property setting
         protected override void ClassProperties(Factory factory)

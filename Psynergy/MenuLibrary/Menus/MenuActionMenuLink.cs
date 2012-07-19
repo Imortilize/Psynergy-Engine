@@ -10,7 +10,7 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace Psynergy.Menus
 {
-    class MenuActionMenuLink : MenuAction
+    class MenuActionMenuLink : MenuAction, IRegister<MenuActionMenuLink>
     {
         protected MenuManager.Menus m_MenuToShow = MenuManager.Menus.Error;
         protected bool m_ResetMenuBackgroundTransition = true;

@@ -13,7 +13,7 @@ using Psynergy;
 
 namespace Psynergy.Graphics
 {
-    public class Scene3D : Scene
+    public class Scene3D : Scene, IRegister<Scene3D>
     {
         #region Factory Property setting
         protected override void ClassProperties(Factory factory)

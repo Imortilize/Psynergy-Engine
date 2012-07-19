@@ -16,7 +16,7 @@ using Psynergy.Camera;
 
 namespace Psynergy.Graphics
 {
-    public class PointLight : Light
+    public class PointLight : Light, IRegister<PointLight>
     {
         #region Factory Property setting
         protected override void ClassProperties(Factory factory)

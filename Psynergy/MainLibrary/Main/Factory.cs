@@ -45,6 +45,9 @@ namespace Psynergy
 
             // Load assemblies
             LoadAssemblies();
+
+            // Auto register classes
+            AutoRegisterClasses();
         }
 
         public override void Load()
@@ -158,9 +161,40 @@ namespace Psynergy
                     {
                         if (genericArguement && i.IsGenericType && i.GetGenericTypeDefinition() == interfaceType)
                         {
-                            Type test1 = i.GetGenericArguments()[0];
+                            Type test = i.GetGenericArguments()[0];
 
-                            if (test1 != null)
+                            if ((test != null) && (test == typeToCheck))
+                            {
+                                typesToRet.Add(typeToCheck);
+
+                                break;
+                            }
+                        }
+                    }
+                }
+            }
+
+            return typesToRet;
+        }
+
+        public List<Type> GetTypesUsingInterfaceWithGenericParameter(String typeName, bool genericIsClassType)
+        {
+            // Find the type
+            Assembly assembly = null;
+            Type interfaceType = FindType(typeName, out assembly);
+            List<Type> typesToRet = new List<Type>();// FindType(typeName, out assemblyToUse);     
+
+            foreach (KeyValuePair<AssemblyName, List<Type>> types in m_AllTypes)
+            {
+                foreach (Type typeToCheck in types.Value)
+                {
+                    foreach (var i in typeToCheck.GetInterfaces())
+                    {
+                        if (i.IsGenericType && i.GetGenericTypeDefinition() == interfaceType)
+                        {
+                            Type test = i.GetGenericArguments()[0];
+
+                            if (!genericIsClassType || (test != null) && (test == typeToCheck))
                             {
                                 typesToRet.Add(typeToCheck);
 
@@ -417,7 +451,21 @@ namespace Psynergy
         }
         #endregion
 
+        #region Class Registration
+
+
         #region Register Setters
+        private void AutoRegisterClasses()
+        {
+            List<Type> types = Factory.Instance.GetTypesUsingInterfaceWithGenericParameter("IRegister`1", true);
+
+            foreach (Type type in types)
+            {
+                // Register the class
+                Register(type.Name);
+            }
+        }
+
         public bool SetProperty(Type type, String propertyName, String value, GameObject invokeNode)
         {
             bool toRet = false;
@@ -525,6 +573,7 @@ namespace Psynergy
 
             return toRet;
         }
+        #endregion
         #endregion
     }
 }

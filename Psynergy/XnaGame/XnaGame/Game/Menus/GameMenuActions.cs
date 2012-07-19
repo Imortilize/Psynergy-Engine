@@ -16,7 +16,7 @@ using Psynergy.Sound;
 namespace XnaGame
 {
     /* Game Specific */
-    public class MenuActionPlayGameOnePlayer : MenuAction
+    public class MenuActionPlayGameOnePlayer : MenuAction, IRegister<MenuActionPlayGameOnePlayer>
     {
         public MenuActionPlayGameOnePlayer() : base()
         {
@@ -44,7 +44,7 @@ namespace XnaGame
         }
     }
 
-    public class MenuActionPlayGameTwoPlayer : MenuAction
+    public class MenuActionPlayGameTwoPlayer : MenuAction, IRegister<MenuActionPlayGameTwoPlayer>
     {
         public MenuActionPlayGameTwoPlayer() : base()
         {
@@ -68,7 +68,7 @@ namespace XnaGame
         }
     }
 
-    public class MenuActionPreviousPawn : MenuAction
+    public class MenuActionPreviousPawn : MenuAction, IRegister<MenuActionPreviousPawn>
     {
         public MenuActionPreviousPawn() : base()
         {
@@ -85,7 +85,7 @@ namespace XnaGame
         }
     }
 
-    public class MenuActionNextPawn : MenuAction
+    public class MenuActionNextPawn : MenuAction, IRegister<MenuActionNextPawn>
     {
         public MenuActionNextPawn() : base()
         {
@@ -102,7 +102,7 @@ namespace XnaGame
         }
     }
 
-    public class MenuActionReplayGame : MenuAction
+    public class MenuActionReplayGame : MenuAction, IRegister<MenuActionReplayGame>
     {
         public MenuActionReplayGame()
             : base()
@@ -117,7 +117,7 @@ namespace XnaGame
         }
     }
 
-    public class MenuActionToggleFullScreen : MenuAction
+    public class MenuActionToggleFullScreen : MenuAction, IRegister<MenuActionToggleFullScreen>
     {
         public MenuActionToggleFullScreen() : base()
         {
@@ -156,7 +156,7 @@ namespace XnaGame
         }
     }
 
-    public class MenuActionToggleMute : MenuAction
+    public class MenuActionToggleMute : MenuAction, IRegister<MenuActionToggleMute>
     {
         public MenuActionToggleMute() : base()
         {
@@ -175,7 +175,7 @@ namespace XnaGame
         }
     }
 
-    public class MenuActionToggleGraphics : MenuAction
+    public class MenuActionToggleGraphics : MenuAction, IRegister<MenuActionToggleGraphics>
     {
         public MenuActionToggleGraphics() : base()
         {
@@ -216,7 +216,7 @@ namespace XnaGame
             }
         }
     }
-      
+
     public class MenuActionQuestionAnswer : MenuAction
     {
         private Question m_Question = null;

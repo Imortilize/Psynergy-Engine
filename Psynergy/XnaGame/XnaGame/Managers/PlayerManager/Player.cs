@@ -15,7 +15,7 @@ using Psynergy.Graphics;
 
 namespace XnaGame
 {
-    public class Player : GameNode, IFocusable
+    public class Player : GameNode, IFocusable, IRegister<Player>
     {
         public enum PlayerControl
         {

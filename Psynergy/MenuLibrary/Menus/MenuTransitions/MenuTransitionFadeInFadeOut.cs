@@ -13,7 +13,7 @@ using Psynergy;
 
 namespace Psynergy.Menus
 {
-    class MenuTransitionFadeInFadeOut : MenuTransition
+    class MenuTransitionFadeInFadeOut : MenuTransition, IRegister<MenuTransitionFadeInFadeOut>
     {
         private float m_BackgroundStartFade = 1.0f;
         private float m_BackgroundEndFade = 1.0f;
