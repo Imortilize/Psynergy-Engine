@@ -817,6 +817,15 @@
       <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Models\FBX\Ship1\ship1_s_0.xnb</Output>
       <Time>2012-07-18T12:23:01.6607359+01:00</Time>
     </Item>
+    <Item>
+      <Source>Textures\TileSets\basicTiles.png</Source>
+      <Name>Textures\TileSets\basicTiles</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Textures\TileSets\basicTiles.xnb</Output>
+      <Time>2012-08-03T15:13:24.2011891+01:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <TargetPlatform>Windows</TargetPlatform>

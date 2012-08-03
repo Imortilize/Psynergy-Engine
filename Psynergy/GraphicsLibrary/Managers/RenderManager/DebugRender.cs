@@ -117,7 +117,7 @@ namespace Psynergy.Graphics
         private SpriteBatch m_SpriteBatch = null;
 
         // Whether to render debug information or not
-        private bool m_Enabled = true;
+        private bool m_Enabled = false;
 
         // The way to render items
         private RenderType m_RenderType = RenderType.Deferred;

@@ -90,3 +90,4 @@ C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\MenuLibrary\o
 C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\MenuLibrary\obj\x86\Release\Microsoft.Xna.Framework.RuntimeProfile.txt
 C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\MenuLibrary\obj\x86\Release\MenuLibrary.dll
 C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\MenuLibrary\obj\x86\Release\MenuLibrary.pdb
+C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\MenuLibrary\bin\x86\Release\Content\Textures\TileSets\basicTiles.xnb

@@ -136,6 +136,10 @@
     <Compile Include="NewTech\NewTerrain\QuadNode.cs" />
     <Compile Include="NewTech\NewTerrain\QuadTree.cs" />
     <Compile Include="NewTech\NewTerrain\QuadTreeTerrainInfo.cs" />
+    <Compile Include="NewTech\Tile\MapCell.cs" />
+    <Compile Include="NewTech\Tile\MapRow.cs" />
+    <Compile Include="NewTech\Tile\Tile.cs" />
+    <Compile Include="NewTech\Tile\TileMap.cs" />
     <Compile Include="NewTech\Water\Water.cs" />
     <Compile Include="NewTech\Water\WaterMesh.cs" />
     <Compile Include="NewTech\Water\WaterMeshMetaData.cs" />
@@ -392,6 +396,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="Content\Textures\randomNormal.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Textures\TileSets\basicTiles.xnb">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="Content\Textures\WillowLeaf.xnb">

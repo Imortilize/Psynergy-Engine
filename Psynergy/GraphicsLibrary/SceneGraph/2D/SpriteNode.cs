@@ -94,6 +94,9 @@ namespace Psynergy.Graphics
                 // Set the default texture to the sprite
                 SetTexture(m_2DTextures[0]);
             }
+
+            // Defer the renderable to the renderer
+            RenderManager.Instance.ActiveRenderer.DeferRenderable(this);
         }
 
         public override void Reset()
@@ -112,7 +115,8 @@ namespace Psynergy.Graphics
                     m_Graphics.GraphicsDevice.SamplerStates[0] = SamplerState.LinearClamp;
             }
 
-            m_SpriteBatch.Draw(m_CurrentTexture, GetPos2D(), null, m_ActualColor, 0.0f, Vector2.Zero, GetScale2D(), SpriteEffects.None, MathHelper.Clamp(m_RenderDepth, 0.0f, 1.0f));
+            if (m_CurrentTexture != null )
+                m_SpriteBatch.Draw(m_CurrentTexture, GetPos2D(), null, m_ActualColor, 0.0f, Vector2.Zero, GetScale2D(), SpriteEffects.None, MathHelper.Clamp(m_RenderDepth, 0.0f, 1.0f));
 
             base.Render( deltaTime );
         }

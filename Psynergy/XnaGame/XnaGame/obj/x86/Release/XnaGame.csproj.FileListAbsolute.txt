@@ -332,3 +332,4 @@ C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGa
 C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\obj\x86\Release\XnaGame.application
 C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\obj\x86\Release\XnaGame.exe
 C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\obj\x86\Release\XnaGame.pdb
+C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\TileSets\basicTiles.xnb

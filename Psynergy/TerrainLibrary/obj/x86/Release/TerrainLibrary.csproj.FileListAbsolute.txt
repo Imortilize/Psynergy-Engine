@@ -95,3 +95,4 @@ C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\TerrainLibrar
 C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\TerrainLibrary\obj\x86\Release\Microsoft.Xna.Framework.RuntimeProfile.txt
 C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\TerrainLibrary\obj\x86\Release\TerrainLibrary.dll
 C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\TerrainLibrary\obj\x86\Release\TerrainLibrary.pdb
+C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\TerrainLibrary\bin\x86\Release\Content\Textures\TileSets\basicTiles.xnb

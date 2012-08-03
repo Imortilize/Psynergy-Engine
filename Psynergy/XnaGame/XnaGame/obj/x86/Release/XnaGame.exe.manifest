@@ -158,14 +158,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="GraphicsLibrary.dll" size="142336">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="GraphicsLibrary.dll" size="142848">
       <assemblyIdentity name="GraphicsLibrary" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>pSRPUEqt0IPlebP0brwUwgmjLq8=</dsig:DigestValue>
+        <dsig:DigestValue>2NTNzjEkeHDCw+zj7VBzuxCBhmY=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -225,7 +225,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>2q3riMgDEf9Do5x2kd61cyh3Zgg=</dsig:DigestValue>
+        <dsig:DigestValue>tGpuetMgwV1ZdzeE33rbf+mXqw4=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -273,7 +273,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>Y7MoEXW5zm7fVCgaag+o5AK/iLc=</dsig:DigestValue>
+        <dsig:DigestValue>8BquhuowuyQJ7wgawU5QcB+R13I=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -309,7 +309,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>GZHDx6BPBc3mLKRO8ooJPRv7Rys=</dsig:DigestValue>
+        <dsig:DigestValue>LYREr4DqBwy+SBotjjAO1P5d3q0=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -321,7 +321,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>VcKW/wNgIhXs52M+4ih6OEWcca8=</dsig:DigestValue>
+        <dsig:DigestValue>TTGJFwrXY3eIQjpdxNlnLUbA1zM=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -2006,6 +2006,15 @@
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
       <dsig:DigestValue>V8aMCI9d2vHkLH64fjB5/L/J0xI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\Textures\TileSets\basicTiles.xnb" size="12068">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>FTApElHl0IqZuT5pHv8smpKSOE0=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Content\Textures\UI\arrowleft.xnb" size="2720">

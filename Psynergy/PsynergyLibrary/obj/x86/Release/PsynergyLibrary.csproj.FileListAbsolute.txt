@@ -101,3 +101,4 @@ C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\PsynergyLibra
 C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\PsynergyLibrary\obj\x86\Release\Microsoft.Xna.Framework.RuntimeProfile.txt
 C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\PsynergyLibrary\obj\x86\Release\PsynergyLibrary.dll
 C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\PsynergyLibrary\obj\x86\Release\PsynergyLibrary.pdb
+C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\PsynergyLibrary\bin\x86\Release\Content\Textures\TileSets\basicTiles.xnb

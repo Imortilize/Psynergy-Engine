@@ -12,6 +12,12 @@ namespace Psynergy.Graphics
 {
     public class SpriteRenderer : PsynergyRenderer
     {
+        private SpriteBatch m_SpriteBatch = null;
+        private Matrix m_GlobalTransformation = Matrix.Identity;
+
+        // List of sprites to draw
+        private List<SpriteNode> m_Sprites = new List<SpriteNode>();
+
         public SpriteRenderer(ContentManager contentManager, GraphicsDeviceManager graphicsDevice) : base(contentManager, graphicsDevice)
         {
         }
@@ -34,31 +40,71 @@ namespace Psynergy.Graphics
         public override void Load()
         {
             base.Load();
+
+            // Get the sprite batch
+            m_SpriteBatch = RenderManager.Instance.SpriteBatch;
+
+            // Calculate global transformation
+            CalculateGlobalTransformation();
+        }
+
+        private void CalculateGlobalTransformation()
+        {
+            // Calculate the  sprite batch global transformation
+            GraphicsDevice device = RenderManager.Instance.GraphicsDevice;
+            Vector2 baseResolution = RenderManager.Instance.BaseResolution;
+            float horScaling = (float)device.PresentationParameters.BackBufferWidth / baseResolution.X;
+            float verScaling = (float)device.PresentationParameters.BackBufferHeight / baseResolution.Y;
+            Vector3 screenScalingFactor = new Vector3(horScaling, verScaling, 1);
+
+            // Scaler
+            m_GlobalTransformation = Matrix.CreateScale(screenScalingFactor);
         }
 
         #region Render Loop
         public override void Begin()
         {
-            if (GraphicsDevice != null)
-            {
-                // Initial rendering state
-                GraphicsDevice.DepthStencilState = DepthStencilState.Default;
-                GraphicsDevice.RasterizerState = RasterizerState.CullClockwise;
-                GraphicsDevice.BlendState = BlendState.Opaque;
-            }
+            base.Begin();
         }
 
         public override void Draw(GameTime deltaTime)
         {
             if (GraphicsDevice != null)
             {
-            
+                // Begin a seperate sprite batch for menus
+                m_SpriteBatch.Begin(SpriteSortMode.Deferred, BlendState.AlphaBlend, SamplerState.AnisotropicClamp, null, null, null, m_GlobalTransformation);
+
+                // Render sprite
+                foreach (SpriteNode sprite in m_Sprites)
+                    sprite.Render(deltaTime);
+
+                // End the sprite batch
+                m_SpriteBatch.End();
             }
         }
 
         public override void End()
         {
             base.End();
+        }
+        #endregion
+
+        #region Defer functions
+        public override void DeferRenderable(RenderNode renderable)
+        {
+            // Only accepts models right now for this renderer
+            Type type = renderable.GetType();
+
+            if ((type == typeof(SpriteNode)) || (type.IsSubclassOf(typeof(SpriteNode))))
+            {
+                SpriteNode spriteNode = (renderable as SpriteNode);
+
+                if (spriteNode != null)
+                {
+                    // Add to sprite pool
+                    m_Sprites.Add(spriteNode);
+                }
+            }
         }
         #endregion
 

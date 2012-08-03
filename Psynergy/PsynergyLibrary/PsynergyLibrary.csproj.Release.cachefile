@@ -61,6 +61,7 @@ Content\Shaders\Deferred Rendering\RenderGBuffer_1.xnb
 Content\Models\FBX\Ship1\ship1_c_0.xnb
 Content\Models\FBX\Ship1\ship1_n_0.xnb
 Content\Models\FBX\Ship1\ship1_s_0.xnb
+Content\Textures\TileSets\basicTiles.xnb
 Content\Textures\HeightMaps\rocks.xnb
 Content\Textures\HeightMaps\terrain.xnb
 Content\Textures\HeightMaps\rocks_0.xnb

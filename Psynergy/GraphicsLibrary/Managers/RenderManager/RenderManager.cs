@@ -372,7 +372,7 @@ namespace Psynergy.Graphics
                 m_Renderer.Draw(deltaTime);
 
                 // Render the current State for any post graphics rendering
-                RenderState(deltaTime);
+                //RenderState(deltaTime);
 
                 // Particles should be here but arn't at the moment
                 RenderParticles(deltaTime);
