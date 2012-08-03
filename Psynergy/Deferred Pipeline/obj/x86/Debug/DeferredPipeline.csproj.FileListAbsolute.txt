@@ -1,0 +1,10 @@
+C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\Deferred Pipeline\bin\x86\Debug\Deferred Pipeline.dll
+C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\Deferred Pipeline\bin\x86\Debug\Deferred Pipeline.pdb
+C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\Deferred Pipeline\bin\x86\Debug\SkinnedModel.dll
+C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\Deferred Pipeline\bin\x86\Debug\SkinnedModel.pdb
+C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\Deferred Pipeline\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\Deferred Pipeline\obj\x86\Debug\Deferred Pipeline.dll
+C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\Deferred Pipeline\obj\x86\Debug\Deferred Pipeline.pdb
+C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\Deferred Pipeline\obj\x86\Debug\Deferred_Pipeline.Properties.Resources.resources
+C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\Deferred Pipeline\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\Deferred Pipeline\obj\x86\Debug\GenerateResource.write.1.tlog

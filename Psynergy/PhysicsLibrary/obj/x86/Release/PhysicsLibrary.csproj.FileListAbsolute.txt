@@ -1,0 +1,9 @@
+C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\PhysicsLibrary\bin\x86\Release\PhysicsLibrary.dll
+C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\PhysicsLibrary\bin\x86\Release\PhysicsLibrary.pdb
+C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\PhysicsLibrary\bin\x86\Release\JigLibX.dll
+C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\PhysicsLibrary\bin\x86\Release\MainLibrary.dll
+C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\PhysicsLibrary\bin\x86\Release\MainLibrary.pdb
+C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\PhysicsLibrary\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\PhysicsLibrary\obj\x86\Release\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\PhysicsLibrary\obj\x86\Release\PhysicsLibrary.dll
+C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\PhysicsLibrary\obj\x86\Release\PhysicsLibrary.pdb

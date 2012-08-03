@@ -19,7 +19,8 @@ namespace Psynergy.Graphics
     public enum RendererEngineType
     {
         None = 0,
-        Deferred = 1
+        Deferred = 1,
+        Sprite = 2
     };
 
     public class RenderManager : Singleton<RenderManager>
@@ -31,7 +32,7 @@ namespace Psynergy.Graphics
         };
 
         // Renderer type
-        private RendererEngineType m_RendererEngineType = RendererEngineType.Deferred;
+        private RendererEngineType m_RendererEngineType = RendererEngineType.None;
         protected ContentManager m_ContentManager = null;
         protected GraphicsDeviceManager m_Graphics = null;
         protected SpriteBatch m_SpriteBatch = null;
@@ -67,8 +68,6 @@ namespace Psynergy.Graphics
 
         public RenderManager()
         {
-            // Create renderer
-            CreateRenderer(null, null);
         }
 
         public RenderManager(ContentManager contentManager, GraphicsDeviceManager graphicsDevice, StateMachine<GameObject> stateManager)
@@ -77,32 +76,11 @@ namespace Psynergy.Graphics
             m_Graphics = graphicsDevice;
             m_StateManager = stateManager;
 
-            // Create renderer
-            CreateRenderer(contentManager, graphicsDevice);
-
             // Create particle manager
             m_ParticleManager = new ParticleEngine(contentManager, graphicsDevice);
             
             // Create LTree renderer ( for now here but probably decoupled later ) TODO:
             m_TreeManager = new TreeManager();
-        }
-
-        private void CreateRenderer(ContentManager contentManager, GraphicsDeviceManager graphicsDevice)
-        {
-            switch (m_RendererEngineType)
-            {
-                case RendererEngineType.None:
-                    {
-                        // Create renderer
-                        m_Renderer = new PsynergyRenderer(contentManager, graphicsDevice);
-                    }
-                    break;
-                case RendererEngineType.Deferred:
-                    {
-                        m_Renderer = new DeferredRenderer(contentManager, graphicsDevice);
-                    }
-                    break;
-            }
         }
 
         public override void Initialise()
@@ -111,6 +89,10 @@ namespace Psynergy.Graphics
             {
                 if ( m_Graphics.GraphicsDevice != null )
                 {
+                    // Create renderer
+                    CreateRenderer(m_ContentManager, m_Graphics);
+
+                    // Initialise the renderer
                     if (m_Renderer != null)
                         m_Renderer.Initialise();
                 }
@@ -127,6 +109,31 @@ namespace Psynergy.Graphics
             // Initialise the state manager
             if (m_StateManager != null)
                 m_StateManager.Initialise();
+        }
+
+        private void CreateRenderer(ContentManager contentManager, GraphicsDeviceManager graphicsDevice)
+        {
+            switch (m_RendererEngineType)
+            {
+                case RendererEngineType.None:
+                    {
+                        // Create basic renderer ( is a stub renderer so won't render anything )
+                        m_Renderer = new PsynergyRenderer(contentManager, graphicsDevice);
+                    }
+                    break;
+                case RendererEngineType.Deferred:
+                    {
+                        // 3D deferred rendering engine
+                        m_Renderer = new DeferredRenderer(contentManager, graphicsDevice);
+                    }
+                    break;
+                case RendererEngineType.Sprite:
+                    {
+                        // 2D sprite renderer
+                        m_Renderer = new SpriteRenderer(contentManager, graphicsDevice);
+                    }
+                    break;
+            }
         }
 
         public override void Reset()
@@ -482,6 +489,11 @@ namespace Psynergy.Graphics
         }
 
         #region Graphics Settings
+        public void SetEngineType(RendererEngineType engineType)
+        {
+            m_RendererEngineType = engineType;
+        }
+
         public void ToggleGraphicsSettings()
         {
             bool useShadows = false;
@@ -610,6 +622,5 @@ namespace Psynergy.Graphics
         public StateMachine<GameObject> GameStateManager { get { return m_StateManager; } }
         public PsynergyRenderer ActiveRenderer { get { return m_Renderer; } }
         public Vector2 BaseResolution { get { return m_BaseResolution; } set { m_BaseResolution = value; } }
-        public RendererEngineType RenderEngineType { get { return m_RendererEngineType; } }
     }
 }

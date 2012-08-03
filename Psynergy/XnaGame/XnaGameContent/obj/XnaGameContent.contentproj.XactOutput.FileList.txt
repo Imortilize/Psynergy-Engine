@@ -1,0 +1,3 @@
+Content\Sounds\sounds.xgs
+Content\Sounds\Wave Bank.xwb
+Content\Sounds\Sound Bank.xsb

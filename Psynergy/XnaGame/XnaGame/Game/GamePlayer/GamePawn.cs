@@ -103,7 +103,7 @@ namespace XnaGame
         {
             base.Load();
 
-            if (RenderManager.Instance.RenderEngineType == RendererEngineType.Deferred)
+            if (RenderManager.Instance.EngineType == RendererEngineType.Deferred)
             {
                 Texture2D texture = null;
 

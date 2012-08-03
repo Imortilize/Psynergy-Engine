@@ -93,6 +93,7 @@
     <Compile Include="Managers\RenderManager\Renderers\Renderable Management\SkinnedMesh.cs" />
     <Compile Include="Managers\RenderManager\Renderers\Renderable Management\SubMesh.cs" />
     <Compile Include="Managers\RenderManager\Renderers\Renderer.cs" />
+    <Compile Include="Managers\RenderManager\Renderers\SpriteRenderer.cs" />
     <Compile Include="Managers\RenderManager\RenderGroup.cs" />
     <Compile Include="Managers\RenderManager\RenderManager.cs" />
     <Compile Include="Managers\SceneManager\SceneManager.cs" />

@@ -1,0 +1,5 @@
+C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\WaterPipeline\bin\x86\Debug\Psynergy.WaterPipeline.dll
+C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\WaterPipeline\bin\x86\Debug\Psynergy.WaterPipeline.pdb
+C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\WaterPipeline\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\WaterPipeline\obj\x86\Debug\Psynergy.WaterPipeline.dll
+C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\WaterPipeline\obj\x86\Debug\Psynergy.WaterPipeline.pdb

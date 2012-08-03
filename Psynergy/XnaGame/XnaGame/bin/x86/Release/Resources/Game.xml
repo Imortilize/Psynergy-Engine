@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<SceneFragment>
+	<!-- CubeMap ( Should be the first thing to be rendered) -->
+	<SkySphere id="Sky" >
+		<property parent="Base" />
+		<property pos="180 0 210" />
+		<property skysize="650" />
+		<property file="Textures/CubeMaps/cube" />
+		<property skytexture="Textures/CubeMaps/Canyon" />
+		<property setfocus="false" />
+	</SkySphere>
+	
+	<TableModelJibLibX id="Table" >
+		<property parent="Base" />
+		<property pos="175 -338 200" />
+		<property scale="2.0 1.5 2.0" />
+		<property file="Models/FBX/Table/table" />
+	</TableModelJibLibX>
+	
+	<GameBoard id="GameBoard" >
+		<property parent="Base" />
+		<property pos="0 0 0" />
+		<property scale="1 1 1" />
+		<property rotdegrees="0 0 0" />
+		<property setfocus="false" />
+		<property gameboard="Resources/Game/GameBoard/GameBoard2.xml" />
+		<GameBoardModelJibLibX gameboardmodel="GameBoardModelJibLibX" >
+			<property pos="180 0 210" />
+			<property scale="3.25 2.5 3.25" />
+			<property file="Models/X/Ground" />
+			<property setfocus="false" />
+		</GameBoardModelJibLibX>
+	</GameBoard>
+
+	<!-- Lights ( under work at the moment ) --> 
+	<DirectionalLight>
+		<property parent="Base" />
+		<property pos="0 0 0" />
+		<property direction="0.5 -0.5 0" />
+		<property diffuse="100 100 87" />
+	</DirectionalLight>
+	<!--<PointLight>
+		<property parent="Base" />
+		<property pos="-700 900 100" />
+		<property radius="1500" />
+		<property intensity="2" />
+		<property diffuse="75 75 67" />
+	</PointLight>-->
+</SceneFragment>

@@ -122,6 +122,12 @@ namespace Psynergy
             }
         }
 
+        public void SetRenderEngine(RendererEngineType engineType)
+        {
+            if (RenderManager.Instance != null)
+                RenderManager.Instance.SetEngineType(engineType);
+        }
+
         public void SetSoundEngine(SoundEngineType engineType)
         {
             if ( SoundManager.Instance != null )
@@ -186,7 +192,7 @@ namespace Psynergy
             if ((m_Game != null) && m_UseFpsCounter)
             {
                 // Attach FPS counter
-                m_FpsCounter = new FPSCounter(m_Game, "FluidSimulatorFPSCounter");
+                m_FpsCounter = new FPSCounter(m_Game, "");
                 m_Game.Components.Add(m_FpsCounter);
             }
 

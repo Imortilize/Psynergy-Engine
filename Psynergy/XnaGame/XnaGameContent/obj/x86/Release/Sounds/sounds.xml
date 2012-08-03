@@ -1,0 +1,293 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Sections>
+  <WaveBank Name="Wave Bank">Wave Bank
+{
+    Name = Wave Bank;
+    Xbox File = Xbox\Wave Bank.xwb;
+    Windows File = Win\Wave Bank.xwb;
+    Xbox Bank Path Edited = 0;
+    Windows Bank Path Edited = 0;
+    Seek Tables = 1;
+    Compression Preset Name = &lt;none&gt;;
+    Bank Last Revised Low = 1787479740;
+    Bank Last Revised High = 30213864;
+
+    Wave
+    {
+        Name = explosion;
+        File = SoundEffects\explosion.wav;
+        Build Settings Last Modified Low = 929950563;
+        Build Settings Last Modified High = 30209215;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 1;
+            Sampling Rate = 22050;
+            Bits Per Sample = 1;
+            Play Region Offset = 44;
+            Play Region Length = 128398;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 4235344896;
+            Last Modified High = 29530649;
+        }
+    }
+
+    Wave
+    {
+        Name = Gameplay 1 (DEMO 1);
+        File = Music\Gameplay 1 (DEMO 1).wav;
+        Build Settings Last Modified Low = 3547410482;
+        Build Settings Last Modified High = 30209444;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 2;
+            Sampling Rate = 44100;
+            Bits Per Sample = 1;
+            Play Region Offset = 44;
+            Play Region Length = 48289500;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 3429591168;
+            Last Modified High = 30209442;
+        }
+    }
+
+    Wave
+    {
+        Name = Menu - Back;
+        File = SoundEffects\Menus\Menu - Back.wav;
+        Build Settings Last Modified Low = 931288346;
+        Build Settings Last Modified High = 30209450;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 2;
+            Sampling Rate = 44100;
+            Bits Per Sample = 1;
+            Play Region Offset = 44;
+            Play Region Length = 352800;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 444689280;
+            Last Modified High = 30209445;
+        }
+    }
+
+    Wave
+    {
+        Name = Menu - Enter;
+        File = SoundEffects\Menus\Menu - Enter.wav;
+        Build Settings Last Modified Low = 931288346;
+        Build Settings Last Modified High = 30209450;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 2;
+            Sampling Rate = 44100;
+            Bits Per Sample = 1;
+            Play Region Offset = 44;
+            Play Region Length = 352800;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 544689280;
+            Last Modified High = 30209445;
+        }
+    }
+
+    Wave
+    {
+        Name = Menu - Move (Up, Down);
+        File = SoundEffects\Menus\Menu - Move (Up, Down).wav;
+        Build Settings Last Modified Low = 931288346;
+        Build Settings Last Modified High = 30209450;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 2;
+            Sampling Rate = 44100;
+            Bits Per Sample = 1;
+            Play Region Offset = 44;
+            Play Region Length = 352800;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 744689280;
+            Last Modified High = 30209445;
+        }
+    }
+
+    Wave
+    {
+        Name = Game - Dice Roll 1;
+        File = SoundEffects\Dice\Game - Dice Roll 1.wav;
+        Build Settings Last Modified Low = 2389231207;
+        Build Settings Last Modified High = 30209451;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 2;
+            Sampling Rate = 44100;
+            Bits Per Sample = 1;
+            Play Region Offset = 44;
+            Play Region Length = 154348;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 994689280;
+            Last Modified High = 30209445;
+        }
+    }
+
+    Wave
+    {
+        Name = Game - Dice Roll 2;
+        File = SoundEffects\Dice\Game - Dice Roll 2.wav;
+        Build Settings Last Modified Low = 2389231207;
+        Build Settings Last Modified High = 30209451;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 2;
+            Sampling Rate = 44100;
+            Bits Per Sample = 1;
+            Play Region Offset = 44;
+            Play Region Length = 187424;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 1074689280;
+            Last Modified High = 30209445;
+        }
+    }
+
+    Wave
+    {
+        Name = Game - Dice Roll 3;
+        File = SoundEffects\Dice\Game - Dice Roll 3.wav;
+        Build Settings Last Modified Low = 2389231207;
+        Build Settings Last Modified High = 30209451;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 2;
+            Sampling Rate = 44100;
+            Bits Per Sample = 1;
+            Play Region Offset = 44;
+            Play Region Length = 220500;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 1154689280;
+            Last Modified High = 30209445;
+        }
+    }
+
+    Wave
+    {
+        Name = Game - Dice Roll 4;
+        File = SoundEffects\Dice\Game - Dice Roll 4.wav;
+        Build Settings Last Modified Low = 2389231207;
+        Build Settings Last Modified High = 30209451;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 2;
+            Sampling Rate = 44100;
+            Bits Per Sample = 1;
+            Play Region Offset = 44;
+            Play Region Length = 198448;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 1274689280;
+            Last Modified High = 30209445;
+        }
+    }
+
+    Wave
+    {
+        Name = Game - Dice Roll 5;
+        File = SoundEffects\Dice\Game - Dice Roll 5.wav;
+        Build Settings Last Modified Low = 2389231207;
+        Build Settings Last Modified High = 30209451;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 2;
+            Sampling Rate = 44100;
+            Bits Per Sample = 1;
+            Play Region Offset = 44;
+            Play Region Length = 163260;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 1374689280;
+            Last Modified High = 30209445;
+        }
+    }
+
+    Wave
+    {
+        Name = Game - Dice Roll 6;
+        File = SoundEffects\Dice\Game - Dice Roll 6.wav;
+        Build Settings Last Modified Low = 2389231207;
+        Build Settings Last Modified High = 30209451;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 2;
+            Sampling Rate = 44100;
+            Bits Per Sample = 1;
+            Play Region Offset = 44;
+            Play Region Length = 191100;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 1474689280;
+            Last Modified High = 30209445;
+        }
+    }
+
+    Wave
+    {
+        Name = Doms BG - Menu Song;
+        File = Music\Doms BG - Menu Song.wav;
+        Build Settings Last Modified Low = 3708823989;
+        Build Settings Last Modified High = 30213863;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 2;
+            Sampling Rate = 44100;
+            Bits Per Sample = 1;
+            Play Region Offset = 44;
+            Play Region Length = 39604644;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 168968192;
+            Last Modified High = 30213398;
+        }
+    }
+}
+
+</WaveBank>
+</Sections>

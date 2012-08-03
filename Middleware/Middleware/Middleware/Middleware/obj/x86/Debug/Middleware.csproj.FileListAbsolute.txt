@@ -1,0 +1,108 @@
+C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\bin\x86\Debug\Resources\ClassRegistry.xml
+C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\bin\x86\Debug\Resources\Game.xml
+C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\bin\x86\Debug\Resources\GameCameras.xml
+C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\bin\x86\Debug\Resources\GameMenus.xml
+C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\bin\x86\Debug\Resources\GameScenes.xml
+C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\bin\x86\Debug\Resources\RenderGroups.xml
+C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\bin\x86\Debug\Resources\State.xml
+C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\bin\x86\Debug\Content\Fonts\defaultfont.xnb
+C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\bin\x86\Debug\Content\LTreeShaders\Leaves.xnb
+C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\bin\x86\Debug\Content\LTreeShaders\Trunk.xnb
+C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\bin\x86\Debug\Content\Models\FBX\Ship1\ship1.xnb
+C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\bin\x86\Debug\Content\Models\FBX\Ship1\ship1_c_0.xnb
+C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\bin\x86\Debug\Content\Models\FBX\Ship1\ship1_n_0.xnb
+C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\bin\x86\Debug\Content\Models\FBX\Ship1\ship1_s_0.xnb
+C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\bin\x86\Debug\Content\Models\null_diffuse.xnb
+C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\bin\x86\Debug\Content\Models\null_diffuse_0.xnb
+C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\bin\x86\Debug\Content\Models\null_emissive.xnb
+C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\bin\x86\Debug\Content\Models\null_emissive_0.xnb
+C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\bin\x86\Debug\Content\Models\null_normal.xnb
+C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\bin\x86\Debug\Content\Models\null_specular.xnb
+C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\bin\x86\Debug\Content\Models\null_specular_0.xnb
+C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\bin\x86\Debug\Content\Models\X\boardnormal_0.xnb
+C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\bin\x86\Debug\Content\Models\X\Ground.xnb
+C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\bin\x86\Debug\Content\Models\X\ground_diffuse_0.xnb
+C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\bin\x86\Debug\Content\Models\X\sphere.xnb
+C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\bin\x86\Debug\Content\Shaders\CubeMap\cubemap.xnb
+C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\bin\x86\Debug\Content\Shaders\Deferred Rendering\ClearGBuffer.xnb
+C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\bin\x86\Debug\Content\Shaders\Deferred Rendering\CombineFinal.xnb
+C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\bin\x86\Debug\Content\Shaders\Deferred Rendering\DirectionalLight.xnb
+C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\bin\x86\Debug\Content\Shaders\Deferred Rendering\PointLight.xnb
+C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\bin\x86\Debug\Content\Shaders\Deferred Rendering\RenderGBuffer.xnb
+C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\bin\x86\Debug\Content\Shaders\Deferred Rendering\RenderGBuffer_0.xnb
+C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\bin\x86\Debug\Content\Shaders\Deferred Rendering\RenderGBuffer_1.xnb
+C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\bin\x86\Debug\Content\Shaders\Deferred Rendering\WaterGBuffer.xnb
+C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\bin\x86\Debug\Content\Shaders\Others\Billboard.xnb
+C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\bin\x86\Debug\Content\Shaders\Others\pointsprite.xnb
+C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\bin\x86\Debug\Content\Shaders\Post Processing\BloomPostProcessor.xnb
+C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\bin\x86\Debug\Content\Shaders\Post Processing\BWPostProcessor.xnb
+C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\bin\x86\Debug\Content\Shaders\Post Processing\DOFPostProcessor.xnb
+C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\bin\x86\Debug\Content\Shaders\Post Processing\EdgeDetectionPostProcessor.xnb
+C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\bin\x86\Debug\Content\Shaders\Post Processing\FilmicToneMapping.xnb
+C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\bin\x86\Debug\Content\Shaders\Post Processing\FilmMappingPostProcessor.xnb
+C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\bin\x86\Debug\Content\Shaders\Post Processing\Fxaa.xnb
+C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\bin\x86\Debug\Content\Shaders\Post Processing\GaussianBlurPostProcessor.xnb
+C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\bin\x86\Debug\Content\Shaders\Post Processing\MergeBloomPostProcessor.xnb
+C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\bin\x86\Debug\Content\Shaders\Post Processing\MLAAPostProcessor.xnb
+C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\bin\x86\Debug\Content\Shaders\Post Processing\SSAO.xnb
+C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\bin\x86\Debug\Content\Shaders\Post Processing\SSAOBlur.xnb
+C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\bin\x86\Debug\Content\Shaders\Post Processing\SSAOMerge.xnb
+C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\bin\x86\Debug\Content\Shaders\Post Processing\ToneMapping.xnb
+C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\bin\x86\Debug\Content\Shaders\Shadows\ShadowDepthMap.xnb
+C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\bin\x86\Debug\Content\Shaders\Textures\Cell Shading\celMap.xnb
+C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\bin\x86\Debug\Content\Shaders\Textures\MLAA\AreaMap32.xnb
+C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\bin\x86\Debug\Content\Shaders\Textures\SSAO\randomNormal.xnb
+C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\bin\x86\Debug\Content\Textures\BirchBark.xnb
+C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\bin\x86\Debug\Content\Textures\BirchLeaf.xnb
+C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\bin\x86\Debug\Content\Textures\CubeMaps\Canyon.xnb
+C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\bin\x86\Debug\Content\Textures\CubeMaps\cube.xnb
+C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\bin\x86\Debug\Content\Textures\Grass.xnb
+C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\bin\x86\Debug\Content\Textures\GrassNormalMap.xnb
+C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\bin\x86\Debug\Content\Textures\GrayBark.xnb
+C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\bin\x86\Debug\Content\Textures\GraywoodLeaf.xnb
+C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\bin\x86\Debug\Content\Textures\HeightMaps\rocks.xnb
+C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\bin\x86\Debug\Content\Textures\HeightMaps\rocks_0.xnb
+C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\bin\x86\Debug\Content\Textures\HeightMaps\terrain.xnb
+C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\bin\x86\Debug\Content\Textures\OakLeaf.xnb
+C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\bin\x86\Debug\Content\Textures\Others\controlpoint.xnb
+C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\bin\x86\Debug\Content\Textures\PineBark.xnb
+C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\bin\x86\Debug\Content\Textures\PineLeaf.xnb
+C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\bin\x86\Debug\Content\Textures\randomNormal.xnb
+C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\bin\x86\Debug\Content\Textures\WillowLeaf.xnb
+C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\bin\x86\Debug\Content\Trees\Birch.xnb
+C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\bin\x86\Debug\Content\Trees\Gardenwood.xnb
+C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\bin\x86\Debug\Content\Trees\Graywood.xnb
+C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\bin\x86\Debug\Content\Trees\Pine.xnb
+C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\bin\x86\Debug\Content\Trees\Rug.xnb
+C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\bin\x86\Debug\Content\Trees\Willow.xnb
+C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\bin\x86\Debug\Content\Textures\water.xnb
+C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\bin\x86\Debug\Content\Textures\waterMap.xnb
+C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\bin\x86\Debug\Content\Textures\WaterDUDV.xnb
+C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\bin\x86\Debug\Content\Textures\WaterNormal.xnb
+C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\bin\x86\Debug\Middleware.exe.config
+C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\bin\x86\Debug\Middleware.exe
+C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\bin\x86\Debug\Middleware.pdb
+C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\bin\x86\Debug\AILibrary.dll
+C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\bin\x86\Debug\CameraLibrary.dll
+C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\bin\x86\Debug\DPSF.dll
+C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\bin\x86\Debug\EventLibrary.dll
+C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\bin\x86\Debug\GraphicsLibrary.dll
+C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\bin\x86\Debug\InputLibrary.dll
+C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\bin\x86\Debug\JigLibX.dll
+C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\bin\x86\Debug\LTreesLibrary.dll
+C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\bin\x86\Debug\MainLibrary.dll
+C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\bin\x86\Debug\MenuLibrary.dll
+C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\bin\x86\Debug\PhysicsLibrary.dll
+C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\bin\x86\Debug\ProjectMercury.dll
+C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\bin\x86\Debug\Psynergy.TerrainPipeline.dll
+C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\bin\x86\Debug\Psynergy.WaterPipeline.dll
+C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\bin\x86\Debug\PsynergyLibrary.dll
+C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\bin\x86\Debug\SkinnedModel.dll
+C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\bin\x86\Debug\SoundLibrary.dll
+C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\bin\x86\Debug\TerrainLibrary.dll
+C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\bin\x86\Debug\Deferred Pipeline.dll
+C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\bin\x86\Debug\Psynergy.WaterPipeline.pdb
+C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\obj\x86\Debug\Middleware.exe
+C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\obj\x86\Debug\Middleware.pdb

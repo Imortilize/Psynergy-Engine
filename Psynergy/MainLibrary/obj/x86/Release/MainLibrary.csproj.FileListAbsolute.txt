@@ -1,0 +1,6 @@
+C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\MainLibrary\bin\x86\Release\MainLibrary.dll
+C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\MainLibrary\bin\x86\Release\MainLibrary.pdb
+C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\MainLibrary\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\MainLibrary\obj\x86\Release\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\MainLibrary\obj\x86\Release\MainLibrary.dll
+C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\MainLibrary\obj\x86\Release\MainLibrary.pdb

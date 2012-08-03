@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<CameraResource id="GameCameras">
+	<Camera3D id="Default" >
+		<property pos="0 0 0" />
+	</Camera3D>
+	<FixedThirdPersonCamera id="FixedThirdPerson" >
+		<property target="0 50 100" />
+		<property currenttargetpos="0 50 100" />
+		<property minrotationy="0" />
+		<property maxrotationy="1" />
+		<property minpitch="300" />
+		<property maxpitch="345" />
+		<property mindistance="50" />
+		<property maxdistance="10000" />
+		<property heightoffset="20" />
+	</FixedThirdPersonCamera>
+	<WorldCamera id="World" >
+		<property viewpos="100 220.5 620" />
+		<property desiredrot="-0.45 -0.18 0 0" />
+	</WorldCamera>
+</CameraResource>

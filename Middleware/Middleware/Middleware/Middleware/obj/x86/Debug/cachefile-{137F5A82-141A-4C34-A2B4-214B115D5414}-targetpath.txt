@@ -1,0 +1,4 @@
+Content\Textures\water.xnb
+Content\Textures\waterMap.xnb
+Content\Textures\WaterDUDV.xnb
+Content\Textures\WaterNormal.xnb
