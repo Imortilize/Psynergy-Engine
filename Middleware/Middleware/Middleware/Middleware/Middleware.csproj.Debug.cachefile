@@ -1,9 +1,6 @@
-Content\Textures\water.xnb
-Content\Textures\waterMap.xnb
-Content\Textures\WaterDUDV.xnb
-Content\Textures\WaterNormal.xnb
 Resources\ClassRegistry.xml
 Resources\Game.xml
+Resources\Game2.xml
 Resources\GameCameras.xml
 Resources\GameMenus.xml
 Resources\GameScenes.xml
@@ -73,6 +70,10 @@ Content\Textures\PineBark.xnb
 Content\Textures\PineLeaf.xnb
 Content\Textures\randomNormal.xnb
 Content\Textures\TileSets\basicTiles.xnb
+Content\Textures\Water\water.xnb
+Content\Textures\Water\WaterDUDV.xnb
+Content\Textures\Water\waterMap.xnb
+Content\Textures\Water\WaterNormal.xnb
 Content\Textures\WillowLeaf.xnb
 Content\Trees\Birch.xnb
 Content\Trees\Gardenwood.xnb

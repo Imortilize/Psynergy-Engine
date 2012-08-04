@@ -108,6 +108,10 @@
     <Reference Include="Psynergy.TerrainPipeline">
       <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\Psynergy Game Engine\Engine\ContentPipeline\Psynergy.TerrainPipeline.dll</HintPath>
     </Reference>
+    <Reference Include="Psynergy.WaterPipeline, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\Psynergy Game Engine\Engine\ContentPipeline\Psynergy.WaterPipeline.dll</HintPath>
+    </Reference>
     <Reference Include="PsynergyLibrary">
       <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\Psynergy Game Engine\Engine\PsynergyLibrary.dll</HintPath>
     </Reference>
@@ -140,10 +144,6 @@
     <Compile Include="NewTech\Tile\MapRow.cs" />
     <Compile Include="NewTech\Tile\Tile.cs" />
     <Compile Include="NewTech\Tile\TileMap.cs" />
-    <Compile Include="NewTech\Water\Water.cs" />
-    <Compile Include="NewTech\Water\WaterMesh.cs" />
-    <Compile Include="NewTech\Water\WaterMeshMetaData.cs" />
-    <Compile Include="NewTech\Water\WaterSubMesh.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Game.cs" />
@@ -404,6 +404,18 @@
     <None Include="Content\Textures\TileSets\basicTiles.xnb">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Content\Textures\Water\water.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Textures\Water\WaterDUDV.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Textures\Water\waterMap.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Textures\Water\WaterNormal.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Content\Textures\WillowLeaf.xnb">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -431,10 +443,6 @@
       <Project>{137F5A82-141A-4C34-A2B4-214B115D5414}</Project>
       <Name>Content</Name>
       <XnaReferenceType>Content</XnaReferenceType>
-    </ProjectReference>
-    <ProjectReference Include="..\..\WaterPipeline\WaterPipeline.csproj">
-      <Project>{CD03D69A-67CE-4741-BEEF-A1EDBCF84D98}</Project>
-      <Name>WaterPipeline</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />

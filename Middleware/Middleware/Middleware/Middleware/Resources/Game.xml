@@ -1,12 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <SceneFragment>
-  <TileMap id="TileMap" >
-    <property parent="Base" />
-    <property pos="0 0 0" />
-    <property texturefile="Textures/TileSets/basicTiles" />
-    <property gridsize="51 50" />
-  </TileMap>
-  
   <!-- CubeMap ( Should be the first thing to be rendered) -->
   <SkySphere id="Sky" >
     <property parent="Base" />
@@ -109,7 +102,7 @@
     <property parent="Base" />
     <property pos="0 0 0" />
     <property scale="1 1 1" />
-    <property texture="Textures/waterMap" />
+    <property texture="Textures/Water/waterMap" />
   </Water>
 
   <!-- Lights ( under work at the moment ) -->

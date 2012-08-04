@@ -230,6 +230,11 @@ Content\Textures\randomNormal.xnb
 Content\Shaders\Textures\SSAO\randomNormal.xnb
 Content\Textures\Others\controlpoint.xnb
 Content\Textures\GrassNormalMap.xnb
+Content\Textures\Water\water.xnb
+Content\Textures\Water\WaterDUDV.xnb
+Content\Textures\Water\waterMap.xnb
+Content\Textures\Water\WaterNormal.xnb
+Content\Textures\TileSets\basicTiles.xnb
 Content\Trees\Willow.xnb
 Content\Trees\Rug.xnb
 Content\Trees\Pine.xnb
@@ -274,7 +279,6 @@ Content\Shaders\Deferred Rendering\RenderGBuffer_1.xnb
 Content\Models\FBX\Ship1\ship1_c_0.xnb
 Content\Models\FBX\Ship1\ship1_n_0.xnb
 Content\Models\FBX\Ship1\ship1_s_0.xnb
-Content\Textures\TileSets\basicTiles.xnb
 Content\Textures\HeightMaps\rocks.xnb
 Content\Textures\HeightMaps\terrain.xnb
 Content\Textures\HeightMaps\rocks_0.xnb

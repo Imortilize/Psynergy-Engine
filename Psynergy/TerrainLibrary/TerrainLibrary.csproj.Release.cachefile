@@ -20,6 +20,10 @@ Content\Textures\randomNormal.xnb
 Content\Shaders\Textures\SSAO\randomNormal.xnb
 Content\Textures\Others\controlpoint.xnb
 Content\Textures\GrassNormalMap.xnb
+Content\Textures\Water\water.xnb
+Content\Textures\Water\WaterDUDV.xnb
+Content\Textures\Water\waterMap.xnb
+Content\Textures\Water\WaterNormal.xnb
 Content\Textures\TileSets\basicTiles.xnb
 Content\Trees\Willow.xnb
 Content\Trees\Rug.xnb

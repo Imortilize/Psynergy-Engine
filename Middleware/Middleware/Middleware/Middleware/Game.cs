@@ -52,8 +52,6 @@ namespace Middleware
             {
                 // Set what sound and physics engine to use
                 m_PsynergyEngine.SetRenderEngine(RendererEngineType.Sprite);
-                m_PsynergyEngine.SetPhysicsEngine(PhysicsEngineType.eJibLibX);
-                m_PsynergyEngine.SetParticleEngine(ParticleEngineType.Mercury);
 
                 // Show FPS
                 m_PsynergyEngine.ShowFPS(true);
@@ -65,18 +63,18 @@ namespace Middleware
             if (m_PsynergyEngine != null)
             {
                 // Initial Graphics Settings
-                m_PsynergyEngine.SetFogProperties(new FogProperties(Color.LightYellow, 750, 1000));
+                //m_PsynergyEngine.SetFogProperties(new FogProperties(Color.LightYellow, 750, 1000));
 
                 // Shadows
-                m_PsynergyEngine.useShadows(true);
+                //m_PsynergyEngine.useShadows(true);
 
                 // Post Processing
-                m_PsynergyEngine.UsePostProcessing(true);
-                m_PsynergyEngine.SetFXAAProperties(new FXAAProperties(true));
-                m_PsynergyEngine.SetToneMappingProperties(new ToneMappingProperties(true)); 
-                m_PsynergyEngine.SetDepthOfFieldProperties(new DepthOfFieldProperties(200, 300, 1));
-                m_PsynergyEngine.SetBloomProperties(new BloomProperties(0.7f, 1.2f));
-                m_PsynergyEngine.SetFilmGrainProperties(new FilmGrainProperties(0.1f, 1, 2));
+                //m_PsynergyEngine.UsePostProcessing(true);
+                //m_PsynergyEngine.SetFXAAProperties(new FXAAProperties(true));
+                //m_PsynergyEngine.SetToneMappingProperties(new ToneMappingProperties(true)); 
+                //m_PsynergyEngine.SetDepthOfFieldProperties(new DepthOfFieldProperties(200, 300, 1));
+                //m_PsynergyEngine.SetBloomProperties(new BloomProperties(0.7f, 1.2f));
+                //m_PsynergyEngine.SetFilmGrainProperties(new FilmGrainProperties(0.1f, 1, 2));
             }
         }
 

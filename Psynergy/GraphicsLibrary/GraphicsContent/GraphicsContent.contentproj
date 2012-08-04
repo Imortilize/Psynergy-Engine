@@ -231,6 +231,10 @@
       <Project>{BC72D0CA-432E-4F65-9736-A29D7CEC52D7}</Project>
       <Name>DeferredPipeline</Name>
     </ProjectReference>
+    <ProjectReference Include="..\..\WaterPipeline\WaterPipeline.csproj">
+      <Project>{CD03D69A-67CE-4741-BEEF-A1EDBCF84D98}</Project>
+      <Name>WaterPipeline</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Models\null_normal.tga">
@@ -440,7 +444,31 @@
       <Processor>EffectProcessor</Processor>
     </Compile>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Compile Include="Textures\Water\water.png">
+      <Name>water</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>WaterProcessor</Processor>
+      <ProcessorParameters_WaterLength>32</ProcessorParameters_WaterLength>
+      <ProcessorParameters_WaterScale>30</ProcessorParameters_WaterScale>
+      <ProcessorParameters_WaterWidth>32</ProcessorParameters_WaterWidth>
+    </Compile>
+    <Compile Include="Textures\Water\WaterDUDV.png">
+      <Name>WaterDUDV</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\Water\waterMap.jpg">
+      <Name>waterMap</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\Water\WaterNormal.png">
+      <Name>WaterNormal</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
   <ItemGroup>
     <Compile Include="Textures\TileSets\basicTiles.png">
       <Name>basicTiles</Name>
