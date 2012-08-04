@@ -10,6 +10,7 @@ using Microsoft.Xna.Framework.Graphics;
 using Psynergy;
 using Psynergy.Graphics;
 using Psynergy.Camera;
+using Psynergy.Input;
 
 namespace Middleware
 {
@@ -38,6 +39,13 @@ namespace Middleware
         #region Tile coordinates
         private bool m_ShowCoordinates = false;
         private SpriteFont m_Font = null;
+        #endregion
+
+        #region Tile Picking
+        private bool m_AllowPicking = true;
+
+        private Texture2D m_MouseMap = null;
+        private Texture2D m_Hilight = null;
         #endregion
 
         public TileMap()
@@ -167,13 +175,36 @@ namespace Middleware
             // End Create Sample Map Data
         }
 
+        #region Load
         public override void Load()
         {
             base.Load();
 
             m_Font = RenderManager.Instance.LoadFont("Pericles6");
-        }
 
+            // Load mouse map ( assuming there is one )
+            try
+            {
+                m_MouseMap = RenderManager.Instance.LoadTexture2D("Textures/TileSets/mousemap");
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.ToString());
+            }
+
+            // Load hi light
+            try
+            {
+                m_Hilight = RenderManager.Instance.LoadTexture2D("Textures/TileSets/hilight");
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.ToString());
+            }
+        }
+        #endregion
+
+        #region Render
         public override void Render(GameTime deltaTime)
         {   
             // Full override of sprite nodes render function for now
@@ -187,132 +218,154 @@ namespace Middleware
             {
                 BaseCamera camera = CameraManager.Instance.ActiveCamera;
 
-                Vector2 cameraPos = Vector2.Zero;
-
                 if (camera != null)
-                    cameraPos = camera.GetPos2D();
-
-                Vector2 firstSquare = new Vector2(cameraPos.X / m_TileStep.X, cameraPos.Y / m_TileStep.Y);
-                Vector2 squareOffset = new Vector2(cameraPos.X % m_TileStep.X, cameraPos.Y % m_TileStep.Y);
-
-                float depthOffset = 0.0f;
-
-                for (int y = 0; y < m_GridSize.Y; y++)
                 {
-                    int rowNum = (y + (int)firstSquare.Y);
-                    int rowOffset = 0;
+                    IsometricCamera isometricCamera = (camera as IsometricCamera);
 
-                    if ((rowNum % 2) == 1)
-                        rowOffset = (int)m_OddRowOffset.X;
-
-                    for (int x = 0; x < m_GridSize.X; x++)
+                    if ( isometricCamera != null )
                     {
-                        int columnNum = (x + (int)firstSquare.X);
+                        Vector2 cameraPos = isometricCamera.GetPos2D();
+                        Vector2 firstSquare = new Vector2(cameraPos.X / m_TileStep.X, cameraPos.Y / m_TileStep.Y);
+                        Vector2 squareOffset = new Vector2(cameraPos.X % m_TileStep.X, cameraPos.Y % m_TileStep.Y);
 
-                        if ((rowNum >= 0) && (columnNum >= 0))
+                        float depthOffset = 0.0f;
+
+                        for (int y = 0; y < m_GridSize.Y; y++)
                         {
-                            if ((m_Rows.Count > rowNum) && (m_Rows[rowNum].Columns.Count > columnNum))
+                            int mapY = (y + (int)firstSquare.Y);
+                            int rowOffset = 0;
+
+                            if ((mapY % 2) == 1)
+                                rowOffset = (int)m_OddRowOffset.X;
+
+                            for (int x = 0; x < m_GridSize.X; x++)
                             {
-                                // Draw terrain layers
-                                foreach (int tileIndex in m_Rows[rowNum].Columns[columnNum].BaseTiles)
+                                int mapX = (x + (int)firstSquare.X);
+
+                                if ((mapY >= 0) && (mapX >= 0))
                                 {
-                                    Debug.Assert(tileIndex >= 0);
-
-                                    if (tileIndex >= 0)
+                                    if ((m_Rows.Count > mapY) && (m_Rows[mapY].Columns.Count > mapX))
                                     {
-                                        // Create the destination rectangle
-                                        Rectangle destRect = new Rectangle(((x * (int)m_TileStep.X) - (int)squareOffset.X + rowOffset + (int)m_BaseOffset.X),
-                                                                           ((y * (int)m_TileStep.Y) - (int)squareOffset.Y + (int)m_BaseOffset.Y), 
-                                                                           (int)m_TileSize.X, 
-                                                                           (int)m_TileSize.Y);
+                                        if ((mapX >= m_GridSize.X) || (mapY >= m_GridSize.Y))
+                                            continue;
 
-                                        Rectangle sourceRect = GetSourceRectangle(tileIndex);
-
-                                        if (sourceRect != Rectangle.Empty)
+                                        // Draw terrain layers
+                                        foreach (int tileIndex in m_Rows[mapY].Columns[mapX].BaseTiles)
                                         {
-                                            // Calculate render depth
-                                            m_RenderDepth = 1.0f;
+                                            Debug.Assert(tileIndex >= 0);
 
-                                            // Draw sprite
-                                            m_SpriteBatch.Draw(m_CurrentTexture, destRect, sourceRect, m_ActualColor, 0.0f, Vector2.Zero, SpriteEffects.None, MathHelper.Clamp(m_RenderDepth, 0.0f, 1.0f));
+                                            if (tileIndex >= 0)
+                                            {
+                                                Vector2 worldPosition = isometricCamera.WorldToScreen(new Vector2((mapX * m_TileStep.X) + rowOffset, mapY * m_TileStep.Y));
+                                                Rectangle sourceRect = GetSourceRectangle(tileIndex);
+
+                                                if (sourceRect != Rectangle.Empty)
+                                                {
+                                                    // Calculate render depth
+                                                    m_RenderDepth = 1.0f;
+
+                                                    // Draw sprite
+                                                    m_SpriteBatch.Draw(m_CurrentTexture, worldPosition, sourceRect, m_ActualColor, 0.0f, Vector2.Zero, 1.0f, SpriteEffects.None, MathHelper.Clamp(m_RenderDepth, 0.0f, 1.0f));
+                                                }
+                                            }
+                                        }
+
+                                        // Calculate the depth offset
+                                        depthOffset = 0.7f - ((mapX + (mapY * m_TileSize.X)) / m_MaxDepth);
+
+                                        // Height row
+                                        int heightRow = 0;
+
+                                        // Draw height layers
+                                        foreach (int tileIndex in m_Rows[mapY].Columns[mapX].HeightTiles)
+                                        {
+                                            Debug.Assert(tileIndex >= 0);
+
+                                            if (tileIndex >= 0)
+                                            {
+                                                Vector2 worldPosition = isometricCamera.WorldToScreen(new Vector2((mapX * m_TileStep.X) + rowOffset, mapY * m_TileStep.Y - (heightRow * m_HeightTileOffset)));
+                                                Rectangle sourceRect = GetSourceRectangle(tileIndex);
+
+                                                if (sourceRect != Rectangle.Empty)
+                                                {
+                                                    // Calculate render depth
+                                                    m_RenderDepth = (depthOffset - ((float)heightRow * m_HeightRowDepthMod));
+
+                                                    // Draw sprite
+                                                    m_SpriteBatch.Draw(m_CurrentTexture, worldPosition, sourceRect, m_ActualColor, 0.0f, Vector2.Zero, 1.0f, SpriteEffects.None, MathHelper.Clamp(m_RenderDepth, 0.0f, 1.0f));
+                                                }
+                                            }
+
+                                            // Increment height row
+                                            heightRow++;
+                                        }
+
+                                        // Draw height layers
+                                        foreach (int tileIndex in m_Rows[mapY].Columns[mapX].TopperTiles)
+                                        {
+                                            Debug.Assert(tileIndex >= 0);
+
+                                            if (tileIndex >= 0)
+                                            {
+                                                Vector2 worldPosition = isometricCamera.WorldToScreen(new Vector2((mapX * m_TileStep.X) + rowOffset, mapY * m_TileStep.Y - (heightRow * m_HeightTileOffset)));
+                                                Rectangle sourceRect = GetSourceRectangle(tileIndex);
+
+                                                if (sourceRect != Rectangle.Empty)
+                                                {
+                                                    // Calculate render depth
+                                                    m_RenderDepth = (depthOffset - ((float)heightRow * m_HeightRowDepthMod));
+
+                                                    // Draw sprite
+                                                    m_SpriteBatch.Draw(m_CurrentTexture, worldPosition, sourceRect, m_ActualColor, 0.0f, Vector2.Zero, 1.0f, SpriteEffects.None, MathHelper.Clamp(m_RenderDepth, 0.0f, 1.0f));
+                                                }
+                                            }
+                                        }
+
+                                        // If tile picking is allowed
+                                        if (m_AllowPicking && (m_Hilight != null))
+                                        {
+                                            InputManager input = InputManager.Instance;
+
+                                            if ( input != null )
+                                            {
+                                                Vector2 hilightLocation = isometricCamera.ScreenToWorld(input.GetCurrentMousePos());
+                                                Point hilightPoint = WorldToMapCell(new Point((int)hilightLocation.X, (int)hilightLocation.Y));
+
+                                                // Calculate whether to offset the highlight or not
+                                                int hilightrowOffset = 0;
+                                                if ((hilightPoint.Y) % 2 == 1)
+                                                    hilightrowOffset = (int)m_OddRowOffset.X;
+                                                
+                                                Vector2 screenPosition = isometricCamera.WorldToScreen(new Vector2((hilightPoint.X * m_TileStep.X) + hilightrowOffset, (hilightPoint.Y + 2) * m_TileStep.Y));
+
+                                                m_SpriteBatch.Draw(
+                                                                m_Hilight,
+                                                                screenPosition,
+                                                                new Rectangle(0, 0, 64, 32),
+                                                                (Color.White * 0.3f),
+                                                                0.0f,
+                                                                Vector2.Zero,
+                                                                1.0f,
+                                                                SpriteEffects.None,
+                                                                0.0f);
+                                            }
+                                        }
+
+                                        // Use to show tile coordinates
+                                        if (m_ShowCoordinates)
+                                        {
+                                            // Draw tile coordinates
+                                            m_SpriteBatch.DrawString(m_Font, mapX.ToString() + ", " + mapY.ToString(),
+                                                                    new Vector2((x * m_TileStep.X) - squareOffset.X + rowOffset + m_BaseOffset.X + 24,
+                                                                    (y * m_TileStep.Y) - squareOffset.Y + m_BaseOffset.Y + 48),
+                                                                    Color.White,
+                                                                    0f,
+                                                                    Vector2.Zero,
+                                                                    1.0f,
+                                                                    SpriteEffects.None,
+                                                                    0.0f);
                                         }
                                     }
-                                }
-
-                                // Calculate the depth offset
-                                depthOffset = 0.7f - ((columnNum + (rowNum * m_TileSize.X)) / m_MaxDepth);
-
-                                // Height row
-                                int heightRow = 0;
-
-                                // Draw height layers
-                                foreach (int tileIndex in m_Rows[rowNum].Columns[columnNum].HeightTiles)
-                                {
-                                    Debug.Assert(tileIndex >= 0);
-
-                                    if (tileIndex >= 0)
-                                    {
-                                        // Create the destination rectangle
-                                        Rectangle destRect = new Rectangle(((x * (int)m_TileStep.X) - (int)squareOffset.X + rowOffset + (int)m_BaseOffset.X),
-                                                                           ((y * (int)m_TileStep.Y) - (int)squareOffset.Y + (int)m_BaseOffset.Y) - (heightRow * m_HeightTileOffset),
-                                                                           (int)m_TileSize.X,
-                                                                           (int)m_TileSize.Y);
-
-                                        Rectangle sourceRect = GetSourceRectangle(tileIndex);
-
-                                        if (sourceRect != Rectangle.Empty)
-                                        {
-                                            // Calculate render depth
-                                            m_RenderDepth = (depthOffset - ((float)heightRow * m_HeightRowDepthMod));
-
-                                            // Draw sprite
-                                            m_SpriteBatch.Draw(m_CurrentTexture, destRect, sourceRect, m_ActualColor, 0.0f, Vector2.Zero, SpriteEffects.None, MathHelper.Clamp(m_RenderDepth, 0.0f, 1.0f));
-                                        }
-                                    }
-
-                                    // Increment height row
-                                    heightRow++;
-                                }
-
-                                // Draw height layers
-                                foreach (int tileIndex in m_Rows[rowNum].Columns[columnNum].TopperTiles)
-                                {
-                                    Debug.Assert(tileIndex >= 0);
-
-                                    if (tileIndex >= 0)
-                                    {
-                                        // Create the destination rectangle
-                                        Rectangle destRect = new Rectangle(((x * (int)m_TileStep.X) - (int)squareOffset.X + rowOffset + (int)m_BaseOffset.X),
-                                                                           ((y * (int)m_TileStep.Y) - (int)squareOffset.Y + (int)m_BaseOffset.Y) - (heightRow * m_HeightTileOffset),
-                                                                           (int)m_TileSize.X,
-                                                                           (int)m_TileSize.Y);
-
-                                        Rectangle sourceRect = GetSourceRectangle(tileIndex);
-
-                                        if (sourceRect != Rectangle.Empty)
-                                        {
-                                            // Calculate render depth
-                                            m_RenderDepth = (depthOffset - ((float)heightRow * m_HeightRowDepthMod));
-
-                                            // Draw sprite
-                                            m_SpriteBatch.Draw(m_CurrentTexture, destRect, sourceRect, m_ActualColor, 0.0f, Vector2.Zero, SpriteEffects.None, MathHelper.Clamp(m_RenderDepth, 0.0f, 1.0f));
-                                        }
-                                    }
-                                }
-
-                                // Use to show tile coordinates
-                                if (m_ShowCoordinates)
-                                {
-                                    // Draw tile coordinates
-                                    m_SpriteBatch.DrawString(m_Font, columnNum.ToString() + ", " + rowNum.ToString(),
-                                                            new Vector2((x * m_TileStep.X) - squareOffset.X + rowOffset + m_BaseOffset.X + 24,
-                                                            (y * m_TileStep.Y) - squareOffset.Y + m_BaseOffset.Y + 48),
-                                                            Color.White,
-                                                            0f,
-                                                            Vector2.Zero,
-                                                            1.0f,
-                                                            SpriteEffects.None,
-                                                            0.0f);
                                 }
                             }
                         }
@@ -335,11 +388,79 @@ namespace Middleware
 
             return toRet;
         }
+        #endregion
+
+        #region Tile Picking
+        public Point WorldToMapCell(Point worldPoint)
+        {
+            Point dummy;
+            return WorldToMapCell(worldPoint, out dummy);
+        }
+
+        private Point WorldToMapCell(Point worldPoint, out Point localPoint)
+        {
+            Point mapCell = new Point((int)(worldPoint.X / m_MouseMap.Width),
+                                      (int)(worldPoint.Y / m_MouseMap.Height) * 2);
+
+            int localPointX = (worldPoint.X % m_MouseMap.Width);
+            int localPointY = (worldPoint.Y % m_MouseMap.Height);
+
+            int dx = 0;
+            int dy = 0;
+
+            uint[] myUInt = new uint[1];
+
+            if (new Rectangle(0, 0, m_MouseMap.Width, m_MouseMap.Height).Contains(localPointX, localPointY))
+            {
+                m_MouseMap.GetData(0, new Rectangle(localPointX, localPointY, 1, 1), myUInt, 0, 1);
+
+                if (myUInt[0] == 0xFF0000FF) // Red
+                {
+                    dx = -1;
+                    dy = -1;
+                    localPointX = (localPointX + (m_MouseMap.Width / 2));
+                    localPointY = (localPointY + (m_MouseMap.Height / 2));
+                }
+
+                if (myUInt[0] == 0xFF00FF00) // Green
+                {
+                    dx = -1;
+                    localPointX = (localPointX + (m_MouseMap.Width / 2));
+                    dy = 1;
+                    localPointY = (localPointY - (m_MouseMap.Height / 2));
+                }
+
+                if (myUInt[0] == 0xFF00FFFF) // Yellow
+                {
+                    dy = -1;
+                    localPointX = (localPointX - (m_MouseMap.Width / 2));
+                    localPointY = (localPointY + (m_MouseMap.Height / 2));
+                }
+
+                if (myUInt[0] == 0xFFFF0000) // Blue
+                {
+                    dy = +1;
+                    localPointX = (localPointX - (m_MouseMap.Width / 2));
+                    localPointY = (localPointY - (m_MouseMap.Height / 2));
+                }
+            }
+
+            mapCell.X += dx;
+            mapCell.Y += (dy - 2);
+
+            // New local point
+            localPoint = new Point(localPointX, localPointY);
+
+            // Return the map cell
+            return mapCell;
+        }
+        #endregion
 
         #region Property Set / Gets
         public Vector2 GridSize { get { return m_GridSize; } set { m_GridSize = value; } }
         public Vector2 TileSize { get { return m_TileSize; } set { m_TileSize = value; } }
         public Vector2 TileStep { get { return m_TileStep; } set { m_TileStep = value; } }
+        public Vector2 BaseOffset { get { return m_BaseOffset; } }
         #endregion
     }
 }

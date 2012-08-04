@@ -22,8 +22,13 @@ namespace Middleware
         protected float m_StartRotation = 0.0f;
 
         // Screen size
-        protected float m_ViewportHeight = 0;
-        protected float m_ViewportWidth = 0;
+        private Vector2 m_ViewPort = Vector2.Zero;
+
+        // World size
+        private Vector2 m_WorldSize = Vector2.Zero;
+
+        // Display offset
+        private Vector2 m_DisplayOffset = Vector2.Zero;
 
         // Reference to tile map
         private TileMap m_TileMap = null;
@@ -42,8 +47,8 @@ namespace Middleware
 
             if ( RenderManager.Instance.GraphicsDevice != null )
             {
-                m_ViewportWidth = RenderManager.Instance.GraphicsDevice.Viewport.Width;
-                m_ViewportHeight = RenderManager.Instance.GraphicsDevice.Viewport.Height;
+                m_ViewPort.X = RenderManager.Instance.GraphicsDevice.Viewport.Width;
+                m_ViewPort.Y = RenderManager.Instance.GraphicsDevice.Viewport.Height;
             }
 
             // Set camera scale
@@ -101,32 +106,28 @@ namespace Middleware
 
             if ((input != null) && (m_TileMap != null))
             {
-                int tileWidth = (int)m_TileMap.TileStep.X;          
-                float modulusX = ((m_ViewportWidth % tileWidth) / tileWidth);
-                float testX = (m_TileMap.GridSize.X - (int)(m_ViewportWidth / tileWidth)) - modulusX;
-
-                int tileHeight = (int)m_TileMap.TileStep.Y;
-                float modulusY = ((m_ViewportHeight % tileHeight) / tileHeight);
-                float testY = (m_TileMap.GridSize.Y - (int)(m_ViewportHeight / tileHeight)) - modulusY;
-
                 if (input.KeyDown(Keys.Left))
                 {
-                    PosX = MathHelper.Clamp((PosX - 2), 0, (testX * tileWidth));
+                    //PosX = MathHelper.Clamp((PosX - 2), 0, (testX * tileWidth));
+                    Move(new Vector2(-2, 0));
                 }
 
                 if (input.KeyDown(Keys.Right))
                 {
-                    PosX = MathHelper.Clamp((PosX + 2), 0, (testX * tileWidth));
+                    //PosX = MathHelper.Clamp((PosX + 2), 0, (testX * tileWidth));
+                    Move(new Vector2(2, 0));
                 }
 
                 if (input.KeyDown(Keys.Up))
                 {
-                    PosY = MathHelper.Clamp((PosY - 2), 0, (testY * tileHeight));
+                    //PosY = MathHelper.Clamp((PosY - 2), 0, (testY * tileHeight));
+                    Move(new Vector2(0, -2));
                 }
 
                 if (input.KeyDown(Keys.Down))
                 {
-                    PosY = MathHelper.Clamp((PosY + 2), 0, (testY * tileHeight));
+                    //PosY = MathHelper.Clamp((PosY + 2), 0, (testY * tileHeight));
+                    Move(new Vector2(0, 2));
                 }
             }
 
@@ -158,12 +159,56 @@ namespace Middleware
             //return true;
         }
 
+        public Vector2 WorldToScreen(Vector2 worldPosition)
+        {
+            return (worldPosition - Location + m_DisplayOffset);
+        }
+
+        public Vector2 ScreenToWorld(Vector2 screenPosition)
+        {
+            return (screenPosition + Location - m_DisplayOffset);
+        }
+
+        private void Move(Vector2 offset)
+        {
+            Location += offset;
+        }
+
         #region Properties
         public Vector2 Origin { get; set; }
         public Vector2 ScreenCenter { get; protected set; }
         public float Rotation { get { return m_Rotation; } set { m_Rotation = value; } }
         public IFocusable2D Focus { get { return (IFocus as IFocusable2D); } set { IFocus = value; } }
-        public TileMap TileMap { set { m_TileMap = value; } }
+        public TileMap TileMap 
+        { 
+            set 
+            { 
+                m_TileMap = value;
+
+                if (m_TileMap != null)
+                {
+                    // Set world size
+                    m_WorldSize.X = ((m_TileMap.GridSize.X - 2) * m_TileMap.TileStep.X);
+                    m_WorldSize.Y = ((m_TileMap.GridSize.Y - 2) * m_TileMap.TileStep.Y);
+
+                    // Set display offset
+                    m_DisplayOffset = m_TileMap.BaseOffset;
+                }
+            } 
+        }
+
+        public Vector2 Location
+        {
+            get 
+            {
+                return GetPos2D();
+            }
+            set
+            {
+                PosX = MathHelper.Clamp(value.X, 0f, (m_WorldSize.X - m_ViewPort.X));
+                PosY = MathHelper.Clamp(value.Y, 0f, (m_WorldSize.Y - m_ViewPort.Y));
+            }
+        }
         #endregion
     }
 }
