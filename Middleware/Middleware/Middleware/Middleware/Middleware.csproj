@@ -160,6 +160,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <SubType>Designer</SubType>
     </Content>
+    <Content Include="Resources\Game2.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Resources\GameCameras.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
