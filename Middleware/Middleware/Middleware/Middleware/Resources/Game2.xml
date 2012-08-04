@@ -3,7 +3,7 @@
   <TileMap id="TileMap" >
     <property parent="Base" />
     <property pos="0 0 0" />
-    <property texturefile="Textures/TileSets/basicTiles" />
-    <property gridsize="51 50" />
+    <property texturefile="Textures/TileSets/isometricTileset" />
+    <property gridsize="50 100" />
   </TileMap>
 </SceneFragment>

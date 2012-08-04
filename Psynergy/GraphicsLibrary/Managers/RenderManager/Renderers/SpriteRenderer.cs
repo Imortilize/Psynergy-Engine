@@ -72,7 +72,7 @@ namespace Psynergy.Graphics
             if (GraphicsDevice != null)
             {
                 // Begin a seperate sprite batch for menus
-                m_SpriteBatch.Begin(SpriteSortMode.Deferred, BlendState.AlphaBlend, SamplerState.AnisotropicClamp, null, null, null, m_GlobalTransformation);
+                m_SpriteBatch.Begin(SpriteSortMode.BackToFront, BlendState.AlphaBlend, SamplerState.AnisotropicClamp, null, null, null, m_GlobalTransformation);
 
                 // Render sprite
                 foreach (SpriteNode sprite in m_Sprites)

@@ -136,6 +136,7 @@
     <Compile Include="Managers\StateManager\States\GameState.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="NewTech\Camera\IsometricCamera.cs" />
     <Compile Include="NewTech\NewTerrain\NewTerrain.cs" />
     <Compile Include="NewTech\NewTerrain\QuadNode.cs" />
     <Compile Include="NewTech\NewTerrain\QuadTree.cs" />
