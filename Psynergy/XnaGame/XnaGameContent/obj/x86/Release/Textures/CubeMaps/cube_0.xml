@@ -3,7 +3,7 @@
   <Asset Type="Graphics:MeshContent">
     <Name>cube1</Name>
     <Identity>
-      <SourceFilename>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGameContent\Textures\CubeMaps\cube.fbx</SourceFilename>
+      <SourceFilename>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGameContent\Textures\CubeMaps\cube.fbx</SourceFilename>
       <SourceTool>FbxImporter</SourceTool>
     </Identity>
     <Transform>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</Transform>
@@ -25,7 +25,7 @@
     <Resource ID="#Resource1" Type="Graphics:BasicMaterialContent">
       <Name>default</Name>
       <Identity>
-        <SourceFilename>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGameContent\Textures\CubeMaps\cube.fbx</SourceFilename>
+        <SourceFilename>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGameContent\Textures\CubeMaps\cube.fbx</SourceFilename>
         <SourceTool>FbxImporter</SourceTool>
       </Identity>
       <OpaqueData>

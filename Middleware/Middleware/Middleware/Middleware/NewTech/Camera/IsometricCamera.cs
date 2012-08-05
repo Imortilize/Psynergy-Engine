@@ -169,7 +169,7 @@ namespace Middleware
             return (screenPosition + Location - m_DisplayOffset);
         }
 
-        private void Move(Vector2 offset)
+        public void Move(Vector2 offset)
         {
             Location += offset;
         }

@@ -10,8 +10,8 @@
         <Data Key="GenerateMipmaps">True</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Textures\BirchBark.xnb</Output>
-      <Time>2012-07-18T12:23:02.0777598+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Textures\BirchBark.xnb</Output>
+      <Time>2012-06-08T16:13:54+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\BirchLeaf.png</Source>
@@ -22,8 +22,8 @@
         <Data Key="GenerateMipmaps">True</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Textures\BirchLeaf.xnb</Output>
-      <Time>2012-07-18T12:23:02.0787599+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Textures\BirchLeaf.xnb</Output>
+      <Time>2012-06-08T16:13:52+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\Grass.jpg</Source>
@@ -34,8 +34,8 @@
         <Data Key="GenerateMipmaps">True</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Textures\Grass.xnb</Output>
-      <Time>2012-07-18T12:23:02.0887604+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Textures\Grass.xnb</Output>
+      <Time>2012-06-08T16:13:54+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\GrayBark.JPG</Source>
@@ -46,8 +46,8 @@
         <Data Key="GenerateMipmaps">True</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Textures\GrayBark.xnb</Output>
-      <Time>2012-07-18T12:23:02.0947608+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Textures\GrayBark.xnb</Output>
+      <Time>2012-06-08T16:13:52+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\GraywoodLeaf.png</Source>
@@ -58,8 +58,8 @@
         <Data Key="GenerateMipmaps">True</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Textures\GraywoodLeaf.xnb</Output>
-      <Time>2012-07-18T12:23:02.0967609+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Textures\GraywoodLeaf.xnb</Output>
+      <Time>2012-06-08T16:13:54+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\OakLeaf.png</Source>
@@ -70,8 +70,8 @@
         <Data Key="GenerateMipmaps">True</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Textures\OakLeaf.xnb</Output>
-      <Time>2012-07-18T12:23:02.1147619+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Textures\OakLeaf.xnb</Output>
+      <Time>2012-06-08T16:13:54+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\PineBark.png</Source>
@@ -82,8 +82,8 @@
         <Data Key="GenerateMipmaps">True</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Textures\PineBark.xnb</Output>
-      <Time>2012-07-18T12:23:02.1207623+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Textures\PineBark.xnb</Output>
+      <Time>2012-06-08T16:13:54+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\PineLeaf.png</Source>
@@ -94,8 +94,8 @@
         <Data Key="GenerateMipmaps">True</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Textures\PineLeaf.xnb</Output>
-      <Time>2012-07-18T12:23:02.1227624+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Textures\PineLeaf.xnb</Output>
+      <Time>2012-06-08T16:13:54+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\WillowLeaf.png</Source>
@@ -106,8 +106,8 @@
         <Data Key="GenerateMipmaps">True</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Textures\WillowLeaf.xnb</Output>
-      <Time>2012-07-18T12:23:02.1447636+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Textures\WillowLeaf.xnb</Output>
+      <Time>2012-06-08T16:13:54+01:00</Time>
     </Item>
     <Item>
       <Source>Models\null_normal.tga</Source>
@@ -115,8 +115,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Models\null_normal.xnb</Output>
-      <Time>2012-07-18T12:23:01.7897433+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Models\null_normal.xnb</Output>
+      <Time>2012-06-08T16:13:52+01:00</Time>
     </Item>
     <Item>
       <Source>Models\null_specular.tga</Source>
@@ -124,8 +124,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Models\null_specular.xnb</Output>
-      <Time>2012-07-18T12:23:01.7907434+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Models\null_specular.xnb</Output>
+      <Time>2012-06-08T16:13:52+01:00</Time>
     </Item>
     <Item>
       <Source>Models\null_diffuse.tga</Source>
@@ -133,8 +133,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Models\null_diffuse.xnb</Output>
-      <Time>2012-07-18T12:23:01.7867432+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Models\null_diffuse.xnb</Output>
+      <Time>2012-06-08T16:13:52+01:00</Time>
     </Item>
     <Item>
       <Source>Models\null_emissive.tga</Source>
@@ -142,8 +142,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Models\null_emissive.xnb</Output>
-      <Time>2012-07-18T12:23:01.7887433+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Models\null_emissive.xnb</Output>
+      <Time>2012-06-08T16:13:52+01:00</Time>
     </Item>
     <Item>
       <Source>Shaders\Textures\Cell Shading\celMap.bmp</Source>
@@ -151,8 +151,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Shaders\Textures\Cell Shading\celMap.xnb</Output>
-      <Time>2012-07-18T12:23:01.9947551+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Shaders\Textures\Cell Shading\celMap.xnb</Output>
+      <Time>2012-08-04T13:24:20.4814453+01:00</Time>
     </Item>
     <Item>
       <Source>Shaders\Textures\MLAA\AreaMap32.dds</Source>
@@ -160,8 +160,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Shaders\Textures\MLAA\AreaMap32.xnb</Output>
-      <Time>2012-07-18T12:23:02.0147562+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Shaders\Textures\MLAA\AreaMap32.xnb</Output>
+      <Time>2012-08-04T13:24:20.8408203+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\randomNormal.png</Source>
@@ -169,8 +169,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Textures\randomNormal.xnb</Output>
-      <Time>2012-07-18T12:23:02.1457637+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Textures\randomNormal.xnb</Output>
+      <Time>2012-06-08T16:13:54+01:00</Time>
     </Item>
     <Item>
       <Source>Shaders\Textures\SSAO\randomNormal.png</Source>
@@ -178,8 +178,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Shaders\Textures\SSAO\randomNormal.xnb</Output>
-      <Time>2012-07-18T12:23:02.0267569+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Shaders\Textures\SSAO\randomNormal.xnb</Output>
+      <Time>2012-08-04T13:24:21.1445312+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\Others\controlpoint.png</Source>
@@ -187,8 +187,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Textures\Others\controlpoint.xnb</Output>
-      <Time>2012-07-18T12:23:02.1187621+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Textures\Others\controlpoint.xnb</Output>
+      <Time>2012-06-08T16:13:52+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\GrassNormalMap.png</Source>
@@ -196,8 +196,58 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Textures\GrassNormalMap.xnb</Output>
-      <Time>2012-07-18T12:23:02.0927607+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Textures\GrassNormalMap.xnb</Output>
+      <Time>2012-07-11T00:49:48+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\Water\water.png</Source>
+      <Name>Textures\Water\water</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>WaterProcessor</Processor>
+      <Parameters>
+        <Data Key="WaterLength">32</Data>
+        <Data Key="WaterScale">30</Data>
+        <Data Key="WaterWidth">32</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Textures\Water\water.xnb</Output>
+      <Time>2012-07-13T00:15:32+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\Water\WaterDUDV.png</Source>
+      <Name>Textures\Water\WaterDUDV</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Textures\Water\WaterDUDV.xnb</Output>
+      <Time>2012-07-12T18:04:38+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\Water\waterMap.jpg</Source>
+      <Name>Textures\Water\waterMap</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Textures\Water\waterMap.xnb</Output>
+      <Time>2012-07-11T17:35:16+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\Water\WaterNormal.png</Source>
+      <Name>Textures\Water\WaterNormal</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Textures\Water\WaterNormal.xnb</Output>
+      <Time>2012-07-15T01:26:00.921875+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\TileSets\basicTiles.png</Source>
+      <Name>Textures\TileSets\basicTiles</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Textures\TileSets\basicTiles.xnb</Output>
+      <Time>2012-08-04T13:35:14.1064453+01:00</Time>
     </Item>
     <Item>
       <Source>Trees\Willow.ltree</Source>
@@ -205,8 +255,8 @@
       <Importer>TreeGeneratorImporter</Importer>
       <Processor>TreeProfileProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Trees\Willow.xnb</Output>
-      <Time>2012-07-18T12:23:02.1707651+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Trees\Willow.xnb</Output>
+      <Time>2012-06-08T16:13:50+01:00</Time>
     </Item>
     <Item>
       <Source>Trees\Rug.ltree</Source>
@@ -214,8 +264,8 @@
       <Importer>TreeGeneratorImporter</Importer>
       <Processor>TreeProfileProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Trees\Rug.xnb</Output>
-      <Time>2012-07-18T12:23:02.1697651+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Trees\Rug.xnb</Output>
+      <Time>2012-06-08T16:13:50+01:00</Time>
     </Item>
     <Item>
       <Source>Trees\Pine.ltree</Source>
@@ -223,8 +273,8 @@
       <Importer>TreeGeneratorImporter</Importer>
       <Processor>TreeProfileProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Trees\Pine.xnb</Output>
-      <Time>2012-07-18T12:23:02.168765+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Trees\Pine.xnb</Output>
+      <Time>2012-06-08T16:13:50+01:00</Time>
     </Item>
     <Item>
       <Source>Trees\Graywood.ltree</Source>
@@ -232,8 +282,8 @@
       <Importer>TreeGeneratorImporter</Importer>
       <Processor>TreeProfileProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Trees\Graywood.xnb</Output>
-      <Time>2012-07-18T12:23:02.1677649+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Trees\Graywood.xnb</Output>
+      <Time>2012-06-08T16:13:50+01:00</Time>
     </Item>
     <Item>
       <Source>Trees\Gardenwood.ltree</Source>
@@ -241,8 +291,8 @@
       <Importer>TreeGeneratorImporter</Importer>
       <Processor>TreeProfileProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Trees\Gardenwood.xnb</Output>
-      <Time>2012-07-18T12:23:02.1657648+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Trees\Gardenwood.xnb</Output>
+      <Time>2012-06-08T16:13:50+01:00</Time>
     </Item>
     <Item>
       <Source>Trees\Birch.ltree</Source>
@@ -250,8 +300,8 @@
       <Importer>TreeGeneratorImporter</Importer>
       <Processor>TreeProfileProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Trees\Birch.xnb</Output>
-      <Time>2012-07-18T12:23:02.1647648+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Trees\Birch.xnb</Output>
+      <Time>2012-06-08T16:13:50+01:00</Time>
     </Item>
     <Item>
       <Source>LTreeShaders\Leaves.fx</Source>
@@ -259,8 +309,8 @@
       <Importer>EffectImporter</Importer>
       <Processor>EffectProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\LTreeShaders\Leaves.xnb</Output>
-      <Time>2012-07-18T12:23:01.4707251+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\LTreeShaders\Leaves.xnb</Output>
+      <Time>2012-06-08T16:13:54+01:00</Time>
     </Item>
     <Item>
       <Source>LTreeShaders\Trunk.fx</Source>
@@ -268,8 +318,8 @@
       <Importer>EffectImporter</Importer>
       <Processor>EffectProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\LTreeShaders\Trunk.xnb</Output>
-      <Time>2012-07-18T12:23:01.4717251+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\LTreeShaders\Trunk.xnb</Output>
+      <Time>2012-06-08T16:13:54+01:00</Time>
     </Item>
     <Item>
       <Source>Shaders\Post Processing\BWPostProcessor.fx</Source>
@@ -280,8 +330,8 @@
         <Data Key="DebugMode">Optimize</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Shaders\Post Processing\BWPostProcessor.xnb</Output>
-      <Time>2012-07-18T12:23:01.9147505+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Shaders\Post Processing\BWPostProcessor.xnb</Output>
+      <Time>2012-06-08T16:13:54+01:00</Time>
     </Item>
     <Item>
       <Source>Shaders\Post Processing\GaussianBlurPostProcessor.fx</Source>
@@ -292,8 +342,8 @@
         <Data Key="DebugMode">Optimize</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Shaders\Post Processing\GaussianBlurPostProcessor.xnb</Output>
-      <Time>2012-07-18T12:23:01.9287513+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Shaders\Post Processing\GaussianBlurPostProcessor.xnb</Output>
+      <Time>2012-06-08T16:13:54+01:00</Time>
     </Item>
     <Item>
       <Source>Shaders\Post Processing\DOFPostProcessor.fx</Source>
@@ -304,8 +354,8 @@
         <Data Key="DebugMode">Optimize</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Shaders\Post Processing\DOFPostProcessor.xnb</Output>
-      <Time>2012-07-18T12:23:01.9187507+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Shaders\Post Processing\DOFPostProcessor.xnb</Output>
+      <Time>2012-06-08T16:13:54+01:00</Time>
     </Item>
     <Item>
       <Source>Shaders\Post Processing\BloomPostProcessor.fx</Source>
@@ -316,8 +366,8 @@
         <Data Key="DebugMode">Optimize</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Shaders\Post Processing\BloomPostProcessor.xnb</Output>
-      <Time>2012-07-18T12:23:01.9167506+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Shaders\Post Processing\BloomPostProcessor.xnb</Output>
+      <Time>2012-06-08T16:13:54+01:00</Time>
     </Item>
     <Item>
       <Source>Shaders\Post Processing\MergeBloomPostProcessor.fx</Source>
@@ -328,8 +378,8 @@
         <Data Key="DebugMode">Optimize</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Shaders\Post Processing\MergeBloomPostProcessor.xnb</Output>
-      <Time>2012-07-18T12:23:01.9327515+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Shaders\Post Processing\MergeBloomPostProcessor.xnb</Output>
+      <Time>2012-07-05T10:45:52+01:00</Time>
     </Item>
     <Item>
       <Source>Shaders\Deferred Rendering\ClearGBuffer.fx</Source>
@@ -340,8 +390,8 @@
         <Data Key="DebugMode">Optimize</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Shaders\Deferred Rendering\ClearGBuffer.xnb</Output>
-      <Time>2012-07-18T12:23:01.8317457+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Shaders\Deferred Rendering\ClearGBuffer.xnb</Output>
+      <Time>2012-08-04T13:24:19.0429687+01:00</Time>
     </Item>
     <Item>
       <Source>Shaders\Deferred Rendering\RenderGBuffer.fx</Source>
@@ -352,15 +402,15 @@
         <Data Key="DebugMode">Optimize</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Shaders\Deferred Rendering\RenderGBuffer.xnb</Output>
-      <Time>2012-08-03T10:27:47.9310505+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Shaders\Deferred Rendering\RenderGBuffer.xnb</Output>
+      <Time>2012-08-04T13:24:19.0839843+01:00</Time>
       <Dependency>
         <Key>Shaders\Deferred Rendering\ppshared.vsi</Key>
-        <Value>2012-07-18T12:23:01.8507468+01:00</Value>
+        <Value>2012-06-08T16:13:54+01:00</Value>
       </Dependency>
       <Dependency>
         <Key>Shaders\Deferred Rendering\ToneMapping.fxh</Key>
-        <Value>2012-07-18T12:23:01.8437464+01:00</Value>
+        <Value>2012-07-04T15:55:40+01:00</Value>
       </Dependency>
     </Item>
     <Item>
@@ -372,15 +422,15 @@
         <Data Key="DebugMode">Optimize</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Shaders\Deferred Rendering\DirectionalLight.xnb</Output>
-      <Time>2012-07-18T12:23:01.8377461+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Shaders\Deferred Rendering\DirectionalLight.xnb</Output>
+      <Time>2012-07-10T21:05:36+01:00</Time>
       <Dependency>
         <Key>Shaders\Deferred Rendering\ppshared.vsi</Key>
-        <Value>2012-07-18T12:23:01.8507468+01:00</Value>
+        <Value>2012-06-08T16:13:54+01:00</Value>
       </Dependency>
       <Dependency>
         <Key>Shaders\Deferred Rendering\shadow.vsi</Key>
-        <Value>2012-07-18T12:23:01.8517469+01:00</Value>
+        <Value>2012-06-08T16:13:54+01:00</Value>
       </Dependency>
     </Item>
     <Item>
@@ -392,8 +442,8 @@
         <Data Key="DebugMode">Optimize</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Shaders\Deferred Rendering\CombineFinal.xnb</Output>
-      <Time>2012-07-18T12:23:01.835746+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Shaders\Deferred Rendering\CombineFinal.xnb</Output>
+      <Time>2012-07-05T23:45:34+01:00</Time>
     </Item>
     <Item>
       <Source>Shaders\Deferred Rendering\PointLight.fx</Source>
@@ -404,11 +454,11 @@
         <Data Key="DebugMode">Optimize</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Shaders\Deferred Rendering\PointLight.xnb</Output>
-      <Time>2012-07-18T12:23:01.8397462+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Shaders\Deferred Rendering\PointLight.xnb</Output>
+      <Time>2012-07-05T23:45:20+01:00</Time>
       <Dependency>
         <Key>Shaders\Helpers\Discard.fxh</Key>
-        <Value>2012-07-18T12:23:01.8677478+01:00</Value>
+        <Value>2012-06-08T16:13:54+01:00</Value>
       </Dependency>
     </Item>
     <Item>
@@ -420,8 +470,8 @@
         <Data Key="DebugMode">Optimize</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Shaders\Post Processing\EdgeDetectionPostProcessor.xnb</Output>
-      <Time>2012-07-18T12:23:01.9197508+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Shaders\Post Processing\EdgeDetectionPostProcessor.xnb</Output>
+      <Time>2012-06-08T16:13:54+01:00</Time>
     </Item>
     <Item>
       <Source>Shaders\Post Processing\MLAAPostProcessor.fx</Source>
@@ -432,11 +482,11 @@
         <Data Key="DebugMode">Optimize</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Shaders\Post Processing\MLAAPostProcessor.xnb</Output>
-      <Time>2012-07-18T12:23:01.9297513+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Shaders\Post Processing\MLAAPostProcessor.xnb</Output>
+      <Time>2012-06-08T16:13:54+01:00</Time>
       <Dependency>
         <Key>Shaders\Helpers\Discard.fxh</Key>
-        <Value>2012-07-18T12:23:01.8677478+01:00</Value>
+        <Value>2012-06-08T16:13:54+01:00</Value>
       </Dependency>
     </Item>
     <Item>
@@ -448,11 +498,11 @@
         <Data Key="DebugMode">Optimize</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Shaders\Post Processing\FilmMappingPostProcessor.xnb</Output>
-      <Time>2012-07-18T12:23:01.9217509+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Shaders\Post Processing\FilmMappingPostProcessor.xnb</Output>
+      <Time>2012-06-08T16:13:54+01:00</Time>
       <Dependency>
         <Key>Shaders\Post Processing\Filmgrain.fxh</Key>
-        <Value>2012-07-18T12:23:01.9227509+01:00</Value>
+        <Value>2012-06-08T16:13:54+01:00</Value>
       </Dependency>
     </Item>
     <Item>
@@ -464,8 +514,8 @@
         <Data Key="DebugMode">Optimize</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Shaders\Post Processing\SSAO.xnb</Output>
-      <Time>2012-07-18T12:23:01.9347516+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Shaders\Post Processing\SSAO.xnb</Output>
+      <Time>2012-06-08T16:13:54+01:00</Time>
     </Item>
     <Item>
       <Source>Shaders\Post Processing\SSAOBlur.fx</Source>
@@ -476,8 +526,8 @@
         <Data Key="DebugMode">Optimize</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Shaders\Post Processing\SSAOBlur.xnb</Output>
-      <Time>2012-07-18T12:23:01.9357517+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Shaders\Post Processing\SSAOBlur.xnb</Output>
+      <Time>2012-06-08T16:13:54+01:00</Time>
     </Item>
     <Item>
       <Source>Shaders\Post Processing\SSAOMerge.fx</Source>
@@ -488,8 +538,8 @@
         <Data Key="DebugMode">Optimize</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Shaders\Post Processing\SSAOMerge.xnb</Output>
-      <Time>2012-07-18T12:23:01.9377518+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Shaders\Post Processing\SSAOMerge.xnb</Output>
+      <Time>2012-06-08T16:13:54+01:00</Time>
     </Item>
     <Item>
       <Source>Shaders\Others\Billboard.fx</Source>
@@ -497,8 +547,8 @@
       <Importer>EffectImporter</Importer>
       <Processor>EffectProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Shaders\Others\Billboard.xnb</Output>
-      <Time>2012-07-18T12:23:01.8807485+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Shaders\Others\Billboard.xnb</Output>
+      <Time>2012-06-08T16:13:54+01:00</Time>
     </Item>
     <Item>
       <Source>Shaders\Others\pointsprite.fx</Source>
@@ -506,8 +556,8 @@
       <Importer>EffectImporter</Importer>
       <Processor>EffectProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Shaders\Others\pointsprite.xnb</Output>
-      <Time>2012-07-18T12:23:01.8817486+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Shaders\Others\pointsprite.xnb</Output>
+      <Time>2012-06-08T16:13:54+01:00</Time>
     </Item>
     <Item>
       <Source>Shaders\Shadows\ShadowDepthMap.fx</Source>
@@ -518,8 +568,8 @@
         <Data Key="DebugMode">Optimize</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Shaders\Shadows\ShadowDepthMap.xnb</Output>
-      <Time>2012-07-18T12:23:01.9537527+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Shaders\Shadows\ShadowDepthMap.xnb</Output>
+      <Time>2012-06-08T16:13:54+01:00</Time>
     </Item>
     <Item>
       <Source>Shaders\CubeMap\cubemap.fx</Source>
@@ -530,8 +580,8 @@
         <Data Key="DebugMode">Optimize</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Shaders\CubeMap\cubemap.xnb</Output>
-      <Time>2012-07-18T12:23:01.8057442+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Shaders\CubeMap\cubemap.xnb</Output>
+      <Time>2012-07-06T12:25:54+01:00</Time>
     </Item>
     <Item>
       <Source>Shaders\Deferred Rendering\WaterGBuffer.fx</Source>
@@ -542,15 +592,15 @@
         <Data Key="DebugMode">Optimize</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Shaders\Deferred Rendering\WaterGBuffer.xnb</Output>
-      <Time>2012-08-03T10:27:47.9560519+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Shaders\Deferred Rendering\WaterGBuffer.xnb</Output>
+      <Time>2012-08-04T13:24:19.1542968+01:00</Time>
       <Dependency>
         <Key>Shaders\Deferred Rendering\ppshared.vsi</Key>
-        <Value>2012-07-18T12:23:01.8507468+01:00</Value>
+        <Value>2012-06-08T16:13:54+01:00</Value>
       </Dependency>
       <Dependency>
         <Key>Shaders\Deferred Rendering\ToneMapping.fxh</Key>
-        <Value>2012-07-18T12:23:01.8437464+01:00</Value>
+        <Value>2012-07-04T15:55:40+01:00</Value>
       </Dependency>
     </Item>
     <Item>
@@ -559,8 +609,8 @@
       <Importer>EffectImporter</Importer>
       <Processor>EffectProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Shaders\Post Processing\Fxaa.xnb</Output>
-      <Time>2012-07-18T12:23:01.9267512+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Shaders\Post Processing\Fxaa.xnb</Output>
+      <Time>2012-07-16T16:55:30+01:00</Time>
     </Item>
     <Item>
       <Source>Models\X\sphere.x</Source>
@@ -568,11 +618,11 @@
       <Importer>XImporter</Importer>
       <Processor>ModelProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Models\X\sphere.xnb</Output>
-      <Time>2012-07-18T12:23:01.7857431+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Models\X\sphere.xnb</Output>
+      <Time>2012-06-08T16:13:52+01:00</Time>
       <Dependency>
         <Key>obj\x86\Release\Models\X\sphere_0.xml</Key>
-        <Value>2012-08-03T11:16:06.4808381+01:00</Value>
+        <Value>2012-08-05T00:34:30.3730468+01:00</Value>
       </Dependency>
     </Item>
     <Item>
@@ -586,19 +636,19 @@
         <Data Key="NormalMapTexture">boardnormal.png</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Models\X\Ground.xnb</Output>
-      <Time>2012-07-18T12:23:01.7567414+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Models\X\Ground.xnb</Output>
+      <Time>2012-06-08T16:13:52+01:00</Time>
       <Dependency>
         <Key>obj\x86\Release\Models\X\Ground_0.xml</Key>
-        <Value>2012-08-03T11:16:07.1928788+01:00</Value>
+        <Value>2012-08-05T00:34:30.4443359+01:00</Value>
       </Dependency>
-      <Request>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Shaders\Deferred Rendering\RenderGBuffer_0.xnb</Request>
-      <Request>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Models\X\ground_diffuse_0.xnb</Request>
-      <Request>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Models\null_diffuse_0.xnb</Request>
-      <Request>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Models\X\boardnormal_0.xnb</Request>
-      <Request>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Models\null_specular_0.xnb</Request>
-      <Request>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Models\null_emissive_0.xnb</Request>
-      <Request>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Shaders\Deferred Rendering\RenderGBuffer_1.xnb</Request>
+      <Request>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Shaders\Deferred Rendering\RenderGBuffer_0.xnb</Request>
+      <Request>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Models\X\ground_diffuse_0.xnb</Request>
+      <Request>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Models\null_diffuse_0.xnb</Request>
+      <Request>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Models\X\boardnormal_0.xnb</Request>
+      <Request>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Models\null_specular_0.xnb</Request>
+      <Request>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Models\null_emissive_0.xnb</Request>
+      <Request>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Shaders\Deferred Rendering\RenderGBuffer_1.xnb</Request>
     </Item>
     <Item>
       <Source>Models\FBX\Ship1\ship1.fbx</Source>
@@ -613,19 +663,19 @@
         <Data Key="CastShadows">True</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Models\FBX\Ship1\ship1.xnb</Output>
-      <Time>2012-07-18T12:23:01.6027326+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Models\FBX\Ship1\ship1.xnb</Output>
+      <Time>2012-06-08T16:13:52+01:00</Time>
       <Dependency>
         <Key>obj\x86\Release\Models\FBX\Ship1\ship1_0.xml</Key>
-        <Value>2012-08-03T11:16:12.5661861+01:00</Value>
+        <Value>2012-08-05T00:34:33.9394531+01:00</Value>
       </Dependency>
-      <Request>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Shaders\Deferred Rendering\RenderGBuffer_0.xnb</Request>
-      <Request>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Models\FBX\Ship1\ship1_c_0.xnb</Request>
-      <Request>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Models\null_diffuse_0.xnb</Request>
-      <Request>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Models\FBX\Ship1\ship1_n_0.xnb</Request>
-      <Request>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Models\FBX\Ship1\ship1_s_0.xnb</Request>
-      <Request>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Models\null_emissive_0.xnb</Request>
-      <Request>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Shaders\Deferred Rendering\RenderGBuffer_1.xnb</Request>
+      <Request>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Shaders\Deferred Rendering\RenderGBuffer_0.xnb</Request>
+      <Request>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Models\FBX\Ship1\ship1_c_0.xnb</Request>
+      <Request>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Models\null_diffuse_0.xnb</Request>
+      <Request>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Models\FBX\Ship1\ship1_n_0.xnb</Request>
+      <Request>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Models\FBX\Ship1\ship1_s_0.xnb</Request>
+      <Request>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Models\null_emissive_0.xnb</Request>
+      <Request>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Shaders\Deferred Rendering\RenderGBuffer_1.xnb</Request>
     </Item>
     <Item>
       <Source>Fonts\defaultfont.spritefont</Source>
@@ -633,37 +683,37 @@
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Fonts\defaultfont.xnb</Output>
-      <Time>2012-07-18T12:23:01.4537241+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Fonts\defaultfont.xnb</Output>
+      <Time>2012-06-08T16:13:54+01:00</Time>
     </Item>
     <Item>
       <Source>Models\X\sphere.x</Source>
       <Importer>XImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
       <Output>obj\x86\Release\Models\X\sphere_0.xml</Output>
-      <Time>2012-07-18T12:23:01.7857431+01:00</Time>
+      <Time>2012-06-08T16:13:52+01:00</Time>
     </Item>
     <Item>
       <Source>Models\X\Ground.x</Source>
       <Importer>XImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
       <Output>obj\x86\Release\Models\X\Ground_0.xml</Output>
-      <Time>2012-07-18T12:23:01.7567414+01:00</Time>
+      <Time>2012-06-08T16:13:52+01:00</Time>
     </Item>
     <Item>
       <Source>Shaders\Deferred Rendering\RenderGBuffer.fx</Source>
       <Importer>EffectImporter</Importer>
       <Processor>EffectProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Shaders\Deferred Rendering\RenderGBuffer_0.xnb</Output>
-      <Time>2012-08-03T10:27:47.9310505+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Shaders\Deferred Rendering\RenderGBuffer_0.xnb</Output>
+      <Time>2012-08-04T13:24:19.0839843+01:00</Time>
       <Dependency>
         <Key>Shaders\Deferred Rendering\ppshared.vsi</Key>
-        <Value>2012-07-18T12:23:01.8507468+01:00</Value>
+        <Value>2012-06-08T16:13:54+01:00</Value>
       </Dependency>
       <Dependency>
         <Key>Shaders\Deferred Rendering\ToneMapping.fxh</Key>
-        <Value>2012-07-18T12:23:01.8437464+01:00</Value>
+        <Value>2012-07-04T15:55:40+01:00</Value>
       </Dependency>
     </Item>
     <Item>
@@ -679,8 +729,8 @@
         <Data Key="PremultiplyAlpha" Type="bool">true</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Models\X\ground_diffuse_0.xnb</Output>
-      <Time>2012-07-18T12:23:01.7777426+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Models\X\ground_diffuse_0.xnb</Output>
+      <Time>2012-06-08T16:13:52+01:00</Time>
     </Item>
     <Item>
       <Source>Models\null_diffuse.tga</Source>
@@ -695,8 +745,8 @@
         <Data Key="PremultiplyAlpha" Type="bool">true</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Models\null_diffuse_0.xnb</Output>
-      <Time>2012-07-18T12:23:01.7867432+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Models\null_diffuse_0.xnb</Output>
+      <Time>2012-06-08T16:13:52+01:00</Time>
     </Item>
     <Item>
       <Source>Models\X\boardnormal.png</Source>
@@ -711,8 +761,8 @@
         <Data Key="PremultiplyAlpha" Type="bool">true</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Models\X\boardnormal_0.xnb</Output>
-      <Time>2012-07-18T12:23:01.7697422+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Models\X\boardnormal_0.xnb</Output>
+      <Time>2012-06-08T16:13:52+01:00</Time>
     </Item>
     <Item>
       <Source>Models\null_specular.tga</Source>
@@ -727,8 +777,8 @@
         <Data Key="PremultiplyAlpha" Type="bool">true</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Models\null_specular_0.xnb</Output>
-      <Time>2012-07-18T12:23:01.7907434+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Models\null_specular_0.xnb</Output>
+      <Time>2012-06-08T16:13:52+01:00</Time>
     </Item>
     <Item>
       <Source>Models\null_emissive.tga</Source>
@@ -743,23 +793,23 @@
         <Data Key="PremultiplyAlpha" Type="bool">true</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Models\null_emissive_0.xnb</Output>
-      <Time>2012-07-18T12:23:01.7887433+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Models\null_emissive_0.xnb</Output>
+      <Time>2012-06-08T16:13:52+01:00</Time>
     </Item>
     <Item>
       <Source>Shaders\Deferred Rendering\RenderGBuffer.fx</Source>
       <Importer>EffectImporter</Importer>
       <Processor>DeferredRendererFXProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Shaders\Deferred Rendering\RenderGBuffer_1.xnb</Output>
-      <Time>2012-08-03T10:27:47.9310505+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Shaders\Deferred Rendering\RenderGBuffer_1.xnb</Output>
+      <Time>2012-08-04T13:24:19.0839843+01:00</Time>
       <Dependency>
         <Key>Shaders\Deferred Rendering\ppshared.vsi</Key>
-        <Value>2012-07-18T12:23:01.8507468+01:00</Value>
+        <Value>2012-06-08T16:13:54+01:00</Value>
       </Dependency>
       <Dependency>
         <Key>Shaders\Deferred Rendering\ToneMapping.fxh</Key>
-        <Value>2012-07-18T12:23:01.8437464+01:00</Value>
+        <Value>2012-07-04T15:55:40+01:00</Value>
       </Dependency>
     </Item>
     <Item>
@@ -767,7 +817,7 @@
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
       <Output>obj\x86\Release\Models\FBX\Ship1\ship1_0.xml</Output>
-      <Time>2012-07-18T12:23:01.6027326+01:00</Time>
+      <Time>2012-06-08T16:13:52+01:00</Time>
     </Item>
     <Item>
       <Source>Models\FBX\Ship1\ship1_c.tga</Source>
@@ -782,8 +832,8 @@
         <Data Key="PremultiplyAlpha" Type="bool">true</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Models\FBX\Ship1\ship1_c_0.xnb</Output>
-      <Time>2012-07-18T12:23:01.6247339+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Models\FBX\Ship1\ship1_c_0.xnb</Output>
+      <Time>2012-06-08T16:13:52+01:00</Time>
     </Item>
     <Item>
       <Source>Models\FBX\Ship1\ship1_n.tga</Source>
@@ -798,8 +848,8 @@
         <Data Key="PremultiplyAlpha" Type="bool">true</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Models\FBX\Ship1\ship1_n_0.xnb</Output>
-      <Time>2012-07-18T12:23:01.6517354+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Models\FBX\Ship1\ship1_n_0.xnb</Output>
+      <Time>2012-06-08T16:13:52+01:00</Time>
     </Item>
     <Item>
       <Source>Models\FBX\Ship1\ship1_s.tga</Source>
@@ -814,17 +864,8 @@
         <Data Key="PremultiplyAlpha" Type="bool">true</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Models\FBX\Ship1\ship1_s_0.xnb</Output>
-      <Time>2012-07-18T12:23:01.6607359+01:00</Time>
-    </Item>
-    <Item>
-      <Source>Textures\TileSets\basicTiles.png</Source>
-      <Name>Textures\TileSets\basicTiles</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Textures\TileSets\basicTiles.xnb</Output>
-      <Time>2012-08-03T15:13:24.2011891+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\Models\FBX\Ship1\ship1_s_0.xnb</Output>
+      <Time>2012-06-08T16:13:52+01:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
@@ -832,47 +873,51 @@
       <TargetProfile>HiDef</TargetProfile>
       <BuildConfiguration>Release</BuildConfiguration>
       <CompressContent>true</CompressContent>
-      <RootDirectory>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\GraphicsContent\</RootDirectory>
-      <LoggerRootDirectory>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\</LoggerRootDirectory>
-      <IntermediateDirectory>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\GraphicsContent\obj\x86\Release\</IntermediateDirectory>
-      <OutputDirectory>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\</OutputDirectory>
+      <RootDirectory>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\GraphicsContent\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\GraphicsContent\obj\x86\Release\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>
+        <Key>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\WaterPipeline\bin\x86\Debug\Psynergy.WaterPipeline.dll</Key>
+        <Value>2012-08-05T00:34:19.2441406+01:00</Value>
+      </Assembly>
+      <Assembly>
         <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.XImporter.dll</Key>
-        <Value>2010-08-23T13:41:18+01:00</Value>
+        <Value>2010-08-23T12:41:18+01:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.VideoImporters.dll</Key>
-        <Value>2010-08-23T13:41:18+01:00</Value>
+        <Value>2010-08-23T12:41:18+01:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.TextureImporter.dll</Key>
-        <Value>2010-08-23T13:41:18+01:00</Value>
+        <Value>2010-08-23T12:41:18+01:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.FBXImporter.dll</Key>
-        <Value>2010-08-23T13:41:18+01:00</Value>
+        <Value>2010-08-23T12:41:18+01:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.EffectImporter.dll</Key>
-        <Value>2010-08-23T13:41:18+01:00</Value>
+        <Value>2010-08-23T12:41:18+01:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.AudioImporters.dll</Key>
-        <Value>2010-08-23T13:41:18+01:00</Value>
+        <Value>2010-08-23T12:41:18+01:00</Value>
       </Assembly>
       <Assembly>
-        <Key>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\Middleware\LTree Generator\LTreesPipeline.dll</Key>
-        <Value>2012-07-18T12:23:08.4261229+01:00</Value>
+        <Key>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\Middleware\LTree Generator\LTreesPipeline.dll</Key>
+        <Value>2012-06-08T16:13:56+01:00</Value>
       </Assembly>
       <Assembly>
-        <Key>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\Deferred Pipeline\bin\x86\Debug\Deferred Pipeline.dll</Key>
-        <Value>2012-08-03T11:15:43.1525038+01:00</Value>
+        <Key>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\Deferred Pipeline\bin\x86\Debug\Deferred Pipeline.dll</Key>
+        <Value>2012-08-05T00:34:19.8925781+01:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
-        <Value>2012-02-16T14:45:05.9973636+00:00</Value>
+        <Value>2011-06-12T00:33:52.5478515+01:00</Value>
       </Assembly>
     </Assemblies>
   </Asset>

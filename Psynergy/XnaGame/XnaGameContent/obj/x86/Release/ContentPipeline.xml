@@ -7,8 +7,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Models\FBX\Skinned\GamePawn\blue_playpiece.xnb</Output>
-      <Time>2012-07-18T12:23:11.8983215+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Models\FBX\Skinned\GamePawn\blue_playpiece.xnb</Output>
+      <Time>2012-06-08T16:12:22+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\Others\default.png</Source>
@@ -16,8 +16,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\Others\default.xnb</Output>
-      <Time>2012-07-18T12:23:20.3998078+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\Others\default.xnb</Output>
+      <Time>2012-06-08T16:12:42+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\Others\evilspoon.jpg</Source>
@@ -25,8 +25,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\Others\evilspoon.xnb</Output>
-      <Time>2012-07-18T12:23:20.4028079+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\Others\evilspoon.xnb</Output>
+      <Time>2012-06-08T16:12:42+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\Others\lightTexture.tga</Source>
@@ -34,8 +34,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\Others\lightTexture.xnb</Output>
-      <Time>2012-07-18T12:23:20.4058081+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\Others\lightTexture.xnb</Output>
+      <Time>2012-06-08T16:12:42+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\Menus\ExitTest.png</Source>
@@ -43,8 +43,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\Menus\ExitTest.xnb</Output>
-      <Time>2012-07-18T12:23:20.2207975+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\Menus\ExitTest.xnb</Output>
+      <Time>2012-06-08T16:12:46+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\Menus\OptionsText.png</Source>
@@ -52,8 +52,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\Menus\OptionsText.xnb</Output>
-      <Time>2012-07-18T12:23:20.2597998+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\Menus\OptionsText.xnb</Output>
+      <Time>2012-06-08T16:12:46+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\Menus\OptionTextSelect.png</Source>
@@ -61,8 +61,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\Menus\OptionTextSelect.xnb</Output>
-      <Time>2012-07-18T12:23:20.2567996+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\Menus\OptionTextSelect.xnb</Output>
+      <Time>2012-06-08T16:12:46+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\Menus\ExitTextSelect.png</Source>
@@ -70,8 +70,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\Menus\ExitTextSelect.xnb</Output>
-      <Time>2012-07-18T12:23:20.2217976+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\Menus\ExitTextSelect.xnb</Output>
+      <Time>2012-06-08T16:12:46+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\Menus\BackTextSelect.png</Source>
@@ -79,8 +79,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\Menus\BackTextSelect.xnb</Output>
-      <Time>2012-07-18T12:23:20.2007964+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\Menus\BackTextSelect.xnb</Output>
+      <Time>2012-06-08T16:12:46+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\Menus\BackText.png</Source>
@@ -88,8 +88,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\Menus\BackText.xnb</Output>
-      <Time>2012-07-18T12:23:20.1997963+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\Menus\BackText.xnb</Output>
+      <Time>2012-06-08T16:12:46+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\Menus\Optionmenu.png</Source>
@@ -97,8 +97,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\Menus\Optionmenu.xnb</Output>
-      <Time>2012-07-18T12:23:20.2587997+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\Menus\Optionmenu.xnb</Output>
+      <Time>2012-06-08T16:12:46+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\Menus\MainMenuTextselect.png</Source>
@@ -106,8 +106,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\Menus\MainMenuTextselect.xnb</Output>
-      <Time>2012-07-18T12:23:20.2547995+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\Menus\MainMenuTextselect.xnb</Output>
+      <Time>2012-06-08T16:12:46+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\Menus\MainMenuText.png</Source>
@@ -115,8 +115,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\Menus\MainMenuText.xnb</Output>
-      <Time>2012-07-18T12:23:20.2527994+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\Menus\MainMenuText.xnb</Output>
+      <Time>2012-06-08T16:12:46+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\Menus\StartText.png</Source>
@@ -124,8 +124,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\Menus\StartText.xnb</Output>
-      <Time>2012-07-18T12:23:20.2688003+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\Menus\StartText.xnb</Output>
+      <Time>2012-06-08T16:12:46+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\Menus\StartTextSelect.png</Source>
@@ -133,8 +133,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\Menus\StartTextSelect.xnb</Output>
-      <Time>2012-07-18T12:23:20.2698003+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\Menus\StartTextSelect.xnb</Output>
+      <Time>2012-06-08T16:12:46+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\Menus\MainMenuBackground.png</Source>
@@ -142,8 +142,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\Menus\MainMenuBackground.xnb</Output>
-      <Time>2012-07-18T12:23:20.2417987+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\Menus\MainMenuBackground.xnb</Output>
+      <Time>2012-06-08T16:12:46+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\Menus\CreditsText.png</Source>
@@ -151,8 +151,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\Menus\CreditsText.xnb</Output>
-      <Time>2012-07-18T12:23:20.2187974+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\Menus\CreditsText.xnb</Output>
+      <Time>2012-06-08T16:12:46+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\Menus\CreditsTextSelect.png</Source>
@@ -160,8 +160,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\Menus\CreditsTextSelect.xnb</Output>
-      <Time>2012-07-18T12:23:20.2197975+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\Menus\CreditsTextSelect.xnb</Output>
+      <Time>2012-06-08T16:12:46+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\Menus\CreditsBackground.png</Source>
@@ -169,8 +169,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\Menus\CreditsBackground.xnb</Output>
-      <Time>2012-07-18T12:23:20.2167973+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\Menus\CreditsBackground.xnb</Output>
+      <Time>2012-06-08T16:12:46+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\Others\endSquare.png</Source>
@@ -178,8 +178,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\Others\endSquare.xnb</Output>
-      <Time>2012-07-18T12:23:20.4008078+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\Others\endSquare.xnb</Output>
+      <Time>2012-06-08T16:12:42+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\Others\startSquare.png</Source>
@@ -187,8 +187,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\Others\startSquare.xnb</Output>
-      <Time>2012-07-18T12:23:20.4068082+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\Others\startSquare.xnb</Output>
+      <Time>2012-06-08T16:12:42+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\Others\ifSquare.png</Source>
@@ -196,8 +196,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\Others\ifSquare.xnb</Output>
-      <Time>2012-07-18T12:23:20.403808+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\Others\ifSquare.xnb</Output>
+      <Time>2012-06-08T16:12:42+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\Others\whileSquare.png</Source>
@@ -205,8 +205,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\Others\whileSquare.xnb</Output>
-      <Time>2012-07-18T12:23:20.4088083+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\Others\whileSquare.xnb</Output>
+      <Time>2012-06-08T16:12:42+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\Others\addSquare.png</Source>
@@ -214,8 +214,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\Others\addSquare.xnb</Output>
-      <Time>2012-07-18T12:23:20.368806+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\Others\addSquare.xnb</Output>
+      <Time>2012-06-08T16:12:42+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\Others\subSquare.png</Source>
@@ -223,8 +223,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\Others\subSquare.xnb</Output>
-      <Time>2012-07-18T12:23:20.4078082+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\Others\subSquare.xnb</Output>
+      <Time>2012-06-08T16:12:42+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\UI\player1text.png</Source>
@@ -232,8 +232,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\player1text.xnb</Output>
-      <Time>2012-07-18T12:23:21.3578626+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\player1text.xnb</Output>
+      <Time>2012-06-08T16:12:56+01:00</Time>
     </Item>
     <Item>
       <Source>Models\FBX\Skinned\GamePawn\red_playpiece.png</Source>
@@ -241,8 +241,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Models\FBX\Skinned\GamePawn\red_playpiece.xnb</Output>
-      <Time>2012-07-18T12:23:11.9373237+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Models\FBX\Skinned\GamePawn\red_playpiece.xnb</Output>
+      <Time>2012-06-08T16:12:22+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\UI\player2text.png</Source>
@@ -250,8 +250,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\player2text.xnb</Output>
-      <Time>2012-07-18T12:23:21.3588626+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\player2text.xnb</Output>
+      <Time>2012-06-08T16:12:56+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\Menus\loadingScreen.png</Source>
@@ -259,8 +259,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\Menus\loadingScreen.xnb</Output>
-      <Time>2012-07-18T12:23:20.2918016+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\Menus\loadingScreen.xnb</Output>
+      <Time>2012-06-08T16:12:46+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\UI\bluepawn.png</Source>
@@ -268,8 +268,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\bluepawn.xnb</Output>
-      <Time>2012-07-18T12:23:21.347862+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\bluepawn.xnb</Output>
+      <Time>2012-06-08T16:12:56+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\UI\redpawn.png</Source>
@@ -277,8 +277,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\redpawn.xnb</Output>
-      <Time>2012-07-18T12:23:21.3598627+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\redpawn.xnb</Output>
+      <Time>2012-06-08T16:12:48+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\UI\Tutorials\Tutorial1.png</Source>
@@ -286,8 +286,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\Tutorials\tutorial1.xnb</Output>
-      <Time>2012-07-18T12:23:21.3108599+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\Tutorials\tutorial1.xnb</Output>
+      <Time>2012-06-08T16:12:48+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\UI\Tutorials\Tutorial2.png</Source>
@@ -295,8 +295,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\Tutorials\tutorial2.xnb</Output>
-      <Time>2012-07-18T12:23:21.3168602+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\Tutorials\tutorial2.xnb</Output>
+      <Time>2012-06-08T16:12:48+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\UI\Tutorials\Tutorial3.png</Source>
@@ -304,8 +304,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\Tutorials\Tutorial3.xnb</Output>
-      <Time>2012-07-18T12:23:21.3218605+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\Tutorials\Tutorial3.xnb</Output>
+      <Time>2012-06-08T16:12:48+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\UI\Tutorials\Tutorial4.png</Source>
@@ -313,8 +313,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\Tutorials\Tutorial4.xnb</Output>
-      <Time>2012-07-18T12:23:21.3258607+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\Tutorials\Tutorial4.xnb</Output>
+      <Time>2012-06-08T16:12:48+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\UI\Tutorials\Tutorial5.png</Source>
@@ -322,8 +322,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\Tutorials\Tutorial5.xnb</Output>
-      <Time>2012-07-18T12:23:21.3318611+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\Tutorials\Tutorial5.xnb</Output>
+      <Time>2012-06-08T16:12:48+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\UI\Tutorials\Tutorial6.png</Source>
@@ -331,8 +331,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\Tutorials\Tutorial6.xnb</Output>
-      <Time>2012-07-18T12:23:21.3368614+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\Tutorials\Tutorial6.xnb</Output>
+      <Time>2012-06-08T16:12:48+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\UI\Tutorials\Tutorial7.png</Source>
@@ -340,8 +340,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\Tutorials\Tutorial7.xnb</Output>
-      <Time>2012-07-18T12:23:21.3418616+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\Tutorials\Tutorial7.xnb</Output>
+      <Time>2012-06-08T16:12:48+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\UI\rolldice.png</Source>
@@ -349,8 +349,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\rolldice.xnb</Output>
-      <Time>2012-07-18T12:23:21.3678631+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\rolldice.xnb</Output>
+      <Time>2012-06-08T16:12:48+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\UI\rolldiceselected.png</Source>
@@ -358,8 +358,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\rolldiceselected.xnb</Output>
-      <Time>2012-07-18T12:23:21.3688632+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\rolldiceselected.xnb</Output>
+      <Time>2012-06-08T16:12:56+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\UI\bluepawnselected.png</Source>
@@ -367,8 +367,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\bluepawnselected.xnb</Output>
-      <Time>2012-07-18T12:23:21.347862+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\bluepawnselected.xnb</Output>
+      <Time>2012-06-08T16:12:56+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\UI\redpawnselected.png</Source>
@@ -376,8 +376,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\redpawnselected.xnb</Output>
-      <Time>2012-07-18T12:23:21.3608627+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\redpawnselected.xnb</Output>
+      <Time>2012-06-08T16:12:56+01:00</Time>
     </Item>
     <Item>
       <Source>ParticleEffects\Mercury\Textures\Star.png</Source>
@@ -385,8 +385,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\ParticleEffects\Mercury\Textures\Star.xnb</Output>
-      <Time>2012-07-18T12:23:12.1813377+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\ParticleEffects\Mercury\Textures\Star.xnb</Output>
+      <Time>2012-06-08T16:12:22+01:00</Time>
     </Item>
     <Item>
       <Source>ParticleEffects\Mercury\Textures\Spikey001.png</Source>
@@ -394,8 +394,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\ParticleEffects\Mercury\Textures\Spikey001.xnb</Output>
-      <Time>2012-07-18T12:23:12.1803376+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\ParticleEffects\Mercury\Textures\Spikey001.xnb</Output>
+      <Time>2012-06-08T16:12:22+01:00</Time>
     </Item>
     <Item>
       <Source>ParticleEffects\Mercury\Textures\Beam.png</Source>
@@ -403,8 +403,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\ParticleEffects\Mercury\Textures\Beam.xnb</Output>
-      <Time>2012-07-18T12:23:12.1763374+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\ParticleEffects\Mercury\Textures\Beam.xnb</Output>
+      <Time>2012-06-08T16:12:22+01:00</Time>
     </Item>
     <Item>
       <Source>ParticleEffects\Mercury\Textures\BeamBlurred.png</Source>
@@ -412,8 +412,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\ParticleEffects\Mercury\Textures\BeamBlurred.xnb</Output>
-      <Time>2012-07-18T12:23:12.1773375+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\ParticleEffects\Mercury\Textures\BeamBlurred.xnb</Output>
+      <Time>2012-06-08T16:12:22+01:00</Time>
     </Item>
     <Item>
       <Source>ParticleEffects\Mercury\Textures\LensFlare.png</Source>
@@ -421,8 +421,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\ParticleEffects\Mercury\Textures\LensFlare.xnb</Output>
-      <Time>2012-07-18T12:23:12.1783375+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\ParticleEffects\Mercury\Textures\LensFlare.xnb</Output>
+      <Time>2012-06-08T16:12:22+01:00</Time>
     </Item>
     <Item>
       <Source>Models\FBX\Board\boardsquare.png</Source>
@@ -430,8 +430,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Models\FBX\Board\boardsquare.xnb</Output>
-      <Time>2012-07-18T12:23:11.5503016+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Models\FBX\Board\boardsquare.xnb</Output>
+      <Time>2012-06-08T16:12:22+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\CubeMaps\Canyon.dds</Source>
@@ -439,8 +439,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\CubeMaps\Canyon.xnb</Output>
-      <Time>2012-07-18T12:23:18.6947102+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\CubeMaps\Canyon.xnb</Output>
+      <Time>2012-06-08T16:12:42+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\UI\Questions\question1.png</Source>
@@ -448,8 +448,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\Questions\question1.xnb</Output>
-      <Time>2012-07-18T12:23:21.0568453+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\Questions\question1.xnb</Output>
+      <Time>2012-06-08T16:12:56+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\Menus\FullScreen.png</Source>
@@ -457,8 +457,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\Menus\FullScreen.xnb</Output>
-      <Time>2012-07-18T12:23:20.2227976+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\Menus\FullScreen.xnb</Output>
+      <Time>2012-06-08T16:12:46+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\Menus\FullScreenSelected.png</Source>
@@ -466,8 +466,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\Menus\FullScreenSelected.xnb</Output>
-      <Time>2012-07-18T12:23:20.2237977+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\Menus\FullScreenSelected.xnb</Output>
+      <Time>2012-06-08T16:12:46+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\Menus\GraphicsHigh.png</Source>
@@ -475,8 +475,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\Menus\GraphicsHigh.xnb</Output>
-      <Time>2012-07-18T12:23:20.2257978+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\Menus\GraphicsHigh.xnb</Output>
+      <Time>2012-06-08T16:12:46+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\Menus\GraphicsHighSelected.png</Source>
@@ -484,8 +484,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\Menus\GraphicsHighSelected.xnb</Output>
-      <Time>2012-07-18T12:23:20.2277979+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\Menus\GraphicsHighSelected.xnb</Output>
+      <Time>2012-06-08T16:12:46+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\Menus\GraphicsLow.png</Source>
@@ -493,8 +493,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\Menus\GraphicsLow.xnb</Output>
-      <Time>2012-07-18T12:23:20.228798+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\Menus\GraphicsLow.xnb</Output>
+      <Time>2012-06-08T16:12:46+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\Menus\GraphicsLowSelected.png</Source>
@@ -502,8 +502,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\Menus\GraphicsLowSelected.xnb</Output>
-      <Time>2012-07-18T12:23:20.2307981+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\Menus\GraphicsLowSelected.xnb</Output>
+      <Time>2012-06-08T16:12:46+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\Menus\SoundsOff.png</Source>
@@ -511,8 +511,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\Menus\SoundsOff.xnb</Output>
-      <Time>2012-07-18T12:23:20.2617999+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\Menus\SoundsOff.xnb</Output>
+      <Time>2012-06-08T16:12:46+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\Menus\SoundsOffSelected.png</Source>
@@ -520,8 +520,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\Menus\SoundsOffSelected.xnb</Output>
-      <Time>2012-07-18T12:23:20.2638+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\Menus\SoundsOffSelected.xnb</Output>
+      <Time>2012-06-08T16:12:46+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\Menus\SoundsOn.png</Source>
@@ -529,8 +529,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\Menus\SoundsOn.xnb</Output>
-      <Time>2012-07-18T12:23:20.2648+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\Menus\SoundsOn.xnb</Output>
+      <Time>2012-06-08T16:12:46+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\Menus\SoundsOnSelected.png</Source>
@@ -538,8 +538,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\Menus\SoundsOnSelected.xnb</Output>
-      <Time>2012-07-18T12:23:20.2658001+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\Menus\SoundsOnSelected.xnb</Output>
+      <Time>2012-06-08T16:12:46+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\Menus\WindowedSelected.png</Source>
@@ -547,8 +547,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\Menus\WindowedSelected.xnb</Output>
-      <Time>2012-07-18T12:23:20.2858012+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\Menus\WindowedSelected.xnb</Output>
+      <Time>2012-06-08T16:12:46+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\Menus\1Player.png</Source>
@@ -556,8 +556,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\Menus\1Player.xnb</Output>
-      <Time>2012-07-18T12:23:20.1787951+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\Menus\1Player.xnb</Output>
+      <Time>2012-06-08T16:12:46+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\Menus\1PlayerSelected.png</Source>
@@ -565,8 +565,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\Menus\1PlayerSelected.xnb</Output>
-      <Time>2012-07-18T12:23:20.1797952+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\Menus\1PlayerSelected.xnb</Output>
+      <Time>2012-06-08T16:12:46+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\Menus\2Player.png</Source>
@@ -574,8 +574,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\Menus\2Player.xnb</Output>
-      <Time>2012-07-18T12:23:20.1807952+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\Menus\2Player.xnb</Output>
+      <Time>2012-06-08T16:12:46+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\Menus\2PlayerSelected.png</Source>
@@ -583,8 +583,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\Menus\2PlayerSelected.xnb</Output>
-      <Time>2012-07-18T12:23:20.1977962+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\Menus\2PlayerSelected.xnb</Output>
+      <Time>2012-06-08T16:12:46+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\UI\topbar.png</Source>
@@ -592,8 +592,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\topbar.xnb</Output>
-      <Time>2012-07-18T12:23:21.3718634+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\topbar.xnb</Output>
+      <Time>2012-06-08T16:12:56+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\UI\blueplayerindicator.png</Source>
@@ -601,8 +601,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\blueplayerindicator.xnb</Output>
-      <Time>2012-07-18T12:23:21.3498621+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\blueplayerindicator.xnb</Output>
+      <Time>2012-06-08T16:12:48+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\UI\redplayerindicator.png</Source>
@@ -610,8 +610,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\redplayerindicator.xnb</Output>
-      <Time>2012-07-18T12:23:21.3628628+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\redplayerindicator.xnb</Output>
+      <Time>2012-06-08T16:12:56+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\UI\blueplayerindicator2.png</Source>
@@ -619,8 +619,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\blueplayerindicator2.xnb</Output>
-      <Time>2012-07-18T12:23:21.3508622+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\blueplayerindicator2.xnb</Output>
+      <Time>2012-06-08T16:12:56+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\UI\blueplayerindicator3.png</Source>
@@ -628,8 +628,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\blueplayerindicator3.xnb</Output>
-      <Time>2012-07-18T12:23:21.3518622+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\blueplayerindicator3.xnb</Output>
+      <Time>2012-06-08T16:12:56+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\UI\redplayerindicator2.png</Source>
@@ -637,8 +637,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\redplayerindicator2.xnb</Output>
-      <Time>2012-07-18T12:23:21.365863+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\redplayerindicator2.xnb</Output>
+      <Time>2012-06-08T16:12:56+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\UI\redplayerindicator3.png</Source>
@@ -646,8 +646,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\redplayerindicator3.xnb</Output>
-      <Time>2012-07-18T12:23:21.3668631+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\redplayerindicator3.xnb</Output>
+      <Time>2012-06-08T16:12:56+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\UI\arrowleft.png</Source>
@@ -655,8 +655,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\arrowleft.xnb</Output>
-      <Time>2012-07-18T12:23:21.3428617+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\arrowleft.xnb</Output>
+      <Time>2012-06-08T16:12:56+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\UI\arrowleftselected.png</Source>
@@ -664,8 +664,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\arrowleftselected.xnb</Output>
-      <Time>2012-07-18T12:23:21.3438618+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\arrowleftselected.xnb</Output>
+      <Time>2012-06-08T16:12:56+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\UI\arrowright.png</Source>
@@ -673,8 +673,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\arrowright.xnb</Output>
-      <Time>2012-07-18T12:23:21.3448618+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\arrowright.xnb</Output>
+      <Time>2012-06-08T16:12:56+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\UI\arrowrightselected.png</Source>
@@ -682,8 +682,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\arrowrightselected.xnb</Output>
-      <Time>2012-07-18T12:23:21.3458619+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\arrowrightselected.xnb</Output>
+      <Time>2012-06-08T16:12:48+01:00</Time>
     </Item>
     <Item>
       <Source>Models\FBX\Board\6-xboardsquare.png</Source>
@@ -691,8 +691,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Models\FBX\Board\6-xboardsquare.xnb</Output>
-      <Time>2012-07-18T12:23:11.5383009+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Models\FBX\Board\6-xboardsquare.xnb</Output>
+      <Time>2012-06-08T16:12:22+01:00</Time>
     </Item>
     <Item>
       <Source>Models\FBX\Board\ifx==1boardsquare.png</Source>
@@ -700,8 +700,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Models\FBX\Board\ifx==1boardsquare.xnb</Output>
-      <Time>2012-07-18T12:23:11.5653025+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Models\FBX\Board\ifx==1boardsquare.xnb</Output>
+      <Time>2012-06-08T16:12:22+01:00</Time>
     </Item>
     <Item>
       <Source>Models\FBX\Board\intxboardsquare.png</Source>
@@ -709,8 +709,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Models\FBX\Board\intxboardsquare.xnb</Output>
-      <Time>2012-07-18T12:23:11.5783032+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Models\FBX\Board\intxboardsquare.xnb</Output>
+      <Time>2012-06-08T16:12:22+01:00</Time>
     </Item>
     <Item>
       <Source>Models\FBX\Board\mainboardsquare.png</Source>
@@ -718,8 +718,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Models\FBX\Board\mainboardsquare.xnb</Output>
-      <Time>2012-07-18T12:23:11.5813034+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Models\FBX\Board\mainboardsquare.xnb</Output>
+      <Time>2012-06-08T16:12:22+01:00</Time>
     </Item>
     <Item>
       <Source>Models\FBX\Board\openbracketboardsquare.png</Source>
@@ -727,8 +727,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Models\FBX\Board\openbracketboardsquare.xnb</Output>
-      <Time>2012-07-18T12:23:11.5823034+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Models\FBX\Board\openbracketboardsquare.xnb</Output>
+      <Time>2012-06-08T16:12:22+01:00</Time>
     </Item>
     <Item>
       <Source>Models\FBX\Board\startboardsquare.png</Source>
@@ -736,8 +736,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Models\FBX\Board\startboardsquare.xnb</Output>
-      <Time>2012-07-18T12:23:11.5863037+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Models\FBX\Board\startboardsquare.xnb</Output>
+      <Time>2012-06-08T16:12:22+01:00</Time>
     </Item>
     <Item>
       <Source>Models\FBX\Board\x+1boardsquare.png</Source>
@@ -745,8 +745,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Models\FBX\Board\x+1boardsquare.xnb</Output>
-      <Time>2012-07-18T12:23:11.5943041+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Models\FBX\Board\x+1boardsquare.xnb</Output>
+      <Time>2012-06-08T16:12:22+01:00</Time>
     </Item>
     <Item>
       <Source>Models\FBX\Board\x+2boardsquare.png</Source>
@@ -754,8 +754,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Models\FBX\Board\x+2boardsquare.xnb</Output>
-      <Time>2012-07-18T12:23:11.5963042+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Models\FBX\Board\x+2boardsquare.xnb</Output>
+      <Time>2012-06-08T16:12:22+01:00</Time>
     </Item>
     <Item>
       <Source>Models\FBX\Board\x+3boardsquare.png</Source>
@@ -763,8 +763,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Models\FBX\Board\x+3boardsquare.xnb</Output>
-      <Time>2012-07-18T12:23:11.5973043+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Models\FBX\Board\x+3boardsquare.xnb</Output>
+      <Time>2012-06-08T16:12:22+01:00</Time>
     </Item>
     <Item>
       <Source>Models\FBX\Board\x+4boardsquare.png</Source>
@@ -772,8 +772,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Models\FBX\Board\x+4boardsquare.xnb</Output>
-      <Time>2012-07-18T12:23:11.5983043+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Models\FBX\Board\x+4boardsquare.xnb</Output>
+      <Time>2012-06-08T16:12:22+01:00</Time>
     </Item>
     <Item>
       <Source>Models\FBX\Board\x+5boardsquare.png</Source>
@@ -781,8 +781,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Models\FBX\Board\x+5boardsquare.xnb</Output>
-      <Time>2012-07-18T12:23:11.6003045+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Models\FBX\Board\x+5boardsquare.xnb</Output>
+      <Time>2012-06-08T16:12:22+01:00</Time>
     </Item>
     <Item>
       <Source>Models\FBX\Board\x+6boardsquare.png</Source>
@@ -790,8 +790,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Models\FBX\Board\x+6boardsquare.xnb</Output>
-      <Time>2012-07-18T12:23:11.6023046+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Models\FBX\Board\x+6boardsquare.xnb</Output>
+      <Time>2012-06-08T16:12:22+01:00</Time>
     </Item>
     <Item>
       <Source>Models\FBX\Board\incrementboardsquare.png</Source>
@@ -799,8 +799,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Models\FBX\Board\incrementboardsquare.xnb</Output>
-      <Time>2012-07-18T12:23:11.5773031+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Models\FBX\Board\incrementboardsquare.xnb</Output>
+      <Time>2012-06-08T16:12:22+01:00</Time>
     </Item>
     <Item>
       <Source>Models\FBX\Board\breakboardsquare.png</Source>
@@ -808,8 +808,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Models\FBX\Board\breakboardsquare.xnb</Output>
-      <Time>2012-07-18T12:23:11.5523017+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Models\FBX\Board\breakboardsquare.xnb</Output>
+      <Time>2012-06-08T16:12:22+01:00</Time>
     </Item>
     <Item>
       <Source>Models\FBX\Board\case1boardsquare.png</Source>
@@ -817,8 +817,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Models\FBX\Board\case1boardsquare.xnb</Output>
-      <Time>2012-07-18T12:23:11.5533018+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Models\FBX\Board\case1boardsquare.xnb</Output>
+      <Time>2012-06-08T16:12:22+01:00</Time>
     </Item>
     <Item>
       <Source>Models\FBX\Board\case2boardsquare.png</Source>
@@ -826,8 +826,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Models\FBX\Board\case2boardsquare.xnb</Output>
-      <Time>2012-07-18T12:23:11.5543018+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Models\FBX\Board\case2boardsquare.xnb</Output>
+      <Time>2012-06-08T16:12:22+01:00</Time>
     </Item>
     <Item>
       <Source>Models\FBX\Board\case3boardsquare.png</Source>
@@ -835,8 +835,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Models\FBX\Board\case3boardsquare.xnb</Output>
-      <Time>2012-07-18T12:23:11.5563019+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Models\FBX\Board\case3boardsquare.xnb</Output>
+      <Time>2012-06-08T16:12:22+01:00</Time>
     </Item>
     <Item>
       <Source>Models\FBX\Board\closebracketboardsquare.png</Source>
@@ -844,8 +844,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Models\FBX\Board\closebracketboardsquare.xnb</Output>
-      <Time>2012-07-18T12:23:11.557302+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Models\FBX\Board\closebracketboardsquare.xnb</Output>
+      <Time>2012-06-08T16:12:22+01:00</Time>
     </Item>
     <Item>
       <Source>Models\FBX\Board\continueboardsquare.png</Source>
@@ -853,8 +853,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Models\FBX\Board\continueboardsquare.xnb</Output>
-      <Time>2012-07-18T12:23:11.5583021+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Models\FBX\Board\continueboardsquare.xnb</Output>
+      <Time>2012-06-08T16:12:22+01:00</Time>
     </Item>
     <Item>
       <Source>Models\FBX\Board\decrementboardsquare.png</Source>
@@ -862,8 +862,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Models\FBX\Board\decrementboardsquare.xnb</Output>
-      <Time>2012-07-18T12:23:11.5593021+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Models\FBX\Board\decrementboardsquare.xnb</Output>
+      <Time>2012-06-08T16:12:22+01:00</Time>
     </Item>
     <Item>
       <Source>Models\FBX\Board\defaultboardsquare.png</Source>
@@ -871,8 +871,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Models\FBX\Board\defaultboardsquare.xnb</Output>
-      <Time>2012-07-18T12:23:11.5603022+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Models\FBX\Board\defaultboardsquare.xnb</Output>
+      <Time>2012-06-08T16:12:22+01:00</Time>
     </Item>
     <Item>
       <Source>Models\FBX\Board\elseboardsquare.png</Source>
@@ -880,8 +880,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Models\FBX\Board\elseboardsquare.xnb</Output>
-      <Time>2012-07-18T12:23:11.5623023+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Models\FBX\Board\elseboardsquare.xnb</Output>
+      <Time>2012-06-08T16:12:22+01:00</Time>
     </Item>
     <Item>
       <Source>Models\FBX\Board\endboardsquare.png</Source>
@@ -889,8 +889,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Models\FBX\Board\endboardsquare.xnb</Output>
-      <Time>2012-07-18T12:23:11.5633023+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Models\FBX\Board\endboardsquare.xnb</Output>
+      <Time>2012-06-08T16:12:22+01:00</Time>
     </Item>
     <Item>
       <Source>Models\FBX\Board\gotoboardsquare.png</Source>
@@ -898,8 +898,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Models\FBX\Board\gotoboardsquare.xnb</Output>
-      <Time>2012-07-18T12:23:11.5643024+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Models\FBX\Board\gotoboardsquare.xnb</Output>
+      <Time>2012-06-08T16:12:22+01:00</Time>
     </Item>
     <Item>
       <Source>Models\FBX\Board\ifx==3boardsquare.png</Source>
@@ -907,8 +907,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Models\FBX\Board\ifx==3boardsquare.xnb</Output>
-      <Time>2012-07-18T12:23:11.5663025+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Models\FBX\Board\ifx==3boardsquare.xnb</Output>
+      <Time>2012-06-08T16:12:22+01:00</Time>
     </Item>
     <Item>
       <Source>Models\FBX\Board\ifxgreaterthan1boardsquare.png</Source>
@@ -916,8 +916,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Models\FBX\Board\ifxgreaterthan1boardsquare.xnb</Output>
-      <Time>2012-07-18T12:23:11.5693027+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Models\FBX\Board\ifxgreaterthan1boardsquare.xnb</Output>
+      <Time>2012-06-08T16:12:22+01:00</Time>
     </Item>
     <Item>
       <Source>Models\FBX\Board\ifxgreaterthan2boardsquare.png</Source>
@@ -925,8 +925,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Models\FBX\Board\ifxgreaterthan2boardsquare.xnb</Output>
-      <Time>2012-07-18T12:23:11.5703027+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Models\FBX\Board\ifxgreaterthan2boardsquare.xnb</Output>
+      <Time>2012-06-08T16:12:22+01:00</Time>
     </Item>
     <Item>
       <Source>Models\FBX\Board\ifxlessthan2boardsquare.png</Source>
@@ -934,8 +934,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Models\FBX\Board\ifxlessthan2boardsquare.xnb</Output>
-      <Time>2012-07-18T12:23:11.5723029+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Models\FBX\Board\ifxlessthan2boardsquare.xnb</Output>
+      <Time>2012-06-08T16:12:22+01:00</Time>
     </Item>
     <Item>
       <Source>Models\FBX\Board\ifxlessthan3boardsquare.png</Source>
@@ -943,8 +943,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Models\FBX\Board\ifxlessthan3boardsquare.xnb</Output>
-      <Time>2012-07-18T12:23:11.5733029+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Models\FBX\Board\ifxlessthan3boardsquare.xnb</Output>
+      <Time>2012-06-08T16:12:22+01:00</Time>
     </Item>
     <Item>
       <Source>Models\FBX\Board\ifxlessthan4boardsquare.png</Source>
@@ -952,8 +952,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Models\FBX\Board\ifxlessthan4boardsquare.xnb</Output>
-      <Time>2012-07-18T12:23:11.574303+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Models\FBX\Board\ifxlessthan4boardsquare.xnb</Output>
+      <Time>2012-06-08T16:12:22+01:00</Time>
     </Item>
     <Item>
       <Source>Models\FBX\Board\ifxlessthan5boardsquare.png</Source>
@@ -961,8 +961,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Models\FBX\Board\ifxlessthan5boardsquare.xnb</Output>
-      <Time>2012-07-18T12:23:11.5763031+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Models\FBX\Board\ifxlessthan5boardsquare.xnb</Output>
+      <Time>2012-06-08T16:12:22+01:00</Time>
     </Item>
     <Item>
       <Source>Models\FBX\Board\jumpboardsquare.png</Source>
@@ -970,8 +970,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Models\FBX\Board\jumpboardsquare.xnb</Output>
-      <Time>2012-07-18T12:23:11.5803033+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Models\FBX\Board\jumpboardsquare.xnb</Output>
+      <Time>2012-06-08T16:12:22+01:00</Time>
     </Item>
     <Item>
       <Source>Models\FBX\Board\returnboardsquare.png</Source>
@@ -979,8 +979,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Models\FBX\Board\returnboardsquare.xnb</Output>
-      <Time>2012-07-18T12:23:11.5843035+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Models\FBX\Board\returnboardsquare.xnb</Output>
+      <Time>2012-06-08T16:12:22+01:00</Time>
     </Item>
     <Item>
       <Source>Models\FBX\Board\switchboardsquare.png</Source>
@@ -988,8 +988,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Models\FBX\Board\switchboardsquare.xnb</Output>
-      <Time>2012-07-18T12:23:11.5873037+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Models\FBX\Board\switchboardsquare.xnb</Output>
+      <Time>2012-06-08T16:12:22+01:00</Time>
     </Item>
     <Item>
       <Source>Models\FBX\Board\whilexgreaterthan1boardsquare.png</Source>
@@ -997,8 +997,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Models\FBX\Board\whilexgreaterthan1boardsquare.xnb</Output>
-      <Time>2012-07-18T12:23:11.5883038+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Models\FBX\Board\whilexgreaterthan1boardsquare.xnb</Output>
+      <Time>2012-06-08T16:12:22+01:00</Time>
     </Item>
     <Item>
       <Source>Models\FBX\Board\whilexgreaterthan2boardsquare.png</Source>
@@ -1006,8 +1006,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Models\FBX\Board\whilexgreaterthan2boardsquare.xnb</Output>
-      <Time>2012-07-18T12:23:11.5903039+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Models\FBX\Board\whilexgreaterthan2boardsquare.xnb</Output>
+      <Time>2012-06-08T16:12:22+01:00</Time>
     </Item>
     <Item>
       <Source>Models\FBX\Board\whilexgreaterthan3boardsquare.png</Source>
@@ -1015,8 +1015,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Models\FBX\Board\whilexgreaterthan3boardsquare.xnb</Output>
-      <Time>2012-07-18T12:23:11.5913039+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Models\FBX\Board\whilexgreaterthan3boardsquare.xnb</Output>
+      <Time>2012-06-08T16:12:22+01:00</Time>
     </Item>
     <Item>
       <Source>Models\FBX\Board\whilexlessthan4boardsquare.png</Source>
@@ -1024,8 +1024,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Models\FBX\Board\whilexlessthan4boardsquare.xnb</Output>
-      <Time>2012-07-18T12:23:11.5933041+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Models\FBX\Board\whilexlessthan4boardsquare.xnb</Output>
+      <Time>2012-06-08T16:12:22+01:00</Time>
     </Item>
     <Item>
       <Source>Models\FBX\Board\x+xboardsquare.png</Source>
@@ -1033,8 +1033,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Models\FBX\Board\x+xboardsquare.xnb</Output>
-      <Time>2012-07-18T12:23:11.6033046+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Models\FBX\Board\x+xboardsquare.xnb</Output>
+      <Time>2012-06-08T16:12:22+01:00</Time>
     </Item>
     <Item>
       <Source>Models\FBX\Board\x-1boardsquare.png</Source>
@@ -1042,8 +1042,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Models\FBX\Board\x-1boardsquare.xnb</Output>
-      <Time>2012-07-18T12:23:11.6063048+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Models\FBX\Board\x-1boardsquare.xnb</Output>
+      <Time>2012-06-08T16:12:22+01:00</Time>
     </Item>
     <Item>
       <Source>Models\FBX\Board\xdividedbyxboardsquare.png</Source>
@@ -1051,8 +1051,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Models\FBX\Board\xdividedbyxboardsquare.xnb</Output>
-      <Time>2012-07-18T12:23:11.6083049+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Models\FBX\Board\xdividedbyxboardsquare.xnb</Output>
+      <Time>2012-06-08T16:12:22+01:00</Time>
     </Item>
     <Item>
       <Source>Models\FBX\Board\xtimes2boardsquare.png</Source>
@@ -1060,8 +1060,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Models\FBX\Board\xtimes2boardsquare.xnb</Output>
-      <Time>2012-07-18T12:23:11.609305+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Models\FBX\Board\xtimes2boardsquare.xnb</Output>
+      <Time>2012-06-08T16:12:22+01:00</Time>
     </Item>
     <Item>
       <Source>Models\FBX\Board\xtimesxboardsquare.png</Source>
@@ -1069,8 +1069,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Models\FBX\Board\xtimesxboardsquare.xnb</Output>
-      <Time>2012-07-18T12:23:11.6113051+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Models\FBX\Board\xtimesxboardsquare.xnb</Output>
+      <Time>2012-06-08T16:12:22+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\Menus\Windowed.png</Source>
@@ -1078,8 +1078,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\Menus\Windowed.xnb</Output>
-      <Time>2012-07-18T12:23:20.2848012+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\Menus\Windowed.xnb</Output>
+      <Time>2012-06-08T16:12:46+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\Menus\returntogame.png</Source>
@@ -1087,8 +1087,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\Menus\returntogame.xnb</Output>
-      <Time>2012-07-18T12:23:20.2968019+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\Menus\returntogame.xnb</Output>
+      <Time>2012-06-08T16:12:46+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\Menus\returntogameselected.png</Source>
@@ -1096,8 +1096,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\Menus\returntogameselected.xnb</Output>
-      <Time>2012-07-18T12:23:20.298802+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\Menus\returntogameselected.xnb</Output>
+      <Time>2012-06-08T16:12:46+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\Menus\player1wins.png</Source>
@@ -1105,8 +1105,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\Menus\player1wins.xnb</Output>
-      <Time>2012-07-18T12:23:20.2938017+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\Menus\player1wins.xnb</Output>
+      <Time>2012-06-08T16:12:46+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\Menus\player2wins.png</Source>
@@ -1114,8 +1114,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\Menus\player2wins.xnb</Output>
-      <Time>2012-07-18T12:23:20.2958018+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\Menus\player2wins.xnb</Output>
+      <Time>2012-06-08T16:12:46+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\Menus\credits.png</Source>
@@ -1123,8 +1123,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\Menus\credits.xnb</Output>
-      <Time>2012-07-18T12:23:20.2878014+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\Menus\credits.xnb</Output>
+      <Time>2012-06-08T16:12:46+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\UI\Questions\answer1.png</Source>
@@ -1132,8 +1132,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\Questions\answer1.xnb</Output>
-      <Time>2012-07-18T12:23:21.0098427+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\Questions\answer1.xnb</Output>
+      <Time>2012-06-08T16:12:56+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\UI\Questions\answer1selected.png</Source>
@@ -1141,8 +1141,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\Questions\answer1selected.xnb</Output>
-      <Time>2012-07-18T12:23:21.0108427+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\Questions\answer1selected.xnb</Output>
+      <Time>2012-06-08T16:12:56+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\UI\Questions\answer2.png</Source>
@@ -1150,8 +1150,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\Questions\answer2.xnb</Output>
-      <Time>2012-07-18T12:23:21.0118428+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\Questions\answer2.xnb</Output>
+      <Time>2012-06-08T16:12:56+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\UI\Questions\answer2selected.png</Source>
@@ -1159,8 +1159,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\Questions\answer2selected.xnb</Output>
-      <Time>2012-07-18T12:23:21.0138429+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\Questions\answer2selected.xnb</Output>
+      <Time>2012-06-08T16:12:56+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\UI\Questions\answer3.png</Source>
@@ -1168,8 +1168,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\Questions\answer3.xnb</Output>
-      <Time>2012-07-18T12:23:21.0148429+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\Questions\answer3.xnb</Output>
+      <Time>2012-06-08T16:12:56+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\UI\Questions\answer3selected.png</Source>
@@ -1177,8 +1177,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\Questions\answer3selected.xnb</Output>
-      <Time>2012-07-18T12:23:21.015843+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\Questions\answer3selected.xnb</Output>
+      <Time>2012-06-08T16:12:56+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\UI\Questions\answer4.png</Source>
@@ -1186,8 +1186,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\Questions\answer4.xnb</Output>
-      <Time>2012-07-18T12:23:21.0168431+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\Questions\answer4.xnb</Output>
+      <Time>2012-06-08T16:12:56+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\UI\Questions\answer4selected.png</Source>
@@ -1195,8 +1195,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\Questions\answer4selected.xnb</Output>
-      <Time>2012-07-18T12:23:21.0188432+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\Questions\answer4selected.xnb</Output>
+      <Time>2012-06-08T16:12:56+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\UI\Questions\answercontinue.png</Source>
@@ -1204,8 +1204,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\Questions\answercontinue.xnb</Output>
-      <Time>2012-07-18T12:23:21.0198432+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\Questions\answercontinue.xnb</Output>
+      <Time>2012-06-08T16:12:56+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\UI\Questions\answercontinueselected.png</Source>
@@ -1213,8 +1213,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\Questions\answercontinueselected.xnb</Output>
-      <Time>2012-07-18T12:23:21.0218433+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\Questions\answercontinueselected.xnb</Output>
+      <Time>2012-06-08T16:12:56+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\UI\Questions\answerfalse.png</Source>
@@ -1222,8 +1222,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\Questions\answerfalse.xnb</Output>
-      <Time>2012-07-18T12:23:21.0228434+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\Questions\answerfalse.xnb</Output>
+      <Time>2012-06-08T16:12:56+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\UI\Questions\answerfalseselected.png</Source>
@@ -1231,8 +1231,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\Questions\answerfalseselected.xnb</Output>
-      <Time>2012-07-18T12:23:21.0248435+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\Questions\answerfalseselected.xnb</Output>
+      <Time>2012-06-08T16:12:56+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\UI\Questions\answerif.png</Source>
@@ -1240,8 +1240,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\Questions\answerif.xnb</Output>
-      <Time>2012-07-18T12:23:21.0258436+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\Questions\answerif.xnb</Output>
+      <Time>2012-06-08T16:12:56+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\UI\Questions\answerifselected.png</Source>
@@ -1249,8 +1249,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\Questions\answerifselected.xnb</Output>
-      <Time>2012-07-18T12:23:21.0278437+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\Questions\answerifselected.xnb</Output>
+      <Time>2012-06-08T16:12:56+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\UI\Questions\answerreturn.png</Source>
@@ -1258,8 +1258,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\Questions\answerreturn.xnb</Output>
-      <Time>2012-07-18T12:23:21.0288437+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\Questions\answerreturn.xnb</Output>
+      <Time>2012-06-08T16:12:56+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\UI\Questions\answerreturnselected.png</Source>
@@ -1267,8 +1267,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\Questions\answerreturnselected.xnb</Output>
-      <Time>2012-07-18T12:23:21.0308439+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\Questions\answerreturnselected.xnb</Output>
+      <Time>2012-06-08T16:12:56+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\UI\Questions\answerswitch.png</Source>
@@ -1276,8 +1276,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\Questions\answerswitch.xnb</Output>
-      <Time>2012-07-18T12:23:21.0318439+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\Questions\answerswitch.xnb</Output>
+      <Time>2012-06-08T16:12:56+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\UI\Questions\answerswitchselected.png</Source>
@@ -1285,8 +1285,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\Questions\answerswitchselected.xnb</Output>
-      <Time>2012-07-18T12:23:21.033844+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\Questions\answerswitchselected.xnb</Output>
+      <Time>2012-06-08T16:12:56+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\UI\Questions\answertrue.png</Source>
@@ -1294,8 +1294,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\Questions\answertrue.xnb</Output>
-      <Time>2012-07-18T12:23:21.0348441+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\Questions\answertrue.xnb</Output>
+      <Time>2012-06-08T16:12:56+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\UI\Questions\answertrueselected.png</Source>
@@ -1303,8 +1303,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\Questions\answertrueselected.xnb</Output>
-      <Time>2012-07-18T12:23:21.0358441+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\Questions\answertrueselected.xnb</Output>
+      <Time>2012-06-08T16:12:56+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\UI\Questions\answerwhile.png</Source>
@@ -1312,8 +1312,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\Questions\answerwhile.xnb</Output>
-      <Time>2012-07-18T12:23:21.0398444+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\Questions\answerwhile.xnb</Output>
+      <Time>2012-06-08T16:12:56+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\UI\Questions\answerwhileselected.png</Source>
@@ -1321,8 +1321,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\Questions\answerwhileselected.xnb</Output>
-      <Time>2012-07-18T12:23:21.0408444+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\Questions\answerwhileselected.xnb</Output>
+      <Time>2012-06-08T16:12:56+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\UI\Questions\answerx++.png</Source>
@@ -1330,8 +1330,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\Questions\answerx++.xnb</Output>
-      <Time>2012-07-18T12:23:21.0418445+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\Questions\answerx++.xnb</Output>
+      <Time>2012-06-08T16:12:56+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\UI\Questions\answerx++selected.png</Source>
@@ -1339,8 +1339,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\Questions\answerx++selected.xnb</Output>
-      <Time>2012-07-18T12:23:21.0438446+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\Questions\answerx++selected.xnb</Output>
+      <Time>2012-06-08T16:12:56+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\UI\Questions\answerx--.png</Source>
@@ -1348,8 +1348,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\Questions\answerx--.xnb</Output>
-      <Time>2012-07-18T12:23:21.0448447+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\Questions\answerx--.xnb</Output>
+      <Time>2012-06-08T16:12:56+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\UI\Questions\answerx--selected.png</Source>
@@ -1357,8 +1357,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\Questions\answerx--selected.xnb</Output>
-      <Time>2012-07-18T12:23:21.0458447+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\Questions\answerx--selected.xnb</Output>
+      <Time>2012-06-08T16:12:56+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\UI\Questions\answerx.png</Source>
@@ -1366,8 +1366,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\Questions\answerx.xnb</Output>
-      <Time>2012-07-18T12:23:21.0478448+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\Questions\answerx.xnb</Output>
+      <Time>2012-06-08T16:12:56+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\UI\Questions\answerxselected.png</Source>
@@ -1375,8 +1375,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\Questions\answerxselected.xnb</Output>
-      <Time>2012-07-18T12:23:21.0488449+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\Questions\answerxselected.xnb</Output>
+      <Time>2012-06-08T16:12:56+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\UI\Questions\answery.png</Source>
@@ -1384,8 +1384,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\Questions\answery.xnb</Output>
-      <Time>2012-07-18T12:23:21.050845+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\Questions\answery.xnb</Output>
+      <Time>2012-06-08T16:12:56+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\UI\Questions\answeryselected.png</Source>
@@ -1393,8 +1393,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\Questions\answeryselected.xnb</Output>
-      <Time>2012-07-18T12:23:21.0518451+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\Questions\answeryselected.xnb</Output>
+      <Time>2012-06-08T16:12:56+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\UI\Questions\question10.png</Source>
@@ -1402,8 +1402,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\Questions\question10.xnb</Output>
-      <Time>2012-07-18T12:23:21.0628457+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\Questions\question10.xnb</Output>
+      <Time>2012-06-08T16:12:56+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\UI\Questions\question11.png</Source>
@@ -1411,8 +1411,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\Questions\question11.xnb</Output>
-      <Time>2012-07-18T12:23:21.0668459+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\Questions\question11.xnb</Output>
+      <Time>2012-06-08T16:12:56+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\UI\Questions\question12.png</Source>
@@ -1420,8 +1420,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\Questions\question12.xnb</Output>
-      <Time>2012-07-18T12:23:21.0718462+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\Questions\question12.xnb</Output>
+      <Time>2012-06-08T16:12:56+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\UI\Questions\question13.png</Source>
@@ -1429,8 +1429,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\Questions\question13.xnb</Output>
-      <Time>2012-07-18T12:23:21.0778465+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\Questions\question13.xnb</Output>
+      <Time>2012-06-08T16:12:56+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\UI\Questions\question14.png</Source>
@@ -1438,8 +1438,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\Questions\question14.xnb</Output>
-      <Time>2012-07-18T12:23:21.0828468+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\Questions\question14.xnb</Output>
+      <Time>2012-06-08T16:12:56+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\UI\Questions\question15.png</Source>
@@ -1447,8 +1447,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\Questions\question15.xnb</Output>
-      <Time>2012-07-18T12:23:21.0888472+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\Questions\question15.xnb</Output>
+      <Time>2012-06-08T16:12:56+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\UI\Questions\question16.png</Source>
@@ -1456,8 +1456,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\Questions\question16.xnb</Output>
-      <Time>2012-07-18T12:23:21.0938475+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\Questions\question16.xnb</Output>
+      <Time>2012-06-08T16:12:56+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\UI\Questions\question17.png</Source>
@@ -1465,8 +1465,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\Questions\question17.xnb</Output>
-      <Time>2012-07-18T12:23:21.0978477+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\Questions\question17.xnb</Output>
+      <Time>2012-06-08T16:12:56+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\UI\Questions\question18.png</Source>
@@ -1474,8 +1474,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\Questions\question18.xnb</Output>
-      <Time>2012-07-18T12:23:21.103848+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\Questions\question18.xnb</Output>
+      <Time>2012-06-08T16:12:56+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\UI\Questions\question19.png</Source>
@@ -1483,8 +1483,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\Questions\question19.xnb</Output>
-      <Time>2012-07-18T12:23:21.1068482+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\Questions\question19.xnb</Output>
+      <Time>2012-06-08T16:12:56+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\UI\Questions\question2.png</Source>
@@ -1492,8 +1492,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\Questions\question2.xnb</Output>
-      <Time>2012-07-18T12:23:21.1118485+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\Questions\question2.xnb</Output>
+      <Time>2012-06-08T16:12:56+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\UI\Questions\question20.png</Source>
@@ -1501,8 +1501,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\Questions\question20.xnb</Output>
-      <Time>2012-07-18T12:23:21.1178488+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\Questions\question20.xnb</Output>
+      <Time>2012-06-08T16:12:56+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\UI\Questions\question3.png</Source>
@@ -1510,8 +1510,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\Questions\question3.xnb</Output>
-      <Time>2012-07-18T12:23:21.1228491+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\Questions\question3.xnb</Output>
+      <Time>2012-06-08T16:12:56+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\UI\Questions\question4.png</Source>
@@ -1519,8 +1519,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\Questions\question4.xnb</Output>
-      <Time>2012-07-18T12:23:21.1278494+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\Questions\question4.xnb</Output>
+      <Time>2012-06-08T16:12:56+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\UI\Questions\question5.png</Source>
@@ -1528,8 +1528,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\Questions\question5.xnb</Output>
-      <Time>2012-07-18T12:23:21.1328497+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\Questions\question5.xnb</Output>
+      <Time>2012-06-08T16:12:56+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\UI\Questions\question6.png</Source>
@@ -1537,8 +1537,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\Questions\question6.xnb</Output>
-      <Time>2012-07-18T12:23:21.13785+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\Questions\question6.xnb</Output>
+      <Time>2012-06-08T16:12:56+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\UI\Questions\question7.png</Source>
@@ -1546,8 +1546,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\Questions\question7.xnb</Output>
-      <Time>2012-07-18T12:23:21.1438503+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\Questions\question7.xnb</Output>
+      <Time>2012-06-08T16:12:56+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\UI\Questions\question8.png</Source>
@@ -1555,8 +1555,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\Questions\question8.xnb</Output>
-      <Time>2012-07-18T12:23:21.1498507+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\Questions\question8.xnb</Output>
+      <Time>2012-06-08T16:12:56+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\UI\Questions\question9.png</Source>
@@ -1564,8 +1564,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\Questions\question9.xnb</Output>
-      <Time>2012-07-18T12:23:21.1658516+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\Questions\question9.xnb</Output>
+      <Time>2012-06-08T16:12:56+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\UI\Questions\rolldice.png</Source>
@@ -1573,8 +1573,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\Questions\rolldice.xnb</Output>
-      <Time>2012-07-18T12:23:21.1678517+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\Questions\rolldice.xnb</Output>
+      <Time>2012-06-08T16:12:56+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\UI\Questions\rolldiceselected.png</Source>
@@ -1582,8 +1582,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\Questions\rolldiceselected.xnb</Output>
-      <Time>2012-07-18T12:23:21.1688517+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\Questions\rolldiceselected.xnb</Output>
+      <Time>2012-06-08T16:12:56+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\UI\Questions\Tutorial1.png</Source>
@@ -1591,8 +1591,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\Questions\Tutorial1.xnb</Output>
-      <Time>2012-07-18T12:23:20.9728405+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\Questions\Tutorial1.xnb</Output>
+      <Time>2012-06-08T16:12:56+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\UI\Questions\Tutorial2.png</Source>
@@ -1600,8 +1600,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\Questions\Tutorial2.xnb</Output>
-      <Time>2012-07-18T12:23:20.9788409+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\Questions\Tutorial2.xnb</Output>
+      <Time>2012-06-08T16:12:56+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\UI\Questions\Tutorial3.png</Source>
@@ -1609,8 +1609,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\Questions\Tutorial3.xnb</Output>
-      <Time>2012-07-18T12:23:20.9858413+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\Questions\Tutorial3.xnb</Output>
+      <Time>2012-06-08T16:12:56+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\UI\Questions\Tutorial4.png</Source>
@@ -1618,8 +1618,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\Questions\Tutorial4.xnb</Output>
-      <Time>2012-07-18T12:23:20.9908416+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\Questions\Tutorial4.xnb</Output>
+      <Time>2012-06-08T16:12:56+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\UI\Questions\Tutorial5.png</Source>
@@ -1627,8 +1627,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\Questions\Tutorial5.xnb</Output>
-      <Time>2012-07-18T12:23:20.997842+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\Questions\Tutorial5.xnb</Output>
+      <Time>2012-06-08T16:12:56+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\UI\Questions\Tutorial6.png</Source>
@@ -1636,8 +1636,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\Questions\Tutorial6.xnb</Output>
-      <Time>2012-07-18T12:23:21.0028423+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\Questions\Tutorial6.xnb</Output>
+      <Time>2012-06-08T16:12:56+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\UI\Questions\Tutorial7.png</Source>
@@ -1645,8 +1645,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\Questions\Tutorial7.xnb</Output>
-      <Time>2012-07-18T12:23:21.0078425+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\UI\Questions\Tutorial7.xnb</Output>
+      <Time>2012-06-08T16:12:56+01:00</Time>
     </Item>
     <Item>
       <Source>Models\FBX\Table\table.FBX</Source>
@@ -1658,19 +1658,19 @@
         <Data Key="NormalMapTexture">tablenormal.png</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Models\FBX\Table\table.xnb</Output>
-      <Time>2012-07-18T12:23:11.9813263+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Models\FBX\Table\table.xnb</Output>
+      <Time>2012-06-08T16:12:22+01:00</Time>
       <Dependency>
         <Key>obj\x86\Release\Models\FBX\Table\table_0.xml</Key>
-        <Value>2012-08-03T11:20:42.3046143+01:00</Value>
+        <Value>2012-08-05T00:36:10.7421875+01:00</Value>
       </Dependency>
-      <Request>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\RenderGBuffer_0.xnb</Request>
-      <Request>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Models\FBX\Table\ASHSEN_2_0.xnb</Request>
-      <Request>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\null_diffuse_0.xnb</Request>
-      <Request>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Models\FBX\Table\tablenormal_0.xnb</Request>
-      <Request>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\null_specular_0.xnb</Request>
-      <Request>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\null_emissive_0.xnb</Request>
-      <Request>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\RenderGBuffer_1.xnb</Request>
+      <Request>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\RenderGBuffer_0.xnb</Request>
+      <Request>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Models\FBX\Table\ASHSEN_2_0.xnb</Request>
+      <Request>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\null_diffuse_0.xnb</Request>
+      <Request>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Models\FBX\Table\tablenormal_0.xnb</Request>
+      <Request>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\null_specular_0.xnb</Request>
+      <Request>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\null_emissive_0.xnb</Request>
+      <Request>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\RenderGBuffer_1.xnb</Request>
     </Item>
     <Item>
       <Source>Textures\CubeMaps\cube.fbx</Source>
@@ -1678,11 +1678,11 @@
       <Importer>FbxImporter</Importer>
       <Processor>ModelProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\CubeMaps\cube.xnb</Output>
-      <Time>2012-07-18T12:23:19.7517707+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Textures\CubeMaps\cube.xnb</Output>
+      <Time>2012-06-08T16:12:42+01:00</Time>
       <Dependency>
         <Key>obj\x86\Release\Textures\CubeMaps\cube_0.xml</Key>
-        <Value>2012-08-03T11:20:46.4948539+01:00</Value>
+        <Value>2012-08-05T00:36:11.6123046+01:00</Value>
       </Dependency>
     </Item>
     <Item>
@@ -1696,19 +1696,19 @@
         <Data Key="EnableNormalMap">True</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Models\FBX\Dice\dice.xnb</Output>
-      <Time>2012-07-18T12:23:11.6463071+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Models\FBX\Dice\dice.xnb</Output>
+      <Time>2012-06-08T16:12:22+01:00</Time>
       <Dependency>
         <Key>obj\x86\Release\Models\FBX\Dice\dice_0.xml</Key>
-        <Value>2012-08-03T11:20:46.5558574+01:00</Value>
+        <Value>2012-08-05T00:36:11.6748046+01:00</Value>
       </Dependency>
-      <Request>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\RenderGBuffer_0.xnb</Request>
-      <Request>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Models\FBX\Dice\dice_0.xnb</Request>
-      <Request>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\null_diffuse_0.xnb</Request>
-      <Request>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Models\FBX\Dice\dicenormal_0.xnb</Request>
-      <Request>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\null_specular_0.xnb</Request>
-      <Request>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\null_emissive_0.xnb</Request>
-      <Request>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\RenderGBuffer_1.xnb</Request>
+      <Request>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\RenderGBuffer_0.xnb</Request>
+      <Request>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Models\FBX\Dice\dice_0.xnb</Request>
+      <Request>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\null_diffuse_0.xnb</Request>
+      <Request>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Models\FBX\Dice\dicenormal_0.xnb</Request>
+      <Request>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\null_specular_0.xnb</Request>
+      <Request>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\null_emissive_0.xnb</Request>
+      <Request>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\RenderGBuffer_1.xnb</Request>
     </Item>
     <Item>
       <Source>Models\FBX\Skinned\GamePawn\pawn_pose.fbx</Source>
@@ -1726,39 +1726,39 @@
         <Data Key="EnableNormalMap">True</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Models\FBX\Skinned\GamePawn\pawn_pose.xnb</Output>
-      <Time>2012-07-18T12:23:11.9343236+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Models\FBX\Skinned\GamePawn\pawn_pose.xnb</Output>
+      <Time>2012-06-08T16:12:22+01:00</Time>
       <Dependency>
         <Key>obj\x86\Release\Models\FBX\Skinned\GamePawn\pawn_pose_0.xml</Key>
-        <Value>2012-08-03T11:20:48.3969627+01:00</Value>
+        <Value>2012-08-05T00:36:12.5224609+01:00</Value>
       </Dependency>
       <Dependency>
         <Key>obj\x86\Release\Models\FBX\Skinned\GamePawn\Animations\idle_0.xml</Key>
-        <Value>2012-08-03T11:20:48.5439711+01:00</Value>
+        <Value>2012-08-05T00:36:12.7167968+01:00</Value>
       </Dependency>
       <Dependency>
         <Key>obj\x86\Release\Models\FBX\Skinned\GamePawn\Animations\lose_0.xml</Key>
-        <Value>2012-08-03T11:20:48.6839792+01:00</Value>
+        <Value>2012-08-05T00:36:12.8955078+01:00</Value>
       </Dependency>
       <Dependency>
         <Key>obj\x86\Release\Models\FBX\Skinned\GamePawn\Animations\celebrate_0.xml</Key>
-        <Value>2012-08-03T11:20:48.7899852+01:00</Value>
+        <Value>2012-08-05T00:36:13.0136718+01:00</Value>
       </Dependency>
       <Dependency>
         <Key>obj\x86\Release\Models\FBX\Skinned\GamePawn\Animations\win_0.xml</Key>
-        <Value>2012-08-03T11:20:48.9299932+01:00</Value>
+        <Value>2012-08-05T00:36:13.1865234+01:00</Value>
       </Dependency>
       <Dependency>
         <Key>obj\x86\Release\Models\FBX\Skinned\GamePawn\Animations\jump_0.xml</Key>
-        <Value>2012-08-03T11:20:49.0700012+01:00</Value>
+        <Value>2012-08-05T00:36:13.3652343+01:00</Value>
       </Dependency>
-      <Request>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\RenderGBuffer_0.xnb</Request>
-      <Request>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Models\FBX\Skinned\GamePawn\blue_playpiece_0.xnb</Request>
-      <Request>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\null_diffuse_0.xnb</Request>
-      <Request>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Models\FBX\Skinned\GamePawn\pawn_normal_0.xnb</Request>
-      <Request>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Models\FBX\Skinned\GamePawn\pawn_specular_0.xnb</Request>
-      <Request>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\null_emissive_0.xnb</Request>
-      <Request>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\RenderGBuffer_2.xnb</Request>
+      <Request>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\RenderGBuffer_0.xnb</Request>
+      <Request>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Models\FBX\Skinned\GamePawn\blue_playpiece_0.xnb</Request>
+      <Request>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\null_diffuse_0.xnb</Request>
+      <Request>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Models\FBX\Skinned\GamePawn\pawn_normal_0.xnb</Request>
+      <Request>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Models\FBX\Skinned\GamePawn\pawn_specular_0.xnb</Request>
+      <Request>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\null_emissive_0.xnb</Request>
+      <Request>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\RenderGBuffer_2.xnb</Request>
     </Item>
     <Item>
       <Source>Models\FBX\cubemodel.fbx</Source>
@@ -1766,19 +1766,19 @@
       <Importer>FbxImporter</Importer>
       <Processor>DeferredRendererModel</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Models\FBX\cubemodel.xnb</Output>
-      <Time>2012-07-18T12:23:12.0013274+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Models\FBX\cubemodel.xnb</Output>
+      <Time>2012-06-08T16:12:22+01:00</Time>
       <Dependency>
         <Key>obj\x86\Release\Models\FBX\cubemodel_0.xml</Key>
-        <Value>2012-08-03T11:20:52.3811906+01:00</Value>
+        <Value>2012-08-05T00:36:15.4863281+01:00</Value>
       </Dependency>
-      <Request>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\RenderGBuffer_0.xnb</Request>
-      <Request>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Models\FBX\Board\boardsquare_0.xnb</Request>
-      <Request>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\null_diffuse_0.xnb</Request>
-      <Request>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\null_normal_0.xnb</Request>
-      <Request>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\null_specular_0.xnb</Request>
-      <Request>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\null_emissive_0.xnb</Request>
-      <Request>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\RenderGBuffer_1.xnb</Request>
+      <Request>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\RenderGBuffer_0.xnb</Request>
+      <Request>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Models\FBX\Board\boardsquare_0.xnb</Request>
+      <Request>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\null_diffuse_0.xnb</Request>
+      <Request>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\null_normal_0.xnb</Request>
+      <Request>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\null_specular_0.xnb</Request>
+      <Request>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\null_emissive_0.xnb</Request>
+      <Request>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\RenderGBuffer_1.xnb</Request>
     </Item>
     <Item>
       <Source>ParticleEffects\Mercury\Effects\characterselectblue.xml</Source>
@@ -1786,8 +1786,8 @@
       <Importer>XmlImporter</Importer>
       <Processor>PassThroughProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\ParticleEffects\Mercury\Effects\characterselectblue.xnb</Output>
-      <Time>2012-07-18T12:23:12.1413354+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\ParticleEffects\Mercury\Effects\characterselectblue.xnb</Output>
+      <Time>2012-06-08T16:12:22+01:00</Time>
     </Item>
     <Item>
       <Source>ParticleEffects\Mercury\Effects\magictrail.xml</Source>
@@ -1795,8 +1795,8 @@
       <Importer>XmlImporter</Importer>
       <Processor>PassThroughProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\ParticleEffects\Mercury\Effects\magictrail.xnb</Output>
-      <Time>2012-07-18T12:23:12.1443356+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\ParticleEffects\Mercury\Effects\magictrail.xnb</Output>
+      <Time>2012-06-08T16:12:22+01:00</Time>
     </Item>
     <Item>
       <Source>ParticleEffects\Mercury\Effects\characterselectred.xml</Source>
@@ -1804,8 +1804,8 @@
       <Importer>XmlImporter</Importer>
       <Processor>PassThroughProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\ParticleEffects\Mercury\Effects\characterselectred.xnb</Output>
-      <Time>2012-07-18T12:23:12.1423355+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\ParticleEffects\Mercury\Effects\characterselectred.xnb</Output>
+      <Time>2012-06-08T16:12:22+01:00</Time>
     </Item>
     <Item>
       <Source>ParticleEffects\Mercury\Effects\questionsquare.xml</Source>
@@ -1813,8 +1813,8 @@
       <Importer>XmlImporter</Importer>
       <Processor>PassThroughProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\ParticleEffects\Mercury\Effects\questionsquare.xnb</Output>
-      <Time>2012-07-18T12:23:12.1473357+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\ParticleEffects\Mercury\Effects\questionsquare.xnb</Output>
+      <Time>2012-06-08T16:12:22+01:00</Time>
     </Item>
     <Item>
       <Source>ParticleEffects\Mercury\Effects\magictrailblue.xml</Source>
@@ -1822,8 +1822,8 @@
       <Importer>XmlImporter</Importer>
       <Processor>PassThroughProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\ParticleEffects\Mercury\Effects\magictrailblue.xnb</Output>
-      <Time>2012-07-18T12:23:12.1453356+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\ParticleEffects\Mercury\Effects\magictrailblue.xnb</Output>
+      <Time>2012-06-08T16:12:22+01:00</Time>
     </Item>
     <Item>
       <Source>ParticleEffects\Mercury\Effects\magictrailred.xml</Source>
@@ -1831,8 +1831,8 @@
       <Importer>XmlImporter</Importer>
       <Processor>PassThroughProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\ParticleEffects\Mercury\Effects\magictrailred.xnb</Output>
-      <Time>2012-07-18T12:23:12.1463357+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\ParticleEffects\Mercury\Effects\magictrailred.xnb</Output>
+      <Time>2012-06-08T16:12:22+01:00</Time>
     </Item>
     <Item>
       <Source>Sounds\SoundEffects\explosion.wav</Source>
@@ -1840,30 +1840,30 @@
       <Importer>WavImporter</Importer>
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Sounds\SoundEffects\explosion.xnb</Output>
-      <Time>2012-07-18T12:23:16.4555822+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Sounds\SoundEffects\explosion.xnb</Output>
+      <Time>2012-06-08T16:13:50+01:00</Time>
     </Item>
     <Item>
       <Source>Models\FBX\Table\table.FBX</Source>
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
       <Output>obj\x86\Release\Models\FBX\Table\table_0.xml</Output>
-      <Time>2012-07-18T12:23:11.9813263+01:00</Time>
+      <Time>2012-06-08T16:12:22+01:00</Time>
     </Item>
     <Item>
-      <Source>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\GraphicsContent\Shaders\Deferred Rendering\RenderGBuffer.fx</Source>
+      <Source>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\GraphicsContent\Shaders\Deferred Rendering\RenderGBuffer.fx</Source>
       <Importer>EffectImporter</Importer>
       <Processor>EffectProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\RenderGBuffer_0.xnb</Output>
-      <Time>2012-08-03T10:27:47.9310505+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\RenderGBuffer_0.xnb</Output>
+      <Time>2012-08-04T13:24:19.0839843+01:00</Time>
       <Dependency>
-        <Key>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\GraphicsContent\Shaders\Deferred Rendering\ppshared.vsi</Key>
-        <Value>2012-07-18T12:23:01.8507468+01:00</Value>
+        <Key>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\GraphicsContent\Shaders\Deferred Rendering\ppshared.vsi</Key>
+        <Value>2012-06-08T16:13:54+01:00</Value>
       </Dependency>
       <Dependency>
-        <Key>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\GraphicsContent\Shaders\Deferred Rendering\ToneMapping.fxh</Key>
-        <Value>2012-07-18T12:23:01.8437464+01:00</Value>
+        <Key>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\GraphicsContent\Shaders\Deferred Rendering\ToneMapping.fxh</Key>
+        <Value>2012-07-04T15:55:40+01:00</Value>
       </Dependency>
     </Item>
     <Item>
@@ -1879,11 +1879,11 @@
         <Data Key="PremultiplyAlpha" Type="bool">true</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Models\FBX\Table\ASHSEN_2_0.xnb</Output>
-      <Time>2012-07-18T12:23:11.9733258+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Models\FBX\Table\ASHSEN_2_0.xnb</Output>
+      <Time>2012-06-08T16:12:22+01:00</Time>
     </Item>
     <Item>
-      <Source>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\GraphicsContent\Models\null_diffuse.tga</Source>
+      <Source>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\GraphicsContent\Models\null_diffuse.tga</Source>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Parameters>
@@ -1895,8 +1895,8 @@
         <Data Key="PremultiplyAlpha" Type="bool">true</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\null_diffuse_0.xnb</Output>
-      <Time>2012-07-18T12:23:01.7867432+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\null_diffuse_0.xnb</Output>
+      <Time>2012-06-08T16:13:52+01:00</Time>
     </Item>
     <Item>
       <Source>Models\FBX\Table\tablenormal.png</Source>
@@ -1911,11 +1911,11 @@
         <Data Key="PremultiplyAlpha" Type="bool">true</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Models\FBX\Table\tablenormal_0.xnb</Output>
-      <Time>2012-07-18T12:23:11.9903268+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Models\FBX\Table\tablenormal_0.xnb</Output>
+      <Time>2012-06-08T16:12:22+01:00</Time>
     </Item>
     <Item>
-      <Source>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\GraphicsContent\Models\null_specular.tga</Source>
+      <Source>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\GraphicsContent\Models\null_specular.tga</Source>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Parameters>
@@ -1927,11 +1927,11 @@
         <Data Key="PremultiplyAlpha" Type="bool">true</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\null_specular_0.xnb</Output>
-      <Time>2012-07-18T12:23:01.7907434+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\null_specular_0.xnb</Output>
+      <Time>2012-06-08T16:13:52+01:00</Time>
     </Item>
     <Item>
-      <Source>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\GraphicsContent\Models\null_emissive.tga</Source>
+      <Source>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\GraphicsContent\Models\null_emissive.tga</Source>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Parameters>
@@ -1943,23 +1943,23 @@
         <Data Key="PremultiplyAlpha" Type="bool">true</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\null_emissive_0.xnb</Output>
-      <Time>2012-07-18T12:23:01.7887433+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\null_emissive_0.xnb</Output>
+      <Time>2012-06-08T16:13:52+01:00</Time>
     </Item>
     <Item>
-      <Source>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\GraphicsContent\Shaders\Deferred Rendering\RenderGBuffer.fx</Source>
+      <Source>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\GraphicsContent\Shaders\Deferred Rendering\RenderGBuffer.fx</Source>
       <Importer>EffectImporter</Importer>
       <Processor>DeferredRendererFXProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\RenderGBuffer_1.xnb</Output>
-      <Time>2012-08-03T10:27:47.9310505+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\RenderGBuffer_1.xnb</Output>
+      <Time>2012-08-04T13:24:19.0839843+01:00</Time>
       <Dependency>
-        <Key>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\GraphicsContent\Shaders\Deferred Rendering\ppshared.vsi</Key>
-        <Value>2012-07-18T12:23:01.8507468+01:00</Value>
+        <Key>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\GraphicsContent\Shaders\Deferred Rendering\ppshared.vsi</Key>
+        <Value>2012-06-08T16:13:54+01:00</Value>
       </Dependency>
       <Dependency>
-        <Key>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\GraphicsContent\Shaders\Deferred Rendering\ToneMapping.fxh</Key>
-        <Value>2012-07-18T12:23:01.8437464+01:00</Value>
+        <Key>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\GraphicsContent\Shaders\Deferred Rendering\ToneMapping.fxh</Key>
+        <Value>2012-07-04T15:55:40+01:00</Value>
       </Dependency>
     </Item>
     <Item>
@@ -1967,14 +1967,14 @@
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
       <Output>obj\x86\Release\Textures\CubeMaps\cube_0.xml</Output>
-      <Time>2012-07-18T12:23:19.7517707+01:00</Time>
+      <Time>2012-06-08T16:12:42+01:00</Time>
     </Item>
     <Item>
       <Source>Models\FBX\Dice\dice.FBX</Source>
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
       <Output>obj\x86\Release\Models\FBX\Dice\dice_0.xml</Output>
-      <Time>2012-07-18T12:23:11.6463071+01:00</Time>
+      <Time>2012-06-08T16:12:22+01:00</Time>
     </Item>
     <Item>
       <Source>Models\FBX\Dice\dice.png</Source>
@@ -1989,8 +1989,8 @@
         <Data Key="PremultiplyAlpha" Type="bool">true</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Models\FBX\Dice\dice_0.xnb</Output>
-      <Time>2012-07-18T12:23:11.6473071+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Models\FBX\Dice\dice_0.xnb</Output>
+      <Time>2012-06-08T16:12:22+01:00</Time>
     </Item>
     <Item>
       <Source>Models\FBX\Dice\dicenormal.png</Source>
@@ -2005,25 +2005,25 @@
         <Data Key="PremultiplyAlpha" Type="bool">true</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Models\FBX\Dice\dicenormal_0.xnb</Output>
-      <Time>2012-07-18T12:23:11.662308+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Models\FBX\Dice\dicenormal_0.xnb</Output>
+      <Time>2012-06-08T16:12:22+01:00</Time>
     </Item>
     <Item>
       <Source>Models\FBX\Skinned\GamePawn\pawn_pose.fbx</Source>
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
       <Output>obj\x86\Release\Models\FBX\Skinned\GamePawn\pawn_pose_0.xml</Output>
-      <Time>2012-07-18T12:23:11.9343236+01:00</Time>
+      <Time>2012-06-08T16:12:22+01:00</Time>
     </Item>
     <Item>
       <Source>Models\FBX\Skinned\GamePawn\Animations\idle.fbx</Source>
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile</Options>
       <Output>obj\x86\Release\Models\FBX\Skinned\GamePawn\Animations\idle_0.xml</Output>
-      <Time>2012-07-18T12:23:11.8773203+01:00</Time>
+      <Time>2012-06-08T16:12:22+01:00</Time>
       <Dependency>
         <Key>obj\x86\Release\Models\FBX\Skinned\GamePawn\Animations\idle_1.xml</Key>
-        <Value>2012-08-03T11:20:48.5249701+01:00</Value>
+        <Value>2012-08-05T00:36:12.7089843+01:00</Value>
       </Dependency>
     </Item>
     <Item>
@@ -2031,17 +2031,17 @@
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
       <Output>obj\x86\Release\Models\FBX\Skinned\GamePawn\Animations\idle_1.xml</Output>
-      <Time>2012-07-18T12:23:11.8773203+01:00</Time>
+      <Time>2012-06-08T16:12:22+01:00</Time>
     </Item>
     <Item>
       <Source>Models\FBX\Skinned\GamePawn\Animations\lose.fbx</Source>
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile</Options>
       <Output>obj\x86\Release\Models\FBX\Skinned\GamePawn\Animations\lose_0.xml</Output>
-      <Time>2012-07-18T12:23:11.8923212+01:00</Time>
+      <Time>2012-06-08T16:12:22+01:00</Time>
       <Dependency>
         <Key>obj\x86\Release\Models\FBX\Skinned\GamePawn\Animations\lose_1.xml</Key>
-        <Value>2012-08-03T11:20:48.6679782+01:00</Value>
+        <Value>2012-08-05T00:36:12.8876953+01:00</Value>
       </Dependency>
     </Item>
     <Item>
@@ -2049,17 +2049,17 @@
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
       <Output>obj\x86\Release\Models\FBX\Skinned\GamePawn\Animations\lose_1.xml</Output>
-      <Time>2012-07-18T12:23:11.8923212+01:00</Time>
+      <Time>2012-06-08T16:12:22+01:00</Time>
     </Item>
     <Item>
       <Source>Models\FBX\Skinned\GamePawn\Animations\celebrate.fbx</Source>
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile</Options>
       <Output>obj\x86\Release\Models\FBX\Skinned\GamePawn\Animations\celebrate_0.xml</Output>
-      <Time>2012-07-18T12:23:11.8733201+01:00</Time>
+      <Time>2012-06-08T16:12:22+01:00</Time>
       <Dependency>
         <Key>obj\x86\Release\Models\FBX\Skinned\GamePawn\Animations\celebrate_1.xml</Key>
-        <Value>2012-08-03T11:20:48.7759844+01:00</Value>
+        <Value>2012-08-05T00:36:13.0068359+01:00</Value>
       </Dependency>
     </Item>
     <Item>
@@ -2067,17 +2067,17 @@
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
       <Output>obj\x86\Release\Models\FBX\Skinned\GamePawn\Animations\celebrate_1.xml</Output>
-      <Time>2012-07-18T12:23:11.8733201+01:00</Time>
+      <Time>2012-06-08T16:12:22+01:00</Time>
     </Item>
     <Item>
       <Source>Models\FBX\Skinned\GamePawn\Animations\win.fbx</Source>
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile</Options>
       <Output>obj\x86\Release\Models\FBX\Skinned\GamePawn\Animations\win_0.xml</Output>
-      <Time>2012-07-18T12:23:11.8953213+01:00</Time>
+      <Time>2012-06-08T16:12:22+01:00</Time>
       <Dependency>
         <Key>obj\x86\Release\Models\FBX\Skinned\GamePawn\Animations\win_1.xml</Key>
-        <Value>2012-08-03T11:20:48.9139923+01:00</Value>
+        <Value>2012-08-05T00:36:13.1796875+01:00</Value>
       </Dependency>
     </Item>
     <Item>
@@ -2085,17 +2085,17 @@
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
       <Output>obj\x86\Release\Models\FBX\Skinned\GamePawn\Animations\win_1.xml</Output>
-      <Time>2012-07-18T12:23:11.8953213+01:00</Time>
+      <Time>2012-06-08T16:12:22+01:00</Time>
     </Item>
     <Item>
       <Source>Models\FBX\Skinned\GamePawn\Animations\jump.fbx</Source>
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile</Options>
       <Output>obj\x86\Release\Models\FBX\Skinned\GamePawn\Animations\jump_0.xml</Output>
-      <Time>2012-07-18T12:23:11.8883209+01:00</Time>
+      <Time>2012-06-08T16:12:22+01:00</Time>
       <Dependency>
         <Key>obj\x86\Release\Models\FBX\Skinned\GamePawn\Animations\jump_1.xml</Key>
-        <Value>2012-08-03T11:20:49.0550004+01:00</Value>
+        <Value>2012-08-05T00:36:13.3574218+01:00</Value>
       </Dependency>
     </Item>
     <Item>
@@ -2103,7 +2103,7 @@
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
       <Output>obj\x86\Release\Models\FBX\Skinned\GamePawn\Animations\jump_1.xml</Output>
-      <Time>2012-07-18T12:23:11.8883209+01:00</Time>
+      <Time>2012-06-08T16:12:22+01:00</Time>
     </Item>
     <Item>
       <Source>Models\FBX\Skinned\GamePawn\blue_playpiece.png</Source>
@@ -2118,8 +2118,8 @@
         <Data Key="PremultiplyAlpha" Type="bool">true</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Models\FBX\Skinned\GamePawn\blue_playpiece_0.xnb</Output>
-      <Time>2012-07-18T12:23:11.8983215+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Models\FBX\Skinned\GamePawn\blue_playpiece_0.xnb</Output>
+      <Time>2012-06-08T16:12:22+01:00</Time>
     </Item>
     <Item>
       <Source>Models\FBX\Skinned\GamePawn\pawn_normal.tga</Source>
@@ -2134,8 +2134,8 @@
         <Data Key="PremultiplyAlpha" Type="bool">true</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Models\FBX\Skinned\GamePawn\pawn_normal_0.xnb</Output>
-      <Time>2012-07-18T12:23:11.9303233+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Models\FBX\Skinned\GamePawn\pawn_normal_0.xnb</Output>
+      <Time>2012-06-08T16:12:22+01:00</Time>
     </Item>
     <Item>
       <Source>Models\FBX\Skinned\GamePawn\pawn_specular.tga</Source>
@@ -2150,26 +2150,26 @@
         <Data Key="PremultiplyAlpha" Type="bool">true</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Models\FBX\Skinned\GamePawn\pawn_specular_0.xnb</Output>
-      <Time>2012-07-18T12:23:11.9353236+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Models\FBX\Skinned\GamePawn\pawn_specular_0.xnb</Output>
+      <Time>2012-06-08T16:12:22+01:00</Time>
     </Item>
     <Item>
-      <Source>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\GraphicsContent\Shaders\Deferred Rendering\RenderGBuffer.fx</Source>
+      <Source>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\GraphicsContent\Shaders\Deferred Rendering\RenderGBuffer.fx</Source>
       <Importer>EffectImporter</Importer>
       <Processor>DeferredRendererFXProcessor</Processor>
       <Parameters>
         <Data Key="Defines">SKINNED_MESH;</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\RenderGBuffer_2.xnb</Output>
-      <Time>2012-08-03T10:27:47.9310505+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\RenderGBuffer_2.xnb</Output>
+      <Time>2012-08-04T13:24:19.0839843+01:00</Time>
       <Dependency>
-        <Key>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\GraphicsContent\Shaders\Deferred Rendering\ppshared.vsi</Key>
-        <Value>2012-07-18T12:23:01.8507468+01:00</Value>
+        <Key>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\GraphicsContent\Shaders\Deferred Rendering\ppshared.vsi</Key>
+        <Value>2012-06-08T16:13:54+01:00</Value>
       </Dependency>
       <Dependency>
-        <Key>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\GraphicsContent\Shaders\Deferred Rendering\ToneMapping.fxh</Key>
-        <Value>2012-07-18T12:23:01.8437464+01:00</Value>
+        <Key>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\GraphicsContent\Shaders\Deferred Rendering\ToneMapping.fxh</Key>
+        <Value>2012-07-04T15:55:40+01:00</Value>
       </Dependency>
     </Item>
     <Item>
@@ -2177,7 +2177,7 @@
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
       <Output>obj\x86\Release\Models\FBX\cubemodel_0.xml</Output>
-      <Time>2012-07-18T12:23:12.0013274+01:00</Time>
+      <Time>2012-06-08T16:12:22+01:00</Time>
     </Item>
     <Item>
       <Source>Models\FBX\Board\boardsquare.png</Source>
@@ -2192,11 +2192,11 @@
         <Data Key="PremultiplyAlpha" Type="bool">true</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Models\FBX\Board\boardsquare_0.xnb</Output>
-      <Time>2012-07-18T12:23:11.5503016+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\Models\FBX\Board\boardsquare_0.xnb</Output>
+      <Time>2012-06-08T16:12:22+01:00</Time>
     </Item>
     <Item>
-      <Source>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\GraphicsContent\Models\null_normal.tga</Source>
+      <Source>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\GraphicsContent\Models\null_normal.tga</Source>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Parameters>
@@ -2208,8 +2208,8 @@
         <Data Key="PremultiplyAlpha" Type="bool">true</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\null_normal_0.xnb</Output>
-      <Time>2012-07-18T12:23:01.7897433+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\null_normal_0.xnb</Output>
+      <Time>2012-06-08T16:13:52+01:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
@@ -2217,55 +2217,55 @@
       <TargetProfile>HiDef</TargetProfile>
       <BuildConfiguration>Release</BuildConfiguration>
       <CompressContent>true</CompressContent>
-      <RootDirectory>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGameContent\</RootDirectory>
-      <LoggerRootDirectory>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\</LoggerRootDirectory>
-      <IntermediateDirectory>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGameContent\obj\x86\Release\</IntermediateDirectory>
-      <OutputDirectory>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\</OutputDirectory>
+      <RootDirectory>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGameContent\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGameContent\obj\x86\Release\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>
-        <Key>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\Terrain Pipeline\bin\x86\Release\Psynergy.TerrainPipeline.dll</Key>
-        <Value>2012-08-03T11:15:45.4336342+01:00</Value>
+        <Key>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\Terrain Pipeline\bin\x86\Release\Psynergy.TerrainPipeline.dll</Key>
+        <Value>2012-08-05T00:34:20.8125+01:00</Value>
       </Assembly>
       <Assembly>
-        <Key>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\Middleware\Mercury Particle Engine 3.1 for XNA 4.0 (Binaries)\References\X86\ProjectMercury.dll</Key>
-        <Value>2012-07-18T12:23:09.0301575+01:00</Value>
+        <Key>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\Middleware\Mercury Particle Engine 3.1 for XNA 4.0 (Binaries)\References\X86\ProjectMercury.dll</Key>
+        <Value>2012-06-08T16:13:54+01:00</Value>
       </Assembly>
       <Assembly>
-        <Key>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\Middleware\Mercury Particle Engine 3.1 for XNA 4.0 (Binaries)\References\X86\ProjectMercury.ContentPipeline.dll</Key>
-        <Value>2012-07-18T12:23:09.0181568+01:00</Value>
+        <Key>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\Middleware\Mercury Particle Engine 3.1 for XNA 4.0 (Binaries)\References\X86\ProjectMercury.ContentPipeline.dll</Key>
+        <Value>2012-06-08T16:13:54+01:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.XImporter.dll</Key>
-        <Value>2010-08-23T13:41:18+01:00</Value>
+        <Value>2010-08-23T12:41:18+01:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.VideoImporters.dll</Key>
-        <Value>2010-08-23T13:41:18+01:00</Value>
+        <Value>2010-08-23T12:41:18+01:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.TextureImporter.dll</Key>
-        <Value>2010-08-23T13:41:18+01:00</Value>
+        <Value>2010-08-23T12:41:18+01:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.FBXImporter.dll</Key>
-        <Value>2010-08-23T13:41:18+01:00</Value>
+        <Value>2010-08-23T12:41:18+01:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.EffectImporter.dll</Key>
-        <Value>2010-08-23T13:41:18+01:00</Value>
+        <Value>2010-08-23T12:41:18+01:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.AudioImporters.dll</Key>
-        <Value>2010-08-23T13:41:18+01:00</Value>
+        <Value>2010-08-23T12:41:18+01:00</Value>
       </Assembly>
       <Assembly>
-        <Key>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\Deferred Pipeline\bin\x86\Debug\Deferred Pipeline.dll</Key>
-        <Value>2012-08-03T11:15:43.1525038+01:00</Value>
+        <Key>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\Deferred Pipeline\bin\x86\Debug\Deferred Pipeline.dll</Key>
+        <Value>2012-08-05T00:34:19.8925781+01:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
-        <Value>2012-02-16T14:45:05.9973636+00:00</Value>
+        <Value>2011-06-12T00:33:52.5478515+01:00</Value>
       </Assembly>
     </Assemblies>
   </Asset>

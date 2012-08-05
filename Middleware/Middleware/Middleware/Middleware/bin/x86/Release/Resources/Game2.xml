@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<SceneFragment>
+  <TileMap id="TileMap" >
+    <property parent="Base" />
+    <property pos="0 0 0" />
+    <property texturefile="Textures/TileSets/isometricTileset" />
+    <property gridsize="50 100" />
+  </TileMap>
+</SceneFragment>

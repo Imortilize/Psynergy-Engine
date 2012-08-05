@@ -1,7 +1,13 @@
-Content\Textures\waterMap.xnb
-Content\Textures\water.xnb
+Content\Textures\TileSets\tileset2.xnb
+Content\Textures\TileSets\hexTileSet.xnb
+Content\Textures\TileSets\isometricTileset.xnb
+Content\Textures\TileSets\mousemap.xnb
+Content\Textures\TileSets\hilight.xnb
+Content\Textures\TileSets\vladSworsman.xnb
+Content\Fonts\Pericles6.xnb
 Resources\ClassRegistry.xml
 Resources\Game.xml
+Resources\Game2.xml
 Resources\GameCameras.xml
 Resources\GameMenus.xml
 Resources\GameScenes.xml
@@ -32,6 +38,7 @@ Content\Shaders\Deferred Rendering\DirectionalLight.xnb
 Content\Shaders\Deferred Rendering\PointLight.xnb
 Content\Shaders\Deferred Rendering\RenderGBuffer.xnb
 Content\Shaders\Deferred Rendering\RenderGBuffer_0.xnb
+Content\Shaders\Deferred Rendering\RenderGBuffer_1.xnb
 Content\Shaders\Deferred Rendering\WaterGBuffer.xnb
 Content\Shaders\Others\Billboard.xnb
 Content\Shaders\Others\pointsprite.xnb
@@ -41,6 +48,7 @@ Content\Shaders\Post Processing\DOFPostProcessor.xnb
 Content\Shaders\Post Processing\EdgeDetectionPostProcessor.xnb
 Content\Shaders\Post Processing\FilmicToneMapping.xnb
 Content\Shaders\Post Processing\FilmMappingPostProcessor.xnb
+Content\Shaders\Post Processing\Fxaa.xnb
 Content\Shaders\Post Processing\GaussianBlurPostProcessor.xnb
 Content\Shaders\Post Processing\MergeBloomPostProcessor.xnb
 Content\Shaders\Post Processing\MLAAPostProcessor.xnb
@@ -68,6 +76,11 @@ Content\Textures\Others\controlpoint.xnb
 Content\Textures\PineBark.xnb
 Content\Textures\PineLeaf.xnb
 Content\Textures\randomNormal.xnb
+Content\Textures\TileSets\basicTiles.xnb
+Content\Textures\Water\water.xnb
+Content\Textures\Water\WaterDUDV.xnb
+Content\Textures\Water\waterMap.xnb
+Content\Textures\Water\WaterNormal.xnb
 Content\Textures\WillowLeaf.xnb
 Content\Trees\Birch.xnb
 Content\Trees\Gardenwood.xnb

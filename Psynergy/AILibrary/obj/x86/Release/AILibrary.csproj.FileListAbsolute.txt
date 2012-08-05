@@ -6,3 +6,11 @@ C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\AILibrary\obj
 C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\AILibrary\obj\x86\Release\Microsoft.Xna.Framework.RuntimeProfile.txt
 C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\AILibrary\obj\x86\Release\AILibrary.dll
 C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\AILibrary\obj\x86\Release\AILibrary.pdb
+C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\AILibrary\bin\x86\Release\AILibrary.dll
+C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\AILibrary\bin\x86\Release\AILibrary.pdb
+C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\AILibrary\bin\x86\Release\MainLibrary.dll
+C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\AILibrary\bin\x86\Release\MainLibrary.pdb
+C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\AILibrary\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\AILibrary\obj\x86\Release\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\AILibrary\obj\x86\Release\AILibrary.dll
+C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\AILibrary\obj\x86\Release\AILibrary.pdb

@@ -3,7 +3,7 @@
   <Asset Type="Graphics:NodeContent">
     <Name>RootNode</Name>
     <Identity>
-      <SourceFilename>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGameContent\Models\FBX\Skinned\GamePawn\Animations\celebrate.fbx</SourceFilename>
+      <SourceFilename>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGameContent\Models\FBX\Skinned\GamePawn\Animations\celebrate.fbx</SourceFilename>
       <SourceTool>FbxImporter</SourceTool>
     </Identity>
     <Transform>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</Transform>
@@ -807,7 +807,7 @@
     <Resource ID="#Resource1" Type="Graphics:BasicMaterialContent">
       <Name>blue_playpiece</Name>
       <Identity>
-        <SourceFilename>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGameContent\Models\FBX\Skinned\GamePawn\Animations\celebrate.fbx</SourceFilename>
+        <SourceFilename>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGameContent\Models\FBX\Skinned\GamePawn\Animations\celebrate.fbx</SourceFilename>
         <SourceTool>FbxImporter</SourceTool>
       </Identity>
       <OpaqueData>

@@ -3,7 +3,7 @@
   <Asset Type="Graphics:MeshContent">
     <Name>polySurface8</Name>
     <Identity>
-      <SourceFilename>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\GraphicsContent\Models\FBX\Ship1\ship1.fbx</SourceFilename>
+      <SourceFilename>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\GraphicsContent\Models\FBX\Ship1\ship1.fbx</SourceFilename>
       <SourceTool>FbxImporter</SourceTool>
     </Identity>
     <Transform>2.308545 0 0 0 0 2.54 5.639933E-16 0 0 -5.126E-16 2.308545 0 0 0 -3.980118 1</Transform>
@@ -28,7 +28,7 @@
     <Resource ID="#Resource1" Type="Graphics:BasicMaterialContent">
       <Name>phong6</Name>
       <Identity>
-        <SourceFilename>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\GraphicsContent\Models\FBX\Ship1\ship1.fbx</SourceFilename>
+        <SourceFilename>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\GraphicsContent\Models\FBX\Ship1\ship1.fbx</SourceFilename>
         <SourceTool>FbxImporter</SourceTool>
       </Identity>
       <OpaqueData>

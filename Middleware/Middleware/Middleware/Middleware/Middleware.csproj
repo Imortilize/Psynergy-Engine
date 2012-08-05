@@ -133,6 +133,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Game\CustomSpaceship.cs" />
+    <Compile Include="Game\Vlad.cs" />
     <Compile Include="Managers\StateManager\States\GameState.cs">
       <SubType>Code</SubType>
     </Compile>

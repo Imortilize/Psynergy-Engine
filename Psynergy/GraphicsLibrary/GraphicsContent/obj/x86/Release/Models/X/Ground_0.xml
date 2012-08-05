@@ -2,7 +2,7 @@
 <XnaContent xmlns:Graphics="Microsoft.Xna.Framework.Content.Pipeline.Graphics" xmlns:Framework="Microsoft.Xna.Framework">
   <Asset Type="Graphics:NodeContent">
     <Identity>
-      <SourceFilename>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\GraphicsContent\Models\X\Ground.x</SourceFilename>
+      <SourceFilename>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\GraphicsContent\Models\X\Ground.x</SourceFilename>
       <SourceTool>XImporter</SourceTool>
     </Identity>
     <Transform>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</Transform>
@@ -30,7 +30,7 @@
   <Resources>
     <Resource ID="#Resource1" Type="Graphics:BasicMaterialContent">
       <Identity>
-        <SourceFilename>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\GraphicsContent\Models\X\Ground.x</SourceFilename>
+        <SourceFilename>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\GraphicsContent\Models\X\Ground.x</SourceFilename>
         <SourceTool>XImporter</SourceTool>
       </Identity>
       <OpaqueData>

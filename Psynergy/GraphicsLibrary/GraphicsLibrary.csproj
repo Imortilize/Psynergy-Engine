@@ -122,6 +122,8 @@
     <Compile Include="Post Processing\SSAOBlur.cs" />
     <Compile Include="Post Processing\SSAOMerge.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SceneGraph\2D\FrameAnimation.cs" />
+    <Compile Include="SceneGraph\2D\GameSprite.cs" />
     <Compile Include="SceneGraph\2D\SpriteNode.cs" />
     <Compile Include="SceneGraph\3D\3D Sprites\BillboardSystem.cs" />
     <Compile Include="SceneGraph\3D\3D Sprites\PointSpriteNode.cs" />
@@ -257,7 +259,7 @@
     <PostBuildEvent>copy "GraphicsLibrary.dll" "C:\Program Files (x86)\Psynergy Game Engine\Engine\GraphicsLibrary.dll"
 copy "ProjectMercury.dll" "C:\Program Files (x86)\Psynergy Game Engine\Engine\ProjectMercury.dll"
 copy "DPSF.dll" "C:\Program Files (x86)\Psynergy Game Engine\Engine\DPSF.dll"
-copy "LTreesLibrary.dll" "C:\Program Files (x86)\Psynergy Game Engine\Engine\LTreesLibrarys.dll"</PostBuildEvent>
+copy "LTreesLibrary.dll" "C:\Program Files (x86)\Psynergy Game Engine\Engine\LTreesLibrary.dll"</PostBuildEvent>
   </PropertyGroup>
   <!--
       To modify your build process, add your task inside one of the targets below and uncomment it. 

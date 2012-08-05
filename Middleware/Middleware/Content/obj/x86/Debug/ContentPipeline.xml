@@ -2,45 +2,67 @@
 <XnaContent xmlns:Pipeline="Microsoft.Xna.Framework.Content.Pipeline">
   <Asset Type="Pipeline:BuildItemCollection">
     <Item>
-      <Source>Textures\water.png</Source>
-      <Name>Textures\water</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>WaterProcessor</Processor>
-      <Parameters>
-        <Data Key="WaterLength">32</Data>
-        <Data Key="WaterWidth">32</Data>
-        <Data Key="WaterScale">30</Data>
-      </Parameters>
-      <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\bin\x86\Debug\Content\Textures\water.xnb</Output>
-      <Time>2012-07-18T12:22:55.8594041+01:00</Time>
-    </Item>
-    <Item>
-      <Source>Textures\waterMap.jpg</Source>
-      <Name>Textures\waterMap</Name>
+      <Source>Textures\TileSets\tileset2.png</Source>
+      <Name>Textures\TileSets\tileset2</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\bin\x86\Debug\Content\Textures\waterMap.xnb</Output>
-      <Time>2012-07-18T12:22:55.8614042+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\bin\x86\Debug\Content\Textures\TileSets\tileset2.xnb</Output>
+      <Time>2012-08-04T16:54:31.25+01:00</Time>
     </Item>
     <Item>
-      <Source>Textures\WaterDUDV.png</Source>
-      <Name>Textures\WaterDUDV</Name>
+      <Source>Textures\TileSets\hexTileSet.png</Source>
+      <Name>Textures\TileSets\hexTileSet</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\bin\x86\Debug\Content\Textures\WaterDUDV.xnb</Output>
-      <Time>2012-07-18T12:22:55.8544038+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\bin\x86\Debug\Content\Textures\TileSets\hexTileSet.xnb</Output>
+      <Time>2012-08-04T19:05:12.4140625+01:00</Time>
     </Item>
     <Item>
-      <Source>Textures\WaterNormal.png</Source>
-      <Name>Textures\WaterNormal</Name>
+      <Source>Textures\TileSets\isometricTileset.png</Source>
+      <Name>Textures\TileSets\isometricTileset</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\bin\x86\Debug\Content\Textures\WaterNormal.xnb</Output>
-      <Time>2012-07-18T12:22:55.8584041+01:00</Time>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\bin\x86\Debug\Content\Textures\TileSets\isometricTileset.xnb</Output>
+      <Time>2012-08-04T19:37:54.5117187+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Fonts\Pericles6.spritefont</Source>
+      <Name>Fonts\Pericles6</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\bin\x86\Debug\Content\Fonts\Pericles6.xnb</Output>
+      <Time>2012-08-04T20:11:42.9384765+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\TileSets\mousemap.png</Source>
+      <Name>Textures\TileSets\mousemap</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\bin\x86\Debug\Content\Textures\TileSets\mousemap.xnb</Output>
+      <Time>2012-08-04T20:56:01.9921875+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\TileSets\hilight.png</Source>
+      <Name>Textures\TileSets\hilight</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\bin\x86\Debug\Content\Textures\TileSets\hilight.xnb</Output>
+      <Time>2012-08-04T20:56:11.8447265+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\TileSets\vladSworsman.png</Source>
+      <Name>Textures\TileSets\vladSworsman</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\bin\x86\Debug\Content\Textures\TileSets\vladSworsman.xnb</Output>
+      <Time>2012-08-04T21:17:54.4033203+01:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
@@ -48,43 +70,39 @@
       <TargetProfile>HiDef</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Content\</RootDirectory>
-      <LoggerRootDirectory>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\</LoggerRootDirectory>
-      <IntermediateDirectory>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Content\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Content\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Content\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>
-        <Key>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\WaterPipeline\bin\x86\Debug\Psynergy.WaterPipeline.dll</Key>
-        <Value>2012-08-03T10:46:16.7064688+01:00</Value>
-      </Assembly>
-      <Assembly>
         <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.XImporter.dll</Key>
-        <Value>2010-08-23T13:41:18+01:00</Value>
+        <Value>2010-08-23T12:41:18+01:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.VideoImporters.dll</Key>
-        <Value>2010-08-23T13:41:18+01:00</Value>
+        <Value>2010-08-23T12:41:18+01:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.TextureImporter.dll</Key>
-        <Value>2010-08-23T13:41:18+01:00</Value>
+        <Value>2010-08-23T12:41:18+01:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.FBXImporter.dll</Key>
-        <Value>2010-08-23T13:41:18+01:00</Value>
+        <Value>2010-08-23T12:41:18+01:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.EffectImporter.dll</Key>
-        <Value>2010-08-23T13:41:18+01:00</Value>
+        <Value>2010-08-23T12:41:18+01:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.AudioImporters.dll</Key>
-        <Value>2010-08-23T13:41:18+01:00</Value>
+        <Value>2010-08-23T12:41:18+01:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
-        <Value>2012-02-16T14:45:05.9973636+00:00</Value>
+        <Value>2011-06-12T00:33:52.5478515+01:00</Value>
       </Assembly>
     </Assemblies>
   </Asset>

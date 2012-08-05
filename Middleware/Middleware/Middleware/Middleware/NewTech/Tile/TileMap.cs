@@ -348,7 +348,7 @@ namespace Middleware
                                                                 1.0f,
                                                                 SpriteEffects.None,
                                                                 0.0f);
-                                            }
+                                             }
                                         }
 
                                         // Use to show tile coordinates

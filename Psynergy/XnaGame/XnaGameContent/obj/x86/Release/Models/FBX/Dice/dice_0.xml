@@ -3,7 +3,7 @@
   <Asset Type="Graphics:MeshContent">
     <Name>Untitled</Name>
     <Identity>
-      <SourceFilename>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGameContent\Models\FBX\Dice\dice.FBX</SourceFilename>
+      <SourceFilename>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGameContent\Models\FBX\Dice\dice.FBX</SourceFilename>
       <SourceTool>FbxImporter</SourceTool>
     </Identity>
     <Transform>1 0 0 0 0 1 0 0 0 0 1 0 0 0 -28.28427 1</Transform>
@@ -26,7 +26,7 @@
     <Resource ID="#Resource1" Type="Graphics:BasicMaterialContent">
       <Name>dice__dice_png</Name>
       <Identity>
-        <SourceFilename>C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGameContent\Models\FBX\Dice\dice.FBX</SourceFilename>
+        <SourceFilename>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGameContent\Models\FBX\Dice\dice.FBX</SourceFilename>
         <SourceTool>FbxImporter</SourceTool>
       </Identity>
       <OpaqueData>

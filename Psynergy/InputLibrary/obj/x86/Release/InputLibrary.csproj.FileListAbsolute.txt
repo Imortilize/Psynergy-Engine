@@ -8,3 +8,13 @@ C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\InputLibrary\
 C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\InputLibrary\obj\x86\Release\Microsoft.Xna.Framework.RuntimeProfile.txt
 C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\InputLibrary\obj\x86\Release\InputLibrary.dll
 C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\InputLibrary\obj\x86\Release\InputLibrary.pdb
+C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\InputLibrary\bin\x86\Release\InputLibrary.dll
+C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\InputLibrary\bin\x86\Release\InputLibrary.pdb
+C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\InputLibrary\bin\x86\Release\EventLibrary.dll
+C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\InputLibrary\bin\x86\Release\MainLibrary.dll
+C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\InputLibrary\bin\x86\Release\EventLibrary.pdb
+C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\InputLibrary\bin\x86\Release\MainLibrary.pdb
+C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\InputLibrary\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\InputLibrary\obj\x86\Release\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\InputLibrary\obj\x86\Release\InputLibrary.dll
+C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\InputLibrary\obj\x86\Release\InputLibrary.pdb
