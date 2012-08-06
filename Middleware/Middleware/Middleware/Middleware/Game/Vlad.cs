@@ -33,24 +33,27 @@ namespace Middleware
         {
             base.Load();
 
-            // Add animations
-            AddAnimation("WalkEast", 0, 48 * 0, 48, 48, 8, 0.1f);
-            AddAnimation("WalkNorth", 0, 48 * 1, 48, 48, 8, 0.1f);
-            AddAnimation("WalkNorthEast", 0, 48 * 2, 48, 48, 8, 0.1f);
-            AddAnimation("WalkNorthWest", 0, 48 * 3, 48, 48, 8, 0.1f);
-            AddAnimation("WalkSouth", 0, 48 * 4, 48, 48, 8, 0.1f);
-            AddAnimation("WalkSouthEast", 0, 48 * 5, 48, 48, 8, 0.1f);
-            AddAnimation("WalkSouthWest", 0, 48 * 6, 48, 48, 8, 0.1f);
-            AddAnimation("WalkWest", 0, 48 * 7, 48, 48, 8, 0.1f);
+            int width = 48;
+            int height = 48;
 
-            AddAnimation("IdleEast", 0, 48 * 0, 48, 48, 1, 0.2f);
-            AddAnimation("IdleNorth", 0, 48 * 1, 48, 48, 1, 0.2f);
-            AddAnimation("IdleNorthEast", 0, 48 * 2, 48, 48, 1, 0.2f);
-            AddAnimation("IdleNorthWest", 0, 48 * 3, 48, 48, 1, 0.2f);
-            AddAnimation("IdleSouth", 0, 48 * 4, 48, 48, 1, 0.2f);
-            AddAnimation("IdleSouthEast", 0, 48 * 5, 48, 48, 1, 0.2f);
-            AddAnimation("IdleSouthWest", 0, 48 * 6, 48, 48, 1, 0.2f);
-            AddAnimation("IdleWest", 0, 48 * 7, 48, 48, 1, 0.2f);
+            // Add animations
+            AddAnimation("WalkEast", 0, 48 * 0, width, height, 8, 0.1f);
+            AddAnimation("WalkNorth", 0, 48 * 1, width, height, 8, 0.1f);
+            AddAnimation("WalkNorthEast", 0, 48 * 2, width, height, 8, 0.1f);
+            AddAnimation("WalkNorthWest", 0, 48 * 3, width, height, 8, 0.1f);
+            AddAnimation("WalkSouth", 0, 48 * 4, width, height, 8, 0.1f);
+            AddAnimation("WalkSouthEast", 0, 48 * 5, width, height, 8, 0.1f);
+            AddAnimation("WalkSouthWest", 0, 48 * 6, width, height, 8, 0.1f);
+            AddAnimation("WalkWest", 0, 48 * 7, width, height, 8, 0.1f);
+
+            AddAnimation("IdleEast", 0, 48 * 0, width, height, 1, 0.2f);
+            AddAnimation("IdleNorth", 0, 48 * 1, width, height, 1, 0.2f);
+            AddAnimation("IdleNorthEast", 0, 48 * 2, width, height, 1, 0.2f);
+            AddAnimation("IdleNorthWest", 0, 48 * 3, width, height, 1, 0.2f);
+            AddAnimation("IdleSouth", 0, 48 * 4, width, height, 1, 0.2f);
+            AddAnimation("IdleSouthEast", 0, 48 * 5, width, height, 1, 0.2f);
+            AddAnimation("IdleSouthWest", 0, 48 * 6, width, height, 1, 0.2f);
+            AddAnimation("IdleWest", 0, 48 * 7, width, height, 1, 0.2f);
 
             DrawOffset = new Vector2(-24, -38);
             CurrentAnimation = "WalkEast";
@@ -64,6 +67,7 @@ namespace Middleware
 
             if (input != null)
             {
+                float moveSpeed = 3;
                 Vector2 moveVector = Vector2.Zero;
                 Vector2 moveDirection = Vector2.Zero;
                 String animation = "";
@@ -72,59 +76,62 @@ namespace Middleware
                 {
                     moveDirection = new Vector2(-1, -1);
                     animation = "WalkNorthWest";
-                    moveVector += new Vector2(-1, -1);
                 }
                 if (input.KeyDown(Keys.NumPad8))
                 {
                     moveDirection = new Vector2(0, -1);
                     animation = "WalkNorth";
-                    moveVector += new Vector2(0, -1);
                 }
 
                 if (input.KeyDown(Keys.NumPad9))
                 {
                     moveDirection = new Vector2(1, -1);
                     animation = "WalkNorthEast";
-                    moveVector += new Vector2(1, -1);
                 }
 
                 if (input.KeyDown(Keys.NumPad4))
                 {
                     moveDirection = new Vector2(-1, 0);
                     animation = "WalkWest";
-                    moveVector += new Vector2(-1, 0);
                 }
 
                 if (input.KeyDown(Keys.NumPad6))
                 {
                     moveDirection = new Vector2(1, 0);
                     animation = "WalkEast";
-                    moveVector += new Vector2(1, 0);
                 }
 
                 if (input.KeyDown(Keys.NumPad1))
                 {
                     moveDirection = new Vector2(-1, 1);
                     animation = "WalkSouthWest";
-                    moveVector += new Vector2(-1, 1);
                 }
 
                 if (input.KeyDown(Keys.NumPad2))
                 {
                     moveDirection = new Vector2(0, 1);
                     animation = "WalkSouth";
-                    moveVector += new Vector2(0, 1);
                 }
 
                 if (input.KeyDown(Keys.NumPad3))
                 {
                     moveDirection = new Vector2(1, 1);
                     animation = "WalkSouthEast";
-                    moveVector += new Vector2(1, 1);
                 }
 
                 if (moveDirection.Length() != 0)
                 {
+                    // Scale by move speed
+                    moveDirection *= moveSpeed;
+
+                    TileMap tileMap = TileMapManager.Instance.GetCurrentTileMap();
+
+                    if (tileMap != null)
+                    {
+                        if (tileMap.GetCellAtWorldPoint(GetPos2D() + moveDirection).Walkable == false)
+                            moveDirection = Vector2.Zero;
+                    }
+
                     MoveBy((int)moveDirection.X, (int)moveDirection.Y);
                     if (CurrentAnimation != animation)
                         CurrentAnimation = animation;
@@ -139,16 +146,16 @@ namespace Middleware
 
             if ( graphicsDevice != null )
             {
-                Viewport viewPort = graphicsDevice.Viewport;
-
-                // Clamp positions to be inside the screen
-                PosX = MathHelper.Clamp(PosX, 0 - DrawOffset.X, viewPort.Width);
-                PosY = MathHelper.Clamp(PosY, 0 - DrawOffset.Y, viewPort.Height);
-
                 IsometricCamera isometricCamera = (CameraManager.Instance.ActiveCamera as IsometricCamera);
 
                 if (isometricCamera != null)
                 {
+                    Viewport viewPort = graphicsDevice.Viewport;
+
+                    // Clamp positions to be inside the screen
+                    PosX = MathHelper.Clamp(PosX, -DrawOffset.X, (isometricCamera.WorldSize.X - DrawOffset.X));
+                    PosY = MathHelper.Clamp(PosY, -DrawOffset.Y, (isometricCamera.WorldSize.Y - DrawOffset.Y));
+
                     Vector2 testPosition = isometricCamera.WorldToScreen(GetPos2D());
 
                     if (testPosition.X < 100)
@@ -177,14 +184,28 @@ namespace Middleware
         }
         #endregion
 
+        #region Render
+        public override void Render(GameTime deltaTime)
+        {
+            // Get the current tile map
+            TileMap tileMap = TileMapManager.Instance.GetCurrentTileMap();
+
+            // use for getting the height on the tile being stood on
+            if (tileMap != null)
+                Offset = new Vector2(0, -tileMap.GetOverallHeight(GetPos2D()));
+
+            base.Render(deltaTime);
+        }
+        #endregion
+
         #region Override Functions
         public override Vector2 GetWorld2D()
         {
             Vector2 toRet = GetPos2D();
             IsometricCamera isometricCamera = (CameraManager.Instance.ActiveCamera as IsometricCamera);
 
-            //if (isometricCamera != null)
-               // toRet = worldPosition - Location;// isometricCamera.WorldToScreen(toRet);
+            if (isometricCamera != null)
+                toRet = isometricCamera.WorldToScreen(toRet);
 
             return toRet;
         }

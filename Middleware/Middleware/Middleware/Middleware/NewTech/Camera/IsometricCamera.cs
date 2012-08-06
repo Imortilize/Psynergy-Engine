@@ -209,6 +209,8 @@ namespace Middleware
                 PosY = MathHelper.Clamp(value.Y, 0f, (m_WorldSize.Y - m_ViewPort.Y));
             }
         }
+
+        public Vector2 WorldSize { get { return m_WorldSize; } }
         #endregion
     }
 }

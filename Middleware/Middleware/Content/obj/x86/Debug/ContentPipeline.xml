@@ -64,6 +64,15 @@
       <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\bin\x86\Debug\Content\Textures\TileSets\vladSworsman.xnb</Output>
       <Time>2012-08-04T21:17:54.4033203+01:00</Time>
     </Item>
+    <Item>
+      <Source>Textures\TileSets\slopMaps.png</Source>
+      <Name>Textures\TileSets\slopeMaps</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\bin\x86\Debug\Content\Textures\TileSets\slopeMaps.xnb</Output>
+      <Time>2012-08-05T13:10:11.7890625+01:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <TargetPlatform>Windows</TargetPlatform>

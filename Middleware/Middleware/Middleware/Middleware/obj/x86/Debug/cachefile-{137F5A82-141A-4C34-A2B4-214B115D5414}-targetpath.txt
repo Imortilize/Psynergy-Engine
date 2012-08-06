@@ -5,3 +5,4 @@ Content\Fonts\Pericles6.xnb
 Content\Textures\TileSets\mousemap.xnb
 Content\Textures\TileSets\hilight.xnb
 Content\Textures\TileSets\vladSworsman.xnb
+Content\Textures\TileSets\slopeMaps.xnb

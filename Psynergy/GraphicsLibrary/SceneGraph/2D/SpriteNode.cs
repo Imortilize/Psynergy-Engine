@@ -49,7 +49,7 @@ namespace Psynergy.Graphics
         protected Vector2 m_DrawOffset = Vector2.Zero;
 
         // Image origin
-        private Vector2 m_Origin = Vector2.Zero;    // Default to top left
+        protected Vector2 m_Origin = Vector2.Zero;    // Default to top left
 
         #region Animation variables
         private bool m_Animating = true;
@@ -405,7 +405,7 @@ namespace Psynergy.Graphics
         }
 
         // Offset used to show parts of animations
-        public Vector2 AnimationOffset { get { return m_AnimationOffset; } set { m_AnimationOffset = value; } }
+        public Vector2 Offset { get { return m_AnimationOffset; } set { m_AnimationOffset = value; } }
         #endregion
         #endregion
     }

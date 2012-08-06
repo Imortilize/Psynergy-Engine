@@ -46,6 +46,7 @@ namespace Middleware
 
         private Texture2D m_MouseMap = null;
         private Texture2D m_Hilight = null;
+        private Texture2D m_SlopeMap = null;
         #endregion
 
         public TileMap()
@@ -72,6 +73,9 @@ namespace Middleware
 
             // Calculate the maximum tile depth
             m_MaxDepth = ((m_GridSize.X + 1) + ((m_GridSize.Y + 1) * m_TileSize.X)) * 10;
+
+            // Add to the tile map manager
+            TileMapManager.Instance.AddTileMap(this);
         }
 
         private void CreateTileMap()
@@ -171,7 +175,28 @@ namespace Middleware
             m_Rows[14].Columns[4].AddTopperTile(125);
             m_Rows[15].Columns[5].AddTopperTile(91);
             m_Rows[16].Columns[6].AddTopperTile(94);
-             
+
+            m_Rows[15].Columns[5].Walkable = false;
+            m_Rows[16].Columns[6].Walkable = false;
+
+            // Hill
+            m_Rows[12].Columns[9].AddHeightTile(34);
+            m_Rows[11].Columns[9].AddHeightTile(34);
+            m_Rows[11].Columns[8].AddHeightTile(34);
+            m_Rows[10].Columns[9].AddHeightTile(34);
+
+            m_Rows[12].Columns[8].AddTopperTile(31);
+            m_Rows[12].Columns[8].SlopeMap = 0;
+            m_Rows[13].Columns[8].AddTopperTile(31);
+            m_Rows[13].Columns[8].SlopeMap = 0;
+
+            m_Rows[12].Columns[10].AddTopperTile(32);
+            m_Rows[12].Columns[10].SlopeMap = 1;
+            m_Rows[13].Columns[9].AddTopperTile(32);
+            m_Rows[13].Columns[9].SlopeMap = 1;
+
+            m_Rows[14].Columns[9].AddTopperTile(30);
+            m_Rows[14].Columns[9].SlopeMap = 4;
             // End Create Sample Map Data
         }
 
@@ -196,6 +221,16 @@ namespace Middleware
             try
             {
                 m_Hilight = RenderManager.Instance.LoadTexture2D("Textures/TileSets/hilight");
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.ToString());
+            }
+
+            // Load slope maps
+            try
+            {
+                m_SlopeMap = RenderManager.Instance.LoadTexture2D("Textures/TileSets/slopeMaps");
             }
             catch (Exception e)
             {
@@ -391,6 +426,11 @@ namespace Middleware
         #endregion
 
         #region Tile Picking
+        public Point WorldToMapCell(Vector2 worldPosition)
+        {
+            return WorldToMapCell(new Point((int)worldPosition.X, (int)worldPosition.Y));
+        }
+
         public Point WorldToMapCell(Point worldPoint)
         {
             Point dummy;
@@ -454,13 +494,93 @@ namespace Middleware
             // Return the map cell
             return mapCell;
         }
+
+        public MapCell GetCellAtWorldPoint(Vector2 worldPosition)
+        {
+            return GetCellAtWorldPoint(new Point((int)worldPosition.X, (int)worldPosition.Y));
+        }
+
+        public MapCell GetCellAtWorldPoint(Point worldPoint)
+        {
+            Point mapPoint = WorldToMapCell(worldPoint);
+            return Rows[mapPoint.Y].Columns[mapPoint.X];
+        }
+        #endregion
+
+        #region Slope Mapping
+        public int GetSlopeHeightAtWorldPoint(Point worldPoint)
+        {
+            int toRet = 0;
+
+            Point localPoint;
+            Point mapPoint = WorldToMapCell(worldPoint, out localPoint);
+            int slopeMap = -1;
+
+            if ((m_Rows.Count > mapPoint.Y) && (m_Rows[mapPoint.Y].Columns.Count > mapPoint.X))
+                slopeMap = Rows[mapPoint.Y].Columns[mapPoint.X].SlopeMap;
+
+            if ( slopeMap >= 0 )
+                toRet = GetSlopeMapHeight(localPoint, slopeMap);
+
+            return toRet;
+        }
+
+        public int GetSlopeHeightAtWorldPoint(Vector2 worldPoint)
+        {
+            return GetSlopeHeightAtWorldPoint(new Point((int)worldPoint.X, (int)worldPoint.Y));
+        }
+
+        public int GetSlopeMapHeight(Point localPixel, int slopeMap)
+        {
+            if ((m_MouseMap != null) && (m_SlopeMap != null))
+            {
+                Point texturePoint = new Point(slopeMap * m_MouseMap.Width + localPixel.X, localPixel.Y);
+
+                Color[] slopeColor = new Color[1];
+
+                if (new Rectangle(0, 0, m_SlopeMap.Width, m_SlopeMap.Height).Contains(texturePoint.X, texturePoint.Y))
+                {
+                    m_SlopeMap.GetData(0, new Rectangle(texturePoint.X, texturePoint.Y, 1, 1), slopeColor, 0, 1);
+
+                    int offset = (int)(((float)(255 - slopeColor[0].R) / 255f) * m_HeightTileOffset);
+
+                    return offset;
+                }
+            }
+
+            return 0;
+        }
+        #endregion
+
+        #region Height Helper Functions
+
+        public int GetOverallHeight(Vector2 worldPoint)
+        {
+            return GetOverallHeight(new Point((int)worldPoint.X, (int)worldPoint.Y));
+        }
+
+        public int GetOverallHeight(Point worldPoint)
+        {
+            Point mapPoint = WorldToMapCell(worldPoint);
+            int height = 0;
+
+            if ((m_Rows.Count > mapPoint.Y) && (m_Rows[mapPoint.Y].Columns.Count > mapPoint.X))
+            {
+                height = m_Rows[mapPoint.Y].Columns[mapPoint.X].HeightTiles.Count * m_HeightTileOffset;
+                height += GetSlopeHeightAtWorldPoint(worldPoint);
+            }
+
+            return height;
+        }
         #endregion
 
         #region Property Set / Gets
+        public List<MapRow> Rows { get { return m_Rows; } }
         public Vector2 GridSize { get { return m_GridSize; } set { m_GridSize = value; } }
         public Vector2 TileSize { get { return m_TileSize; } set { m_TileSize = value; } }
         public Vector2 TileStep { get { return m_TileStep; } set { m_TileStep = value; } }
         public Vector2 BaseOffset { get { return m_BaseOffset; } }
+        public int HeightTileOffset { get { return m_HeightTileOffset; } } 
         #endregion
     }
 }

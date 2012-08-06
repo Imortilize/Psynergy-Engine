@@ -31,6 +31,9 @@ namespace Middleware
         {
             // Create Psynergy Engine
             m_PsynergyEngine = new PsynergyEngine(this);
+
+            // Put this here for now
+            new TileMapManager();
         }
 
         /// <summary>

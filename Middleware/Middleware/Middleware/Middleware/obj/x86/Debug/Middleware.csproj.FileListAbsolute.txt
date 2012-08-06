@@ -223,3 +223,4 @@ C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middlewa
 C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\bin\x86\Debug\Content\Textures\TileSets\hilight.xnb
 C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\bin\x86\Debug\Content\Textures\TileSets\vladSworsman.xnb
 C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\bin\x86\Debug\LTreesLibrary.dll
+C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\bin\x86\Debug\Content\Textures\TileSets\slopeMaps.xnb
