@@ -5,11 +5,13 @@
     <property pos="0 0 0" />
     <property texturefile="Textures/TileSets/isometricTileset" />
     <property gridsize="50 100" />
+    <property scale="2 2 2" />
   </TileMap>
 
   <Vlad id="Vlad" >
     <property parent="Base" />
     <property pos="100 100 0" />
     <property texturefile="Textures/TileSets/vladSworsman" />
+    <property scale="1 1 1" />
   </Vlad>
 </SceneFragment>

@@ -49,6 +49,10 @@ namespace Middleware
         private Texture2D m_SlopeMap = null;
         #endregion
 
+        #region Hacks for now
+        private Vlad m_Vlad = null;
+        #endregion
+
         public TileMap()
         {        
         }
@@ -356,34 +360,15 @@ namespace Middleware
                                             }
                                         }
 
-                                        // If tile picking is allowed
-                                        if (m_AllowPicking && (m_Hilight != null))
+                                        if (m_Vlad != null)
                                         {
-                                            InputManager input = InputManager.Instance;
+                                            Point vladMapPoint = WorldToMapCell(new Point((int)m_Vlad.Position.X, (int)m_Vlad.Position.Y));
 
-                                            if ( input != null )
+                                            if ((mapX == vladMapPoint.X) && (mapY == vladMapPoint.Y))
                                             {
-                                                Vector2 hilightLocation = isometricCamera.ScreenToWorld(input.GetCurrentMousePos());
-                                                Point hilightPoint = WorldToMapCell(new Point((int)hilightLocation.X, (int)hilightLocation.Y));
-
-                                                // Calculate whether to offset the highlight or not
-                                                int hilightrowOffset = 0;
-                                                if ((hilightPoint.Y) % 2 == 1)
-                                                    hilightrowOffset = (int)m_OddRowOffset.X;
-                                                
-                                                Vector2 screenPosition = isometricCamera.WorldToScreen(new Vector2((hilightPoint.X * m_TileStep.X) + hilightrowOffset, (hilightPoint.Y + 2) * m_TileStep.Y));
-
-                                                m_SpriteBatch.Draw(
-                                                                m_Hilight,
-                                                                screenPosition,
-                                                                new Rectangle(0, 0, 64, 32),
-                                                                (Color.White * 0.3f),
-                                                                0.0f,
-                                                                Vector2.Zero,
-                                                                1.0f,
-                                                                SpriteEffects.None,
-                                                                0.0f);
-                                             }
+                                               // if ( m_Rows[mapY].Columns[mapX].Walkable )
+                                                    m_Vlad.RenderDepth = depthOffset - (float)(heightRow + 2) * m_HeightRowDepthMod;
+                                            }
                                         }
 
                                         // Use to show tile coordinates
@@ -401,6 +386,39 @@ namespace Middleware
                                                                     0.0f);
                                         }
                                     }
+                                }
+                            }
+                        }
+
+                        if (m_Vlad != null)
+                        {
+                            // If tile picking is allowed
+                            if (m_AllowPicking && (m_Hilight != null))
+                            {
+                                InputManager input = InputManager.Instance;
+
+                                if (input != null)
+                                {
+                                    Vector2 hilightLocation = isometricCamera.ScreenToWorld(input.GetCurrentMousePos());
+                                    Point hilightPoint = WorldToMapCell(new Point((int)hilightLocation.X, (int)hilightLocation.Y));
+
+                                    // Calculate whether to offset the highlight or not
+                                    int hilightrowOffset = 0;
+                                    if ((hilightPoint.Y) % 2 == 1)
+                                        hilightrowOffset = (int)m_OddRowOffset.X;
+
+                                    Vector2 screenPosition = isometricCamera.WorldToScreen(new Vector2((hilightPoint.X * m_TileStep.X) + hilightrowOffset, (hilightPoint.Y + 2) * m_TileStep.Y));
+
+                                    m_SpriteBatch.Draw(
+                                                    m_Hilight,
+                                                    screenPosition,
+                                                    new Rectangle(0, 0, 64, 32),
+                                                    (Color.White * 0.3f),
+                                                    0.0f,
+                                                    Vector2.Zero,
+                                                    1.0f,
+                                                    SpriteEffects.None,
+                                                    (m_Vlad.RenderDepth + 0.01f));
                                 }
                             }
                         }
@@ -580,7 +598,11 @@ namespace Middleware
         public Vector2 TileSize { get { return m_TileSize; } set { m_TileSize = value; } }
         public Vector2 TileStep { get { return m_TileStep; } set { m_TileStep = value; } }
         public Vector2 BaseOffset { get { return m_BaseOffset; } }
-        public int HeightTileOffset { get { return m_HeightTileOffset; } } 
+        public int HeightTileOffset { get { return m_HeightTileOffset; } }
+
+        #region Hacks
+        public Vlad Vlad { get { return m_Vlad; } set { m_Vlad = value; } }
+        #endregion
         #endregion
     }
 }

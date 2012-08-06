@@ -309,7 +309,7 @@ namespace Psynergy.Graphics
             m_Animations.Add(name, new FrameAnimation(x, y, width, height, frames, frameLength));
 
             // Make sure origin is set to centre of this animation
-            m_Origin = new Vector2((width * 0.5f), (height * 0.5f));
+            m_Origin = new Vector2((width * 0.5f), 0.0f);
         }
 
         public void AddAnimation(String name, int x, int y, int width, int height, int frames, float frameLength, String nextAnimation)
@@ -317,7 +317,7 @@ namespace Psynergy.Graphics
             m_Animations.Add(name, new FrameAnimation(x, y, width, height, frames, frameLength, nextAnimation));
 
             // Make sure origin is set to centre of this animation
-            m_Origin = new Vector2((width * 0.5f), (height * 0.5f));
+            m_Origin = new Vector2((width * 0.5f), 0.0f);
         }
 
         public FrameAnimation GetAnimationByName(String name)

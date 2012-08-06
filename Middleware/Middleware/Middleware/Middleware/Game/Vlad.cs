@@ -55,9 +55,15 @@ namespace Middleware
             AddAnimation("IdleSouthWest", 0, 48 * 6, width, height, 1, 0.2f);
             AddAnimation("IdleWest", 0, 48 * 7, width, height, 1, 0.2f);
 
-            DrawOffset = new Vector2(-24, -38);
+            DrawOffset = new Vector2(-24, (-38 * ScaleY));
             CurrentAnimation = "WalkEast";
             IsAnimating = true;
+
+            
+            TileMap tileMap = TileMapManager.Instance.GetCurrentTileMap();
+
+            if (tileMap != null)
+                tileMap.Vlad = this;
         }
 
         #region Update
@@ -74,7 +80,7 @@ namespace Middleware
 
                 if (input.KeyDown(Keys.NumPad7)) 
                 {
-                    moveDirection = new Vector2(-1, -1);
+                    moveDirection = new Vector2(-1, -1) * 0.5f;
                     animation = "WalkNorthWest";
                 }
                 if (input.KeyDown(Keys.NumPad8))
@@ -85,7 +91,7 @@ namespace Middleware
 
                 if (input.KeyDown(Keys.NumPad9))
                 {
-                    moveDirection = new Vector2(1, -1);
+                    moveDirection = new Vector2(1, -1) * 0.5f;
                     animation = "WalkNorthEast";
                 }
 
@@ -103,7 +109,7 @@ namespace Middleware
 
                 if (input.KeyDown(Keys.NumPad1))
                 {
-                    moveDirection = new Vector2(-1, 1);
+                    moveDirection = new Vector2(-1, 1) * 0.5f;
                     animation = "WalkSouthWest";
                 }
 
@@ -115,7 +121,7 @@ namespace Middleware
 
                 if (input.KeyDown(Keys.NumPad3))
                 {
-                    moveDirection = new Vector2(1, 1);
+                    moveDirection = new Vector2(1, 1) * 0.5f;
                     animation = "WalkSouthEast";
                 }
 
@@ -129,6 +135,8 @@ namespace Middleware
                     if (tileMap != null)
                     {
                         if (tileMap.GetCellAtWorldPoint(GetPos2D() + moveDirection).Walkable == false)
+                            moveDirection = Vector2.Zero;
+                        else if (Math.Abs(tileMap.GetOverallHeight(GetPos2D()) - tileMap.GetOverallHeight(GetPos2D() + moveDirection)) > 10)
                             moveDirection = Vector2.Zero;
                     }
 
