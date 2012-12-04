@@ -132,6 +132,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Game\Controllers\GameNodeController.cs" />
+    <Compile Include="Game\Controllers\ManualDriveController.cs" />
+    <Compile Include="Game\Controllers\TestController.cs" />
     <Compile Include="Game\CustomSpaceship.cs" />
     <Compile Include="Game\Vlad.cs" />
     <Compile Include="Managers\StateManager\States\GameState.cs">
@@ -169,6 +172,7 @@
     </Content>
     <Content Include="Resources\GameCameras.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
     </Content>
     <Content Include="Resources\GameMenus.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

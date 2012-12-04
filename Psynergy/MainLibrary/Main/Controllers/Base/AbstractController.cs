@@ -10,7 +10,7 @@ using Psynergy;
 
 namespace Psynergy
 {
-    abstract public class AbstractController<T> : GameObject
+    abstract public class AbstractController : GameObject
     {
         #region Factory Property setting
         protected override void ClassProperties(Factory factory)

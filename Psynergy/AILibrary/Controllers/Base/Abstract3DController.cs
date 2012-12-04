@@ -10,10 +10,10 @@ using Psynergy;
 
 namespace Psynergy.AI
 {
-    abstract public class Abstract3DController : Controller
+    abstract public class Abstract3DController<T> : Controller where T : Node
     {
         public Abstract3DController() : base() { }
-        public Abstract3DController(Node node) : base(node) { }
+        public Abstract3DController(T node) : base(node) { }
         abstract public void SetDesiredPosition(Vector3 desiredPos);
         abstract public void StopMovement();
         abstract public void SetDesiredRotation(Vector3 from, Vector3 to);

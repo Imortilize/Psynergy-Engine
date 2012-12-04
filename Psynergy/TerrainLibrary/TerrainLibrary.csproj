@@ -103,6 +103,10 @@
     <Compile Include="Terrain\TerrainMeshMetaData.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\CameraLibrary\CameraLibrary.csproj">
+      <Project>{F20F853D-EA75-4409-8044-DE95DB61E358}</Project>
+      <Name>CameraLibrary</Name>
+    </ProjectReference>
     <ProjectReference Include="..\EventLibrary\EventLibrary.csproj">
       <Project>{2D81DF63-99CF-461F-B012-768CC256B033}</Project>
       <Name>EventLibrary</Name>
@@ -132,7 +136,7 @@
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\Microsoft.Xna.GameStudio.targets" />
   <PropertyGroup>
-    <PostBuildEvent>copy "TerrainLibrary.dll" "C:\Program Files (x86)\Psynergy Game Engine\Engine\TerrainLibrary.dll"</PostBuildEvent>
+    <PostBuildEvent>xcopy /y "TerrainLibrary.dll" "C:\Program Files (x86)\Psynergy Game Engine\Engine\TerrainLibrary.dll"</PostBuildEvent>
   </PropertyGroup>
   <!--
       To modify your build process, add your task inside one of the targets below and uncomment it. 

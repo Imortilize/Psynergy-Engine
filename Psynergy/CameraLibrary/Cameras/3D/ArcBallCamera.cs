@@ -38,6 +38,13 @@ namespace Psynergy.Camera
         protected float m_MaxDistance = 0.0f;
         protected float m_DistanceMove = 100.0f;
 
+
+
+        // Test
+        private float m_CameraRotation = 0.0f;
+        private float m_CameraArc = 0.0f;
+        private float m_CameraRotateSpeed = 0.1f;
+
         public ArcBallCamera() : base("")
         {
         }
@@ -65,7 +72,7 @@ namespace Psynergy.Camera
             base.Initialise();
 
             // Set the distance to half way between the min and maximum rotationY as default
-            RotY = (MinRotationY + ((MaxRotationY - MinRotationY) / 2));
+            //RotY = (MinRotationY + ((MaxRotationY - MinRotationY) / 2));
 
             // Set the x rotation value 
             m_Pitch = m_MaxPitch;
@@ -89,7 +96,7 @@ namespace Psynergy.Camera
             base.Reset();
 
             // Set the distance to half way between the min and maximum rotationY as default
-            RotY = (MinRotationY + ((MaxRotationY - MinRotationY) / 2));
+            //RotY = (MinRotationY + ((MaxRotationY - MinRotationY) / 2));
 
             // Allow tweeining
             m_StartTween = true;
@@ -120,21 +127,19 @@ namespace Psynergy.Camera
         {
             if (!m_DisableMovement)
             {
-                InputManager input = InputManager.Instance;
-
                 bool valueChanged = false;
 
                 // distance values ( mouse and controller )
-                if (input.IsGamePadConnected(PlayerIndex.One))
+                if (InputHandle.IsGamePadConnected(PlayerIndex.One))
                 {
-                    if (input.LeftBumperDown(PlayerIndex.One))
+                    if (InputHandle.LeftBumperDown(PlayerIndex.One))
                     {
                         m_Distance += (m_DistanceMove * (float)deltaTime.ElapsedGameTime.TotalSeconds);
 
                         valueChanged = true;
                     }
 
-                    if (input.RightBumperDown(PlayerIndex.One))
+                    if (InputHandle.RightBumperDown(PlayerIndex.One))
                     {
                         m_Distance -= (m_DistanceMove * (float)deltaTime.ElapsedGameTime.TotalSeconds);
 
@@ -143,7 +148,10 @@ namespace Psynergy.Camera
                 }
 
                 if (!valueChanged)
-                    m_Distance += input.GetMouseWheelChange();
+                {
+                    Vector3 mouseDelta = InputHandle.MouseDelta;
+                    m_Distance += mouseDelta.Z;
+                }
             }
 
             // Clamp the distance to within the min and max distance values
@@ -154,7 +162,21 @@ namespace Psynergy.Camera
         {
             if (!m_DisableMovement)
             {
-                InputManager input = InputManager.Instance;
+              /*  float time = (float)deltaTime.ElapsedGameTime.TotalMilliseconds;
+
+
+                // Check for input to rotate the camera up and down around the model.
+                if (InputHandle.GetKey(Keys.Up) || InputHandle.GetKey(Keys.W))
+                {
+                    m_CameraArc += time * m_CameraRotateSpeed;
+                }
+
+                if (InputHandle.GetKey(Keys.Down) || InputHandle.GetKey(Keys.S))
+                {
+                    m_CameraArc -= time * m_CameraRotateSpeed;
+                }*/
+
+
 
                 // Reset the rotation values accordingly
                 m_YawSpeed = 0.0f;
@@ -163,9 +185,9 @@ namespace Psynergy.Camera
                 bool valueChanged = false;
 
                 // If the game pad is connected then use these values over the mouse
-                if (input.IsGamePadConnected(PlayerIndex.One))
+                if (InputHandle.IsGamePadConnected(PlayerIndex.One))
                 {
-                    Vector2 leftThumbStick = input.LeftStick(PlayerIndex.One);
+                    Vector2 leftThumbStick = InputHandle.LeftStick(PlayerIndex.One);
 
                     // Left thumbstick
                     m_YawSpeed = (leftThumbStick.X * 5);
@@ -177,11 +199,15 @@ namespace Psynergy.Camera
 
                 if (!valueChanged)
                 {
-                    // Rotation values ( mouse left pressed )
-                    if (input.IsMouseRightPressed())
+                    // If right mouse is down allow rotation
+                    if (InputHandle.GetMouse(1) || InputHandle.GetMouse(2))
                     {
-                        m_YawSpeed = (input.GetMouseMoveX() * 5);
-                        m_PitchSpeed = (input.GetMouseMoveY() * 5);
+                        // Get the mouse delta
+                        Vector3 mouseDelta = InputHandle.MouseDelta;
+
+                        // Apply accordingly
+                        m_YawSpeed = (mouseDelta.X * 5);
+                        m_PitchSpeed = (mouseDelta.Y * 5);
                     }
                 }
             }
@@ -203,7 +229,7 @@ namespace Psynergy.Camera
             if (Focus != null)
             {
                 // Calculate the rotation matrix
-                Matrix rotation = Matrix.CreateFromQuaternion(Rotation);
+                /*Matrix rotation = Matrix.CreateFromQuaternion(Rotation);
 
                 // Translate down the Z axis by the desired distance between the camera and object, then rotate that
                 // vector to find the camera offset from the target.
@@ -217,10 +243,14 @@ namespace Psynergy.Camera
                 newPos = PositionChecks(newPos);
 
                 // Set the new position
-                Position = newPos;
+                Position = newPos;*/
 
-
-                Transform = Matrix.CreateFromQuaternion(Rotation) * Matrix.CreateTranslation(Position);
+                Matrix unrotatedView = Matrix.CreateLookAt(new Vector3(0, 0, -Distance), Vector3.Zero, Vector3.Up);
+                Matrix rot = Matrix.CreateRotationY(Yaw) * Matrix.CreateRotationX(Pitch);
+                //Transform = Matrix.CreateTranslation(-Target) * rot * unrotatedView;
+                Transform = rot * unrotatedView;
+                // Store position for now
+                //Position = Transform.Translation;
             }
         }
 

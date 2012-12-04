@@ -124,7 +124,7 @@ namespace Psynergy.Graphics
                         if (camera != null)
                         {
                             Matrix worldMatrix = Matrix.Identity;
-                            Matrix viewMatrix = camera.View;
+                            Matrix viewMatrix = camera.Transform;
                             Matrix projectionMatrix = camera.Projection;
                             Vector3 cameraPosition = camera.Position;
 

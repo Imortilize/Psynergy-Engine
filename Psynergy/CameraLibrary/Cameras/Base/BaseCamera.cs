@@ -9,6 +9,7 @@ using Microsoft.Xna.Framework.Graphics;
 
 /* Main Library */
 using Psynergy;
+using Psynergy.Input;
 
 namespace Psynergy.Camera
 {
@@ -33,6 +34,7 @@ namespace Psynergy.Camera
         // Graphics device
         protected GraphicsDevice m_GraphicsDevice = null;
 
+        // State the camera is in
         protected CameraState m_CameraState = CameraState.Enter;
 
         protected float m_CameraScale = 1.0f;
@@ -225,8 +227,26 @@ namespace Psynergy.Camera
             OnExit();
         }
 
+        #region Ray Casting
+        public virtual Ray CastRay(Matrix world)
+        {
+            return new Ray();
+        }
+        #endregion
+
         #region Properties
-        public GraphicsDevice GraphicsDevice { get { return m_GraphicsDevice; } set { m_GraphicsDevice = value; } }
+        public GraphicsDevice GraphicsDevice 
+        { 
+            get { return m_GraphicsDevice; } 
+            set 
+            { 
+                // Set graphics device
+                m_GraphicsDevice = value;
+            } 
+        }
+
+        public Viewport Viewport { get { return m_GraphicsDevice.Viewport; } }
+
         public float CameraScale { get; set; }
         public virtual Matrix Transform { get; set; }
         public bool StartTween { get { return m_StartTween; } set { m_StartTween = value; } }

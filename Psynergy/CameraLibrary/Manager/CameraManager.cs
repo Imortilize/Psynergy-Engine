@@ -124,39 +124,41 @@ namespace Psynergy.Camera
         }
 
         #region Ray Casting
-        public void CastRay(Viewport viewPort)
+        public Ray CastRay(Viewport viewPort)
         {
+            Ray ray = new Ray();
+
+            // Check that there is an active camera
             if (m_ActiveCamera != null)
             {
                 Type cameraType = m_ActiveCamera.GetType();
 
                 if (cameraType == typeof(Camera3D) || cameraType.IsSubclassOf(typeof(Camera3D)))
                 {
-                    InputManager input = InputManager.Instance;
                     Camera3D camera = (m_ActiveCamera as Camera3D);
 
-                    if ((input != null))
-                    {
-                        Vector2 currentMouseState = input.GetCurrentMousePos();
-                        Vector2 mousePosition = new Vector2(currentMouseState.X, currentMouseState.Y);
-                        Vector3 nearPoint = new Vector3(mousePosition, 0);
-                        Vector3 farPoint = new Vector3(mousePosition, 1);
+                    Vector2 currentMouseState = InputHandle.MousePosition;
+                    Vector2 mousePosition = new Vector2(currentMouseState.X, currentMouseState.Y);
+                    Vector3 nearPoint = new Vector3(mousePosition, viewPort.MinDepth);
+                    Vector3 farPoint = new Vector3(mousePosition, viewPort.MaxDepth);
 
-                        nearPoint = viewPort.Unproject(nearPoint, camera.Projection, camera.View, Matrix.Identity);
-                        farPoint = viewPort.Unproject(farPoint, camera.Projection, camera.View, Matrix.Identity);
+                    nearPoint = viewPort.Unproject(nearPoint, camera.Projection, camera.Transform, Matrix.Identity);
+                    farPoint = viewPort.Unproject(farPoint, camera.Projection, camera.Transform, Matrix.Identity);
 
-                        Vector3 direction = (farPoint - nearPoint);
-                        direction.Normalize();
+                    Vector3 direction = (farPoint - nearPoint);
+                    direction.Normalize();
 
-                        // Create ray
-                        Ray ray = new Ray(nearPoint, direction);
+                    // Save the ray values accordingly
+                    ray.Position = nearPoint;
+                    ray.Direction = direction;
 
-                        // TEST - fire ray cast
-                        SelectObjectEvent selectEvent = new SelectObjectEvent(ray);
-                        EventManager.Instance.SendMessage(selectEvent);
-                    }
+                    // TEST - fire ray cast
+                    //SelectObjectEvent selectEvent = new SelectObjectEvent(ray);
+                    //EventManager.Instance.SendMessage(selectEvent);
                 }
             }
+
+            return ray;
         }
         #endregion
 

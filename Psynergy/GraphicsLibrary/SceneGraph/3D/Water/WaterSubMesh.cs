@@ -61,7 +61,7 @@ namespace Psynergy.Graphics
 
                     // Generate a reflection plane
                     Plane reflectionPlane = CreatePlane(camera, (waterHeight - 0.5f), new Vector3(0, -1, 0), reflectionViewMatrix, true);
-                    Plane refractionPlane = CreatePlane(camera, ((waterHeight + 4) - 0.5f), new Vector3(0, -1, 0), camera.View, false);
+                    Plane refractionPlane = CreatePlane(camera, ((waterHeight + 4) - 0.5f), new Vector3(0, -1, 0), camera.Transform, false);
 
                     /*Vector4 testPlane = new Vector4(0, 1, 0, -(waterHeight - 0.5f));
                     reflectionPlane.Normal = new Vector3(testPlane.X, testPlane.Y, testPlane.Z);
@@ -97,7 +97,7 @@ namespace Psynergy.Graphics
                         mesh.RenderEffect.SetRefractionClipPlane(refractionPlane);
 
                         // Some how render these objects into the reflection target ( need to decide on this still )
-                        mesh.ReconstructShading(deltaTime, camera, camera.View, camera.Projection, graphicsDevice);
+                        mesh.ReconstructShading(deltaTime, camera, camera.Transform, camera.Projection, graphicsDevice);
 
                         // Set to null now were done with it
                         mesh.RenderEffect.SetRefractionClipPlane(new Plane(Vector4.Zero));

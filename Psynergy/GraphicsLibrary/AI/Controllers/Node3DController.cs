@@ -16,7 +16,7 @@ using Psynergy.AI;
 
 namespace Psynergy.Graphics
 {
-    public class Node3DController : Abstract3DController, IRegister<Node3DController>, IListener<TerrainSetEvent>, IListener<TerrainLoadedEvent>
+    public class Node3DController : Controller, IRegister<Node3DController>, IListener<TerrainSetEvent>, IListener<TerrainLoadedEvent>
     {
         #region Factory Property setting
         protected override void ClassProperties(Factory factory)
@@ -54,7 +54,7 @@ namespace Psynergy.Graphics
         {
         }
 
-        public Node3DController(Node node) : base(node)
+        public Node3DController(Node3D node) : base(node)
         {
         }
 
@@ -107,14 +107,14 @@ namespace Psynergy.Graphics
             UpdateVision(deltaTime);
         }
 
-        protected override void UpdateMovement(GameTime deltaTime)
+        protected override void UpdateMovement(GameTime deltaTime, Vector3 position)
         {
-            base.UpdateMovement(deltaTime);
+            base.UpdateMovement(deltaTime, position);
 
-            if (m_ObjReference != null)
+            // Object reference should be a Node3D or inherited Node3D object
+            Node3D node = (m_ObjReference as Node3D);
+            if (node != null)
             {
-                Node3D node = (m_ObjReference as Node3D);
-
                 if (m_Movement)
                 {
                     Vector3 directionVec = (m_DesiredPosition - node.Position);                    // Direction from current position to desired position
@@ -141,7 +141,7 @@ namespace Psynergy.Graphics
                             m_Velocity += ((GetMovementSpeed() * (float)deltaTime.ElapsedGameTime.TotalSeconds));
                         }
 
-                        // If there is any speed involved ( otherwise not moving
+                        // If there is any speed involved ( otherwise not moving )
                         if (m_Velocity > 0)
                         {
                             // m_Velocity -= (FRICTION * (float)deltaTime.ElapsedGameTime.TotalSeconds);
@@ -168,7 +168,7 @@ namespace Psynergy.Graphics
                                 newPos.Y = (height + m_TerrainHeightOffset);
                             }
                             //else
-                              //  newPos.Y = originalHeight;
+                            //  newPos.Y = originalHeight;
 
                             // Set the desired rotation
                             SetDesiredRotation(node.Position, newPos);
@@ -180,12 +180,12 @@ namespace Psynergy.Graphics
 
                     // Check whether to get a next position or not
                     if ((originalDistance - currentDistance) <= 1)
-                        SetNextSplinePosition(deltaTime);
+                        SetNextPosition(deltaTime);
                 }
             }
         }
 
-        public virtual bool SetNextSplinePosition(GameTime deltaTime)
+        public override bool SetNextPosition(GameTime deltaTime)
         {
             bool toRet = false;
 
@@ -194,7 +194,7 @@ namespace Psynergy.Graphics
                 if (m_ObjReference.GetType().IsSubclassOf(typeof(Node)))
                 {
                     Node3D node = (m_ObjReference as Node3D);
-                    toRet = node.SetNextSplinePosition(deltaTime);
+                    toRet = node.SetNextPosition(deltaTime);
                 }
             }
 

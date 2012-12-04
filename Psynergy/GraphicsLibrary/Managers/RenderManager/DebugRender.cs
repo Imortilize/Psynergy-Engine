@@ -117,7 +117,7 @@ namespace Psynergy.Graphics
         private SpriteBatch m_SpriteBatch = null;
 
         // Whether to render debug information or not
-        private bool m_Enabled = false;
+        private bool m_Enabled = true;
 
         // The way to render items
         private RenderType m_RenderType = RenderType.Deferred;
@@ -427,7 +427,7 @@ namespace Psynergy.Graphics
                 if (camera != null)
                 {
                     Matrix world = (Matrix.CreateScale(debugSphere.radius) * Matrix.CreateTranslation(debugSphere.center));
-                    Matrix view = camera.View;
+                    Matrix view = camera.Transform;
                     Matrix projection = camera.Projection;
 
                     m_BoundingSphereMesh.Meshes[0].MeshParts[0].Effect.Parameters["xWorld"].SetValue(world);
@@ -459,7 +459,7 @@ namespace Psynergy.Graphics
                         foreach (DebugBoundingSphere debugSphere in m_DebugBoundingSpheres)
                         {
                             Matrix world = (Matrix.CreateScale(debugSphere.radius) * Matrix.CreateTranslation(debugSphere.center));
-                            Matrix view = camera.View;
+                            Matrix view = camera.Transform;
                             Matrix projection = camera.Projection;
 
                             m_BoundingSphereMesh.Meshes[0].MeshParts[0].Effect.Parameters["xWorld"].SetValue(world);
@@ -502,7 +502,7 @@ namespace Psynergy.Graphics
                     m_PointSpriteEffect.Parameters["Texture"].SetValue(m_PointTexture);
                     m_PointSpriteEffect.Parameters["xPointSpriteSizeWidth"].SetValue(5.0f);
                     m_PointSpriteEffect.Parameters["xPointSpriteSizeHeight"].SetValue(5.0f);
-                    m_PointSpriteEffect.Parameters["xView"].SetValue(camera3D.View);
+                    m_PointSpriteEffect.Parameters["xView"].SetValue(camera3D.Transform);
                     m_PointSpriteEffect.Parameters["xProjection"].SetValue(camera3D.Projection);
                     m_PointSpriteEffect.Parameters["xCamPos"].SetValue(camera3D.Position);
                     m_PointSpriteEffect.Parameters["xCamUp"].SetValue(camera3D.Up);
@@ -552,7 +552,7 @@ namespace Psynergy.Graphics
                         m_PointSpriteEffect.Parameters["Texture"].SetValue(m_PointTexture);
                         m_PointSpriteEffect.Parameters["xPointSpriteSizeWidth"].SetValue(5.0f);
                         m_PointSpriteEffect.Parameters["xPointSpriteSizeHeight"].SetValue(5.0f);
-                        m_PointSpriteEffect.Parameters["xView"].SetValue(camera3D.View);
+                        m_PointSpriteEffect.Parameters["xView"].SetValue(camera3D.Transform);
                         m_PointSpriteEffect.Parameters["xProjection"].SetValue(camera3D.Projection);
                         m_PointSpriteEffect.Parameters["xCamPos"].SetValue(camera3D.Position);
                         m_PointSpriteEffect.Parameters["xCamUp"].SetValue(camera3D.Up);
@@ -587,7 +587,7 @@ namespace Psynergy.Graphics
                     {
                         Camera3D camera3D = (camera as Camera3D);
 
-                        m_DebugLineEffect.View = camera3D.View;
+                        m_DebugLineEffect.View = camera3D.Transform;
                         m_DebugLineEffect.Projection = camera3D.Projection;
                         m_DebugLineEffect.CurrentTechnique.Passes[0].Apply();
 
@@ -631,7 +631,7 @@ namespace Psynergy.Graphics
             {
                 Camera3D camera3D = (camera as Camera3D);
 
-                m_DebugLineEffect.View = camera3D.View;
+                m_DebugLineEffect.View = camera3D.Transform;
                 m_DebugLineEffect.Projection = camera3D.Projection;
                 m_DebugLineEffect.CurrentTechnique.Passes[0].Apply();
 

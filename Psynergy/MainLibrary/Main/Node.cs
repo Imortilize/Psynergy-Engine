@@ -51,13 +51,6 @@ namespace Psynergy
             m_ChildrenNodes = new List<Node>();
         }
 
-        /* Called after properties have been set */
-        public override void DefaultProperties()
-        {
-            if (m_Controller == null)
-                m_Controller = DefaultController();
-        }
-
         protected virtual Controller DefaultController()
         {
             return new Controller();
@@ -240,12 +233,8 @@ namespace Psynergy
         {
             return (m_Type.IsSubclassOf(type) || m_Type == typeof(Type));
         }
-
-        public virtual void SetPos(Vector3 pos)
-        {
-            m_Position = pos;
-        }
-
+        
+        /* Used to set a nodes position from the xml file right now */
         public void SetPos(String pos)
         {
             String[] splitPos = SplitString(pos);
@@ -257,16 +246,6 @@ namespace Psynergy
             m_Position.X = System.Convert.ToSingle(splitPos[0]);
             m_Position.Y = System.Convert.ToSingle(splitPos[1]);
             m_Position.Z = System.Convert.ToSingle(splitPos[2]);
-        }
-
-        public Vector2 GetPos2D()
-        {
-            return new Vector2(m_Position.X, m_Position.Y);
-        }
-
-        public virtual Vector3 GetPos()
-        {
-            return m_Position;
         }
 
         public virtual float GetMovementSpeed()
@@ -286,7 +265,10 @@ namespace Psynergy
         public Node PreviousSibling { get { return m_PreviousSibling; } set { m_PreviousSibling = value; } }
         public List<Node> Children { get { return m_ChildrenNodes; } }
 
+        // Positions
         public virtual Vector3 Position { get { return m_Position; } set { m_Position = value; } }
+        public Vector2 Position2D { get { return new Vector2(m_Position.X, m_Position.Y); } }
+
         public virtual Vector3 StartPosition { get { return m_StartPosition; } set { m_StartPosition = value; } }
         public float PosX { get { return m_Position.X; } set { m_Position.X = value; } }
         public float PosY { get { return m_Position.Y; } set { m_Position.Y = value; } }

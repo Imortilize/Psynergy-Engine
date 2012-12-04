@@ -37,7 +37,7 @@
 		<property parent="Base" />
 		<property pos="0 0 0" />
 		<property direction="0.5 -0.5 0" />
-		<property diffuse="100 100 87" />
+		<property diffuse="50 50 43" />
 	</DirectionalLight>
 	<!--<PointLight>
 		<property parent="Base" />

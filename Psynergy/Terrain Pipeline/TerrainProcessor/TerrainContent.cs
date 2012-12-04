@@ -18,6 +18,26 @@ namespace Psynergy.TerrainPipeline
     public class TerrainContent
     {
         /// <summary>
+        /// This property is a 2D array of Vector3s, and tells us the vertex data of the terrain geometry
+        /// </summary>
+        public Vector3[] Vertices
+        {
+            get { return m_Vertices; }
+            set { m_Vertices = value; }
+        }
+        private Vector3[] m_Vertices;
+
+        /// <summary>
+        /// This property is a count of the number of indexed vertexes stored off to use for picking
+        /// </summary>
+        public int VertexCount
+        {
+            get { return m_VertexCount; }
+            set { m_VertexCount = value; }
+        }
+        private int m_VertexCount = 0;
+
+        /// <summary>
         /// This propery is a 2D array of floats, and tells us the height that each
         /// position in the heightmap is.
         /// </summary>
@@ -74,6 +94,10 @@ namespace Psynergy.TerrainPipeline
             // in the terrain mesh
             GeometryContent geometry = terrainMesh.Geometry[0];
 
+            // Create vertex buffer
+            m_VertexCount = geometry.Indices.Count;
+            m_Vertices = new Vector3[m_VertexCount];
+
             // Go through each vertex...
             for (int i = 0; i < geometry.Vertices.VertexCount; i++)
             {
@@ -87,12 +111,56 @@ namespace Psynergy.TerrainPipeline
                 int arrayY = (int)((position.Z / terrainScale) + (terrainLength - 1) * 0.5f);
 
                 // Store values
+               // m_Vertices[arrayX, arrayY] = position;
                 m_Height[arrayX, arrayY] = position.Y;
                 m_Normals[arrayX, arrayY] = normal;
             }
+
+            // Find geometry vertices
+            FindVertices(terrainMesh, 0);
+
+            // Convert the list to an array
+            ///m_Vertices = tempVertices.ToArray();
+        }
+
+        /// <summary>
+        /// Helper for extracting a list of all the vertex positions in a model.
+        /// </summary>
+        void FindVertices(MeshContent mesh, int vertexIndex)
+        {
+            // Mesh must not be null
+            if (mesh != null)
+            {
+                // Look up the absolute transform of the mesh.
+                Matrix absoluteTransform = mesh.AbsoluteTransform;
+
+                // Loop over all the pieces of geometry in the mesh.
+                foreach (GeometryContent geometry in mesh.Geometry)
+                {
+                    // Loop over all the indices in this piece of geometry.
+                    // Every group of three indices represents one triangle.
+                    foreach (int index in geometry.Indices)
+                    {
+                        // Look up the position of this vertex.
+                        Vector3 vertex = geometry.Vertices.Positions[index];
+
+                        // Transform from local into world space.
+                        vertex = Vector3.Transform(vertex, absoluteTransform);
+
+                        // Store this vertex.
+                        m_Vertices[vertexIndex] = vertex;
+
+                        // Increment the index
+                        vertexIndex++;
+                    }
+                }
+            }
+
+            // Recursively scan over the children of this node.
+            foreach (MeshContent child in mesh.Children)
+                FindVertices(child, vertexIndex);
         }
     }
-
 
     /// <summary>
     /// A TypeWriter for HeightMapInfo, which tells the content pipeline how to save the
@@ -111,15 +179,18 @@ namespace Psynergy.TerrainPipeline
 
             // Write the mesh heights
             foreach (float height in value.Height)
-            {
                 output.Write(height);
-            }
 
             // Write the mesh normals
             foreach (Vector3 normal in value.Normals)
-            {
                 output.Write(normal);
-            }
+
+            // Write out the vert count
+            output.Write(value.VertexCount);
+
+            // Write the mesh vertices
+            foreach (Vector3 vertex in value.Vertices)
+                output.Write(vertex);
         }
 
         /// <summary>

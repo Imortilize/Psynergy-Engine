@@ -55,13 +55,10 @@ namespace XnaGame
             if ( m_PsynergyEngine != null )
             {
                 // Set what sound and physics engine to use
+                m_PsynergyEngine.SetRenderEngine(RendererEngineType.Deferred);
                 m_PsynergyEngine.SetSoundEngine(SoundEngineType.XACT);
                 m_PsynergyEngine.SetPhysicsEngine(PhysicsEngineType.eJibLibX);
                 m_PsynergyEngine.SetParticleEngine(ParticleEngineType.Mercury);
-
-                // Initial Graphics Settings
-                m_PsynergyEngine.useShadows(true);
-                m_PsynergyEngine.SetFogProperties(new FogProperties(Color.LightYellow, 200, 900));
 
                 // Show FPS
                 m_PsynergyEngine.ShowFPS(true);
@@ -73,6 +70,12 @@ namespace XnaGame
             // THESE CURRENTLY COME AFTER THE BASE INITIALISE CALL
             if (m_PsynergyEngine != null)
             {
+                // Initial Graphics Settings
+                m_PsynergyEngine.SetFogProperties(new FogProperties(Color.LightYellow, 750, 1000));
+
+                // Shadows
+                m_PsynergyEngine.useShadows(true);
+
                 // Post Processing
                 m_PsynergyEngine.UsePostProcessing(true);
                 m_PsynergyEngine.SetFXAAProperties(new FXAAProperties(true));

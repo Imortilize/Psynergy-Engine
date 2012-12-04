@@ -111,7 +111,7 @@ namespace XnaGame
 
                                 if (player.Control == Player.PlayerControl.Human)
                                 {
-                                    if (InputManager.Instance.KeyPressed(Keys.Enter))
+                                    if (InputHandle.GetKeyDown(Keys.Enter))
                                         rollDice = true;
                                 }
                                 else if (player.Control == Player.PlayerControl.AI)

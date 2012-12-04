@@ -39,7 +39,7 @@ namespace Psynergy.Camera
                 Vector3 side = Vector3.Cross(forward, Vector3.Up);
                 Vector3 up = Vector3.Cross(forward, side);
 
-                View = Matrix.CreateLookAt(Position, Target, up);
+                Transform = Matrix.CreateLookAt(Position, Target, up);
             }
         }
     }

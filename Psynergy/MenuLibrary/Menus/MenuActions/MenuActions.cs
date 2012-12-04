@@ -55,7 +55,8 @@ namespace Psynergy.Menus
         {
             base.RunAction();
 
-            InputManager.Instance.ExitApplication = true;
+            // Exit the game
+            InputHandle.Exit();
         }
     }
 
@@ -71,7 +72,6 @@ namespace Psynergy.Menus
             base.RunAction();
 
             MenuManager.Instance.CloseMenu();
-            //InputManager.Instance.UnPauseGame();
         }
     }
 
@@ -86,7 +86,7 @@ namespace Psynergy.Menus
             base.RunAction();
 
             // Make sure the game is unpaused
-            InputManager.Instance.UnPauseGame();
+            InputHandle.UnPauseGame();
 
             // Change to the main menu state
             RenderManager.Instance.GameStateManager.ChangeState("MainMenu");

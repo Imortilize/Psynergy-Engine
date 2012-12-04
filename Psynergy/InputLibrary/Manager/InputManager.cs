@@ -9,32 +9,15 @@ using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 
-namespace Psynergy.Input
+/*namespace Psynergy.Input
 {
     public class InputManager : Singleton<InputManager>
     {
         // Viewport
-        private Viewport m_ViewPort;
-
-        // Keyboard values
-        private KeyboardState m_OldKeyboardState;
-        private List<Keys> m_KeysPressed = new List<Keys>();
-
-        // Mouse values
-        private MouseState m_LastMouseState;
-        private MouseState m_CurrentMouseState;
-        private bool m_MouseLeftClicked = false;
-        private bool m_MouseLeftDown = false;
-        private bool m_MouseRightClicked = false;
-        private bool m_MouseRightDown = false;
-        private bool m_MouseMiddleClicked = false;
-        private bool m_MouseMiddleDown = false;
-        private float m_MouseDeltaX = 0.0f;
-        private float m_MouseDeltaY = 0.0f;
-        private float m_MouseWheelDelta = 0.0f;
+        //private Viewport m_ViewPort;
 
         // Gamepad values
-        struct GamePadTracker
+        /*struct GamePadTracker
         {
             public GamePadTracker(PlayerIndex index, GamePadState startState)
             {
@@ -52,66 +35,45 @@ namespace Psynergy.Input
             public GamePadState currentState;
         };
 
-        private SortedList<PlayerIndex, GamePadTracker> m_GamePadTrackers = new SortedList<PlayerIndex, GamePadTracker>();
-        //private GamePadState m_GamePadStateOneOld;
-        //private GamePadState m_GamePadStateOne;
+        private SortedList<PlayerIndex, GamePadTracker> m_GamePadTrackers = new SortedList<PlayerIndex, GamePadTracker>();*/
 
-        private bool m_CanPause = false;
+        /*private bool m_CanPause = false;
         private bool m_PauseApplication = false;
         private bool m_PauseRenderering = false;
-        private bool m_ExitApplication = false;
+        private bool m_ExitApplication = false;*/
 
-        public InputManager()
+       /* public InputManager()
         {
-            m_ViewPort = new Viewport();
+            //m_ViewPort = new Viewport();
         }
 
         public override void Initialise()
         {
-            // Get the start keyboard state
-            m_OldKeyboardState = Keyboard.GetState();
-
-            // Get the mouse state on load
-            m_LastMouseState = Mouse.GetState();
-            m_CurrentMouseState = Mouse.GetState();
-
             // get the game pad states
-            InitialiseGamePads();
+           // InitialiseGamePads();
 
             base.Initialise();
-        }
+        }*/
 
-        private void InitialiseGamePads()
+       /* private void InitialiseGamePads()
         {
             m_GamePadTrackers.Add(PlayerIndex.One, new GamePadTracker(PlayerIndex.One, GamePad.GetState(PlayerIndex.One)));
             m_GamePadTrackers.Add(PlayerIndex.Two, new GamePadTracker(PlayerIndex.Two, GamePad.GetState(PlayerIndex.Two)));
             m_GamePadTrackers.Add(PlayerIndex.Three, new GamePadTracker(PlayerIndex.Three, GamePad.GetState(PlayerIndex.Three)));
             m_GamePadTrackers.Add(PlayerIndex.Four, new GamePadTracker(PlayerIndex.Four, GamePad.GetState(PlayerIndex.Four)));
-        }
+        }*/
 
-        public override void Load()
+       /* public override void Load()
         {
             base.Load();
         }
 
         public override void Update(GameTime deltaTime)
         {
-            base.Update(deltaTime);
+            base.Update(deltaTime);*/
             
-            for (int i = 0; i < m_KeysPressed.Count; i++)
-            {
-                if (KeyUp(m_KeysPressed[i]))
-                {
-                    if (m_KeysPressed.Count == 0)
-                        break;
-
-                    // A key was just removed so moved down an index
-                    i--;
-                }
-            }
-
             // If the user is allowed to pause or not
-            if (m_CanPause)
+            /*if (m_CanPause)
             {
                 // Check if the application is asking to be paused or not
                 if (CheckPause())
@@ -119,68 +81,13 @@ namespace Psynergy.Input
                     // inverse the pause application booleans ( if true it gets turned to false, otherwise turn it to true ).
                     SwitchPause();
                 }
-            }
-
-            // Update mouse values
-            UpdateMouse(deltaTime);
+            }*/
 
             // Update gamepad values
-            UpdateGamePads(deltaTime);
-        }
+           // UpdateGamePads(deltaTime);
+       //67 }
 
-        private void UpdateMouse(GameTime deltaTime)
-        {
-            if (m_CurrentMouseState != null)
-            {
-                Viewport viewPort = m_ViewPort;
-                MouseState newMouseState = Mouse.GetState();
-
-                if ((newMouseState.X >= 0) && (newMouseState.Y >= 0) && (newMouseState.X <= viewPort.Width) && (newMouseState.Y <= viewPort.Height))
-                {
-                    if (m_LastMouseState != m_CurrentMouseState)
-                        m_LastMouseState = m_CurrentMouseState;
-
-                    m_CurrentMouseState = newMouseState;
-
-                    // Clamp within boundaries of viewport to prevent crashing
-                    float mouseX = MathHelper.Clamp(m_CurrentMouseState.X, 0, viewPort.Width);
-                    float mouseY = MathHelper.Clamp(m_CurrentMouseState.Y, 0, viewPort.Height);
-
-                    m_MouseDeltaX = (((float)m_LastMouseState.X - (float)mouseX) * (float)deltaTime.ElapsedGameTime.TotalSeconds);
-                    m_MouseDeltaY = (((float)m_LastMouseState.Y - (float)mouseY) * (float)deltaTime.ElapsedGameTime.TotalSeconds);
-                    m_MouseWheelDelta = (((float)m_LastMouseState.ScrollWheelValue - (float)m_CurrentMouseState.ScrollWheelValue) * (float)deltaTime.ElapsedGameTime.TotalSeconds);
-
-                    bool leftMouseButtonPressed = (m_CurrentMouseState.LeftButton == ButtonState.Pressed);
-                    bool rightMouseButtonPressed = (m_CurrentMouseState.RightButton == ButtonState.Pressed);
-                    bool middleMouseButtonPressed = (m_CurrentMouseState.MiddleButton == ButtonState.Pressed);
-
-                    // Update click detections but only when button is clicked
-                    m_MouseLeftClicked = (leftMouseButtonPressed && !m_MouseLeftDown);
-                    m_MouseRightClicked = (rightMouseButtonPressed && !m_MouseRightDown);
-                    m_MouseMiddleClicked = (middleMouseButtonPressed && !m_MouseMiddleDown);
-
-                    // These ones always return true if the button is down
-                    m_MouseLeftDown = leftMouseButtonPressed;
-                    m_MouseRightDown = rightMouseButtonPressed;
-                    m_MouseMiddleDown = middleMouseButtonPressed;
-                }
-                else
-                {
-                    m_MouseDeltaX = 0;
-                    m_MouseDeltaY = 0;
-                    m_MouseWheelDelta = 0;
-
-                    m_MouseLeftClicked = false;
-                    m_MouseLeftDown = false;
-                    m_MouseRightClicked = false;
-                    m_MouseRightDown = false;
-                    m_MouseMiddleClicked = false;
-                    m_MouseMiddleDown = false;
-                }
-            }
-        }
-
-        private void UpdateGamePads(GameTime deltaTime)
+       /* private void UpdateGamePads(GameTime deltaTime)
         {
             // Check to see if the old state shoudl be saved or not
             for (int i = 0; i < m_GamePadTrackers.Values.Count; i++)
@@ -204,120 +111,10 @@ namespace Psynergy.Input
                     m_GamePadTrackers.Add(gamePad.PlayerIndex, gamePad);
                 }
             }
-        }
-
-        public bool KeyDown(Keys key)
-        {
-            KeyboardState newState = Keyboard.GetState();
-
-            if (newState.IsKeyDown(key))
-                return true;
-            else
-                return false;
-        }
-
-        public bool KeyPressed(Keys key)
-        {
-            KeyboardState newState = Keyboard.GetState();
-
-            int index = m_KeysPressed.IndexOf(key);
-
-            // Check that this key isn't currently already pressed
-            if (index >= 0)
-                return false;
-
-            if (newState.IsKeyDown(key))
-            {
-                // Add this key to the list of keys presed
-                m_KeysPressed.Add(key);
-
-                return true;
-            }
-            else
-                return false;
-        }
-
-        public bool KeyUp(Keys key)
-        {
-            KeyboardState newState = Keyboard.GetState();
-
-            if (newState.IsKeyUp(key))
-            {
-                // Remove this key from the list of keys pressed
-                int index = m_KeysPressed.IndexOf(key);
-
-                Debug.Assert(index >= 0, "Key been released but doesn't exist in the keys pressed list!");
-
-                m_KeysPressed.RemoveAt(index);
-
-                return true;
-            }
-            else
-                return false;
-        }
-
-        public Keys[] KeysPressed()
-        {
-            KeyboardState newState = Keyboard.GetState();
-
-            return newState.GetPressedKeys();
-        }
-
-        /* Mouse Functions */
-        public Vector2 GetPrevMousePos()
-        {
-            Viewport viewPort = m_ViewPort;
-
-            // Clamp within boundaries of viewport to prevent crashing
-            float mouseX = MathHelper.Clamp(m_LastMouseState.X, 0, viewPort.Width);
-            float mouseY = MathHelper.Clamp(m_LastMouseState.Y, 0, viewPort.Height);
-
-            return new Vector2(mouseX, mouseY);
-        }
-
-        public Vector2 GetCurrentMousePos()
-        {
-            Viewport viewPort = m_ViewPort;
-
-            // Clamp within boundaries of viewport to prevent crashing
-            float mouseX = MathHelper.Clamp(m_CurrentMouseState.X, 0, viewPort.Width);
-            float mouseY = MathHelper.Clamp(m_CurrentMouseState.Y, 0, viewPort.Height);
-
-            return new Vector2(mouseX, mouseY);
-        }
-
-        public float GetMouseMoveX()
-        {
-            return m_MouseDeltaX;
-        }
-
-        public float GetMouseMoveY()
-        {
-            return m_MouseDeltaY;
-        }
-
-        public float GetMouseWheelChange()
-        {
-            return m_MouseWheelDelta;
-        }
-
-        public bool IsMouseLeftPressed()
-        {
-            return m_MouseLeftDown;
-        }
-
-        public bool IsMouseRightPressed()
-        {
-            return m_MouseRightDown;
-        }
-
-        public bool IsMouseMiddlePressed()
-        {
-            return m_MouseMiddleDown;
-        }
+        }*/
 
         // GamePad functions
-        public bool IsButtonPressed(ButtonState oldState, ButtonState newState)
+        /*public bool IsButtonPressed(ButtonState oldState, ButtonState newState)
         {
             return ((newState == ButtonState.Pressed) && (oldState == ButtonState.Released));
         }
@@ -325,10 +122,10 @@ namespace Psynergy.Input
         public bool IsButtonReleased(ButtonState oldState, ButtonState newState)
         {
             return ((newState == ButtonState.Released) && (oldState == ButtonState.Pressed));
-        }
+        }*/
 
         /* Pause functions */
-        public void ActivatePause()
+        /*public void ActivatePause()
         {
             m_CanPause = true;
         }
@@ -336,13 +133,13 @@ namespace Psynergy.Input
         public void DeactivatePause()
         {
             m_CanPause = false;
-        }
+        }*/
 
-        private bool CheckPause()
+        /*private bool CheckPause()
         {
             bool toRet = false;
 
-            if (KeyPressed(Keys.P) || KeyPressed(Keys.Escape))
+            if (InputHandle.GetKeyDown(Keys.P) || InputHandle.GetKeyDown(Keys.Escape))
                 toRet = true;
             else
             {
@@ -361,9 +158,9 @@ namespace Psynergy.Input
             }
 
             return toRet;
-        }
+        }*/
 
-        public void SwitchPause()
+       /* public void SwitchPause()
         {
             if (!PauseApplication)
                 PauseGameMenu();
@@ -372,7 +169,7 @@ namespace Psynergy.Input
         }
 
         /* This is used if wanting to pause the game outside of the default pause game buttons ( such as a cutscene pause ) etc.. */
-        public void PauseGame(bool show)
+        /*public void PauseGame(bool show)
         {
             PauseApplication = show;
 
@@ -381,7 +178,7 @@ namespace Psynergy.Input
         }
 
         /* This is an auto pause menu if pause is enabled and the pause button is pressed in game. It shows the pause menu as well */
-        private void PauseGameMenu()
+       /* private void PauseGameMenu()
         {
             PauseApplication = true;
 
@@ -406,14 +203,14 @@ namespace Psynergy.Input
         public void PauseRendering(bool pause)
         {
             m_PauseRenderering = pause;
-        }
+        }*/
 
         // If Ok is selected from any device
-        public bool Submit(PlayerIndex playerIndex)
+        /*public bool Submit(PlayerIndex playerIndex)
         {
             bool toRet = false;
 
-            if (KeyPressed(Keys.Enter) || m_MouseLeftClicked)
+            if (InputHandle.GetKeyDown(Keys.Enter) || InputHandle.GetMouseDown(0))
                 toRet = true;
             else
             {
@@ -439,7 +236,7 @@ namespace Psynergy.Input
         {
             bool toRet = false;
 
-            if (KeyPressed(Keys.Back))
+            if (InputHandle.GetKeyDown(Keys.Back))
                 toRet = true;
             else
             {
@@ -459,18 +256,18 @@ namespace Psynergy.Input
         {
             bool toRet = false;
 
-            if (m_MouseLeftClicked)
+            if (InputHandle.GetMouseDown(0))
                 toRet = true;
             
             return toRet;
-        }
+        }*/
 
         // If back is selected from any device
-        public bool Back(PlayerIndex playerIndex)
+        /*public bool Back(PlayerIndex playerIndex)
         {
             bool toRet = false;
 
-            if (KeyPressed(Keys.Back))
+            if (InputHandle.GetKeyDown(Keys.Back))
                 toRet = true;
             else
             {
@@ -496,7 +293,7 @@ namespace Psynergy.Input
         {
             bool toRet = false;
 
-            if (KeyPressed(Keys.Up))
+            if (InputHandle.GetKeyDown(Keys.Up))
                 toRet = true;
             else
             {
@@ -517,7 +314,7 @@ namespace Psynergy.Input
         {
             bool toRet = false;
 
-            if (KeyPressed(Keys.Down))
+            if (InputHandle.GetKeyDown(Keys.Down))
                 toRet = true;
             else
             {
@@ -543,7 +340,7 @@ namespace Psynergy.Input
         {
             bool toRet = false;
 
-            if (KeyPressed(Keys.Left))
+            if (InputHandle.GetKeyDown(Keys.Left))
                 toRet = true;
             else
             {
@@ -569,7 +366,7 @@ namespace Psynergy.Input
         {
             bool toRet = false;
 
-            if (KeyPressed(Keys.Right))
+            if (InputHandle.GetKeyDown(Keys.Right))
                 toRet = true;
             else
             {
@@ -588,9 +385,9 @@ namespace Psynergy.Input
             }
 
             return toRet;
-        }
+        }*/
 
-        public bool IsGamePadConnected(PlayerIndex playerIndex)
+        /*public bool IsGamePadConnected(PlayerIndex playerIndex)
         {
             bool toRet = false;
 
@@ -607,9 +404,9 @@ namespace Psynergy.Input
             }
 
             return toRet;
-        }
+        }*/
 
-        public Vector2 LeftStick(PlayerIndex playerIndex)
+        /*public Vector2 LeftStick(PlayerIndex playerIndex)
         {
             Vector2 toRet = new Vector2(0, 0);
 
@@ -761,50 +558,38 @@ namespace Psynergy.Input
             }
 
             return toRet;
-        }
+        }*/
 
-        public bool IsMouseConnected()
+       /* public bool IsAnyInput(PlayerIndex playerIndex)
         {
-            bool toRet = false;
-
-            if (m_CurrentMouseState != null)
-                toRet = true;
-
-            return toRet;
-        }
-
-        public bool IsAnyInput(PlayerIndex playerIndex)
-        {
-            bool toRet = false;
-
             if (IsMouseLeftPressed() || IsMouseRightPressed() || IsMouseMiddlePressed())
-                toRet = true;
+                return true;
 
             if (KeysPressed().Length > 0)
-                toRet = true;
+                return true;
 
-            if ( toRet == false )
+            // No input so far so check game pads
+            int index = (int)playerIndex;
+
+            GamePadState oldState = m_GamePadTrackers.Values[index].oldState;
+            GamePadState currentState = m_GamePadTrackers.Values[index].currentState;
+
+            if (currentState.IsConnected)
             {
-                int index = (int)playerIndex;
-
-                GamePadState oldState = m_GamePadTrackers.Values[index].oldState;
-                GamePadState currentState = m_GamePadTrackers.Values[index].currentState;
-
-                if (currentState.IsConnected)
-                {
-                    if (oldState != currentState)
-                        toRet = true; 
-                }
+                if (oldState != currentState)
+                    return true; 
             }
+            
+            return false;
 
-            return toRet;
-        }
+            return InputHandle.IsAnyInput(playerIndex);
+        }*/
 
-        #region Properties
-        public bool PauseApplication { get { return m_PauseApplication; } set { m_PauseApplication = value; } }
+       // #region Properties
+        /*public bool PauseApplication { get { return m_PauseApplication; } set { m_PauseApplication = value; } }
         public bool PauseRender { get { return m_PauseRenderering; } }
         public bool ExitApplication { get { return m_ExitApplication; } set { m_ExitApplication = value; } }
-        public Viewport ViewPort { get { return m_ViewPort; } set { m_ViewPort = value; } }
-        #endregion
-    }
-}
+        public Viewport ViewPort { get { return m_ViewPort; } set { m_ViewPort = value; } }*/
+       // #endregion
+   // }
+//}*/

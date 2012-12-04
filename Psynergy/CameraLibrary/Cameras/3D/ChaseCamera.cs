@@ -81,7 +81,7 @@ namespace Psynergy.Camera
                 Vector3 up = Vector3.Transform(Vector3.Up, rotation);
 
                 // Recalculate the view matrix
-                View = Matrix.CreateLookAt(Position, target, up);
+                Transform = Matrix.CreateLookAt(Position, target, up);
             }
         }
 

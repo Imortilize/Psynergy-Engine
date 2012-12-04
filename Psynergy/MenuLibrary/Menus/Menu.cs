@@ -207,8 +207,7 @@ namespace Psynergy.Menus
                         m_Open = false;
 
                         // If application is paused, unpause it
-                        if (InputManager.Instance.PauseApplication)
-                            InputManager.Instance.PauseApplication = false;
+                        InputHandle.PauseApplication = false;
                     }
                     break;
             }
@@ -360,11 +359,10 @@ namespace Psynergy.Menus
             // Check that there are more then just 1 menu option available
             if (m_MenuOptions.Count > 1)
             {
-                InputManager input = InputManager.Instance;
                 bool menuOptionChange = false;
 
                 // Check if a new menu option is selected
-                if (input.Down( PlayerIndex.One ))
+                if (InputHandle.Down(PlayerIndex.One))
                 {
                     if ((m_MenuOptionIndex + 1) < m_MenuOptions.Count)
                     {
@@ -375,7 +373,7 @@ namespace Psynergy.Menus
                         menuOptionChange = true;
                     }
                 }
-                else if (input.Up( PlayerIndex.One ))
+                else if (InputHandle.Up(PlayerIndex.One))
                 {
                     if (m_MenuOptionIndex > 0)
                     {
@@ -388,9 +386,9 @@ namespace Psynergy.Menus
                 }
 
                 // Check mouse input  for selection and clicking
-                if (input.IsMouseConnected())
+                if (InputHandle.IsMouseConnected())
                 {
-                    Vector2 currentMousePos = input.GetCurrentMousePos();
+                    Vector2 currentMousePos = InputHandle.MousePosition;
 
                     for ( int i = 0; i < m_MenuOptions.Count; i++ )
                     {

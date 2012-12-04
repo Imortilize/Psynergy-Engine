@@ -263,7 +263,7 @@ namespace Middleware
 
                     if ( isometricCamera != null )
                     {
-                        Vector2 cameraPos = isometricCamera.GetPos2D();
+                        Vector2 cameraPos = isometricCamera.Position2D;
                         Vector2 firstSquare = new Vector2(cameraPos.X / m_TileStep.X, cameraPos.Y / m_TileStep.Y);
                         Vector2 squareOffset = new Vector2(cameraPos.X % m_TileStep.X, cameraPos.Y % m_TileStep.Y);
 
@@ -395,31 +395,26 @@ namespace Middleware
                             // If tile picking is allowed
                             if (m_AllowPicking && (m_Hilight != null))
                             {
-                                InputManager input = InputManager.Instance;
+                                Vector2 hilightLocation = isometricCamera.ScreenToWorld(InputHandle.MousePosition);
+                                Point hilightPoint = WorldToMapCell(new Point((int)hilightLocation.X, (int)hilightLocation.Y));
 
-                                if (input != null)
-                                {
-                                    Vector2 hilightLocation = isometricCamera.ScreenToWorld(input.GetCurrentMousePos());
-                                    Point hilightPoint = WorldToMapCell(new Point((int)hilightLocation.X, (int)hilightLocation.Y));
+                                // Calculate whether to offset the highlight or not
+                                int hilightrowOffset = 0;
+                                if ((hilightPoint.Y) % 2 == 1)
+                                    hilightrowOffset = (int)m_OddRowOffset.X;
 
-                                    // Calculate whether to offset the highlight or not
-                                    int hilightrowOffset = 0;
-                                    if ((hilightPoint.Y) % 2 == 1)
-                                        hilightrowOffset = (int)m_OddRowOffset.X;
+                                Vector2 screenPosition = isometricCamera.WorldToScreen(new Vector2((hilightPoint.X * m_TileStep.X) + hilightrowOffset, (hilightPoint.Y + 2) * m_TileStep.Y));
 
-                                    Vector2 screenPosition = isometricCamera.WorldToScreen(new Vector2((hilightPoint.X * m_TileStep.X) + hilightrowOffset, (hilightPoint.Y + 2) * m_TileStep.Y));
-
-                                    m_SpriteBatch.Draw(
-                                                    m_Hilight,
-                                                    screenPosition,
-                                                    new Rectangle(0, 0, 64, 32),
-                                                    (Color.White * 0.3f),
-                                                    0.0f,
-                                                    Vector2.Zero,
-                                                    1.0f,
-                                                    SpriteEffects.None,
-                                                    (m_Vlad.RenderDepth + 0.01f));
-                                }
+                                m_SpriteBatch.Draw(
+                                                m_Hilight,
+                                                screenPosition,
+                                                new Rectangle(0, 0, 64, 32),
+                                                (Color.White * 0.3f),
+                                                0.0f,
+                                                Vector2.Zero,
+                                                1.0f,
+                                                SpriteEffects.None,
+                                                (m_Vlad.RenderDepth + 0.01f));
                             }
                         }
                     }

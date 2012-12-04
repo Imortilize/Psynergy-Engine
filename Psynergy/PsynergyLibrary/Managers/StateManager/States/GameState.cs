@@ -77,7 +77,7 @@ namespace Psynergy
             Reset();
 
             // Set it so that the player can pause the game
-            InputManager.Instance.ActivatePause();
+            InputHandle.ActivatePause();
 
             // Change to the fixed third person camera
             CameraManager.Instance.ChangeCamera(m_StartCamera);
@@ -134,7 +134,7 @@ namespace Psynergy
             base.OnExit(objectRef);
 
             // Set it so that the player can no longer pause the game
-            InputManager.Instance.DeactivatePause();
+            InputHandle.DeactivatePause();
 
             // Set default camera
             CameraManager.Instance.SetDefaultCamera();

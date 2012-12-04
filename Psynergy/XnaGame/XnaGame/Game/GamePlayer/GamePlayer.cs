@@ -95,10 +95,13 @@ namespace XnaGame
         public override void Initialise()
         {
             // Create the game pawn controller
-            Controller = new Node3DController(this);
-            Controller.MovementSpeed = 8.0f;
-            Controller.MaxVelocity = 20.0f;
-            Controller.TerrainHeightOffset = 0.0f;
+            Node3DController controller = new Node3DController(this);
+            controller.MovementSpeed = 8.0f;
+            controller.MaxVelocity = 20.0f;
+            controller.TerrainHeightOffset = 0.0f;
+
+            // Save controller reference
+            Controller = controller;
 
             // Set position
             SetPosition(new Vector3(0, 0, 50));
@@ -374,8 +377,8 @@ namespace XnaGame
                     // dice start position
                     Vector3 startDicePos = camPos + (forwardVec * 100) + (upVec * 10);
 
-                    // Set position ( test for now )
-                    m_Dice.SetPos(startDicePos);
+                    // Set position
+                    m_Dice.Position = startDicePos;
 
                     // Apply impulse
                     Vector3 impulse = (forwardVec * 350);

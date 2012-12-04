@@ -34,7 +34,7 @@ namespace Psynergy.Graphics
         public override void RenderToGBuffer(Camera3D camera, GraphicsDevice graphicsDevice)
         {
             RenderEffect.SetCurrentTechnique(0);
-            RenderEffect.SetMatrices(GlobalTransform, camera.View, camera.Projection);
+            RenderEffect.SetMatrices(GlobalTransform, camera.Transform, camera.Projection);
 
             //our first pass is responsible for rendering into GBuffer
             RenderEffect.SetFarClip(camera.FarPlane);
@@ -69,7 +69,7 @@ namespace Psynergy.Graphics
 
         public override void GenericRender(Camera3D camera, GraphicsDevice graphicsDevice)
         {
-            RenderEffect.SetMatrices(GlobalTransform, camera.View, camera.Projection);
+            RenderEffect.SetMatrices(GlobalTransform, camera.Transform, camera.Projection);
 
             if (m_Parent.BoneMatrices != null)
                 RenderEffect.SetBones(m_Parent.BoneMatrices);

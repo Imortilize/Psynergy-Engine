@@ -67,7 +67,7 @@ namespace Psynergy.Menus
             Vector2 view = RenderManager.Instance.BaseResolution;
             Rectangle fullscreen = new Rectangle(0, 0, (int)view.X, (int)view.Y);
 
-            m_SpriteBatch.Draw(m_CurrentTexture, GetPos2D(), fullscreen, m_ActualColor, 0.0f, Vector2.Zero, GetScale2D(), SpriteEffects.None, MathHelper.Clamp(m_RenderDepth, 0.0f, 1.0f));
+            m_SpriteBatch.Draw(m_CurrentTexture, Position2D, fullscreen, m_ActualColor, 0.0f, Vector2.Zero, GetScale2D(), SpriteEffects.None, MathHelper.Clamp(m_RenderDepth, 0.0f, 1.0f));
         }
 
         public void PlayMusic()
