@@ -68,7 +68,6 @@ namespace Psynergy
             // Create the managers
             new Factory();
             new RenderManager(content, m_Graphics, new StateMachine<GameObject>("GameStateManager", "Resources/State.xml"));
-            new InputManager();
             new SceneManager();
             new MenuManager();
             new EventManager(new EventAggregator(SynchronizationContext.Current));
@@ -172,9 +171,8 @@ namespace Psynergy
             RenderManager.Instance.Initialise();
 
             if (m_Graphics.GraphicsDevice != null)
-                InputManager.Instance.ViewPort = m_Graphics.GraphicsDevice.Viewport;
+                InputHandle.GraphicsDevice = m_Graphics.GraphicsDevice;
 
-            InputManager.Instance.Initialise();
             UIManager.Instance.Initialise();
 
             /* Physics Engine */
@@ -254,21 +252,17 @@ namespace Psynergy
         public override void Update(GameTime gameTime)
         {
             // Allows the game to exit
-            if (InputManager.Instance.ExitApplication)
+            if (InputHandle.ExitApplication)
             {
                 if ( m_Game != null )
                     m_Game.Exit();
             }
 
-            // Update input manager viewport
-            if (GraphicsDevice != null)
-                InputManager.Instance.ViewPort = GraphicsDevice.Viewport;
-
             // Update the input manager
-            InputManager.Instance.Update(gameTime);
+            InputHandle.Update(gameTime);
 
             // Only update the render items if the game isn't paused
-            if (!InputManager.Instance.PauseApplication)
+            if (!InputHandle.PauseApplication)
             {
                 // Update Render ( camera )
                 RenderManager.Instance.Update(gameTime);
@@ -290,7 +284,7 @@ namespace Psynergy
             RenderManager.Instance.Render(gameTime);
 
             // Update the User Interface
-            //UIManager.Instance.Render(gameTime);
+            UIManager.Instance.Render(gameTime);
 
             // render menus
             MenuManager.Instance.Render(gameTime);

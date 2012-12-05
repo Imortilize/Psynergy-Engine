@@ -258,7 +258,7 @@ namespace Psynergy.Menus
                         newPos -= new Vector3((sprite.Width * 0.5f), sprite.Height, 0.0f);
 
                     // Reposition accordingly
-                    sprite.SetPos(newPos);
+                    sprite.Position = newPos;
 
                     if (!m_Textures.ContainsValue(sprite))
                     {
@@ -283,7 +283,7 @@ namespace Psynergy.Menus
                 Vector3 newPos = position;
 
                 // Reposition accordingly
-                toRet.SetPos(newPos);
+                toRet.Position = newPos;
 
                 if (!m_Textures.ContainsValue(toRet))
                 {
@@ -316,7 +316,7 @@ namespace Psynergy.Menus
                     newPos -= new Vector3(toRet.Width, (toRet.Height * 0.5f), 0.0f);
 
                 // Reposition accordingly
-                toRet.SetPos(newPos);
+                toRet.Position = newPos;
 
                 if (!m_Textures.ContainsValue(toRet))
                 {
@@ -409,7 +409,7 @@ namespace Psynergy.Menus
                             newPos -= new Vector3((sprite.Width * 0.5f), (sprite.Height * 0.5f), 0.0f);
 
                         // Reposition accordingly
-                        sprite.SetPos(newPos);
+                        sprite.Position = newPos;
 
                         UIObjectTimed timedSprite = new UIObjectTimed(sprite, time);
 

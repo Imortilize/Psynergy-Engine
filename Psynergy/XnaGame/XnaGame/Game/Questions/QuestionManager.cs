@@ -98,7 +98,7 @@ namespace XnaGame
                     m_Pause = false;
 
                     // UnPause rendering
-                    InputManager.Instance.PauseRendering(false);
+                    InputHandle.PauseRendering(false);
 
                     // Pause roll dice image for now
                     GamePlayer gamePlayer = (PlayerManager.Instance.ActivePlayer as GamePlayer);
@@ -196,7 +196,7 @@ namespace XnaGame
                 m_Pause = true;
 
                 // UnPause rendering
-                InputManager.Instance.PauseRendering(true);
+                InputHandle.PauseRendering(true);
 
                 // Pause roll dice image for now
                 GamePlayer gamePlayer = (PlayerManager.Instance.ActivePlayer as GamePlayer);

@@ -112,14 +112,22 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\CameraLibrary\CameraLibrary.csproj">
+      <Project>{F20F853D-EA75-4409-8044-DE95DB61E358}</Project>
+      <Name>CameraLibrary</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Deferred Pipeline\DeferredPipeline.csproj">
       <Project>{BC72D0CA-432E-4F65-9736-A29D7CEC52D7}</Project>
       <Name>DeferredPipeline</Name>
     </ProjectReference>
+    <ProjectReference Include="..\MainLibrary\MainLibrary.csproj">
+      <Project>{A2113989-0A0E-422E-881C-57744917AD51}</Project>
+      <Name>MainLibrary</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>copy "Psynergy.TerrainPipeline.dll" "C:\Program Files (x86)\Psynergy Game Engine\Engine\ContentPipeline\Psynergy.TerrainPipeline.dll"</PostBuildEvent>
+    <PostBuildEvent>copy /y  "Psynergy.TerrainPipeline.dll" "C:\Program Files (x86)\Psynergy Game Engine\Engine\ContentPipeline\Psynergy.TerrainPipeline.dll"</PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
      Other similar extension points exist, see Microsoft.Common.targets.

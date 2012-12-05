@@ -52,7 +52,7 @@ namespace Psynergy.Graphics
         protected Vector2 m_Origin = Vector2.Zero;    // Default to top left
 
         #region Animation variables
-        private bool m_Animating = true;
+        private bool m_Animating = false;
         private Dictionary<String, FrameAnimation> m_Animations = new Dictionary<String, FrameAnimation>();
         private String m_CurrentAnimation = null;
         private Vector2 m_AnimationOffset = Vector2.Zero;
@@ -178,8 +178,18 @@ namespace Psynergy.Graphics
                 // Check if it is an animating sprite or not
                 if (m_Animating)
                 {
-                    if ( CurrentFrameAnimation != null )
+                    if (CurrentFrameAnimation != null)
                         sourceRectangle = CurrentFrameAnimation.FrameRectangle;
+                    else
+                    {
+                        // Source rectangle is the whole image
+                        sourceRectangle = new Rectangle(0, 0, m_CurrentTexture.Width, m_CurrentTexture.Height);
+                    }
+                }
+                else
+                {
+                    // Source rectangle is the whole image
+                    sourceRectangle = new Rectangle(0, 0, m_CurrentTexture.Width, m_CurrentTexture.Height);
                 }
 
                 // Draw sprite
@@ -191,7 +201,7 @@ namespace Psynergy.Graphics
 
         public virtual Vector2 GetWorld2D()
         {
-            return GetPos2D();
+            return Position2D;
         }
 
         public Texture2D GetDefaultTexture()
@@ -354,7 +364,7 @@ namespace Psynergy.Graphics
         {
             get 
             { 
-                Vector2 pos2D = GetPos2D();
+                Vector2 pos2D = Position2D;
                 int width = 0;
                 int height = 0;
 

@@ -40,6 +40,7 @@ namespace Psynergy
             factory.RegisterVector3("pos", "Position");
             factory.RegisterVector3("scale", "Scale");
             factory.RegisterFloat("opacity", "Opacity");
+            factory.RegisterFloat("weight", "Weight");
         }
         #endregion
 
@@ -120,6 +121,11 @@ namespace Psynergy
         protected String[] SplitString(String vector)
         {
             return vector.Split(new Char[] { ' ' });
+        }
+
+        public bool IsTypeOf<T>() where T : GameObject
+        {
+            return (this.GetType() == typeof(T));
         }
 
         #region IFactoryProduct Implementation
@@ -211,6 +217,19 @@ namespace Psynergy
         #region Properties
         public String Name { get { return m_Name; } set { m_Name = value; } }
         public Type Type { get { return m_Type; } set { m_Type = value; } }
+        public float Weight
+        {
+            get { return m_Weight; }
+            set
+            {
+                // Weights are clamped between 0 and 100
+                value = MathHelper.Clamp(value, 0, 100);
+
+                // Set the object weight
+                m_Weight = value;
+            }
+        }
+
 
         public float Opacity { get { return m_Opacity; } set { m_Opacity = value; SetOpacity(value); } }
         public Vector3 Scale { get { return m_Scale; } set { m_Scale = value; } }

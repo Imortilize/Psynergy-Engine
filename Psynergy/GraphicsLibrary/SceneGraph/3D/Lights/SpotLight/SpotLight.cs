@@ -42,24 +42,22 @@ namespace Psynergy.Graphics
 
         protected override void UpdateInput(GameTime gameTime)
         {
-            InputManager input = InputManager.Instance;
-
-            if (input.KeyDown(Keys.W))
+            if (InputHandle.GetKeyDown(Keys.W))
                 LightPosition += new Vector3(0, 10, 0);
 
-            if (input.KeyDown(Keys.S))
+            if (InputHandle.GetKeyDown(Keys.S))
                 LightPosition -= new Vector3(0, 10, 0);
 
-            if (input.KeyDown(Keys.D))
+            if (InputHandle.GetKeyDown(Keys.D))
                 LightPosition += new Vector3(10, 0, 0);
 
-            if (input.KeyDown(Keys.A))
+            if (InputHandle.GetKeyDown(Keys.A))
                 LightPosition -= new Vector3(10, 0, 0);
 
-            if (input.KeyDown(Keys.Right))
+            if (InputHandle.GetKeyDown(Keys.Right))
                 ConeAngle += 0.1f;
 
-            if (input.KeyDown(Keys.Left))
+            if (InputHandle.GetKeyDown(Keys.Left))
                 ConeAngle -= 0.1f;
         }
 

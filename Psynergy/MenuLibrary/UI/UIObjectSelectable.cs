@@ -88,11 +88,9 @@ namespace Psynergy.Menus
 
             if (IsIdle())
             {
-                InputManager input = InputManager.Instance;
-
-                if (input.IsMouseConnected())
+                if (InputHandle.IsMouseConnected())
                 {
-                    Vector2 currentMousePos = input.GetCurrentMousePos();
+                    Vector2 currentMousePos = InputHandle.MousePosition;
                     BaseCamera camera = CameraManager.Instance.ActiveCamera;
 
                     // Check if the mouse is over this option or not

@@ -111,7 +111,7 @@
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\Microsoft.Xna.GameStudio.targets" />
   <PropertyGroup>
-    <PostBuildEvent>copy "EventLibrary.dll" "C:\Program Files (x86)\Psynergy Game Engine\Engine\EventLibrary.dll"</PostBuildEvent>
+    <PostBuildEvent>xcopy /y "EventLibrary.dll" "C:\Program Files (x86)\Psynergy Game Engine\Engine\EventLibrary.dll"</PostBuildEvent>
   </PropertyGroup>
   <!--
       To modify your build process, add your task inside one of the targets below and uncomment it. 

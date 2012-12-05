@@ -50,7 +50,7 @@ namespace XnaGame
 
             if (m_ActiveState == ActiveState.eIdle)
             {
-                if (InputManager.Instance.IsAnyInput(PlayerIndex.One))
+                if (InputHandle.IsAnyInput(PlayerIndex.One))
                     m_Close = true;
             }
         }

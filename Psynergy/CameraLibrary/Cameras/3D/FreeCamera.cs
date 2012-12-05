@@ -46,19 +46,17 @@ namespace Psynergy.Camera
 
         protected override void Move(GameTime deltaTime)
         {
-            InputManager input = InputManager.Instance;
-
             // Translation values
-            if (input.KeyDown(Keys.W)) 
+            if (InputHandle.GetKeyDown(Keys.W)) 
                 m_Translation += (Vector3.Forward * MoveSpeed);
 
-            if (input.KeyDown(Keys.A))
+            if (InputHandle.GetKeyDown(Keys.A))
                 m_Translation += (Vector3.Left * MoveSpeed);
 
-            if (input.KeyDown(Keys.S)) 
+            if (InputHandle.GetKeyDown(Keys.S)) 
 
                 m_Translation += (Vector3.Backward * MoveSpeed);
-            if (input.KeyDown(Keys.D)) 
+            if (InputHandle.GetKeyDown(Keys.D)) 
                 m_Translation += (Vector3.Right * MoveSpeed);
 
             base.Move(deltaTime);
@@ -66,13 +64,13 @@ namespace Psynergy.Camera
 
         protected override void Rotate(GameTime deltaTime)
         {
-            InputManager input = InputManager.Instance;
-
             // Rotation values
-            if (input.IsMouseRightPressed())
+            if (InputHandle.GetMouse(1))
             {
-                m_YawSpeed = (input.GetMouseMoveX() * 5f);
-                m_PitchSpeed = (input.GetMouseMoveY() * 5f);
+                Vector3 mouseDelta = InputHandle.MouseDelta;
+
+                m_YawSpeed = (mouseDelta.X * 5f);
+                m_PitchSpeed = (mouseDelta.Y * 5f);
             }
             else
             {

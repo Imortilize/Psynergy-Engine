@@ -61,9 +61,9 @@ namespace XnaGame
 
         public override void Update(GameTime deltaTime)
         {
-            if (InputManager.Instance.KeyDown(Keys.D))
+            if (InputHandle.GetKey(Keys.D))
                 Move(m_Acceleration);
-            else if (InputManager.Instance.KeyDown(Keys.A))
+            else if (InputHandle.GetKey(Keys.A))
                 Move(-m_Acceleration);
             else
                 Move(0.0f);
@@ -71,7 +71,7 @@ namespace XnaGame
             // If the player is allowed to jump
             if (m_CanJump)
             {
-                if (InputManager.Instance.KeyDown(Keys.Space))
+                if (InputHandle.GetKey(Keys.Space))
                     Jump();
             }
 
@@ -114,8 +114,10 @@ namespace XnaGame
             ClampMovementSpeed();
 
             // Set player position
-            Vector3 playerPos = GetPos();
-            SetPos(playerPos + m_MovementSpeed);
+            Vector3 newPos = (Position + m_MovementSpeed);
+
+            // Set the position
+            Position = newPos;
         }
 
         private void ClampMovementSpeed()

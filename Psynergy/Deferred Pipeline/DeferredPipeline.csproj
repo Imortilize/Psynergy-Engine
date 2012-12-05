@@ -88,7 +88,7 @@
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\Microsoft.Xna.GameStudio.ContentPipelineExtensions.targets" />
   <PropertyGroup>
-    <PostBuildEvent>copy "Deferred Pipeline.dll" "C:\Program Files (x86)\Psynergy Game Engine\Engine\ContentPipeline\Deferred Pipeline.dll"</PostBuildEvent>
+    <PostBuildEvent>copy /y "Deferred Pipeline.dll" "C:\Program Files (x86)\Psynergy Game Engine\Engine\ContentPipeline\Deferred Pipeline.dll"</PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
      Other similar extension points exist, see Microsoft.Common.targets.

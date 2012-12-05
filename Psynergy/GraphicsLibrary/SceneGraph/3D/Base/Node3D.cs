@@ -190,12 +190,12 @@ namespace Psynergy.Graphics
             BuildWorldMatrix(deltaTime);
         }
 
-        public virtual bool SetNextSplinePosition(GameTime deltaTime)
+        public virtual bool SetNextPosition(GameTime deltaTime)
         {
             bool toRet = false;
 
             if ( m_Controller != null )
-                toRet = Controller.SetNextSplinePosition(deltaTime);
+                toRet = Controller.SetNextPosition(deltaTime);
 
             return toRet;
         }
@@ -282,11 +282,11 @@ namespace Psynergy.Graphics
                 Controller.SetDesiredRotation(from, to);
         }
 
-        public void ModifyDesiredRotation(Matrix modification)
+     /*   public void ModifyDesiredRotation(Matrix modification)
         {
             if (Controller != null)
                 Controller.ModifyDesiredRotation(modification);
-        }
+        }*/
 
         public void SetTerrain(TerrainNode terrainNode, float terrainOffset )
         {
@@ -318,7 +318,7 @@ namespace Psynergy.Graphics
             if (m_ParentNode != null)
             {
                 if (m_ParentNode.InheritsFrom(typeof(Node3D)))
-                    toRet = (m_ParentNode as Node3D).PivotNode;
+                    toRet = (m_ParentNode as Node3D).Pivot;
             }
 
             return toRet;
@@ -350,21 +350,14 @@ namespace Psynergy.Graphics
             return toRet;
         }
 
+        // World and Local matrices
         public Matrix WorldMatrix { get { return m_WorldMatrix; } set { m_WorldMatrix = value; } }
-        public override Vector3 GetPos() { return m_WorldMatrix.Translation; }
-        public Vector3 GetForwardVector() { return m_WorldMatrix.Forward; }
-        public Vector3 GetUpVector() { return m_WorldMatrix.Up; }
-
         public Matrix LocalWorldMatrix { get { return m_LocalWorldMatrix; } set { m_LocalWorldMatrix = value; } }
-        public Vector3 GetLocalPos() { return m_LocalWorldMatrix.Translation; }
-        public Vector3 GetLocalForwardVector() { return m_LocalWorldMatrix.Forward; }
-        public Vector3 GetLocalUpVector() { return m_LocalWorldMatrix.Up; }
 
-        // Overridden because the world matrix holds the models actual position
-        public override Vector3 Position { get { return m_WorldMatrix.Translation; } set { base.Position = value; } }
+        // Pivot Node which is where any children nodes will be transformed around
+        public PivotNode Pivot { get { return m_PivotNode; } set { m_PivotNode = value; } }
 
-        public PivotNode PivotNode { get { return m_PivotNode; } set { m_PivotNode = value; } }
-
+        // Node rotations
         public Quaternion Rotation { get { return m_Rotation; } set { m_Rotation = value; } }
         public Quaternion StartRotation { get { return m_StartRotation; } set { m_StartRotation = value; } }
         public Vector3 RotationDegrees
@@ -426,7 +419,7 @@ namespace Psynergy.Graphics
         {
         }
 
-        public Node3DController Controller { get { return (m_Controller as Node3DController); } set { m_Controller = value; } }
+        //public Node3DController Controller { get { return (m_Controller as Node3DController); } set { m_Controller = value; } }
         #endregion
     }
 }

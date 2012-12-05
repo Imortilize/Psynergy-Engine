@@ -31,24 +31,24 @@ namespace Middleware
         {
  	        base.Update(deltaTime);
 
-            Vector3 newPos = m_Position;
+            /*Vector3 newPos = m_Position;
             Quaternion newRot = m_Rotation;
 
             if (this.Focused)
             {
                 float delta = (float)deltaTime.ElapsedGameTime.TotalSeconds;
 
-                if (InputManager.Instance.KeyDown(Keys.W))
+                if (InputHandle.GetKey(Keys.W))
                     newPos += (WorldMatrix.Forward * 300.0f * delta);
 
-                if (InputManager.Instance.KeyDown(Keys.S))
+                if (InputHandle.GetKey(Keys.S))
                     newPos += (WorldMatrix.Backward * 300.0f * delta);
 
-                if (InputManager.Instance.KeyDown(Keys.D) || InputManager.Instance.KeyDown(Keys.A))
+                if (InputHandle.GetKey(Keys.D) || InputHandle.GetKey(Keys.A))
                 {
                     float rotSpeed = 90;
 
-                    if (InputManager.Instance.KeyDown(Keys.A))
+                    if (InputHandle.GetKey(Keys.A))
                         rotSpeed *= -1;
 
                     Matrix rotMatrix = Matrix.CreateFromQuaternion(newRot);
@@ -109,7 +109,7 @@ namespace Middleware
             }
 
             SetPos(newPos);
-            m_Rotation = newRot;
+            m_Rotation = newRot;*/
         }
     }
 }

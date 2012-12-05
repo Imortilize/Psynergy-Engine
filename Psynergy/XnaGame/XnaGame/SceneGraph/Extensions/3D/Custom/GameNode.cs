@@ -55,7 +55,7 @@ namespace XnaGame
         {
         }
 
-        public override bool SetNextSplinePosition(GameTime deltaTime)
+        public override bool SetNextPosition(GameTime deltaTime)
         {
             bool toRet = false;
 

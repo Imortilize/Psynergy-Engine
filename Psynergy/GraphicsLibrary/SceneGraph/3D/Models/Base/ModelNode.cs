@@ -100,6 +100,9 @@ namespace Psynergy.Graphics
                     // Build the boundin box for the model
                     BuildBoundingBox();
 
+                    // For now build bounding sphere too ( enumerate later )
+                    BuildBoundingSphere();
+
                     // Load any textures
                     LoadTextures();
 
@@ -214,14 +217,17 @@ namespace Psynergy.Graphics
             // Update base class where the main calculations occur.
             base.Update(deltaTime);
 
-            // Build the bounding box for the model
-            BuildBoundingBox();
-
             // Update rotation before building the matrices
             Rotate(deltaTime);
 
             // Update movement before building the matrices
             Move(deltaTime);
+
+            // Build the bounding box for the model
+            BuildBoundingBox();
+
+            // For now build bounding sphere too ( enumerate later )
+            BuildBoundingSphere();
 
             if (RenderGroup != null)
             {
@@ -255,8 +261,6 @@ namespace Psynergy.Graphics
 
         protected virtual void Move(GameTime deltaTime)
         {
-            // test code for point light
-            InputManager input = InputManager.Instance;
         }
 
         public virtual void ChangeTexture(String textureName)
@@ -349,6 +353,43 @@ namespace Psynergy.Graphics
         public override void RemoveFromScene()
         {
             base.RemoveFromScene();
+        }
+        #endregion
+
+        #region Intersections
+        public float? Intersects(Ray ray)
+        {
+            float? intersection = null;
+
+            // The input ray is in world space, but our model data is stored in object
+            // space. We would normally have to transform all the model data by the
+            // modelTransform matrix, moving it into world space before we test it
+            // against the ray. That transform can be slow if there are a lot of
+            // triangles in the model, however, so instead we do the opposite.
+            // Transforming our ray by the inverse modelTransform moves it into object
+            // space, where we can test it directly against our model data. Since there
+            // is only one ray but typically many triangles, doing things this way
+            // around can be much faster.
+
+            // Inverse model transform
+           // Matrix inverseTransform = Matrix.Invert(m_WorldMatrix);
+
+            // Transform the ray into object space
+           // ray.Position = Vector3.Transform(ray.Position, inverseTransform);
+           // ray.Direction = Vector3.TransformNormal(ray.Direction, inverseTransform);
+
+            if (m_BoundingSphere != null)
+                intersection = m_BoundingSphere.Intersects(ray);
+
+            // For now check against bounding boxes as well if sphere fails 
+            // TODO: ( probably want bounding enumeration later )
+            if (intersection == null)
+            {
+                if (m_BoundingBox != null)
+                    intersection = m_BoundingBox.Intersects(ray);
+            }
+
+            return intersection;
         }
         #endregion
 

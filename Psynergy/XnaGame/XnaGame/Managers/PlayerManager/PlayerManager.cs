@@ -70,11 +70,9 @@ namespace XnaGame
 
         public override void Update(GameTime deltaTime)
         {
-            InputManager input = InputManager.Instance;
-
             // We shall put the selection code in here for now as it is a 
             // player related task.
-            if (input.IsMouseLeftPressed())
+            if (InputHandle.GetMouse(0))
             {
                 RenderManager renderManager = RenderManager.Instance;
 

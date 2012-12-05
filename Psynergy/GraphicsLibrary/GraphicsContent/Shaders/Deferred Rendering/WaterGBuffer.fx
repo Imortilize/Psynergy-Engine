@@ -31,6 +31,9 @@ float3 xFogColor = float3( 1, 1, 1 );
 
 bool xUseNormalMap = false;
 
+// Reflection values
+float xReflectionFactor = 0.5f;
+
 texture2D Texture;
 sampler2D diffuseSampler : register(s0) = sampler_state 
 {
@@ -334,7 +337,7 @@ float4 PixelShaderReconstructShading(ReconstructVertexShaderOutput input) : COLO
 	float2 reflectTexCoords = float2(0.5, -0.5) * (float2(input.ReflClipPos.x, input.ReflClipPos.y) / input.ReflClipPos.w) + 0.5f;
 	reflectTexCoords = (reflectTexCoords + perturbation);
 	
-	float3 reflection = tex2D(reflectionSampler, reflectTexCoords) * 0.3f;
+	float3 reflection = tex2D(reflectionSampler, reflectTexCoords) * xReflectionFactor;
 	/**/
 
 	// Colour based on how much reflection vs refraction

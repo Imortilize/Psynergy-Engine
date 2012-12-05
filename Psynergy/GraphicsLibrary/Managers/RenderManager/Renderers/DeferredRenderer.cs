@@ -598,16 +598,16 @@ namespace Psynergy.Graphics
             m_SSAOProcessor.NormalMap = m_NormalTarget;
             m_SSAOProcessor.DepthMap = m_SecondaryDepthTarget;
 
-            if (InputManager.Instance.KeyPressed(Microsoft.Xna.Framework.Input.Keys.Up))
+            if (InputHandle.GetKeyDown(Microsoft.Xna.Framework.Input.Keys.Up))
                 m_SSAOProcessor.DistanceScale += 100;
 
-            if (InputManager.Instance.KeyPressed(Microsoft.Xna.Framework.Input.Keys.Down))
+            if (InputHandle.GetKeyDown(Microsoft.Xna.Framework.Input.Keys.Down))
                 m_SSAOProcessor.DistanceScale -= 100;
 
-            if (InputManager.Instance.KeyPressed(Microsoft.Xna.Framework.Input.Keys.Left))
+            if (InputHandle.GetKeyDown(Microsoft.Xna.Framework.Input.Keys.Left))
                 m_SSAOProcessor.SampleRadius -= 0.5f;
 
-            if (InputManager.Instance.KeyPressed(Microsoft.Xna.Framework.Input.Keys.Right))
+            if (InputHandle.GetKeyDown(Microsoft.Xna.Framework.Input.Keys.Right))
                 m_SSAOProcessor.SampleRadius += 0.5f;
 
             // Draw the post process 

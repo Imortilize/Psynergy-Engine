@@ -176,15 +176,6 @@ namespace XnaGame
             ActiveRender = false;
         }
 
-        public override void SetPos(Vector3 pos)
-        {
-            base.SetPos(pos);
-
-            // Set body position
-            if (m_Body != null)
-                m_Body.Position = pos;
-        }
-
         public bool IsStationary()
         {
             bool toRet = false;
@@ -217,6 +208,22 @@ namespace XnaGame
         }
 
         #region Property Set / Gets
+        public override Vector3 Position
+        {
+            get
+            {
+                return base.Position;
+            }
+            set
+            {
+                base.Position = value;
+
+                // Set body position
+                if (m_Body != null)
+                    m_Body.Position = value;
+            }
+        }
+
         public Body Body { get { return m_Body; } }
         public CollisionSkin Skin { get { return m_Skin; } }
         #endregion

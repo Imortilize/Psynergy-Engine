@@ -132,21 +132,19 @@ namespace XnaGame
 
         protected override void UpdateMoveInput(GameTime deltaTime)
         {
-            InputManager input = InputManager.Instance;
-
             bool valueChanged = false;
 
             // distance values ( mouse and controller )
-            if (input.IsGamePadConnected(PlayerIndex.One))
+            if (InputHandle.IsGamePadConnected(PlayerIndex.One))
             {
-                if (input.LeftBumperDown(PlayerIndex.One))
+                if (InputHandle.LeftBumperDown(PlayerIndex.One))
                 {
                     m_DesiredDistance += (m_DistanceMove * (float)deltaTime.ElapsedGameTime.TotalSeconds);
 
                     valueChanged = true;
                 }
 
-                if (input.RightBumperDown(PlayerIndex.One))
+                if (InputHandle.RightBumperDown(PlayerIndex.One))
                 {
                     m_DesiredDistance -= (m_DistanceMove * (float)deltaTime.ElapsedGameTime.TotalSeconds);
 
@@ -157,7 +155,10 @@ namespace XnaGame
             if (!m_DisableMovement)
             {
                 if (!valueChanged)
-                    m_DesiredDistance += (input.GetMouseWheelChange() * (m_DistanceMove * 0.1f));
+                {
+                    Vector3 mouseDelta = InputHandle.MouseDelta;
+                    m_DesiredDistance += (mouseDelta.Z * (m_DistanceMove * 0.1f));
+                }
             }
 
             // Clamp the distance to within the min and max distance values

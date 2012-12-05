@@ -60,11 +60,11 @@ namespace Psynergy.Menus
                 foreach (String action in m_ActionTypes)
                 {
                     if (action == "Submit")
-                        m_RunAction = InputManager.Instance.Submit( PlayerIndex.One );
+                        m_RunAction = InputHandle.Submit(PlayerIndex.One);
                     else if (action == "Return")
-                        m_RunAction = InputManager.Instance.Return( PlayerIndex.One );
+                        m_RunAction = InputHandle.Return(PlayerIndex.One);
                     else if (action == "Click")
-                        m_RunAction = InputManager.Instance.Click(PlayerIndex.One);
+                        m_RunAction = InputHandle.GetMouse(0);
                 }
             }
 

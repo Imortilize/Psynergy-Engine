@@ -1,9 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Diagnostics;
 
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework;
+
+using Psynergy.Camera;
 
 namespace Psynergy.TerrainPipeline
 {
@@ -22,6 +25,9 @@ namespace Psynergy.TerrainPipeline
         // For example, if TerrainScale is 30, Height[0,0] and Height[1,0] are 30
         // units apart.        
         private float m_TerrainScale;
+
+        // Terrain vertices
+        private Vector3[] m_Vertices;
 
         // Terrain normals
         private Vector3[,] m_Normals;
@@ -42,7 +48,7 @@ namespace Psynergy.TerrainPipeline
 
 
         // the constructor will initialize all of the member variables.
-        public TerrainInfo(float[,] heights, Vector3[,] normals, float terrainScale)
+        public TerrainInfo(Vector3[] vertices, float[,] heights, Vector3[,] normals, float terrainScale)
         {
             if (heights == null)
                 throw new ArgumentNullException("heights");
@@ -51,6 +57,7 @@ namespace Psynergy.TerrainPipeline
                 throw new ArgumentNullException("normals");
 
             m_TerrainScale = terrainScale;
+            m_Vertices = vertices;
             m_Heights = heights;
             m_Normals = normals;
 
@@ -236,6 +243,123 @@ namespace Psynergy.TerrainPipeline
             }
         }
 
+        /* Used to pick a position on the terrain */
+        public Vector3? Pick(Ray ray, Vector3 position, Matrix world)
+        {
+            Vector3? intersectionPoint = null;
+
+           // Matrix inverseTransform = Matrix.Invert(Matrix.CreateScale(30));
+
+            // Transform the ray into object space
+           /// ray.Position = Vector3.Transform(ray.Position, inverseTransform);
+           // ray.Direction = Vector3.TransformNormal(ray.Direction, inverseTransform);
+
+            // Keep track of the closest triangle we found so far,
+            // so we can always return the closest one.
+            float? closestIntersection = null;
+
+            // Cycle through the list of vertices in the mesh
+            for (int i = 0; i < m_Vertices.Length; i += 3)
+            {
+                Vector3 vertex1 = (m_Vertices[i] + position);
+                Vector3 vertex2 = (m_Vertices[i + 1] + position);
+                Vector3 vertex3 = (m_Vertices[i + 2] + position);
+
+                float? newIntersection = RayIntersectsTriangle(ref ray, ref vertex1, ref vertex2, ref vertex3);
+
+                // Does the ray intersect this triangle?
+                if (newIntersection != null)
+                {
+                    // If so, is it closer than any other previous triangle?
+                    if ((closestIntersection == null) || (newIntersection < closestIntersection))
+                    {
+                        // Store the distance to this triangle.
+                        closestIntersection = newIntersection;
+
+                        // Intersection point will be the ray direction * the intersection which is the
+                        // distance to the intersection
+                        intersectionPoint = (ray.Direction * closestIntersection);
+
+                        break;
+                    }
+                }
+            }
+
+            // Return the intersection point whether it is null or not
+            return intersectionPoint;
+        }
+
+        /// <summary>
+        /// Checks whether a ray intersects a triangle. This uses the algorithm
+        /// developed by Tomas Moller and Ben Trumbore, which was published in the
+        /// Journal of Graphics Tools, volume 2, "Fast, Minimum Storage Ray-Triangle
+        /// Intersection".
+        /// 
+        /// This method is implemented using the pass-by-reference versions of the
+        /// XNA math functions. Using these overloads is generally not recommended,
+        /// because they make the code less readable than the normal pass-by-value
+        /// versions. This method can be called very frequently in a tight inner loop,
+        /// however, so in this particular case the performance benefits from passing
+        /// everything by reference outweigh the loss of readability.
+        /// </summary>
+        private float? RayIntersectsTriangle(ref Ray ray, ref Vector3 vertex1, ref Vector3 vertex2, ref Vector3 vertex3)
+        {
+            // Compute vectors along two edges of the triangle.
+            Vector3 edge1, edge2;
+
+            Vector3.Subtract(ref vertex2, ref vertex1, out edge1);
+            Vector3.Subtract(ref vertex3, ref vertex1, out edge2);
+
+            // Compute the determinant.
+            Vector3 directionCrossEdge2;
+            Vector3.Cross(ref ray.Direction, ref edge2, out directionCrossEdge2);
+
+            float determinant;
+            Vector3.Dot(ref edge1, ref directionCrossEdge2, out determinant);
+
+            // If the ray is parallel to the triangle plane, there is no collision.
+            if (determinant > -float.Epsilon && determinant < float.Epsilon)
+                return null;
+
+            float inverseDeterminant = 1.0f / determinant;
+
+            // Calculate the U parameter of the intersection point.
+            Vector3 distanceVector;
+            Vector3.Subtract(ref ray.Position, ref vertex1, out distanceVector);
+
+            float triangleU;
+            Vector3.Dot(ref distanceVector, ref directionCrossEdge2, out triangleU);
+            triangleU *= inverseDeterminant;
+
+            // Make sure it is inside the triangle.
+            if ((triangleU < 0) || (triangleU > 1))
+                return null;
+
+            // Calculate the V parameter of the intersection point.
+            Vector3 distanceCrossEdge1;
+            Vector3.Cross(ref distanceVector, ref edge1, out distanceCrossEdge1);
+
+            float triangleV;
+            Vector3.Dot(ref ray.Direction, ref distanceCrossEdge1, out triangleV);
+            triangleV *= inverseDeterminant;
+
+            // Make sure it is inside the triangle.
+            if ((triangleV < 0) || ((triangleU + triangleV) > 1))
+                return null;
+
+            // Compute the distance along the ray to the triangle.
+            float rayDistance;
+            Vector3.Dot(ref edge2, ref distanceCrossEdge1, out rayDistance);
+            rayDistance *= inverseDeterminant;
+
+            // Is the triangle behind the ray origin?
+            if (rayDistance < 0)
+                return null;
+
+            return rayDistance;
+        }
+        /**/
+
         #region Property Set / Get
         public Vector3 Position { get { return m_HeightmapPosition; } set { m_HeightmapPosition = value; } }
         #endregion
@@ -251,28 +375,38 @@ namespace Psynergy.TerrainPipeline
     {
         protected override TerrainInfo Read(ContentReader input, TerrainInfo existingInstance)
         {
-            float m_TerrainScale = input.ReadSingle();
-            int m_Width = input.ReadInt32();
-            int m_Height = input.ReadInt32();
-            float[,] m_Heights = new float[m_Width, m_Height];
-            Vector3[,] m_Normals = new Vector3[m_Width, m_Height];
+            float terrainScale = input.ReadSingle();
+            int width = input.ReadInt32();
+            int height = input.ReadInt32();
+            float[,] heights = new float[width, height];
+            Vector3[,] normals = new Vector3[width, height];
 
-            for (int x = 0; x < m_Width; x++)
+            // Get the terrain heights
+            for (int x = 0; x < width; x++)
             {
-                for (int z = 0; z < m_Height; z++)
+                for (int z = 0; z < height; z++)
                 {
-                    m_Heights[x, z] = input.ReadSingle();
-                }
-            }
-            for (int x = 0; x < m_Width; x++)
-            {
-                for (int z = 0; z < m_Height; z++)
-                {
-                    m_Normals[x, z] = input.ReadVector3();
+                    heights[x, z] = input.ReadSingle();
                 }
             }
 
-            return new TerrainInfo(m_Heights, m_Normals, m_TerrainScale);
+            // Get the terrain normals
+            for (int x = 0; x < width; x++)
+            {
+                for (int z = 0; z < height; z++)
+                {
+                    normals[x, z] = input.ReadVector3();
+                }
+            }
+
+            // Read in the vertex list to use for terrain picking
+            int vertCount = input.ReadInt32();
+            Vector3[] vertices = new Vector3[vertCount];
+
+            for (int i = 0; i < vertCount; i++)
+                vertices[i] = input.ReadVector3();
+
+            return new TerrainInfo(vertices, heights, normals, terrainScale);
         }
     }
 }

@@ -2,6 +2,6 @@
 <SceneResource id="GameScenes">
 	<SceneFragment id="GameScene" file="Resources/Game.xml" is3d="true" >
 		<property useprelighting="true" />
-		<property ambient="0.20 0.20 0.20" />
+		<property ambient="0.10 0.10 0.10" />
 	</SceneFragment>
 </SceneResource>

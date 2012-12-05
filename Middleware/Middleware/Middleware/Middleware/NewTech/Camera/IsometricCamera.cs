@@ -102,29 +102,27 @@ namespace Middleware
                 PosY += (-PosY * MoveSpeed * delta);
             }*/
 
-            InputManager input = InputManager.Instance;
-
-            if ((input != null) && (m_TileMap != null))
+            if (m_TileMap != null)
             {
-                if (input.KeyDown(Keys.Left))
+                if (InputHandle.GetKey(Keys.Left))
                 {
                     //PosX = MathHelper.Clamp((PosX - 2), 0, (testX * tileWidth));
                     Move(new Vector2(-2, 0));
                 }
 
-                if (input.KeyDown(Keys.Right))
+                if (InputHandle.GetKey(Keys.Right))
                 {
                     //PosX = MathHelper.Clamp((PosX + 2), 0, (testX * tileWidth));
                     Move(new Vector2(2, 0));
                 }
 
-                if (input.KeyDown(Keys.Up))
+                if (InputHandle.GetKey(Keys.Up))
                 {
                     //PosY = MathHelper.Clamp((PosY - 2), 0, (testY * tileHeight));
                     Move(new Vector2(0, -2));
                 }
 
-                if (input.KeyDown(Keys.Down))
+                if (InputHandle.GetKey(Keys.Down))
                 {
                     //PosY = MathHelper.Clamp((PosY + 2), 0, (testY * tileHeight));
                     Move(new Vector2(0, 2));
@@ -201,7 +199,7 @@ namespace Middleware
         {
             get 
             {
-                return GetPos2D();
+                return Position2D;
             }
             set
             {

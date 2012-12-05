@@ -69,87 +69,84 @@ namespace Middleware
         #region Update
         public override void Update(GameTime deltaTime)
         {
-            InputManager input = InputManager.Instance;
+            float moveSpeed = 3;
+            Vector2 moveVector = Vector2.Zero;
+            Vector2 moveDirection = Vector2.Zero;
+            String animation = "";
 
-            if (input != null)
+            if (InputHandle.GetKey(Keys.NumPad7)) 
             {
-                float moveSpeed = 3;
-                Vector2 moveVector = Vector2.Zero;
-                Vector2 moveDirection = Vector2.Zero;
-                String animation = "";
-
-                if (input.KeyDown(Keys.NumPad7)) 
-                {
-                    moveDirection = new Vector2(-1, -1) * 0.5f;
-                    animation = "WalkNorthWest";
-                }
-                if (input.KeyDown(Keys.NumPad8))
-                {
-                    moveDirection = new Vector2(0, -1);
-                    animation = "WalkNorth";
-                }
-
-                if (input.KeyDown(Keys.NumPad9))
-                {
-                    moveDirection = new Vector2(1, -1) * 0.5f;
-                    animation = "WalkNorthEast";
-                }
-
-                if (input.KeyDown(Keys.NumPad4))
-                {
-                    moveDirection = new Vector2(-1, 0);
-                    animation = "WalkWest";
-                }
-
-                if (input.KeyDown(Keys.NumPad6))
-                {
-                    moveDirection = new Vector2(1, 0);
-                    animation = "WalkEast";
-                }
-
-                if (input.KeyDown(Keys.NumPad1))
-                {
-                    moveDirection = new Vector2(-1, 1) * 0.5f;
-                    animation = "WalkSouthWest";
-                }
-
-                if (input.KeyDown(Keys.NumPad2))
-                {
-                    moveDirection = new Vector2(0, 1);
-                    animation = "WalkSouth";
-                }
-
-                if (input.KeyDown(Keys.NumPad3))
-                {
-                    moveDirection = new Vector2(1, 1) * 0.5f;
-                    animation = "WalkSouthEast";
-                }
-
-                if (moveDirection.Length() != 0)
-                {
-                    // Scale by move speed
-                    moveDirection *= moveSpeed;
-
-                    TileMap tileMap = TileMapManager.Instance.GetCurrentTileMap();
-
-                    if (tileMap != null)
-                    {
-                        if (tileMap.GetCellAtWorldPoint(GetPos2D() + moveDirection).Walkable == false)
-                            moveDirection = Vector2.Zero;
-                        else if (Math.Abs(tileMap.GetOverallHeight(GetPos2D()) - tileMap.GetOverallHeight(GetPos2D() + moveDirection)) > 10)
-                            moveDirection = Vector2.Zero;
-                    }
-
-                    MoveBy((int)moveDirection.X, (int)moveDirection.Y);
-                    if (CurrentAnimation != animation)
-                        CurrentAnimation = animation;
-                }
-                else
-                {
-                    CurrentAnimation = "Idle" + CurrentAnimation.Substring(4);
-                }
+                moveDirection = new Vector2(-1, -1) * 0.5f;
+                animation = "WalkNorthWest";
+            }
+            if (InputHandle.GetKey(Keys.NumPad8))
+            {
+                moveDirection = new Vector2(0, -1);
+                animation = "WalkNorth";
             }
 
+            if (InputHandle.GetKey(Keys.NumPad9))
+            {
+                moveDirection = new Vector2(1, -1) * 0.5f;
+                animation = "WalkNorthEast";
+            }
+
+            if (InputHandle.GetKey(Keys.NumPad4))
+            {
+                moveDirection = new Vector2(-1, 0);
+                animation = "WalkWest";
+            }
+
+            if (InputHandle.GetKey(Keys.NumPad6))
+            {
+                moveDirection = new Vector2(1, 0);
+                animation = "WalkEast";
+            }
+
+            if (InputHandle.GetKey(Keys.NumPad1))
+            {
+                moveDirection = new Vector2(-1, 1) * 0.5f;
+                animation = "WalkSouthWest";
+            }
+
+            if (InputHandle.GetKey(Keys.NumPad2))
+            {
+                moveDirection = new Vector2(0, 1);
+                animation = "WalkSouth";
+            }
+
+            if (InputHandle.GetKey(Keys.NumPad3))
+            {
+                moveDirection = new Vector2(1, 1) * 0.5f;
+                animation = "WalkSouthEast";
+            }
+
+            if (moveDirection.Length() != 0)
+            {
+                // Scale by move speed
+                moveDirection *= moveSpeed;
+
+                TileMap tileMap = TileMapManager.Instance.GetCurrentTileMap();
+
+                if (tileMap != null)
+                {
+                    Vector2 pos2D = Position2D;
+
+                    if (tileMap.GetCellAtWorldPoint(pos2D + moveDirection).Walkable == false)
+                        moveDirection = Vector2.Zero;
+                    else if (Math.Abs(tileMap.GetOverallHeight(pos2D) - tileMap.GetOverallHeight(pos2D + moveDirection)) > 10)
+                        moveDirection = Vector2.Zero;
+                }
+
+                MoveBy((int)moveDirection.X, (int)moveDirection.Y);
+                if (CurrentAnimation != animation)
+                    CurrentAnimation = animation;
+            }
+            else
+            {
+                CurrentAnimation = "Idle" + CurrentAnimation.Substring(4);
+            }
+ 
             GraphicsDevice graphicsDevice = RenderManager.Instance.GraphicsDevice;
 
             if ( graphicsDevice != null )
@@ -164,7 +161,7 @@ namespace Middleware
                     PosX = MathHelper.Clamp(PosX, -DrawOffset.X, (isometricCamera.WorldSize.X - DrawOffset.X));
                     PosY = MathHelper.Clamp(PosY, -DrawOffset.Y, (isometricCamera.WorldSize.Y - DrawOffset.Y));
 
-                    Vector2 testPosition = isometricCamera.WorldToScreen(GetPos2D());
+                    Vector2 testPosition = isometricCamera.WorldToScreen(Position2D);
 
                     if (testPosition.X < 100)
                     {
@@ -200,7 +197,7 @@ namespace Middleware
 
             // use for getting the height on the tile being stood on
             if (tileMap != null)
-                Offset = new Vector2(0, -tileMap.GetOverallHeight(GetPos2D()));
+                Offset = new Vector2(0, -tileMap.GetOverallHeight(Position2D));
 
             base.Render(deltaTime);
         }
@@ -209,7 +206,7 @@ namespace Middleware
         #region Override Functions
         public override Vector2 GetWorld2D()
         {
-            Vector2 toRet = GetPos2D();
+            Vector2 toRet = Position2D;
             IsometricCamera isometricCamera = (CameraManager.Instance.ActiveCamera as IsometricCamera);
 
             if (isometricCamera != null)

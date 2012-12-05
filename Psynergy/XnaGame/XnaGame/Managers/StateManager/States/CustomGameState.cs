@@ -97,7 +97,7 @@ namespace XnaGame
             Reset();
 
             // Set it so that the player can pause the game
-            InputManager.Instance.ActivatePause();
+            InputHandle.ActivatePause();
 
             // Activate player one for now
             PlayerManager.Instance.SetActivePlayer(PlayerIndex.One);

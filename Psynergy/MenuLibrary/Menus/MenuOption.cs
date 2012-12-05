@@ -97,10 +97,8 @@ namespace Psynergy.Menus
                     m_BoundingArea.Min = new Vector3(PosX, PosY, 0);
                     m_BoundingArea.Max = new Vector3((PosX + m_SelectedTextures[m_TextureIndex].Width), (PosY + m_SelectedTextures[m_TextureIndex].Height), 0);
 
-                    InputManager input = InputManager.Instance;
-
                     // Check if we are over the option or not
-                    if ( IsMouseOverOption(input.GetCurrentMousePos()))
+                    if ( IsMouseOverOption(InputHandle.MousePosition))
                         SetTexture(m_SelectedTextures[m_TextureIndex]);
                     else
                         SetTexture(m_2DTextures[m_TextureIndex]);

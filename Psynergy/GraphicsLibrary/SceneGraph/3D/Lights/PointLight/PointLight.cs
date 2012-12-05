@@ -75,24 +75,22 @@ namespace Psynergy.Graphics
         {
             if (m_InputAllowed)
             {
-                InputManager input = InputManager.Instance;
-
-                if (input.KeyDown(Keys.D))
+                if (InputHandle.GetKey(Keys.D))
                     Radius += 10f;
 
-                if (input.KeyDown(Keys.A))
+                if (InputHandle.GetKey(Keys.A))
                     Radius -= 10f;
 
-                if (input.KeyDown(Keys.Right))
+                if (InputHandle.GetKey(Keys.Right))
                     Position += new Vector3(0.5f, 0, 0);
 
-                if (input.KeyDown(Keys.Left))
+                if (InputHandle.GetKey(Keys.Left))
                     Position -= new Vector3(0.5f, 0, 0);
 
-                if (input.KeyDown(Keys.Up))
+                if (InputHandle.GetKey(Keys.Up))
                     Position += new Vector3(0, 0.5f, 0);
 
-                if (input.KeyDown(Keys.Down))
+                if (InputHandle.GetKey(Keys.Down))
                     Position -= new Vector3(0, 0.5f, 0);
             }
         }
@@ -135,10 +133,10 @@ namespace Psynergy.Graphics
 
                     if (camera != null)
                     {
-                        m_Effect.Parameters["xView"].SetValue(camera.View);
+                        m_Effect.Parameters["xView"].SetValue(camera.Transform);
                         m_Effect.Parameters["xProjection"].SetValue(camera.Projection);
                         m_Effect.Parameters["xCameraPosition"].SetValue(camera.Position);
-                        m_Effect.Parameters["xInvertViewProjection"].SetValue(Matrix.Invert(camera.View * camera.Projection));
+                        m_Effect.Parameters["xInvertViewProjection"].SetValue(Matrix.Invert(camera.ViewProjection));
 
                         // Calculate the distance between the camera and light center
                         float cameraToCenter = Vector3.Distance(camera.Position, Position);
@@ -205,7 +203,9 @@ namespace Psynergy.Graphics
             get { return base.Position; }
             set
             {
-                m_Position = value;
+                base.Position = value;
+                
+                // Set bounding sphere center
                 m_BoundingSphere.Center = Position;
             }
         }

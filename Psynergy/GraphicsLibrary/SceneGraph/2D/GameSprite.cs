@@ -122,7 +122,7 @@ namespace Psynergy.Graphics
                             }
                             else
                             {
-                                if (m_Target == m_Sprite.GetPos2D())
+                                if (m_Target == m_Sprite.Position2D)
                                 {
                                     if (m_UsePathing)
                                     {

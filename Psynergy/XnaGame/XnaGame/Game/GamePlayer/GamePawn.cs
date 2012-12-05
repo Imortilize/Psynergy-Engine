@@ -60,11 +60,14 @@ namespace XnaGame
             base.Initialise();
 
             // Create the game pawn controller
-            Controller = new Node3DController(this);
-            Controller.MovementSpeed = 50.0f;
-            Controller.MaxVelocity = 30.0f;
-            Controller.RotationVelocity = 2.5f;
-            Controller.TerrainHeightOffset = 0.0f;
+            Node3DController controller = new Node3DController(this);
+            controller.MovementSpeed = 50.0f;
+            controller.MaxVelocity = 30.0f;
+            controller.RotationVelocity = 2.5f;
+            controller.TerrainHeightOffset = 0.0f;
+
+            // Save the controller
+            Controller = controller;
 
             // Set position
             SetPosition(new Vector3(0, 0, 50));

@@ -276,7 +276,14 @@ namespace Psynergy.Graphics
                 if (assetName == "")
                     assetName = "default";
 
-                toRet = m_ContentManager.Load<Model>(assetName);
+                try
+                {
+                    toRet = m_ContentManager.Load<Model>(assetName);
+                }
+                catch (Exception error)
+                {
+                    Console.WriteLine(error.ToString());
+                }
 
                 Debug.Assert(toRet != null, "Texture file '" + assetName + "' not found / loaded on a sprite node!");
             }
@@ -343,7 +350,7 @@ namespace Psynergy.Graphics
 
         public override void Update(GameTime deltaTime)
         {
-            if (!InputManager.Instance.PauseRender)
+            if (!InputHandle.PauseDraw)
             {
                 if (m_Renderer != null)
                     m_Renderer.Update(deltaTime);
@@ -353,7 +360,7 @@ namespace Psynergy.Graphics
             if (m_StateManager != null)
                 m_StateManager.Update(deltaTime);
 
-            if (!InputManager.Instance.PauseRender)
+            if (!InputHandle.PauseDraw)
             {
                 // Update particle related items
                 if (m_ParticleManager != null)
@@ -451,7 +458,7 @@ namespace Psynergy.Graphics
                 {
                     Camera3D camera3D = (camera as Camera3D);
 
-                    Matrix view = camera3D.View;
+                    Matrix view = camera3D.Transform;
                     Matrix proj = camera3D.Projection;
 
                     Vector3 projectedPosition = GraphicsDevice.Viewport.Project(pos, proj, view, Matrix.Identity);
