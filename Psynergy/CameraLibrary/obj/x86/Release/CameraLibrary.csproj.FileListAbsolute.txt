@@ -18,7 +18,7 @@ C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\CameraLibrary\bin\x86
 C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\CameraLibrary\bin\x86\Release\EventLibrary.pdb
 C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\CameraLibrary\bin\x86\Release\InputLibrary.pdb
 C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\CameraLibrary\bin\x86\Release\MainLibrary.pdb
-C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\CameraLibrary\obj\x86\Release\ResolveAssemblyReference.cache
 C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\CameraLibrary\obj\x86\Release\Microsoft.Xna.Framework.RuntimeProfile.txt
 C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\CameraLibrary\obj\x86\Release\CameraLibrary.dll
 C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\CameraLibrary\obj\x86\Release\CameraLibrary.pdb
+C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\CameraLibrary\obj\x86\Release\CameraLibrary.csprojResolveAssemblyReference.cache

@@ -142,8 +142,8 @@ namespace Psynergy.Camera
                     Vector3 nearPoint = new Vector3(mousePosition, viewPort.MinDepth);
                     Vector3 farPoint = new Vector3(mousePosition, viewPort.MaxDepth);
 
-                    nearPoint = viewPort.Unproject(nearPoint, camera.Projection, camera.Transform, Matrix.Identity);
-                    farPoint = viewPort.Unproject(farPoint, camera.Projection, camera.Transform, Matrix.Identity);
+                    nearPoint = viewPort.Unproject(nearPoint, camera.Projection, camera.View, Matrix.Identity);
+                    farPoint = viewPort.Unproject(farPoint, camera.Projection, camera.View, Matrix.Identity);
 
                     Vector3 direction = (farPoint - nearPoint);
                     direction.Normalize();

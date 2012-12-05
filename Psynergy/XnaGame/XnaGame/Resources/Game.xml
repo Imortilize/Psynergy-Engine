@@ -39,11 +39,11 @@
 		<property direction="0.5 -0.5 0" />
 		<property diffuse="50 50 43" />
 	</DirectionalLight>
-	<!--<PointLight>
+	<PointLight>
 		<property parent="Base" />
 		<property pos="-700 900 100" />
 		<property radius="1500" />
 		<property intensity="2" />
 		<property diffuse="75 75 67" />
-	</PointLight>-->
+	</PointLight>
 </SceneFragment>

@@ -6,7 +6,6 @@ C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\SkinnedModel\
 C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\SkinnedModel\obj\x86\Release\SkinnedModel.pdb
 C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\SkinnedModel\bin\x86\Release\SkinnedModel.dll
 C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\SkinnedModel\bin\x86\Release\SkinnedModel.pdb
-C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\SkinnedModel\obj\x86\Release\ResolveAssemblyReference.cache
 C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\SkinnedModel\obj\x86\Release\Microsoft.Xna.Framework.RuntimeProfile.txt
 C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\SkinnedModel\obj\x86\Release\SkinnedModel.dll
 C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\SkinnedModel\obj\x86\Release\SkinnedModel.pdb

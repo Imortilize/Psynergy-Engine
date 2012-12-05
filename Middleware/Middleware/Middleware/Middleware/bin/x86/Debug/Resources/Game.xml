@@ -17,29 +17,44 @@
     <property file="Models/X/Ground" />
     <property setfocus="false" />
   </ModelNode>-->
-  
-  <!--<CustomSpaceship id="Ship" >
+
+  <CustomSpaceship id="Ship1" >
     <property parent="Base" />
-    <property pos="-200 -125 0" />
+    <property weight="5" />
+    <property pos="500 0 0" />
     <property scale="0.25 0.25 0.25" />
     <property setfocus="true" />
     <property file="Models/FBX/Ship1/ship1" />
+    <TestController controller="TestController" >
+      <property movementspeed="100"/>
+      <property maxvelocity="50 50 50"/>
+    </TestController>
+  </CustomSpaceship>
+
+  <CustomSpaceship id="Ship2" >
+    <property parent="Base" />
+    <property weight="5" />
+    <property pos="50 0 200" />
+    <property scale="0.25 0.25 0.25" />
+    <property setfocus="true" />
+    <property file="Models/FBX/Ship1/ship1" />
+    <TestController controller="TestController" >
+      <property movementspeed="100"/>
+      <property maxvelocity="50 50 50"/>
+    </TestController>
   </CustomSpaceship>
 
   <CustomSpaceship id="Ship" >
     <property parent="Base" />
-    <property pos="-200 -125 -300" />
+    <property weight="5" />
+    <property pos="50 0 0" />
     <property scale="0.25 0.25 0.25" />
     <property setfocus="true" />
     <property file="Models/FBX/Ship1/ship1" />
-  </CustomSpaceship>-->
-
-  <CustomSpaceship id="Ship" >
-    <property parent="Base" />
-    <property pos="-100 -125 -400" />
-    <property scale="0.25 0.25 0.25" />
-    <property setfocus="true" />
-    <property file="Models/FBX/Ship1/ship1" />
+    <TestController controller="TestController" >
+      <property movementspeed="100"/>
+      <property maxvelocity="50 50 50"/>
+    </TestController>
   </CustomSpaceship>
 
   <!--<ModelNode id="Ship" >
@@ -92,18 +107,18 @@
 
   <Terrain id="Terrain" >
     <property parent="Base" />
-    <property pos="0 100 0" />
-    <property scale="0.25 0.25 0.25" />
-    <property texture="Textures/Grass" />
+    <property pos="0 0 0" />
+    <property scale="1 1 1" />
+    <property texture="Textures/Grass" />    
     <property heightmap="testHeightMap" />>
   </Terrain>
 
-  <Water id="Water" >
+  <!--<Water id="Water" >
     <property parent="Base" />
     <property pos="0 0 0" />
     <property scale="1 1 1" />
     <property texture="Textures/Water/waterMap" />
-  </Water>
+  </Water>-->
 
   <!-- Lights ( under work at the moment ) -->
   <DirectionalLight>

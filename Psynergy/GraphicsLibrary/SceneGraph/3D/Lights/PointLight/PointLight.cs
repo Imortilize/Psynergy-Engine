@@ -133,7 +133,7 @@ namespace Psynergy.Graphics
 
                     if (camera != null)
                     {
-                        m_Effect.Parameters["xView"].SetValue(camera.Transform);
+                        m_Effect.Parameters["xView"].SetValue(camera.View);
                         m_Effect.Parameters["xProjection"].SetValue(camera.Projection);
                         m_Effect.Parameters["xCameraPosition"].SetValue(camera.Position);
                         m_Effect.Parameters["xInvertViewProjection"].SetValue(Matrix.Invert(camera.ViewProjection));
@@ -141,7 +141,7 @@ namespace Psynergy.Graphics
                         // Calculate the distance between the camera and light center
                         float cameraToCenter = Vector3.Distance(camera.Position, Position);
 
-                        Vector3 test = (camera.Transform.Forward * camera.FarPlane);
+                        //Vector3 test = (camera.Transform.Forward * camera.FarPlane);
 
                         //if (camera.Frustum.Far.Intersects(BoundingSphere) == PlaneIntersectionType.Intersecting)
                         //graphicsDevice.RasterizerState = RasterizerState.CullCounterClockwise;

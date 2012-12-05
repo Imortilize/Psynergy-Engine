@@ -88,6 +88,7 @@ namespace Middleware
                     //DebugRender.Instance.DrawDebugPoint(m_DesiredPosition.Value, 10);
 
                     DebugRender.Instance.AddNewDebugLineGroup(Vector3.One, Color.Yellow);
+                    DebugRender.Instance.AddNewDebugLineGroup(-camera.Transform.Translation, Color.Yellow);
                     DebugRender.Instance.AddDebugLine(m_DesiredPosition.Value, Color.Orange);
                     DebugRender.Instance.AddDebugLine(m_DesiredPosition.Value, Color.Orange);
                 }

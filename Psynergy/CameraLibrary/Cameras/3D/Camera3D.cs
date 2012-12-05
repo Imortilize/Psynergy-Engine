@@ -645,14 +645,13 @@ namespace Psynergy.Camera
 
                 // Generate the frustum
                 GenerateFrustum();
-
                 //Frustum.Matrix = (m_ViewMatrix * m_ProjectionMatrix);
+
                 // Generate projection matrix
                 //GeneratePerspectiveProjectionMatrix(45);
                 m_ProjectionDirty = true;
             } 
         }
-
 
         public override void SetFocus(IFocusable focus)
         {

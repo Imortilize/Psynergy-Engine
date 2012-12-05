@@ -178,7 +178,7 @@ C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x
 C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\SkinnedModel.pdb
 C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\Psynergy.WaterPipeline.pdb
 C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\bin\x86\Release\DPSF.xml
-C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\obj\x86\Release\ResolveAssemblyReference.cache
 C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\obj\x86\Release\Microsoft.Xna.Framework.RuntimeProfile.txt
 C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\obj\x86\Release\GraphicsLibrary.dll
 C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\obj\x86\Release\GraphicsLibrary.pdb
+C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\GraphicsLibrary\obj\x86\Release\GraphicsLibrary.csprojResolveAssemblyReference.cache

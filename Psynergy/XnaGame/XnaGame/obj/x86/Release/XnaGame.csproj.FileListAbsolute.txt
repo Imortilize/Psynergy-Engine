@@ -667,10 +667,10 @@ C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x
 C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Psynergy.WaterPipeline.pdb
 C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Psynergy.TerrainPipeline.pdb
 C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\bin\x86\Release\Deferred Pipeline.pdb
-C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\obj\x86\Release\ResolveAssemblyReference.cache
 C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\obj\x86\Release\Microsoft.Xna.Framework.RuntimeProfile.txt
 C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\obj\x86\Release\XnaGame.TrustInfo.xml
 C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\obj\x86\Release\XnaGame.exe.manifest
 C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\obj\x86\Release\XnaGame.application
 C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\obj\x86\Release\XnaGame.exe
 C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\obj\x86\Release\XnaGame.pdb
+C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGame\obj\x86\Release\XnaGame.csprojResolveAssemblyReference.cache

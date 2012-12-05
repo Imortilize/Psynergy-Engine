@@ -237,7 +237,7 @@ namespace Psynergy.Camera
 	            m_Translation = Vector3.Transform(m_Translation, rotation);
 	
 	            // Set the new position
-                Vector3 newPos = Vector3.Zero;// (CurrentTargetPosition + m_Translation);
+                Vector3 newPos = (CurrentTargetPosition + m_Translation);
 	
 	            // Check this position
 	            newPos = PositionChecks(newPos);
@@ -247,6 +247,30 @@ namespace Psynergy.Camera
 	
 	
 	            Transform = Matrix.CreateFromQuaternion(Rotation) * Matrix.CreateTranslation(Position);
+
+                // Calculate the rotation matrix
+                /*Matrix rotation = Matrix.CreateFromQuaternion(Rotation);
+
+                // Translate down the Z axis by the desired distance between the camera and object, then rotate that
+                // vector to find the camera offset from the target.
+                m_Translation = new Vector3(0, 0, Distance);
+                m_Translation = Vector3.Transform(m_Translation, rotation);
+
+                // Set the new position
+                Vector3 newPos = (CurrentTargetPosition + m_Translation);
+
+                // Check this position
+                newPos = PositionChecks(newPos);
+
+                // Set the new position
+                Position = newPos;*/
+
+                //Matrix unrotatedView = Matrix.CreateLookAt(new Vector3(0, 0, -Distance), Vector3.Zero, Vector3.Up);
+                //Matrix rot = Matrix.CreateRotationY(Yaw) * Matrix.CreateRotationX(Pitch);
+                //Transform = Matrix.CreateTranslation(-Target) * rot * unrotatedView;
+                //Transform = rot * unrotatedView;
+                // Store position for now
+                //Position = Transform.Translation;
             }
         }
 

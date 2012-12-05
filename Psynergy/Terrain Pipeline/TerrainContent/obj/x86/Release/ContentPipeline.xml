@@ -8,7 +8,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\TerrainLibrary\bin\x86\Release\Content\Textures\HeightMaps\rocks.xnb</Output>
-      <Time>2010-09-20T13:52:56+01:00</Time>
+      <Time>2012-11-15T20:45:10.2457525+00:00</Time>
     </Item>
     <Item>
       <Source>Textures\HeightMaps\terrain.bmp</Source>
@@ -17,10 +17,11 @@
       <Processor>TerrainProcessor</Processor>
       <Parameters>
         <Data Key="TexCoordScale">0.2</Data>
+        <Data Key="TerrainBumpiness">100</Data>
       </Parameters>
       <Options>None</Options>
       <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\TerrainLibrary\bin\x86\Release\Content\Textures\HeightMaps\terrain.xnb</Output>
-      <Time>2012-07-06T22:21:30+01:00</Time>
+      <Time>2012-12-03T15:30:42.1382401+00:00</Time>
       <Request>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\TerrainLibrary\bin\x86\Release\Content\Textures\HeightMaps\rocks_0.xnb</Request>
     </Item>
     <Item>
@@ -37,7 +38,7 @@
       </Parameters>
       <Options>None</Options>
       <Output>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\TerrainLibrary\bin\x86\Release\Content\Textures\HeightMaps\rocks_0.xnb</Output>
-      <Time>2010-09-20T13:52:56+01:00</Time>
+      <Time>2012-11-15T20:45:10.2457525+00:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
@@ -53,39 +54,39 @@
     <Assemblies>
       <Assembly>
         <Key>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\Terrain Pipeline\bin\x86\Release\Psynergy.TerrainPipeline.dll</Key>
-        <Value>2012-08-05T00:34:20.8125+01:00</Value>
+        <Value>2012-12-05T04:54:32.3389049+00:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.XImporter.dll</Key>
-        <Value>2010-08-23T12:41:18+01:00</Value>
+        <Value>2010-08-23T13:41:18+01:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.VideoImporters.dll</Key>
-        <Value>2010-08-23T12:41:18+01:00</Value>
+        <Value>2010-08-23T13:41:18+01:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.TextureImporter.dll</Key>
-        <Value>2010-08-23T12:41:18+01:00</Value>
+        <Value>2010-08-23T13:41:18+01:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.FBXImporter.dll</Key>
-        <Value>2010-08-23T12:41:18+01:00</Value>
+        <Value>2010-08-23T13:41:18+01:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.EffectImporter.dll</Key>
-        <Value>2010-08-23T12:41:18+01:00</Value>
+        <Value>2010-08-23T13:41:18+01:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.AudioImporters.dll</Key>
-        <Value>2010-08-23T12:41:18+01:00</Value>
+        <Value>2010-08-23T13:41:18+01:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\Deferred Pipeline\bin\x86\Debug\Deferred Pipeline.dll</Key>
-        <Value>2012-08-05T00:34:19.8925781+01:00</Value>
+        <Value>2012-12-05T04:47:08.2179051+00:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
-        <Value>2011-06-12T00:33:52.5478515+01:00</Value>
+        <Value>2012-11-27T15:52:07.1665786+00:00</Value>
       </Assembly>
     </Assemblies>
   </Asset>

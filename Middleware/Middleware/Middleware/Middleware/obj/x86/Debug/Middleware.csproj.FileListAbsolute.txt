@@ -215,7 +215,6 @@ C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middlewa
 C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\bin\x86\Debug\SoundLibrary.dll
 C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\bin\x86\Debug\TerrainLibrary.dll
 C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\bin\x86\Debug\Deferred Pipeline.dll
-C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\obj\x86\Debug\ResolveAssemblyReference.cache
 C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
 C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\obj\x86\Debug\Middleware.exe
 C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\obj\x86\Debug\Middleware.pdb
@@ -224,3 +223,4 @@ C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middlewa
 C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\bin\x86\Debug\Content\Textures\TileSets\vladSworsman.xnb
 C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\bin\x86\Debug\LTreesLibrary.dll
 C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\bin\x86\Debug\Content\Textures\TileSets\slopeMaps.xnb
+C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Middleware\Middleware\Middleware\Middleware\obj\x86\Debug\Middleware.csprojResolveAssemblyReference.cache
