@@ -2,7 +2,7 @@
 <SceneFragment>
 	<!-- CubeMap ( Should be the first thing to be rendered) -->
 	<SkySphere id="Sky" >
-		<property parent="Base" />
+		<property parent="Root" />
 		<property pos="180 0 210" />
 		<property skysize="650" />
 		<property file="Textures/CubeMaps/cube" />
@@ -11,14 +11,14 @@
 	</SkySphere>
 	
 	<TableModelJibLibX id="Table" >
-		<property parent="Base" />
+		<property parent="Root" />
 		<property pos="175 -338 200" />
 		<property scale="2.0 1.5 2.0" />
 		<property file="Models/FBX/Table/table" />
 	</TableModelJibLibX>
 	
 	<GameBoard id="GameBoard" >
-		<property parent="Base" />
+		<property parent="Root" />
 		<property pos="0 0 0" />
 		<property scale="1 1 1" />
 		<property rotdegrees="0 0 0" />
@@ -34,13 +34,13 @@
 
 	<!-- Lights ( under work at the moment ) --> 
 	<DirectionalLight>
-		<property parent="Base" />
+		<property parent="Root" />
 		<property pos="0 0 0" />
 		<property direction="0.5 -0.5 0" />
 		<property diffuse="50 50 43" />
 	</DirectionalLight>
 	<PointLight>
-		<property parent="Base" />
+		<property parent="Root" />
 		<property pos="-700 900 100" />
 		<property radius="1500" />
 		<property intensity="2" />

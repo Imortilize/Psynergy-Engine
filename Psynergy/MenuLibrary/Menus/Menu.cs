@@ -16,7 +16,7 @@ using Psynergy.Input;
 
 namespace Psynergy.Menus
 {
-    public class Menu : Node, IRegister<Menu>
+    public class Menu : GameObject, IRegister<Menu>
     {
         #region Factory Property setting
         protected override void ClassProperties(Factory factory)

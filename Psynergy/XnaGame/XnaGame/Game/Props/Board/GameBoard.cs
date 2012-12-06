@@ -117,13 +117,11 @@ namespace XnaGame
 
             if (Children.Count > 0)
             {
-                Node child = FindChild(name);
+                GameObject child = FindChild(name);
 
                 if (child != null)
                 {
-                    Type type = child.GetType();
-
-                    if ((type == typeof(BoardSquare)) || (type.IsSubclassOf(typeof(BoardSquare))))
+                    if (child.InheritsFrom<BoardSquare>())
                         boardSquare = (child as BoardSquare);
                 }
             }
@@ -136,7 +134,7 @@ namespace XnaGame
         {
             if (Children.Count > 0)
             {
-                foreach (Node node in Children)
+                foreach (GameObject node in Children)
                 {
                     if ( (node.GetType() == typeof(BoardSquare)) || (node.GetType().IsSubclassOf(typeof(BoardSquare))) )
                     {

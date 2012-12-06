@@ -104,7 +104,7 @@ namespace XnaGame
                     }
                 }
 
-                if (newObject.GetType().IsSubclassOf(typeof(Node)))
+                if (newObject.GetType().IsSubclassOf(typeof(GameObject)))
                 {
                     // Add it as a child to the game board
                     if (m_Gameboard != null)
@@ -123,7 +123,7 @@ namespace XnaGame
                             newObject.Initialise();
 
                             // Add board square
-                            m_Gameboard.AddChild(newObject as Node);
+                            m_Gameboard.AddChild(newObject);
                         }
                     }
                 }

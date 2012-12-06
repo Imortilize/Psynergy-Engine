@@ -128,7 +128,6 @@
     <Compile Include="SceneGraph\3D\3D Sprites\BillboardSystem.cs" />
     <Compile Include="SceneGraph\3D\3D Sprites\PointSpriteNode.cs" />
     <Compile Include="SceneGraph\3D\Base\Node3D.cs" />
-    <Compile Include="SceneGraph\3D\Base\PivotNode.cs" />
     <Compile Include="SceneGraph\3D\CubeMap\SkySphere.cs" />
     <Compile Include="SceneGraph\3D\CubeMap\SkySphereMesh.cs" />
     <Compile Include="SceneGraph\3D\CubeMap\SkySphereSubMesh.cs" />
@@ -149,7 +148,9 @@
     <Compile Include="SceneGraph\3D\Non-Models\Physics Objects\Dice\CustomDiceJibLibX.cs" />
     <Compile Include="SceneGraph\3D\Non-Models\TriangleNode.cs" />
     <Compile Include="SceneGraph\3D\Scene\Scene3D.cs" />
-    <Compile Include="SceneGraph\3D\Terrain\TerrainNode.cs" />
+    <Compile Include="SceneGraph\3D\Terrain\TerrainNode.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="SceneGraph\3D\Vision\VisionNode.cs" />
     <Compile Include="SceneGraph\3D\Water\Water.cs" />
     <Compile Include="SceneGraph\3D\Water\WaterMesh.cs" />
