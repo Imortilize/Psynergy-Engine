@@ -254,37 +254,36 @@ namespace Psynergy.Graphics
         }
 
         #region Defer functions
-        public virtual void DeferRenderable(RenderNode renderable)
+        public void Defer(IDeferrable deferrable)
+        {
+            if (deferrable.InheritsFrom<RenderNode>())
+                DeferRenderable(deferrable as RenderNode);
+            else if (deferrable.InheritsFrom<Light>())
+                DeferLight(deferrable as Light);
+        }
+
+        public void Defer(ICollection<IDeferrable> deferrables)
+        {
+            foreach (IDeferrable deferrable in deferrables)
+                Defer(deferrable);
+        }
+
+        protected virtual void DeferRenderable(RenderNode renderable)
         {
             if (!m_RenderNodes.Contains(renderable))
                 m_RenderNodes.Add(renderable);
         }
 
-        public void DeferRenderableGroup(List<RenderNode> renderableGroup)
-        {
-            foreach (RenderNode renderNode in renderableGroup)
-            {
-                if (!m_RenderNodes.Contains(renderNode))
-                    DeferRenderable(renderNode);
-            }
-        }
-
-        public virtual void DeferLight(Light light)
+        protected virtual void DeferLight(Light light)
         {
             if (!m_Lights.Contains(light))
                 m_Lights.Add(light);
-        }
-
-        public void DeferLightGroup(List<Light> lightGroup)
-        {
-            foreach (Light light in lightGroup)
-                DeferLight(light);
         }
         #endregion
 
         #region RenderNode Management
 
-        public bool HasRenderNode(RenderNode renderNode)
+        public bool Contains(RenderNode renderNode)
         {
             bool toRet = false;
 

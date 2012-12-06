@@ -357,10 +357,15 @@ namespace Psynergy
         {
             return (m_Type == typeof(T));
         }
-        
+
         public bool InheritsFrom<T>() where T : GameObject
         {
             return (m_Type.IsSubclassOf(typeof(T)) || m_Type == typeof(T));
+        }
+
+        public bool Interfaces<T>() where T : IInterface
+        {
+            return (m_Type.GetInterfaces().Contains(typeof(T)));
         }
         #endregion
 

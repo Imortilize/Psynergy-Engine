@@ -86,17 +86,8 @@ namespace Psynergy.Graphics
                 String nodeIDName = nodeID.InnerText;
                 String nodeFile = sceneFile.InnerText;
 
-                XmlNode is3D = sceneresource.Attributes.GetNamedItem("is3d");
-                bool bIs3D = false;
-
-                if (is3D != null)
-                    bIs3D = System.Convert.ToBoolean(is3D.InnerText);
-
                 // Create the scene accordingly whether it is 3D or not
-                if (bIs3D)
-                    toRet = new Scene3D(nodeIDName, nodeFile);
-                else
-                    toRet = new Scene(nodeIDName, nodeFile);
+                toRet = new Scene(nodeIDName, nodeFile);
 
                 // Add any scene properties
                 foreach (XmlNode child in sceneresource)

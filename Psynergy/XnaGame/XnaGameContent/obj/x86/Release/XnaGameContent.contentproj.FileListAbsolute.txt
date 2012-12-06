@@ -1,4 +1,2 @@
 C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGameContent\obj\x86\Release\ResolveAssemblyReference.cache
 C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGameContent\obj\x86\Release\Sounds\sounds.xml
-C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGameContent\obj\x86\Release\XnaGameContent.contentprojResolveAssemblyReference.cache
-C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\XnaGame\XnaGameContent\obj\x86\Release\Sounds\sounds.xml

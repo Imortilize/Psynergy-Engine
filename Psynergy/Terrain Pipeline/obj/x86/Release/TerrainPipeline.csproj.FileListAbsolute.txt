@@ -7,20 +7,3 @@ C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\Terrain Pipel
 C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\Terrain Pipeline\obj\x86\Release\ResolveAssemblyReference.cache
 C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\Terrain Pipeline\obj\x86\Release\Psynergy.TerrainPipeline.dll
 C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\Terrain Pipeline\obj\x86\Release\Psynergy.TerrainPipeline.pdb
-C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\Terrain Pipeline\bin\x86\Release\Psynergy.TerrainPipeline.dll
-C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\Terrain Pipeline\bin\x86\Release\Psynergy.TerrainPipeline.pdb
-C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\Terrain Pipeline\bin\x86\Release\Deferred Pipeline.dll
-C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\Terrain Pipeline\bin\x86\Release\SkinnedModel.dll
-C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\Terrain Pipeline\bin\x86\Release\Deferred Pipeline.pdb
-C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\Terrain Pipeline\bin\x86\Release\SkinnedModel.pdb
-C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\Terrain Pipeline\obj\x86\Release\Psynergy.TerrainPipeline.dll
-C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\Terrain Pipeline\obj\x86\Release\Psynergy.TerrainPipeline.pdb
-C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\Terrain Pipeline\bin\x86\Release\CameraLibrary.dll
-C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\Terrain Pipeline\bin\x86\Release\MainLibrary.dll
-C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\Terrain Pipeline\bin\x86\Release\EventLibrary.dll
-C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\Terrain Pipeline\bin\x86\Release\InputLibrary.dll
-C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\Terrain Pipeline\bin\x86\Release\CameraLibrary.pdb
-C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\Terrain Pipeline\bin\x86\Release\MainLibrary.pdb
-C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\Terrain Pipeline\bin\x86\Release\EventLibrary.pdb
-C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\Terrain Pipeline\bin\x86\Release\InputLibrary.pdb
-C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\Terrain Pipeline\obj\x86\Release\TerrainPipeline.csprojResolveAssemblyReference.cache

@@ -1,4 +1,0 @@
-C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\WaterPipeline\bin\x86\Debug\Psynergy.WaterPipeline.dll
-C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\WaterPipeline\bin\x86\Debug\Psynergy.WaterPipeline.pdb
-C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\WaterPipeline\obj\x86\Debug\Psynergy.WaterPipeline.dll
-C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\WaterPipeline\obj\x86\Debug\Psynergy.WaterPipeline.pdb

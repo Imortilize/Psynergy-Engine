@@ -156,12 +156,13 @@ namespace Psynergy.Graphics
                 node.Render(deltaTime);
         }
 
+        #region Find Functions
         public List<T> FindAll<T>() where T : GameObject
         {
-            return NodeChildren<T>(RootNode);
+            return FindChildren<T>(RootNode);
         }
 
-        private List<T> NodeChildren<T>(GameObject node) where T : GameObject
+        private List<T> FindChildren<T>(GameObject node) where T : GameObject
         {
             List<T> toRet = new List<T>();
 
@@ -169,7 +170,7 @@ namespace Psynergy.Graphics
             {
                 // If this child has children then process them first
                 if (child.Children.Count > 0)
-                    toRet.AddRange(NodeChildren<T>(child));
+                    toRet.AddRange(FindChildren<T>(child));
 
                 // Check whether the child is of a model or not
                 if (child.InheritsFrom<T>())
@@ -178,6 +179,30 @@ namespace Psynergy.Graphics
 
             return toRet;
         }
+
+        public List<GameObject> FindAllByIntreface<T>() where T : IInterface
+        {
+            return FindChildrenByinterface<T>(RootNode);
+        }
+
+        private List<GameObject> FindChildrenByinterface<T>(GameObject node) where T : IInterface
+        {
+            List<GameObject> toRet = new List<GameObject>();
+
+            foreach (GameObject child in node.Children)
+            {
+                // If this child has children then process them first
+                if (child.Children.Count > 0)
+                    toRet.AddRange(FindChildrenByinterface<T>(child));
+
+                // Check whether the child is of a model or not
+                if (child.Interfaces<T>())
+                    toRet.Add(child);
+            }
+
+            return toRet;
+        }
+        #endregion
 
         public void AppendChildToTop( GameObject node )
         {

@@ -106,7 +106,7 @@ namespace Psynergy.Graphics
             }
 
             // Defer the renderable to the renderer
-            RenderManager.Instance.ActiveRenderer.DeferRenderable(this);
+            RenderManager.Instance.ActiveRenderer.Defer(this);
         }
 
         public override void Reset()

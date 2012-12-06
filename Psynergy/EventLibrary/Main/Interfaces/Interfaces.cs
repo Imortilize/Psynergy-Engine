@@ -10,7 +10,7 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace Psynergy.Events
 {
-    public interface IContext
+    public interface IContext : IInterface
     {
         // Gets a reference to the buildstack for this build session
         //BuildStack BuildStack { get; }
@@ -44,7 +44,7 @@ namespace Psynergy.Events
     }
 
     /* Event aggregator interface */
-    public interface IEventAggregator
+    public interface IEventAggregator : IInterface
     {
         void SendMessage<T>(T message) where T : IEvent;
         void SendMessage<T>() where T : IEvent, new();
@@ -56,7 +56,7 @@ namespace Psynergy.Events
         void UnSubscribe<T>(IListener<T> listener) where T : IEvent;
     }
 
-    public interface IListener
+    public interface IListener : IInterface
     {
     }
 
@@ -65,7 +65,7 @@ namespace Psynergy.Events
         void Handle(T message);
     }
 
-    public interface InstanceInterceptor
+    public interface InstanceInterceptor : IInterface
     {
         object Process(object target, IContext context);
     }

@@ -15,7 +15,7 @@ using Psynergy;
 namespace Psynergy.Graphics 
 {
     // TODO : Create a 'RenderNode' class which overloads Node3D overload to abstract general node stuff from the 3d render properties
-    public class Light : GameObject, IRegister<Light>
+    public class Light : GameObject, IRegister<Light>, IDeferrable
     {
         #region Factory Property setting
         protected override void ClassProperties(Factory factory)

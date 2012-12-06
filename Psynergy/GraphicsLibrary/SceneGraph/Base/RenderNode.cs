@@ -15,7 +15,7 @@ using Psynergy.Camera;
 
 namespace Psynergy.Graphics
 {
-    public class RenderNode : GameObject
+    public class RenderNode : GameObject, IDeferrable
     {
         #region Factory Property setting
         protected override void ClassProperties(Factory factory)
@@ -48,7 +48,7 @@ namespace Psynergy.Graphics
 
         #region Scene Control
         // Scene added to ( if one exists )
-        protected Scene3D m_SceneAddedTo = null;
+        protected Scene m_SceneAddedTo = null;
         #endregion
 
         public RenderNode() : base("")
@@ -189,16 +189,11 @@ namespace Psynergy.Graphics
         {
             if (scene != null)
             {
-                if (scene.GetType() == typeof(Scene3D))
-                {
-                    Scene3D scene3D = (scene as Scene3D);
+                // Add this way for now
+                scene.Add(this);
 
-                    // Add this way for now
-                    scene3D.AddNewRenderNode(this);
-
-                    // Save which scene it has been added to
-                    m_SceneAddedTo = scene3D;
-                }
+                // Save which scene it has been added to
+                m_SceneAddedTo = scene;
             }
         }
 
@@ -207,7 +202,7 @@ namespace Psynergy.Graphics
             if (m_SceneAddedTo != null)
             {
                 // Add this way for now
-                m_SceneAddedTo.RemoveRenderNode(this);
+                m_SceneAddedTo.Remove(this);
                 m_SceneAddedTo = null;
             }
         }

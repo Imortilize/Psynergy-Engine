@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<SceneResource id="GameScenes">
-	<SceneFragment id="GameScene" file="Resources/Game.xml" is3d="true" >
-		<property useprelighting="true" />
-		<property ambient="0.02 0.02 0.02" />
-	</SceneFragment>
-</SceneResource>

@@ -10,7 +10,7 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace Psynergy.Camera
 {
-    public interface ICamera
+    public interface ICamera : IInterface
     {
         // The movespeed of the camera, it will tween to its destination
         float MoveSpeed { get; set; }
@@ -22,7 +22,7 @@ namespace Psynergy.Camera
         IFocusable IFocus { get; set; }
     }
 
-    public interface ICamera2D
+    public interface ICamera2D : IInterface
     {
         // Gets the Origin of the viewport (accounts for scale)
         Vector2 Origin { get; }
@@ -37,7 +37,7 @@ namespace Psynergy.Camera
         float Rotation { get; set; }
     }
 
-    public interface ICamera3D
+    public interface ICamera3D : IInterface
     {
         // Gets the Origin of the viewport
         Vector3 Origin { get; }

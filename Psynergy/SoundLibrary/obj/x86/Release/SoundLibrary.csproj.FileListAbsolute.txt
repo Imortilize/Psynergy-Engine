@@ -6,11 +6,3 @@ C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\SoundLibrary\
 C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\SoundLibrary\obj\x86\Release\Microsoft.Xna.Framework.RuntimeProfile.txt
 C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\SoundLibrary\obj\x86\Release\SoundLibrary.dll
 C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\SoundLibrary\obj\x86\Release\SoundLibrary.pdb
-C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\SoundLibrary\bin\x86\Release\SoundLibrary.dll
-C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\SoundLibrary\bin\x86\Release\SoundLibrary.pdb
-C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\SoundLibrary\bin\x86\Release\MainLibrary.dll
-C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\SoundLibrary\bin\x86\Release\MainLibrary.pdb
-C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\SoundLibrary\obj\x86\Release\Microsoft.Xna.Framework.RuntimeProfile.txt
-C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\SoundLibrary\obj\x86\Release\SoundLibrary.dll
-C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\SoundLibrary\obj\x86\Release\SoundLibrary.pdb
-C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\SoundLibrary\obj\x86\Release\SoundLibrary.csprojResolveAssemblyReference.cache

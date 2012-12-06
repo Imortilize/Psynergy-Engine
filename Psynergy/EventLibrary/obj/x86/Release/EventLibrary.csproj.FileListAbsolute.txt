@@ -6,11 +6,3 @@ C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\EventLibrary\
 C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\EventLibrary\obj\x86\Release\Microsoft.Xna.Framework.RuntimeProfile.txt
 C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\EventLibrary\obj\x86\Release\EventLibrary.dll
 C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\EventLibrary\obj\x86\Release\EventLibrary.pdb
-C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\EventLibrary\bin\x86\Release\EventLibrary.dll
-C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\EventLibrary\bin\x86\Release\EventLibrary.pdb
-C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\EventLibrary\bin\x86\Release\MainLibrary.dll
-C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\EventLibrary\bin\x86\Release\MainLibrary.pdb
-C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\EventLibrary\obj\x86\Release\Microsoft.Xna.Framework.RuntimeProfile.txt
-C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\EventLibrary\obj\x86\Release\EventLibrary.dll
-C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\EventLibrary\obj\x86\Release\EventLibrary.pdb
-C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\EventLibrary\obj\x86\Release\EventLibrary.csprojResolveAssemblyReference.cache

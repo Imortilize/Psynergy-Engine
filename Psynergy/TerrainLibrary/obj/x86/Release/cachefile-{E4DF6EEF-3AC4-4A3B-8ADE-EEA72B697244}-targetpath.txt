@@ -1,3 +1,0 @@
-Content\Textures\HeightMaps\rocks.xnb
-Content\Textures\HeightMaps\terrain.xnb
-Content\Textures\HeightMaps\rocks_0.xnb

@@ -10,12 +10,16 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace Psynergy
 {
-    public interface IFactoryProduct
+    public interface IInterface
+    {
+    }
+
+    public interface IFactoryProduct : IInterface
     {
         object GetFactoryKey();
     }
 
-    public interface IObject
+    public interface IObject : IInterface
     {
         void Initialise();
         void Load();
@@ -24,7 +28,7 @@ namespace Psynergy
         void Render(GameTime deltaTime);
     }
 
-    public interface IFocusable
+    public interface IFocusable : IInterface
     {
         Transform transform { get; }
         bool Focused { get; set; }
@@ -41,12 +45,12 @@ namespace Psynergy
     {
     }
 
-    public interface IMenuAction
+    public interface IMenuAction : IInterface
     {
         void RunAction();
     }
 
-    public interface IRegister<T>
+    public interface IRegister<T> : IInterface
     {
     }
 }

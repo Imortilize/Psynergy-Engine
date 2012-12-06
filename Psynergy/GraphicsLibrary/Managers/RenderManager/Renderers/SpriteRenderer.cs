@@ -90,7 +90,7 @@ namespace Psynergy.Graphics
         #endregion
 
         #region Defer functions
-        public override void DeferRenderable(RenderNode renderable)
+        protected override void DeferRenderable(RenderNode renderable)
         {
             // Only accepts models right now for this renderer
             Type type = renderable.GetType();

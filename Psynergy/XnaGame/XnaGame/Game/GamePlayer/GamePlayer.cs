@@ -461,23 +461,18 @@ namespace XnaGame
         {
             if (scene != null)
             {
-                if (scene.GetType() == typeof(Scene3D))
+                foreach (GamePawn pawn in m_Pawns)
+                    pawn.AddToScene(scene);
+
+                // Save which scene it has been added to
+                m_SceneAddedTo = scene;
+
+                if (scene.Hierarchy != null)
                 {
-                    Scene3D scene3D = (scene as Scene3D);
+                    m_GameBoard = (scene.Hierarchy.RootNode.FindChild("GameBoard") as GameBoard);
 
-                    foreach (GamePawn pawn in m_Pawns)
-                        pawn.AddToScene(scene3D);
-
-                    // Save which scene it has been added to
-                    m_SceneAddedTo = scene3D;
-
-                    if (scene3D.Hierarchy != null)
-                    {
-                        m_GameBoard = (scene3D.Hierarchy.RootNode.FindChild("GameBoard") as GameBoard);
-
-                        if (m_GameBoard != null)
-                            m_GameBoard.AddChild(this);
-                    }
+                    if (m_GameBoard != null)
+                        m_GameBoard.AddChild(this);
                 }
             }
         }

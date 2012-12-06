@@ -7,12 +7,3 @@ C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\PhysicsLibrar
 C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\PhysicsLibrary\obj\x86\Release\Microsoft.Xna.Framework.RuntimeProfile.txt
 C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\PhysicsLibrary\obj\x86\Release\PhysicsLibrary.dll
 C:\Users\dominicbrittain\Documents\GitHub\Psynergy-Engine\Psynergy\PhysicsLibrary\obj\x86\Release\PhysicsLibrary.pdb
-C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\PhysicsLibrary\bin\x86\Release\PhysicsLibrary.dll
-C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\PhysicsLibrary\bin\x86\Release\PhysicsLibrary.pdb
-C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\PhysicsLibrary\bin\x86\Release\JigLibX.dll
-C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\PhysicsLibrary\bin\x86\Release\MainLibrary.dll
-C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\PhysicsLibrary\bin\x86\Release\MainLibrary.pdb
-C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\PhysicsLibrary\obj\x86\Release\Microsoft.Xna.Framework.RuntimeProfile.txt
-C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\PhysicsLibrary\obj\x86\Release\PhysicsLibrary.dll
-C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\PhysicsLibrary\obj\x86\Release\PhysicsLibrary.pdb
-C:\Users\Dominic\Documents\GitHub\Psynergy-Engine\Psynergy\PhysicsLibrary\obj\x86\Release\PhysicsLibrary.csprojResolveAssemblyReference.cache

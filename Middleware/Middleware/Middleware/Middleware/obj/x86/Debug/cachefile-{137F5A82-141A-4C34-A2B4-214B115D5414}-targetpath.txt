@@ -1,8 +1,0 @@
-Content\Textures\TileSets\tileset2.xnb
-Content\Textures\TileSets\hexTileSet.xnb
-Content\Textures\TileSets\isometricTileset.xnb
-Content\Textures\TileSets\mousemap.xnb
-Content\Textures\TileSets\hilight.xnb
-Content\Textures\TileSets\vladSworsman.xnb
-Content\Textures\TileSets\slopeMaps.xnb
-Content\Fonts\Pericles6.xnb

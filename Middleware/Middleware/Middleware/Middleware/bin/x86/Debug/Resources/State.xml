@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<StateResource>
-	<State id="MainMenu" type="MainMenuState" />
-	<State id="Game" type="GameState" />
-	<DefaultState id="Game" />
-</StateResource>

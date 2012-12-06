@@ -77,6 +77,7 @@
     <Compile Include="AI\Controllers\Node3DController.cs" />
     <Compile Include="Events\Events.cs" />
     <Compile Include="Main\Helpers.cs" />
+    <Compile Include="Main\Interfaces\interfaces.cs" />
     <Compile Include="Main\QuadRenderer.cs" />
     <Compile Include="Main\SplineAsset.cs" />
     <Compile Include="Managers\ParticleManager\Manager\ParticleManager.cs" />
@@ -147,7 +148,6 @@
     <Compile Include="SceneGraph\3D\Non-Models\Physics Objects\Dice\Base\CustomDice.cs" />
     <Compile Include="SceneGraph\3D\Non-Models\Physics Objects\Dice\CustomDiceJibLibX.cs" />
     <Compile Include="SceneGraph\3D\Non-Models\TriangleNode.cs" />
-    <Compile Include="SceneGraph\3D\Scene\Scene3D.cs" />
     <Compile Include="SceneGraph\3D\Terrain\TerrainNode.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -253,6 +253,7 @@
     <Folder Include="Managers\ParticleManager\Systems\Mercury\.svn\tmp\prop-base\" />
     <Folder Include="Managers\ParticleManager\Systems\Mercury\.svn\tmp\props\" />
     <Folder Include="Managers\ParticleManager\Systems\Mercury\.svn\tmp\text-base\" />
+    <Folder Include="SceneGraph\3D\Scene\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\Microsoft.Xna.GameStudio.targets" />

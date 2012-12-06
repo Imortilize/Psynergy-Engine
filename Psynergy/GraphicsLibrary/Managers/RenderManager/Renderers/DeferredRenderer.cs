@@ -767,12 +767,12 @@ namespace Psynergy.Graphics
         #endregion
 
         #region Defer functions
-        public override void DeferRenderable(RenderNode renderable)
+        protected override void DeferRenderable(RenderNode renderable)
         {
             // Only accepts models right now for this renderer
             Type type = renderable.GetType();
 
-            if ( (type == typeof(ModelNode)) || (type.IsSubclassOf(typeof(ModelNode))))
+            if ( renderable.InheritsFrom<ModelNode>() )
             {
                 ModelNode modelNode = (renderable as ModelNode);
                 Mesh mesh = modelNode.Mesh;
@@ -807,7 +807,7 @@ namespace Psynergy.Graphics
             }
         }
 
-        public override void DeferLight(Light light)
+        protected override void DeferLight(Light light)
         {
             if (light != null)
             {

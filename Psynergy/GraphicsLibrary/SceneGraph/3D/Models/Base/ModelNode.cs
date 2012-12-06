@@ -126,9 +126,6 @@ namespace Psynergy.Graphics
                     }
                 }
             }
-
-            // Defer the renderable to the renderer
-            RenderManager.Instance.ActiveRenderer.DeferRenderable(this);
         }
 
         protected virtual Mesh CreateMesh()
