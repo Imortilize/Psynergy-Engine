@@ -126,7 +126,7 @@ namespace Psynergy.Graphics
                             Matrix worldMatrix = Matrix.Identity;
                             Matrix viewMatrix = camera.View;
                             Matrix projectionMatrix = camera.Projection;
-                            Vector3 cameraPosition = camera.Position;
+                            Vector3 cameraPosition = camera.transform.Position;
 
                             m_Renderer.RenderEffect(m_ParticleEffect, ref worldMatrix, ref viewMatrix, ref projectionMatrix, ref cameraPosition);
                         }

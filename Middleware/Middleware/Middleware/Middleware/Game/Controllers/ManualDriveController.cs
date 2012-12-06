@@ -41,10 +41,10 @@ namespace Middleware
                     float delta = (float)deltaTime.ElapsedGameTime.TotalSeconds;
 
                     if (InputHandle.GetKey(Keys.W))
-                        Velocity += (node.WorldMatrix.Forward * m_MovementSpeed * delta);
+                        Velocity += (node.transform.WorldMatrix.Forward * m_MovementSpeed * delta);
 
                     if (InputHandle.GetKey(Keys.S))
-                        Velocity += (node.WorldMatrix.Backward * m_MovementSpeed * delta);
+                        Velocity += (node.transform.WorldMatrix.Backward * m_MovementSpeed * delta);
                 }   
             }
 
@@ -61,10 +61,10 @@ namespace Middleware
                 if (node != null)
                 {
                     // Current position
-                    Vector3 newPos = node.Position;
+                    Vector3 newPos = node.transform.Position;
 
                     // Current rotation
-                    Quaternion newRot = node.Rotation;
+                    Quaternion newRot = node.transform.Rotation;
 
                     // If the node is currently focused.
                     if (node.Focused)
@@ -95,7 +95,7 @@ namespace Middleware
                         }
 
                         // Set the rotation
-                        node.Rotation = newRot;
+                        node.transform.Rotation = newRot;
                     }
                 }
             }

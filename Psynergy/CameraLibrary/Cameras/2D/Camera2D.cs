@@ -42,7 +42,7 @@ namespace Psynergy.Camera
             }*/
 
             ScreenCenter = new Vector2(m_ViewportWidth / 2, m_ViewportHeight / 2);
-            Scale = new Vector3(m_CameraScale, m_CameraScale, m_CameraScale);
+            transform.Scale = new Vector3(m_CameraScale);
             MoveSpeed = 1.25f;
 
             base.Initialise();
@@ -70,40 +70,46 @@ namespace Psynergy.Camera
             // Move the Camera to the position that it needs to go
             var delta = (float)deltaTime.ElapsedGameTime.TotalSeconds;
 
+            // Get pos
+            Vector3 pos = transform.Position;
+
             // If the camera has a focus 
             if (Focus != null)
             {
                 // If using tween properties
                 if (m_Tween)
                 {
-                    PosX += (((Focus.Position.X + (Focus.Width / 2)) - PosX) * MoveSpeed * delta);
-                    PosY += (((Focus.Position.Y + (Focus.Height / 2)) - PosY) * MoveSpeed * delta);
+                    pos.X += (((Focus.transform.Position.X + (Focus.Width / 2)) - pos.X) * MoveSpeed * delta);
+                    pos.Y += (((Focus.transform.Position.Y + (Focus.Height / 2)) - pos.Y) * MoveSpeed * delta);
                 }
                 else
                 {
-                    PosX = ((Focus.Position.X) + (Focus.Width / 2));
-                    PosY = ((Focus.Position.Y) + (Focus.Height / 2));
+                    pos.X = ((Focus.transform.Position.X) + (Focus.Width / 2));
+                    pos.Y = ((Focus.transform.Position.Y) + (Focus.Height / 2));
                 }
             }
             else
             {
-                PosX += (-PosX * MoveSpeed * delta);
-                PosY += (-PosY * MoveSpeed * delta);
+                pos.X += (-pos.X * MoveSpeed * delta);
+                pos.Y += (-pos.Y * MoveSpeed * delta);
             }
 
             Origin = new Vector2( 0, 0 );
 
             // Create the Transform used by any
             // spritebatch process
-            Transform = Matrix.Identity *
-                        Matrix.CreateTranslation(-PosX, -PosY, 0) *
-                        Matrix.CreateRotationZ(Rotation) *                // Use rotation X as we only need 1 value in 2d cameras
-                        Matrix.CreateTranslation(Origin.X, Origin.Y, 0) *
-                        Matrix.CreateScale(Scale);
+            transform.WorldMatrix = Matrix.Identity *
+                                    Matrix.CreateTranslation(-pos.X, -pos.Y, 0) *
+                                    Matrix.CreateRotationZ(Rotation) *                // Use rotation X as we only need 1 value in 2d cameras
+                                    Matrix.CreateTranslation(Origin.X, Origin.Y, 0) *
+                                    Matrix.CreateScale(transform.Scale);
+
+            // Set position back
+            transform.Position = pos;
         }
 
         // Used to determine whether it is within the view or not
-        public override bool IsInView(Node sprite)
+        public override bool IsInView(GameObject sprite)
         {
             return false;
             // If the object is not within the horizontal bounds of the screen

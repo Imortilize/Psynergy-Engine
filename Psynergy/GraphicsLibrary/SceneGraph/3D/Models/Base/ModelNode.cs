@@ -114,7 +114,7 @@ namespace Psynergy.Graphics
 
                     // Mesh assignment
                     m_Mesh.Model = m_Model;
-                    m_Mesh.Transform = m_WorldMatrix;
+                    m_Mesh.Transform = transform.WorldMatrix;
 
                     // If it is a skinned model, load it as a skinned model properties
                     if (RenderGroup.IsSkinned)
@@ -165,7 +165,7 @@ namespace Psynergy.Graphics
                 }
             }
 
-            sphere = sphere.Transform(m_WorldMatrix);
+            sphere = sphere.Transform(transform.WorldMatrix);
             m_BoundingSphere = sphere;
         }
 
@@ -194,7 +194,7 @@ namespace Psynergy.Graphics
                         for (int i = 0; i < vertexBufferSize / sizeof(float); i += vertexStride / sizeof(float))
                         {
                             Vector3 transformedPosition = Vector3.Transform(new Vector3(vertexData[i], vertexData[i + 1], vertexData[i + 2]), m_Transforms[mesh.ParentBone.Index]);
-                            transformedPosition = Vector3.Transform(transformedPosition, m_WorldMatrix);
+                            transformedPosition = Vector3.Transform(transformedPosition, transform.WorldMatrix);
 
                             min = Vector3.Min(min, transformedPosition);
                             max = Vector3.Max(max, transformedPosition);
@@ -204,8 +204,8 @@ namespace Psynergy.Graphics
             }
 
             // Create and return bounding box
-            m_BoundingBox.Min = (min * Scale);
-            m_BoundingBox.Max = (max * Scale);
+            m_BoundingBox.Min = (min * transform.Scale);
+            m_BoundingBox.Max = (max * transform.Scale);
         } 
 
         protected virtual void LoadPostTagTextures()
@@ -240,7 +240,7 @@ namespace Psynergy.Graphics
                     if (AnimationPlayer != null)
                     {
                         // Update the animation player
-                        AnimationPlayer.Update(elapsedTime, m_WorldMatrix);
+                        AnimationPlayer.Update(elapsedTime, transform.WorldMatrix);
                     }
 
                     SkinnedMesh skinnedMesh = (m_Mesh as SkinnedMesh);
@@ -251,7 +251,7 @@ namespace Psynergy.Graphics
             if ( m_Mesh != null )
             {
                 m_Mesh.Active = ActiveRender;
-                m_Mesh.Transform = m_WorldMatrix;
+                m_Mesh.Transform = transform.WorldMatrix;
             }
         }
 

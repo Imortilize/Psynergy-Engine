@@ -40,7 +40,7 @@ namespace Psynergy.Menus
             m_Depth = 0.35f;
             m_SpriteBatch = RenderManager.Instance.SpriteBatch;
 
-            Scale = new Vector3(scale, scale, scale);
+            transform.Scale = new Vector3(scale);
         }
 
         public Text(String name, String text, Color color, Vector2 position, float scale)
@@ -53,14 +53,14 @@ namespace Psynergy.Menus
             m_Depth = 0.35f;
             m_SpriteBatch = RenderManager.Instance.SpriteBatch;
 
-            Scale = new Vector3(scale, scale, scale);
+            transform.Scale = new Vector3(scale);
         }
 
         public override void Render(GameTime deltaTime)
         {
             if ((m_SpriteBatch != null) && (m_Font != null))
             {
-                float scale = ((Scale.X + Scale.Y + Scale.Z) / 3);
+                float scale = ((transform.Scale.X + transform.Scale.Y + transform.Scale.Z) / 3);
 
                 Vector2 origin = new Vector2(m_Font.MeasureString(m_Text).X / 2, m_Font.MeasureString(m_Text).Y / 2);
 

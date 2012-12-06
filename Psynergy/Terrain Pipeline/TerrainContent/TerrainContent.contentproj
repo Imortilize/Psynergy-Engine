@@ -43,7 +43,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TerrainProcessor</Processor>
       <ProcessorParameters_TexCoordScale>0.2</ProcessorParameters_TexCoordScale>
-      <ProcessorParameters_TerrainBumpiness>100</ProcessorParameters_TerrainBumpiness>
+      <ProcessorParameters_TerrainBumpiness>0</ProcessorParameters_TerrainBumpiness>
     </Compile>
   </ItemGroup>
   <ItemGroup>

@@ -372,20 +372,24 @@ namespace Psynergy.Graphics
         {
             if (m_Renderer != null)
             {
-                // Begin renderer
-                m_Renderer.Begin();
+                // Only run the render loop if there are objects to render to begin with.
+                if (m_Renderer.ObjectsToRender())
+                {
+                    // Begin renderer
+                    m_Renderer.Begin();
 
-                // Draw renderer
-                m_Renderer.Draw(deltaTime);
+                    // Draw renderer
+                    m_Renderer.Draw(deltaTime);
 
-                // Render the current State for any post graphics rendering
-                //RenderState(deltaTime);
+                    // Render the current State for any post graphics rendering
+                    //RenderState(deltaTime);
 
-                // Particles should be here but arn't at the moment
-                RenderParticles(deltaTime);
- 
-                // End renderer
-                m_Renderer.End();
+                    // Particles should be here but arn't at the moment
+                    RenderParticles(deltaTime);
+
+                    // End renderer
+                    m_Renderer.End();
+                }
             }
         }
 
@@ -458,7 +462,7 @@ namespace Psynergy.Graphics
                 {
                     Camera3D camera3D = (camera as Camera3D);
 
-                    Matrix view = camera3D.Transform;
+                    Matrix view = camera3D.View;
                     Matrix proj = camera3D.Projection;
 
                     Vector3 projectedPosition = GraphicsDevice.Viewport.Project(pos, proj, view, Matrix.Identity);

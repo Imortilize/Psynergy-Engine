@@ -26,11 +26,10 @@ namespace Psynergy.Camera
         }
         #endregion
 
-        private Matrix m_Transform = Matrix.Identity;
+        // View matrix
         private Matrix m_ViewMatrix = Matrix.Identity;   // Inverse of the transform
-        private Matrix m_EyeProjectionTransform = Matrix.Identity;
-
-        //protected Matrix m_ViewMatrix = Matrix.Identity;
+        
+        // Projection matrix
         protected Matrix m_ProjectionMatrix = Matrix.Identity;
         protected Matrix m_ShadowProjectionMatrix = Matrix.Identity;    // not ideal place but for sharper shadows for now
         protected bool m_ProjectionDirty = false;
@@ -38,9 +37,6 @@ namespace Psynergy.Camera
         protected Matrix m_ViewProjection = Matrix.Identity;
 
         protected Vector3 m_Translation = Vector3.Zero;
-
-        protected Quaternion m_Rotation = Quaternion.Identity;
-        protected Quaternion m_StartRotation = Quaternion.Identity;
 
         protected float m_Roll = 0.0f;
         protected float m_RollSpeed = 0.0f;
@@ -83,9 +79,6 @@ namespace Psynergy.Camera
 
         public override void Initialise()
         {
-            // Set the start rotation
-            m_StartRotation = Rotation;
-
             // Set the start rotation builder values
             m_StartRoll = Roll;
             m_StartRollSpeed = RollSpeed;
@@ -100,6 +93,7 @@ namespace Psynergy.Camera
             // Generate frustum corners
             Frustum = new BoundingFrustum( Matrix.Identity );
 
+            // Initialise base values
             base.Initialise();
         }
 
@@ -107,7 +101,6 @@ namespace Psynergy.Camera
         {
             base.Reset();
 
-            Rotation = m_StartRotation;
             Roll = m_StartRoll;
             RollSpeed = m_StartRollSpeed;
             Yaw = m_StartYaw;
@@ -128,19 +121,6 @@ namespace Psynergy.Camera
         {
             base.Update(deltaTime);
 
-            // Any code that needs to happen after setting up the camera...
-            // Get the relative effect
-            /*Effect effect = RenderManager.Instance.GetEffect("generic");
-
-            Debug.Assert(effect != null, "Effect was not loaded!");
-
-            if (effect != null)
-            {
-                // Set the relative parameters
-                effect.Parameters["xView"].SetValue(View);
-                effect.Parameters["xProjection"].SetValue(Projection);
-            }*/
-
             // Check camera render options
             UpdateRenderOptions();
         }
@@ -155,7 +135,7 @@ namespace Psynergy.Camera
                 m_PositionOnEnter = CurrentTargetPosition;
             }
             else
-                m_PositionOnEnter = Position;
+                m_PositionOnEnter = transform.Position;
         }
 
         protected override void Move(GameTime deltaTime)
@@ -247,7 +227,7 @@ namespace Psynergy.Camera
             Clamp();
   
             // normal rotation
-            Rotation = Quaternion.CreateFromYawPitchRoll(m_Yaw, m_Pitch, m_Roll);
+            transform.Rotation = Quaternion.CreateFromYawPitchRoll(m_Yaw, m_Pitch, m_Roll);
         }
 
         protected virtual void Clamp()
@@ -281,24 +261,23 @@ namespace Psynergy.Camera
 
         protected virtual void GenerateViewMatrix(GameTime deltaTime)
         {
-            Vector3 camUp = Vector3.Transform(Vector3.Up, Matrix.CreateFromQuaternion(Rotation));
+            Vector3 camUp = Vector3.Transform(Vector3.Up, Matrix.CreateFromQuaternion(transform.Rotation));
 
-            Transform = Matrix.CreateLookAt(Position, Vector3.Zero, camUp);
+            View = Matrix.CreateLookAt(transform.Position, Vector3.Zero, camUp);
         }
 
         private void GeneratePerspectiveProjectionMatrix(float fov)
         {
             if (m_GraphicsDevice != null)
             {
-                PresentationParameters pp = m_GraphicsDevice.PresentationParameters;
+                // Aspect ratio
+                m_AspectRatio = m_GraphicsDevice.Viewport.AspectRatio;
 
-                m_AspectRatio = ((float)pp.BackBufferWidth / (float)pp.BackBufferHeight);
-
+                // Shadow projection matrix
                 m_ShadowProjectionMatrix = Matrix.CreatePerspectiveFieldOfView(MathHelper.ToRadians(45), m_AspectRatio, m_NearPlane, 400);
+                
+                // Normal projection matrix 
                 Projection = Matrix.CreatePerspectiveFieldOfView(MathHelper.ToRadians(fov), m_AspectRatio, m_NearPlane, m_FarPlane);
-
-                // Eye projection transform
-                m_EyeProjectionTransform = Matrix.Multiply(m_ViewMatrix, Projection);
 
                 // Project has been recalculated
                 m_ProjectionDirty = false;
@@ -311,7 +290,7 @@ namespace Psynergy.Camera
             m_ViewProjection = (View * Projection);
 
             // Now create the bounding frustum for the camera
-            Frustum = new BoundingFrustum(Matrix.Multiply(m_ViewMatrix, Projection));
+            Frustum = new BoundingFrustum(m_ViewProjection);
 
             // And create the smaller shadow frustum for sharper shadows
             ShadowFrustum = new BoundingFrustum(Matrix.Multiply(m_ViewMatrix, m_ShadowProjectionMatrix));
@@ -519,7 +498,7 @@ namespace Psynergy.Camera
         public Vector3 Project(Vector3 position)
         {
             // Projection from 3D to 2D space
-            return Viewport.Project(position, Projection, Transform, Matrix.CreateWorld(Position, Transform.Forward, Transform.Up));
+            return Viewport.Project(position, Projection, View, Matrix.CreateWorld(transform.Position, transform.WorldMatrix.Forward, transform.WorldMatrix.Up));
         }
         #endregion
 
@@ -545,6 +524,7 @@ namespace Psynergy.Camera
             ray.Position = nearPoint;
             ray.Direction = direction;
 
+            // Return the projected ray
             return ray;
         }
         #endregion
@@ -552,22 +532,6 @@ namespace Psynergy.Camera
 
         #region Properties
         public Vector3 Origin { get; set; }
-
-        public Quaternion Rotation { get { return m_Rotation; } set { m_Rotation = value; } }
-        public Vector3 RotationDegrees
-        {
-            set
-            {
-                m_Pitch = value.X;
-                m_Yaw = value.Y;
-                m_Roll = value.Z;
-                m_Rotation = Quaternion.CreateFromYawPitchRoll(m_Yaw, m_Pitch, m_Roll);
-            }
-        }
-        public float RotX { get { return m_Rotation.X; } set { m_Rotation.X = value; } }
-        public float RotY { get { return m_Rotation.Y; } set { m_Rotation.Y = value; } }
-        public float RotZ { get { return m_Rotation.Z; } set { m_Rotation.Z = value; } }
-        public float RotW { get { return m_Rotation.W; } set { m_Rotation.W = value; } }
 
         public float Roll { get { return m_Roll; } set { m_Roll = value; } }
         public float RollSpeed { get { return m_RollSpeed; } set { m_RollSpeed = value; } }
@@ -621,7 +585,11 @@ namespace Psynergy.Camera
             }
             set
             {
-                m_ViewMatrix = value;
+                // Invert the value to get the true view matrix
+                m_ViewMatrix = Matrix.Invert(value);
+
+                // Store the transfrom as the world matrix
+                transform.WorldMatrix = value;
 
                 // Generate the frustum
                 GenerateFrustum();
@@ -630,27 +598,6 @@ namespace Psynergy.Camera
                 //GeneratePerspectiveProjectionMatrix(45);
                 m_ProjectionDirty = true;
             }
-        }
-
-
-        public override Matrix Transform 
-        {
-            get { return m_Transform; }
-            set 
-            {
-                m_Transform = value;
-                View = Matrix.Invert(m_Transform);
-                m_EyeProjectionTransform = Matrix.Multiply(m_ViewMatrix, m_ProjectionMatrix);
-                //m_ViewMatrix = value;
-
-                // Generate the frustum
-                GenerateFrustum();
-                //Frustum.Matrix = (m_ViewMatrix * m_ProjectionMatrix);
-
-                // Generate projection matrix
-                //GeneratePerspectiveProjectionMatrix(45);
-                m_ProjectionDirty = true;
-            } 
         }
 
         public override void SetFocus(IFocusable focus)
@@ -663,9 +610,6 @@ namespace Psynergy.Camera
         }
 
         public Matrix ViewProjection { get { return m_ViewProjection; } set { m_ViewProjection = value; } }
-        public Vector3 Up { get { return Transform.Up; } }
-        public Vector3 Right { get { return Transform.Right; } }
-
         public BoundingFrustum Frustum { get; private set; }
         public BoundingFrustum ShadowFrustum { get; private set; }
         public IFocusable3D Focus 
@@ -736,7 +680,7 @@ namespace Psynergy.Camera
                 Vector3 toRet = Vector3.Zero;
 
                 if ( Focus != null )
-                    toRet = Focus.WorldMatrix.Translation;
+                    toRet = Focus.transform.WorldMatrix.Translation;
 
                 return toRet; 
             } 

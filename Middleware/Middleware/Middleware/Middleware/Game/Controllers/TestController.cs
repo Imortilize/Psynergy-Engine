@@ -87,20 +87,20 @@ namespace Middleware
             //  DebugRender.Instance.AddNewDebugLineGroup(m_ObjReference.Position, Color.Blue);
 
             float halfBoundingRadius = model.BoundingSphere.Radius;
-            Vector3 right = model.WorldMatrix.Right;
-            Vector3 left = model.WorldMatrix.Left;
+            Vector3 right = model.transform.WorldMatrix.Right;
+            Vector3 left = model.transform.WorldMatrix.Left;
 
-            DebugRender.Instance.AddNewDebugLineGroup(m_ObjReference.Position, Color.Blue);
-            DebugRender.Instance.AddDebugLine((m_ObjReference.Position + (right * halfBoundingRadius)), Color.Red);
-            DebugRender.Instance.AddDebugLine((m_ObjReference.Position + (right * halfBoundingRadius)), Color.Red);
+            DebugRender.Instance.AddNewDebugLineGroup(m_ObjReference.transform.Position, Color.Blue);
+            DebugRender.Instance.AddDebugLine((m_ObjReference.transform.Position + (right * halfBoundingRadius)), Color.Red);
+            DebugRender.Instance.AddDebugLine((m_ObjReference.transform.Position + (right * halfBoundingRadius)), Color.Red);
 
-            DebugRender.Instance.AddNewDebugLineGroup(m_ObjReference.Position, Color.Blue);
-            DebugRender.Instance.AddDebugLine((m_ObjReference.Position + (left * halfBoundingRadius)), Color.Red);
-            DebugRender.Instance.AddDebugLine((m_ObjReference.Position + (left * halfBoundingRadius)), Color.Red);
+            DebugRender.Instance.AddNewDebugLineGroup(m_ObjReference.transform.Position, Color.Blue);
+            DebugRender.Instance.AddDebugLine((m_ObjReference.transform.Position + (left * halfBoundingRadius)), Color.Red);
+            DebugRender.Instance.AddDebugLine((m_ObjReference.transform.Position + (left * halfBoundingRadius)), Color.Red);
 
-            DebugRender.Instance.AddNewDebugLineGroup(m_ObjReference.Position, Color.Orange);
-            DebugRender.Instance.AddDebugLine(m_ObjReference.Position + (model.WorldMatrix.Forward * (Velocity.Length() * 100)), Color.Orange);
-            DebugRender.Instance.AddDebugLine(m_ObjReference.Position + (model.WorldMatrix.Forward * (Velocity.Length() * 100)), Color.Orange);
+            DebugRender.Instance.AddNewDebugLineGroup(m_ObjReference.transform.Position, Color.Orange);
+            DebugRender.Instance.AddDebugLine(m_ObjReference.transform.Position + (model.transform.WorldMatrix.Forward * (Velocity.Length() * 100)), Color.Orange);
+            DebugRender.Instance.AddDebugLine(m_ObjReference.transform.Position + (model.transform.WorldMatrix.Forward * (Velocity.Length() * 100)), Color.Orange);
 
             // Run base class movement code
             base.UpdateMovement(deltaTime, position);

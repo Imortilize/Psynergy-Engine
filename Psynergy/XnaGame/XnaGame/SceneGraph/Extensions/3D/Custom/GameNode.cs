@@ -59,37 +59,37 @@ namespace XnaGame
         {
             bool toRet = false;
 
-            if (m_Spline != null)
+            if (HasController && (m_Spline != null))
             {
                 // Make sure the end of the spline hasn't been reached
-                if (m_Spline.PointsExist() && !m_Spline.IsEndReached(Position))
+                if (m_Spline.PointsExist() && !m_Spline.IsEndReached(transform.Position))
                 {
                     // A spline exists with points and the end hasn't been reached yet.
                     toRet = true;
 
                     // Points exist and it isn't the end of the spline, 
                     // Check if the point has been reached
-                    if (m_Spline.IsPointReached(Position))
+                    if (m_Spline.IsPointReached(transform.Position))
                     {
-                        Vector3 newPos = Position;
+                        Vector3 newPos = transform.Position;
 
                         // Get the next spline position
-                        newPos = m_Spline.GetNextControlPointPosition(Position);
+                        newPos = m_Spline.GetNextControlPointPosition(transform.Position);
 
                         // Test interpolation
                         //newPos = m_Spline.GetNextInterpolatedPosition(deltaTime, newPos, 1, Controller.TerrainReference);
 
-                        if (!m_Spline.IsEndReached(Position))
+                        if (!m_Spline.IsEndReached(transform.Position))
                         {
                             // Set the next desired position to this point
-                            SetDesiredPosition(newPos);
+                            Controller.SetDesiredPosition(newPos);
                         }
                         else
-                            StopMovement();
+                            Controller.StopMovement();
                     }
                 }
                 else
-                    StopMovement();
+                    Controller.StopMovement();
             }
 
             return toRet;

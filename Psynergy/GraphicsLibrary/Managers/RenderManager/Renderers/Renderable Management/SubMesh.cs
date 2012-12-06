@@ -75,7 +75,7 @@ namespace Psynergy.Graphics
                 RenderEffect.SetBones(m_Parent.BoneMatrices);
 
             // Set camera position
-            RenderEffect.SetCameraPosition(camera.Position);
+            RenderEffect.SetCameraPosition(camera.transform.Position);
 
             // Apply the Render Effect
             RenderEffect.Apply();

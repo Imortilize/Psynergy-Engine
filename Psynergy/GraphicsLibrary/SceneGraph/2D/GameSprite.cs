@@ -81,7 +81,7 @@ namespace Psynergy.Graphics
 
             if (m_Sprite != null)
             {
-                m_Sprite.Position = Position;
+                m_Sprite.transform.Position = transform.Position;
             }
         }
         #endregion
@@ -110,7 +110,7 @@ namespace Psynergy.Graphics
                         {
                             // Get a vector pointing from the current location of the sprite
                             // to the destination
-                            Vector3 delta = new Vector3((m_Target.X - m_Sprite.PosX), (m_Target.Y - m_Sprite.PosY), 0);
+                            Vector3 delta = new Vector3((m_Target.X - m_Sprite.transform.Position.X), (m_Target.Y - m_Sprite.transform.Position.Y), 0);
 
                             if (delta.Length() > m_MoveSpeed)
                             {
@@ -118,11 +118,13 @@ namespace Psynergy.Graphics
                                 delta = (delta * (m_MoveSpeed * (float)deltaTime.ElapsedGameTime.TotalSeconds));
 
                                 // Set position accordingly
-                                Position += delta;
+                                transform.Position += delta;
                             }
                             else
                             {
-                                if (m_Target == m_Sprite.Position2D)
+                                Vector3 spritePos = m_Sprite.transform.Position;
+
+                                if (m_Target == new Vector2(spritePos.X, spritePos.Y))
                                 {
                                     if (m_UsePathing)
                                     {
@@ -152,7 +154,7 @@ namespace Psynergy.Graphics
                                 }
                                 else
                                 {
-                                    Position = new Vector3(m_Target.X, m_Target.Y, 0);
+                                    transform.Position = new Vector3(m_Target.X, m_Target.Y, 0);
                                 }
                             }
                         }
@@ -162,6 +164,15 @@ namespace Psynergy.Graphics
                     m_Sprite.Update(deltaTime);
                 }
             }
+        }
+        #endregion
+
+        #region Transform Update
+        public override void OnTransformUpdated()
+        {
+            // Set sprite position accordingly
+            if (m_Sprite != null)
+                m_Sprite.transform.Position = transform.Position;
         }
         #endregion
 
@@ -229,18 +240,6 @@ namespace Psynergy.Graphics
                 }
 
                 return toRet;
-            }
-        }
-
-        public override Vector3 Position
-        {
-            get { return base.Position; }
-            set
-            {
-                base.Position = value;
-
-                if (m_Sprite != null)
-                    m_Sprite.Position = value;
             }
         }
         #endregion

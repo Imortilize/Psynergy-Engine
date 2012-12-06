@@ -263,7 +263,7 @@ namespace Middleware
 
                     if ( isometricCamera != null )
                     {
-                        Vector2 cameraPos = isometricCamera.Position2D;
+                        Vector3 cameraPos = isometricCamera.transform.Position;
                         Vector2 firstSquare = new Vector2(cameraPos.X / m_TileStep.X, cameraPos.Y / m_TileStep.Y);
                         Vector2 squareOffset = new Vector2(cameraPos.X % m_TileStep.X, cameraPos.Y % m_TileStep.Y);
 
@@ -362,7 +362,7 @@ namespace Middleware
 
                                         if (m_Vlad != null)
                                         {
-                                            Point vladMapPoint = WorldToMapCell(new Point((int)m_Vlad.Position.X, (int)m_Vlad.Position.Y));
+                                            Point vladMapPoint = WorldToMapCell(new Point((int)m_Vlad.transform.Position.X, (int)m_Vlad.transform.Position.Y));
 
                                             if ((mapX == vladMapPoint.X) && (mapY == vladMapPoint.Y))
                                             {

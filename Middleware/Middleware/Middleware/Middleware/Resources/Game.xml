@@ -2,7 +2,7 @@
 <SceneFragment>
   <!-- CubeMap ( Should be the first thing to be rendered) -->
   <SkySphere id="Sky" >
-    <property parent="Base" />
+    <property parent="Root" />
     <property pos="180 0 210" />
     <property skysize="1250" />
     <property file="Textures/CubeMaps/cube" />
@@ -19,7 +19,7 @@
   </ModelNode>-->
 
   <CustomSpaceship id="Ship1" >
-    <property parent="Base" />
+    <property parent="Root" />
     <property weight="5" />
     <property pos="500 0 0" />
     <property scale="0.25 0.25 0.25" />
@@ -32,7 +32,7 @@
   </CustomSpaceship>
 
   <CustomSpaceship id="Ship2" >
-    <property parent="Base" />
+    <property parent="Root" />
     <property weight="5" />
     <property pos="50 0 200" />
     <property scale="0.25 0.25 0.25" />
@@ -45,7 +45,7 @@
   </CustomSpaceship>
 
   <CustomSpaceship id="Ship" >
-    <property parent="Base" />
+    <property parent="Root" />
     <property weight="5" />
     <property pos="50 0 0" />
     <property scale="0.25 0.25 0.25" />
@@ -106,7 +106,7 @@
   </ModelNode>-->
 
   <Terrain id="Terrain" >
-    <property parent="Base" />
+    <property parent="Root" />
     <property pos="0 0 0" />
     <property scale="1 1 1" />
     <property texture="Textures/Grass" />    
@@ -122,13 +122,13 @@
 
   <!-- Lights ( under work at the moment ) -->
   <DirectionalLight>
-    <property parent="Base" />
+    <property parent="Root" />
     <property pos="0 0 0" />
     <property direction="0.5 -0.5 0" />
     <property diffuse="200 200 174" />
   </DirectionalLight>
   <PointLight>
-    <property parent="Base" />
+    <property parent="Root" />
     <property pos="-700 900 100" />
     <property radius="1500" />
     <property intensity="2" />

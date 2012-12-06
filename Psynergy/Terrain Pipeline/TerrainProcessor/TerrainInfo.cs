@@ -255,7 +255,7 @@ namespace Psynergy.TerrainPipeline
            // ray.Direction = Vector3.TransformNormal(ray.Direction, inverseTransform);
 
             // Keep track of the closest triangle we found so far,
-            // so we can always return the closest one.
+            // so we can always return the closest one.k
             float? closestIntersection = null;
 
             // Cycle through the list of vertices in the mesh
@@ -319,7 +319,9 @@ namespace Psynergy.TerrainPipeline
 
             // If the ray is parallel to the triangle plane, there is no collision.
             if (determinant > -float.Epsilon && determinant < float.Epsilon)
+            {
                 return null;
+            }
 
             float inverseDeterminant = 1.0f / determinant;
 
@@ -332,8 +334,10 @@ namespace Psynergy.TerrainPipeline
             triangleU *= inverseDeterminant;
 
             // Make sure it is inside the triangle.
-            if ((triangleU < 0) || (triangleU > 1))
+            if (triangleU < 0 || triangleU > 1)
+            {
                 return null;
+            }
 
             // Calculate the V parameter of the intersection point.
             Vector3 distanceCrossEdge1;
@@ -344,8 +348,10 @@ namespace Psynergy.TerrainPipeline
             triangleV *= inverseDeterminant;
 
             // Make sure it is inside the triangle.
-            if ((triangleV < 0) || ((triangleU + triangleV) > 1))
+            if (triangleV < 0 || triangleU + triangleV > 1)
+            {
                 return null;
+            }
 
             // Compute the distance along the ray to the triangle.
             float rayDistance;
@@ -354,7 +360,9 @@ namespace Psynergy.TerrainPipeline
 
             // Is the triangle behind the ray origin?
             if (rayDistance < 0)
+            {
                 return null;
+            }
 
             return rayDistance;
         }
@@ -362,6 +370,7 @@ namespace Psynergy.TerrainPipeline
 
         #region Property Set / Get
         public Vector3 Position { get { return m_HeightmapPosition; } set { m_HeightmapPosition = value; } }
+        public float Scale { get { return m_TerrainScale; } }
         #endregion
     }
 

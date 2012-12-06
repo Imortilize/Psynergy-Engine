@@ -10,7 +10,7 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace Psynergy.Camera
 {
-    public class WorldCamera : FreeCamera, IFocusable, IRegister<WorldCamera>
+    public class WorldCamera : FreeCamera, IRegister<WorldCamera>
     {
         #region Factory Property setting
         protected override void ClassProperties(Factory factory)
@@ -162,7 +162,7 @@ namespace Psynergy.Camera
                 m_RotateAmount = MathHelper.Clamp(m_RotateAmount, 0, 1);
 
                 // interpolate between the start rotation and the desired rotation
-                m_Rotation = Quaternion.Lerp(m_RotationOnEnter, m_DesiredRotation, m_RotateAmount);
+                transform.Rotation = Quaternion.Lerp(m_RotationOnEnter, m_DesiredRotation, m_RotateAmount);
             }
         }
 
@@ -194,12 +194,12 @@ namespace Psynergy.Camera
                     m_PreviousCameraDistance = camera3D.GetDistance();
  
                     // Store rotation of previous camera when entering
-                    m_RotationOnEnter = camera3D.Rotation;
-                    Rotation = m_RotationOnEnter;       
+                    m_RotationOnEnter = camera3D.transform.Rotation;
+                    transform.Rotation = m_RotationOnEnter;       
                 }
 
                 // Set to move back to the start position
-                TweenTo(previousCamera.Transform.Translation, m_PositionToViewFrom, 0.0f);
+                TweenTo(previousCamera.transform.WorldMatrix.Translation, m_PositionToViewFrom, 0.0f);
             
                 // Reset change amount
                 m_RotateAmount = 0.0f;
@@ -212,7 +212,7 @@ namespace Psynergy.Camera
 
             // Set to move back to the start position
             //TweenTo(m_Position, m_PositionOnEnter, 0.5f);
-            CurrentTargetPosition = Position;
+            CurrentTargetPosition = transform.Position;
             Focus = m_PreviousCameraFocus;
         }
 

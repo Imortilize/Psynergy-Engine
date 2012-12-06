@@ -111,7 +111,11 @@ namespace Psynergy.Graphics.Terrain
 
         public override void Update(GameTime deltaTime)
         {
-            base.Update(deltaTime);     
+            base.Update(deltaTime);
+
+            // Set terrain info position accordingly
+            //if (m_TerrainInfo != null)
+                //m_TerrainInfo.Position = new Vector3(m_TerrainInfo.Position.X, transform.Position.Y, m_TerrainInfo.Position.Z);
         }
 
         #region Terrain Picking
@@ -132,11 +136,17 @@ namespace Psynergy.Graphics.Terrain
                 {
                     Ray ray = camera.CastRay(Matrix.Identity);
 
+                    /*Matrix world = Matrix.CreateScale(m_TerrainInfo.Scale) * Matrix.CreateTranslation(m_TerrainInfo.Position);
+                    Matrix inverseTransform = Matrix.Invert(world);
+
+                    ray.Position = Vector3.Transform(ray.Position, inverseTransform);
+                    ray.Direction = Vector3.TransformNormal(ray.Direction, inverseTransform);*/
+
                     // Get the point that the ray intersects the terrain if it does
                     intersectionPoint = IntersectsAtPoint(ray);
 
                     // Scale accordingly
-                    intersectionPoint *= Scale;
+                    intersectionPoint *= transform.Scale;
 
                     if (intersectionPoint != null)
                         Console.WriteLine("INTERSECTION POINT: " + intersectionPoint.ToString());
@@ -160,7 +170,7 @@ namespace Psynergy.Graphics.Terrain
             if (Intersects(ray) != null)
             {
                 // Cast the ray and check against the terrain
-                intersectionPoint = m_TerrainInfo.Pick(ray, Position, m_WorldMatrix);
+                intersectionPoint = m_TerrainInfo.Pick(ray, transform.Position, transform.WorldMatrix);
             }
 
             return intersectionPoint;
@@ -240,27 +250,12 @@ namespace Psynergy.Graphics.Terrain
         #region Property Set / Gets
         public TerrainInfo TerrainInfo { get { return m_TerrainInfo; } }
 
-        public override Vector3 Position
-        {
-            get
-            {
-                return base.Position;
-            }
-            set
-            {
-                base.Position = value;
-
-                if (m_TerrainInfo != null)
-                    m_TerrainInfo.Position = new Vector3(m_TerrainInfo.Position.X, Position.Y, m_TerrainInfo.Position.Z);
-            }
-        }
-
         // Average scale of the terrain
         public float AverageScale
         {
             get
             {
-                return ((Scale.X + Scale.Y + Scale.Z) / 3);
+                return ((transform.Scale.X + transform.Scale.Y + transform.Scale.Z) / 3);
             }
         }
         #endregion

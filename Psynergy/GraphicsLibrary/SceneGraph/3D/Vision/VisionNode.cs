@@ -13,7 +13,7 @@ using Psynergy;
 
 namespace Psynergy.Graphics
 {
-    public class VisionNode : Node, IRegister<VisionNode>
+    public class VisionNode : GameObject, IRegister<VisionNode>
     {
         #region Factory Property setting
         protected override void ClassProperties(Factory factory)
@@ -60,7 +60,7 @@ namespace Psynergy.Graphics
                 if (m_Radius > 0)
                 {
                     // Get this objects scale
-                    Vector3 scale = objectRef.Scale;
+                    Vector3 scale = objectRef.transform.Scale;
 
                     // Turn the scale vector into a normalized single unit scale which will 
                     // in turn normalise the size of the sight ( takes into account objects that have been scaled up / down ).
@@ -69,12 +69,12 @@ namespace Psynergy.Graphics
                     // Take this objects forward vector and multiply it by its vision radius to get
                     // the vision in front of them.
                     float halfRadius = (m_Radius * 0.5f);
-                    Vector3 axis = (objectRef.WorldMatrix.Forward * m_Distance * scale);
+                    Vector3 axis = (objectRef.transform.WorldMatrix.Forward * m_Distance * scale);
                     Vector3 minVisionPoint = Vector3.Transform(axis, Matrix.CreateRotationY(MathHelper.ToRadians(-halfRadius)));
                     Vector3 maxVisionPoint = Vector3.Transform(axis, Matrix.CreateRotationY(MathHelper.ToRadians(halfRadius)));
 
                     // Add a new line group
-                    DebugRender.Instance.AddDebugVision((objectRef.Position + new Vector3(0, m_Height, 0)), axis, minVisionPoint, maxVisionPoint);
+                    DebugRender.Instance.AddDebugVision((objectRef.transform.Position + new Vector3(0, m_Height, 0)), axis, minVisionPoint, maxVisionPoint);
                 }
             }
         }
@@ -85,7 +85,7 @@ namespace Psynergy.Graphics
 
             if (objectRef != null)
             {
-                Vector3 objPos = objectRef.Position;
+                Vector3 objPos = objectRef.transform.Position;
                 Vector3 offset = (position - objPos);
                 float distance = offset.Length();
 
@@ -93,8 +93,8 @@ namespace Psynergy.Graphics
                 if (distance <= m_Distance)
                 {
                     float halfRadius = (m_Radius * 0.5f);
-                    Vector3 forwardVector = objectRef.WorldMatrix.Forward;
-                    Vector3 scale = objectRef.Scale;
+                    Vector3 forwardVector = objectRef.transform.WorldMatrix.Forward;
+                    Vector3 scale = objectRef.transform.Scale;
 
                     Vector3 axis = (objPos + (forwardVector * m_Distance * scale));
                     Vector3 axisPos = (axis - objPos);

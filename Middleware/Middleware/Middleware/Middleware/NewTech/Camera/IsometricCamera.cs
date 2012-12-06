@@ -52,7 +52,7 @@ namespace Middleware
             }
 
             // Set camera scale
-            Scale = new Vector3(m_CameraScale, m_CameraScale, m_CameraScale);
+            transform.Scale = new Vector3(m_CameraScale);
             Origin = new Vector2(0, 0);
 
             base.Initialise();
@@ -133,15 +133,15 @@ namespace Middleware
 
             // Create the Transform used by any
             // spritebatch process
-            Transform = Matrix.Identity *
-                        Matrix.CreateTranslation(-PosX, -PosY, 0) *
-                        Matrix.CreateRotationZ(Rotation) *                // Use rotation X as we only need 1 value in 2d cameras
-                        Matrix.CreateTranslation(Origin.X, Origin.Y, 0) *
-                        Matrix.CreateScale(Scale);
+            transform.WorldMatrix = Matrix.Identity *
+                                    Matrix.CreateTranslation(-transform.Position.X, -transform.Position.Y, 0) *
+                                    Matrix.CreateRotationZ(Rotation) *                // Use rotation X as we only need 1 value in 2d cameras
+                                    Matrix.CreateTranslation(Origin.X, Origin.Y, 0) *
+                                    Matrix.CreateScale(transform.Scale);
         }
 
         // Used to determine whether it is within the view or not
-        public override bool IsInView(Node sprite)
+        public override bool IsInView(GameObject sprite)
         {
             return false;
             // If the object is not within the horizontal bounds of the screen
@@ -199,12 +199,18 @@ namespace Middleware
         {
             get 
             {
-                return Position2D;
+                return new Vector2(transform.Position.X, transform.Position.Y);
             }
             set
             {
-                PosX = MathHelper.Clamp(value.X, 0f, (m_WorldSize.X - m_ViewPort.X));
-                PosY = MathHelper.Clamp(value.Y, 0f, (m_WorldSize.Y - m_ViewPort.Y));
+                Vector3 pos = transform.Position;
+
+                // Modify pos
+                pos.X = MathHelper.Clamp(value.X, 0f, (m_WorldSize.X - m_ViewPort.X));
+                pos.Y = MathHelper.Clamp(value.Y, 0f, (m_WorldSize.Y - m_ViewPort.Y));
+
+                // Save pos
+                transform.Position = pos;
             }
         }
 

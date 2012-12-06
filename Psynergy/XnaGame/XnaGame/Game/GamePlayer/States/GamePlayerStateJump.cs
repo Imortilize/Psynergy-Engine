@@ -58,11 +58,11 @@ namespace XnaGame
                 {
                     if (square.GetType() == typeof(IfSquare))
                     {
-                        UIManager.Instance.AddText3DObject("iftext", "Enter If Statement", (player.ActivePawn.Position + new Vector3(0, +15, 0)), Color.OrangeRed, 1.5f);
+                        UIManager.Instance.AddText3DObject("iftext", "Enter If Statement", (player.ActivePawn.transform.Position + new Vector3(0, +15, 0)), Color.OrangeRed, 1.5f);
                     }
                     else if (square.GetType() == typeof(WhileSquare))
                     {
-                        UIManager.Instance.AddText3DObject("whiletext", "Enter While Loop", (player.ActivePawn.Position + new Vector3(0, +15, 0)), Color.OrangeRed, 1.5f);
+                        UIManager.Instance.AddText3DObject("whiletext", "Enter While Loop", (player.ActivePawn.transform.Position + new Vector3(0, +15, 0)), Color.OrangeRed, 1.5f);
                     }
                 }
             }

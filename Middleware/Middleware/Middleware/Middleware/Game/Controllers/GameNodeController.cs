@@ -42,7 +42,7 @@ namespace Middleware
         {
         }
 
-        public GameNodeController(Node node)
+        public GameNodeController(GameObject node)
             : base(node)
         {
         }
@@ -76,21 +76,24 @@ namespace Middleware
                     float delta = (float)deltaTime.ElapsedGameTime.TotalSeconds;
 
                     // Position direction
-                    Vector3 direction = (m_DesiredPosition.Value - m_ObjReference.Position);
+                    Vector3 direction = (m_DesiredPosition.Value - m_ObjReference.transform.Position);
                     direction.Normalize();
 
                     // Apply the velocity
                     Velocity = (direction * m_MovementSpeed * delta);
 
-                    DebugRender.Instance.AddNewDebugLineGroup(m_ObjReference.Position, Color.Blue);
+                    DebugRender.Instance.AddNewDebugLineGroup(m_ObjReference.transform.Position, Color.Blue);
                     DebugRender.Instance.AddDebugLine(m_DesiredPosition.Value, Color.Red);
                     DebugRender.Instance.AddDebugLine(m_DesiredPosition.Value, Color.Red);
                     //DebugRender.Instance.DrawDebugPoint(m_DesiredPosition.Value, 10);
 
-                    DebugRender.Instance.AddNewDebugLineGroup(Vector3.One, Color.Yellow);
-                    DebugRender.Instance.AddNewDebugLineGroup(-camera.Transform.Translation, Color.Yellow);
+                   /* DebugRender.Instance.AddNewDebugLineGroup(camera.transform.Position + camera.Transform.Forward, Color.Yellow);
                     DebugRender.Instance.AddDebugLine(m_DesiredPosition.Value, Color.Orange);
-                    DebugRender.Instance.AddDebugLine(m_DesiredPosition.Value, Color.Orange);
+                    DebugRender.Instance.AddDebugLine(m_DesiredPosition.Value, Color.Orange);*/
+
+                    DebugRender.Instance.AddNewDebugLineGroup((camera as Camera3D).View.Translation, Color.Yellow);
+                    DebugRender.Instance.AddDebugLine(m_DesiredPosition.Value, Color.Yellow);
+                    DebugRender.Instance.AddDebugLine(m_DesiredPosition.Value, Color.Yellow);
                 }
             }
 
@@ -106,7 +109,7 @@ namespace Middleware
                 Node3D node = (m_ObjReference as Node3D);
 
                 // Update the rotation
-                node.Rotation = Quaternion.Slerp(node.Rotation, m_DesiredRotation.Value, (m_RotationVelocity * (float)deltaTime.ElapsedGameTime.TotalSeconds));
+                node.transform.Rotation = Quaternion.Slerp(node.transform.Rotation, m_DesiredRotation.Value, (m_RotationVelocity * (float)deltaTime.ElapsedGameTime.TotalSeconds));
 
                 // increase rotation
                 //node.OrbitalPitch += (node.OrbitalPitchSpeed * (float)deltaTime.ElapsedGameTime.TotalSeconds);
@@ -123,10 +126,10 @@ namespace Middleware
                 if (node != null)
                 {
                     // Current position
-                    Vector3 newPos = node.Position;
+                    Vector3 newPos = node.transform.Position;
 
                     // Current rotation
-                    Quaternion newRot = node.Rotation;
+                    Quaternion newRot = node.transform.Rotation;
 
                     // See if a terrain exists
                     Terrain terrain = TerrainManager.Instance.Terrain;
@@ -153,7 +156,7 @@ namespace Middleware
                                 height *= m_TerrainScaledAverage;
 
                                 // Adjust the height by the position at which the terrain is currently set at
-                                height += terrain.Position.Y;
+                                height += terrain.transform.Position.Y;
 
                                 // Set the final position of the model
                                 newPos = new Vector3(newPos.X, (height + FLOAT_DISTANCE), newPos.Z);
@@ -177,10 +180,10 @@ namespace Middleware
                     }
 
                     // Set the new position
-                    node.Position = newPos;
+                    node.transform.Position = newPos;
 
                     // Set the new rotation
-                    node.Rotation = newRot;
+                    node.transform.Rotation = newRot;
                 }
             }
         }
@@ -204,7 +207,7 @@ namespace Middleware
             m_DesiredPosition = desiredPos;
 
             // Set the rotation to follow it in
-            SetDesiredRotation(m_ObjReference.Position, desiredPos);
+            SetDesiredRotation(m_ObjReference.transform.Position, desiredPos);
         }
 
         public override void SetDesiredRotation(Vector3 from, Vector3 to)

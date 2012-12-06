@@ -15,11 +15,8 @@ namespace Psynergy.Camera
         // The movespeed of the camera, it will tween to its destination
         float MoveSpeed { get; set; }
 
-        // Gets the transform that can be applied to the spritebatch class
-        Matrix Transform { get; }
-
         // In view interface
-        bool IsInView(Node obj);
+        bool IsInView(GameObject obj);
 
         // Set focus
         IFocusable IFocus { get; set; }
@@ -44,8 +41,5 @@ namespace Psynergy.Camera
     {
         // Gets the Origin of the viewport
         Vector3 Origin { get; }
-
-        // Get or sets the rotation of the camera
-        Quaternion Rotation { get; set; }
     }
 }

@@ -55,7 +55,7 @@ namespace Middleware
             AddAnimation("IdleSouthWest", 0, 48 * 6, width, height, 1, 0.2f);
             AddAnimation("IdleWest", 0, 48 * 7, width, height, 1, 0.2f);
 
-            DrawOffset = new Vector2(-24, (-38 * ScaleY));
+            DrawOffset = new Vector2(-24, (-38 * transform.Scale.Y));
             CurrentAnimation = "WalkEast";
             IsAnimating = true;
 
@@ -130,7 +130,8 @@ namespace Middleware
 
                 if (tileMap != null)
                 {
-                    Vector2 pos2D = Position2D;
+                    Vector3 pos = transform.Position;
+                    Vector2 pos2D = new Vector2(pos.X, pos.Y);
 
                     if (tileMap.GetCellAtWorldPoint(pos2D + moveDirection).Walkable == false)
                         moveDirection = Vector2.Zero;
@@ -157,11 +158,14 @@ namespace Middleware
                 {
                     Viewport viewPort = graphicsDevice.Viewport;
 
-                    // Clamp positions to be inside the screen
-                    PosX = MathHelper.Clamp(PosX, -DrawOffset.X, (isometricCamera.WorldSize.X - DrawOffset.X));
-                    PosY = MathHelper.Clamp(PosY, -DrawOffset.Y, (isometricCamera.WorldSize.Y - DrawOffset.Y));
+                    // Get pos
+                    Vector3 pos = transform.Position;
 
-                    Vector2 testPosition = isometricCamera.WorldToScreen(Position2D);
+                    // Clamp positions to be inside the screen
+                    pos.X = MathHelper.Clamp(pos.X, -DrawOffset.X, (isometricCamera.WorldSize.X - DrawOffset.X));
+                    pos.Y = MathHelper.Clamp(pos.Y, -DrawOffset.Y, (isometricCamera.WorldSize.Y - DrawOffset.Y));
+
+                    Vector2 testPosition = isometricCamera.WorldToScreen(new Vector2(pos.X, pos.Y));
 
                     if (testPosition.X < 100)
                     {
@@ -182,6 +186,9 @@ namespace Middleware
                     {
                         isometricCamera.Move(new Vector2(0, testPosition.Y - (viewPort.Height - 100)));
                     }
+
+                    // Save position back
+                    transform.Position = pos;
                 }
             }
 
@@ -197,7 +204,7 @@ namespace Middleware
 
             // use for getting the height on the tile being stood on
             if (tileMap != null)
-                Offset = new Vector2(0, -tileMap.GetOverallHeight(Position2D));
+                Offset = new Vector2(0, -tileMap.GetOverallHeight(new Vector2(transform.Position.X, transform.Position.Y)));
 
             base.Render(deltaTime);
         }
@@ -206,7 +213,8 @@ namespace Middleware
         #region Override Functions
         public override Vector2 GetWorld2D()
         {
-            Vector2 toRet = Position2D;
+            Vector3 pos = transform.Position;
+            Vector2 toRet = new Vector2(pos.X, pos.Y);
             IsometricCamera isometricCamera = (CameraManager.Instance.ActiveCamera as IsometricCamera);
 
             if (isometricCamera != null)

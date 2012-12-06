@@ -72,7 +72,7 @@ namespace XnaGame
                     if (sideLengths.Y <= 0)
                         sideLengths.Y = 0.1f;
 
-                    Matrix rotMat = Matrix.CreateFromQuaternion(Rotation);
+                    Matrix rotMat = Matrix.CreateFromQuaternion(transform.Rotation);
 
                     Box box = new Box(Vector3.Zero, Matrix.Identity, sideLengths);
                     m_Skin.AddPrimitive(box, (int)MaterialTable.MaterialID.BouncyNormal);
@@ -81,10 +81,10 @@ namespace XnaGame
                     m_Mass = SetMass(1.0f);
 
                     // Move the body to correct position initially
-                    m_Body.MoveTo(Position, Matrix.Identity);
+                    m_Body.MoveTo(transform.Position, Matrix.Identity);
 
                     // Apply transform to skin
-                    m_Skin.ApplyLocalTransform(new Transform(-m_Mass, Matrix.Identity));
+                    m_Skin.ApplyLocalTransform(new JigLibX.Math.Transform(-m_Mass, Matrix.Identity));
 
                     // Enable it 
                     Enable();
@@ -134,10 +134,10 @@ namespace XnaGame
 
             Matrix rotMat = Matrix.CreateFromQuaternion(Quaternion.Identity);
             Matrix rotation = Matrix.CreateRotationY(MathHelper.ToRadians(180));
-
             Matrix newRot = Matrix.Multiply(rotation, rotMat);
 
-            m_Rotation = Quaternion.CreateFromRotationMatrix(newRot);
+            // Store rotation
+            transform.Rotation = Quaternion.CreateFromRotationMatrix(newRot);
         }
 
         public override void Update(GameTime deltaTime)

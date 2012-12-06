@@ -9,7 +9,7 @@ namespace Psynergy
     public class XmlResource : XmlDocument
     {
         private String m_FileName = "";
-        protected Node m_ParentNode = null;
+        protected GameObject m_ParentNode = null;
 
         public XmlResource(String filename)
         {

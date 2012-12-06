@@ -65,8 +65,8 @@ namespace Psynergy.Menus
 
             if (m_SelectedTextures.Count > m_TextureIndex)
             {
-                m_BoundingArea.Min = new Vector3(PosX, PosY, 0);
-                m_BoundingArea.Max = new Vector3((PosX + m_SelectedTextures[m_TextureIndex].Width), (PosY + m_SelectedTextures[m_TextureIndex].Height), 0);
+                m_BoundingArea.Min = new Vector3(transform.Position.X, transform.Position.Y, 0);
+                m_BoundingArea.Max = new Vector3((transform.Position.X + m_SelectedTextures[m_TextureIndex].Width), (transform.Position.Y + m_SelectedTextures[m_TextureIndex].Height), 0);
             }
         }
 
@@ -94,8 +94,8 @@ namespace Psynergy.Menus
                     else
                         m_TextureIndex = 0;
 
-                    m_BoundingArea.Min = new Vector3(PosX, PosY, 0);
-                    m_BoundingArea.Max = new Vector3((PosX + m_SelectedTextures[m_TextureIndex].Width), (PosY + m_SelectedTextures[m_TextureIndex].Height), 0);
+                    m_BoundingArea.Min = new Vector3(transform.Position.X, transform.Position.Y, 0);
+                    m_BoundingArea.Max = new Vector3((transform.Position.X + m_SelectedTextures[m_TextureIndex].Width), (transform.Position.Y + m_SelectedTextures[m_TextureIndex].Height), 0);
 
                     // Check if we are over the option or not
                     if ( IsMouseOverOption(InputHandle.MousePosition))

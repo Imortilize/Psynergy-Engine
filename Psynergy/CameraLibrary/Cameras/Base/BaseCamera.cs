@@ -21,7 +21,7 @@ namespace Psynergy.Camera
         eCameraType_World
     };
 
-    public class BaseCamera : Node, ICamera, IFocusable
+    public class BaseCamera : GameObject, ICamera
     {
         protected enum CameraState
         {
@@ -61,9 +61,6 @@ namespace Psynergy.Camera
         public override void Initialise()
         {
             base.Initialise();
-
-            // Default transform to identity matrix
-            Transform = Matrix.Identity;
         }
 
         public override void Reset()
@@ -196,7 +193,7 @@ namespace Psynergy.Camera
         }
 
         // Used to determine whether it is within the view or not
-        public virtual bool IsInView(Node sprite)
+        public virtual bool IsInView(GameObject sprite)
         {
             // In View
             return true;
@@ -248,7 +245,6 @@ namespace Psynergy.Camera
         public Viewport Viewport { get { return m_GraphicsDevice.Viewport; } }
 
         public float CameraScale { get; set; }
-        public virtual Matrix Transform { get; set; }
         public bool StartTween { get { return m_StartTween; } set { m_StartTween = value; } }
         public bool Tween { get { return m_Tween; } set { m_Tween = value; } }
         public float MoveSpeed { get; set; }

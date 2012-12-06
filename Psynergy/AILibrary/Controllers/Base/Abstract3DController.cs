@@ -10,7 +10,7 @@ using Psynergy;
 
 namespace Psynergy.AI
 {
-    abstract public class Abstract3DController<T> : Controller where T : Node
+    abstract public class Abstract3DController<T> : Controller where T : GameObject
     {
         public Abstract3DController() : base() { }
         public Abstract3DController(T node) : base(node) { }

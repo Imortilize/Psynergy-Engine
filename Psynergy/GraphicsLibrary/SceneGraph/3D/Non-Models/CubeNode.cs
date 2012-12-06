@@ -280,8 +280,8 @@ namespace Psynergy.Graphics
             base.Update(deltaTime);
 
             // Update bounding box
-            m_BoundingBox.Min = Position - new Vector3((0.5f * Scale.X), (0.5f * Scale.Y), (0.5f * Scale.Z));
-            m_BoundingBox.Max = Position + new Vector3((0.5f * Scale.X), (0.5f * Scale.Y), (0.5f * Scale.Z));
+            m_BoundingBox.Min = transform.Position - (transform.Scale * 0.5f);
+            m_BoundingBox.Max = transform.Position + (transform.Scale * 0.5f);
         }
 
         public override void Render(GameTime deltaTime)

@@ -45,7 +45,7 @@ namespace Psynergy.Graphics
             DiffuseColor = new Vector3(1, 1, 1);
             Intensity = 1f;
             Radius = 10000;
-            BoundingSphere = new BoundingSphere(Position, Radius);
+            BoundingSphere = new BoundingSphere(transform.Position, Radius);
         }
 
         public override void Initialise()
@@ -82,16 +82,16 @@ namespace Psynergy.Graphics
                     Radius -= 10f;
 
                 if (InputHandle.GetKey(Keys.Right))
-                    Position += new Vector3(0.5f, 0, 0);
+                    transform.Position += new Vector3(0.5f, 0, 0);
 
                 if (InputHandle.GetKey(Keys.Left))
-                    Position -= new Vector3(0.5f, 0, 0);
+                    transform.Position -= new Vector3(0.5f, 0, 0);
 
                 if (InputHandle.GetKey(Keys.Up))
-                    Position += new Vector3(0, 0.5f, 0);
+                    transform.Position += new Vector3(0, 0.5f, 0);
 
                 if (InputHandle.GetKey(Keys.Down))
-                    Position -= new Vector3(0, 0.5f, 0);
+                    transform.Position -= new Vector3(0, 0.5f, 0);
             }
         }
 
@@ -100,7 +100,7 @@ namespace Psynergy.Graphics
             base.SetEffectParameters(effect);
 
             if (effect.Parameters["xLightPosition"] != null)
-                effect.Parameters["xLightPosition"].SetValue(Position);
+                effect.Parameters["xLightPosition"].SetValue(transform.Position);
 
             if (effect.Parameters["xLightAttenuation"] != null)
                 effect.Parameters["xLightAttenuation"].SetValue(Radius);
@@ -123,23 +123,26 @@ namespace Psynergy.Graphics
                 {
                     Camera3D camera = (CameraManager.Instance.ActiveCamera as Camera3D);
 
+                    // Set the bounding spheres centee point
+                    m_BoundingSphere.Center = transform.Position;
+
                     // Compute the light world matrix
                     // and scale according to light radius, and translate it to light position
                     Matrix sphereWorldMatrix = Matrix.CreateScale(Radius);
                     sphereWorldMatrix.Translation = BoundingSphere.Center;
 
                     m_Effect.Parameters["xWorld"].SetValue(sphereWorldMatrix);
-                    m_Effect.Parameters["xLightPosition"].SetValue(Position);
+                    m_Effect.Parameters["xLightPosition"].SetValue(transform.Position);
 
                     if (camera != null)
                     {
                         m_Effect.Parameters["xView"].SetValue(camera.View);
                         m_Effect.Parameters["xProjection"].SetValue(camera.Projection);
-                        m_Effect.Parameters["xCameraPosition"].SetValue(camera.Position);
+                        m_Effect.Parameters["xCameraPosition"].SetValue(camera.transform.Position);
                         m_Effect.Parameters["xInvertViewProjection"].SetValue(Matrix.Invert(camera.ViewProjection));
 
                         // Calculate the distance between the camera and light center
-                        float cameraToCenter = Vector3.Distance(camera.Position, Position);
+                        float cameraToCenter = Vector3.Distance(camera.transform.Position, transform.Position);
 
                         //Vector3 test = (camera.Transform.Forward * camera.FarPlane);
 
@@ -195,18 +198,6 @@ namespace Psynergy.Graphics
             {
                 m_Radius = value;
                 m_BoundingSphere.Radius = value;
-            }
-        }
-
-        public override Vector3 Position
-        {
-            get { return base.Position; }
-            set
-            {
-                base.Position = value;
-                
-                // Set bounding sphere center
-                m_BoundingSphere.Center = Position;
             }
         }
 

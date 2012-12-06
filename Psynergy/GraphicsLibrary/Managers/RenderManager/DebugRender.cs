@@ -502,10 +502,10 @@ namespace Psynergy.Graphics
                     m_PointSpriteEffect.Parameters["Texture"].SetValue(m_PointTexture);
                     m_PointSpriteEffect.Parameters["xPointSpriteSizeWidth"].SetValue(5.0f);
                     m_PointSpriteEffect.Parameters["xPointSpriteSizeHeight"].SetValue(5.0f);
-                    m_PointSpriteEffect.Parameters["xView"].SetValue(camera3D.Transform);
+                    m_PointSpriteEffect.Parameters["xView"].SetValue(camera3D.View);
                     m_PointSpriteEffect.Parameters["xProjection"].SetValue(camera3D.Projection);
-                    m_PointSpriteEffect.Parameters["xCamPos"].SetValue(camera3D.Position);
-                    m_PointSpriteEffect.Parameters["xCamUp"].SetValue(camera3D.Up);
+                    m_PointSpriteEffect.Parameters["xCamPos"].SetValue(camera3D.transform.Position);
+                    m_PointSpriteEffect.Parameters["xCamUp"].SetValue(camera3D.transform.WorldMatrix.Up);
 
                     foreach (EffectPass pass in m_PointSpriteEffect.CurrentTechnique.Passes)
                     {
@@ -552,10 +552,10 @@ namespace Psynergy.Graphics
                         m_PointSpriteEffect.Parameters["Texture"].SetValue(m_PointTexture);
                         m_PointSpriteEffect.Parameters["xPointSpriteSizeWidth"].SetValue(5.0f);
                         m_PointSpriteEffect.Parameters["xPointSpriteSizeHeight"].SetValue(5.0f);
-                        m_PointSpriteEffect.Parameters["xView"].SetValue(camera3D.Transform);
+                        m_PointSpriteEffect.Parameters["xView"].SetValue(camera3D.View);
                         m_PointSpriteEffect.Parameters["xProjection"].SetValue(camera3D.Projection);
-                        m_PointSpriteEffect.Parameters["xCamPos"].SetValue(camera3D.Position);
-                        m_PointSpriteEffect.Parameters["xCamUp"].SetValue(camera3D.Up);
+                        m_PointSpriteEffect.Parameters["xCamPos"].SetValue(camera3D.transform.Position);
+                        m_PointSpriteEffect.Parameters["xCamUp"].SetValue(camera3D.transform.WorldMatrix.Up);
 
                         foreach (EffectPass pass in m_PointSpriteEffect.CurrentTechnique.Passes)
                         {
@@ -587,7 +587,7 @@ namespace Psynergy.Graphics
                     {
                         Camera3D camera3D = (camera as Camera3D);
 
-                        m_DebugLineEffect.View = camera3D.Transform;
+                        m_DebugLineEffect.View = camera3D.View;
                         m_DebugLineEffect.Projection = camera3D.Projection;
                         m_DebugLineEffect.CurrentTechnique.Passes[0].Apply();
 
@@ -611,7 +611,8 @@ namespace Psynergy.Graphics
                                 }
 
                                 // Draw the lines
-                                RenderManager.Instance.GraphicsDevice.DrawUserIndexedPrimitives<VertexPositionColor>(PrimitiveType.LineStrip, linePoints, 0, lineGroupPointCount, lineListIndices, 0, (lineGroupPointCount - 1));
+                                if ( (lineGroupPointCount - 1) > 0 )
+                                    RenderManager.Instance.GraphicsDevice.DrawUserIndexedPrimitives<VertexPositionColor>(PrimitiveType.LineStrip, linePoints, 0, lineGroupPointCount, lineListIndices, 0, (lineGroupPointCount - 1));
                             }
                         }
 
@@ -631,7 +632,7 @@ namespace Psynergy.Graphics
             {
                 Camera3D camera3D = (camera as Camera3D);
 
-                m_DebugLineEffect.View = camera3D.Transform;
+                m_DebugLineEffect.View = camera3D.View;
                 m_DebugLineEffect.Projection = camera3D.Projection;
                 m_DebugLineEffect.CurrentTechnique.Passes[0].Apply();
 

@@ -36,7 +36,9 @@ namespace XnaGame
 
             // Set modelName
             ModelName = "Models/FBX/Dice/dice";
-            Scale *= 0.1f;
+
+            // Set dice scale
+            transform.Scale *= 0.1f;
 
             base.Initialise();
         }
@@ -107,27 +109,27 @@ namespace XnaGame
             Vector3 compareVec = Vector3.Up;
 
             // Top face //
-            if (CheckFace(compareVec, m_WorldMatrix.Up))
+            if (CheckFace(compareVec, transform.WorldMatrix.Up))
                 return 5;
 
             // left face //
-            if (CheckFace(compareVec, m_WorldMatrix.Left))
+            if (CheckFace(compareVec, transform.WorldMatrix.Left))
                 return 4;
 
             // Back face //
-            if (CheckFace(compareVec, m_WorldMatrix.Backward))
+            if (CheckFace(compareVec, transform.WorldMatrix.Backward))
                 return 1;
 
             // Right face //
-            if (CheckFace(compareVec, m_WorldMatrix.Right))
+            if (CheckFace(compareVec, transform.WorldMatrix.Right))
                 return 3;
 
             // Front face //
-            if (CheckFace(compareVec, m_WorldMatrix.Forward))
+            if (CheckFace(compareVec, transform.WorldMatrix.Forward))
                 return 6;
 
             // Bottom face //
-            if (CheckFace(compareVec, m_WorldMatrix.Down))
+            if (CheckFace(compareVec, transform.WorldMatrix.Down))
                 return 2;
 
             return toRet;

@@ -26,7 +26,7 @@ namespace Psynergy
 
     public interface IFocusable
     {
-        Vector3 Position { get; }
+        Transform transform { get; }
         bool Focused { get; set; }
     }
 
@@ -39,9 +39,6 @@ namespace Psynergy
 
     public interface IFocusable3D : IFocusable
     {
-        Quaternion Rotation { get; set; }
-        Matrix WorldMatrix { get; set; }
-        Matrix LocalWorldMatrix { get; set; }
     }
 
     public interface IMenuAction

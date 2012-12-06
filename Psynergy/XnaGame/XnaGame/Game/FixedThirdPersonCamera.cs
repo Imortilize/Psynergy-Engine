@@ -55,7 +55,7 @@ namespace XnaGame
             Pitch = m_MinPitch;
             m_DesiredDistance = m_MinDistance;
             m_Distance = m_DesiredDistance;
-            Position = Vector3.Zero;
+            transform.Position = Vector3.Zero;
             CurrentTargetPosition = new Vector3(0, 50, 100);
         }
 

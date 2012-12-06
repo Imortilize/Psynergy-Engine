@@ -39,7 +39,16 @@ namespace Psynergy.Menus
             base.Update(deltaTime);
 
             if (m_ObjReference != null)
-                m_ObjReference.PosY += (m_RiseRate * (float)deltaTime.ElapsedGameTime.TotalSeconds);
+            {
+                // Get pos
+                Vector3 pos = m_ObjReference.transform.Position;
+
+                // Modify pos
+                pos.Y += (m_RiseRate * (float)deltaTime.ElapsedGameTime.TotalSeconds);
+
+                // Save pos
+                m_ObjReference.transform.Position = pos;
+            }
         }
     }
 }

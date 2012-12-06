@@ -71,7 +71,7 @@ namespace Psynergy.Graphics
         public SpriteNode(String name, String assetName, Vector3 position) : base(name)
         {
             m_2DTextureNames.Add(assetName);
-            m_Position = position;
+            transform.Position = position;
         }
 
         public override void Initialise()
@@ -192,8 +192,11 @@ namespace Psynergy.Graphics
                     sourceRectangle = new Rectangle(0, 0, m_CurrentTexture.Width, m_CurrentTexture.Height);
                 }
 
+                // Get node scale
+                Vector3 scale = transform.Scale;
+
                 // Draw sprite
-                m_SpriteBatch.Draw(m_CurrentTexture, (GetWorld2D() + m_Origin + m_DrawOffset + m_AnimationOffset), sourceRectangle, m_ActualColor, 0.0f, m_Origin, GetScale2D(), SpriteEffects.None, MathHelper.Clamp(m_RenderDepth, 0.0f, 1.0f));
+                m_SpriteBatch.Draw(m_CurrentTexture, (GetWorld2D() + m_Origin + m_DrawOffset + m_AnimationOffset), sourceRectangle, m_ActualColor, 0.0f, m_Origin, new Vector2(scale.X, scale.Y), SpriteEffects.None, MathHelper.Clamp(m_RenderDepth, 0.0f, 1.0f));
             }
 
             base.Render( deltaTime );
@@ -201,7 +204,9 @@ namespace Psynergy.Graphics
 
         public virtual Vector2 GetWorld2D()
         {
-            return Position2D;
+            Vector3 pos = transform.Position;
+
+            return new Vector2(pos.X, pos.Y);
         }
 
         public Texture2D GetDefaultTexture()
@@ -308,8 +313,14 @@ namespace Psynergy.Graphics
         #region Helpful Functions
         public void MoveBy(int x, int y)
         {
-            PosX += x;
-            PosY += y;
+            Vector3 pos = transform.Position;
+
+            // Modify position
+            pos.X += x;
+            pos.Y += y;
+
+            // Set pos back
+            transform.Position = pos;
         }
         #endregion
 
@@ -340,8 +351,8 @@ namespace Psynergy.Graphics
         #endregion
 
         #region Property Set / Gets
-        public float Height { get { return (m_Height * m_Scale.Y); } set { m_Height = value; } }
-        public float Width { get { return (m_Width * m_Scale.X); } set { m_Width = value; } }
+        public float Height { get { return (m_Height * transform.Scale.Y); } set { m_Height = value; } }
+        public float Width { get { return (m_Width * transform.Scale.X); } set { m_Width = value; } }
         public String TextureFile 
         {
             get
@@ -364,7 +375,7 @@ namespace Psynergy.Graphics
         {
             get 
             { 
-                Vector2 pos2D = Position2D;
+                Vector3 pos = transform.Position;
                 int width = 0;
                 int height = 0;
 
@@ -374,7 +385,7 @@ namespace Psynergy.Graphics
                     height = m_CurrentTexture.Height;
                 }
 
-                return new Rectangle((int)pos2D.X, (int)pos2D.Y, width, height); 
+                return new Rectangle((int)pos.X, (int)pos.Y, width, height); 
             }
         }
 

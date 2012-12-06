@@ -42,18 +42,18 @@ namespace Psynergy.Graphics
                     const float waterHeight = 1.0f;
 
                     /* Reimers */
-                    Vector3 cameraFinalTarget = (camera.Position + camera.Transform.Forward);
+                    Vector3 cameraFinalTarget = (camera.transform.Position + camera.transform.WorldMatrix.Forward);
 
                     // Obtain the camera reflection position
-                    Vector3 reflectionCamPosition = camera.Position;
-                    reflectionCamPosition.Y = -camera.Position.Y + waterHeight * 2;
+                    Vector3 reflectionCamPosition = camera.transform.Position;
+                    reflectionCamPosition.Y = -camera.transform.Position.Y + waterHeight * 2;
 
                     // Obtain the target of camera B
                     Vector3 reflectionTargetPos = cameraFinalTarget;
                     reflectionTargetPos.Y = -cameraFinalTarget.Y + waterHeight * 2;
 
                     // Get the up vector of camera B
-                    Vector3 invUpVector = Vector3.Cross(camera.Right, (reflectionTargetPos - reflectionCamPosition));
+                    Vector3 invUpVector = Vector3.Cross(camera.transform.WorldMatrix.Right, (reflectionTargetPos - reflectionCamPosition));
 
                     // Create the camera B reflection view matrix
                     Matrix reflectionViewMatrix = Matrix.CreateLookAt(reflectionCamPosition, reflectionTargetPos, invUpVector);
@@ -120,7 +120,7 @@ namespace Psynergy.Graphics
             RenderEffect.SetScrollTime((float)deltaTime.TotalGameTime.TotalSeconds);
 
             // Set camera position
-            RenderEffect.SetCameraPosition(camera.Position);
+            RenderEffect.SetCameraPosition(camera.transform.Position);
 
             // Render as per normal
             base.ReconstructShading(deltaTime, camera, view, projection, graphicsDevice);

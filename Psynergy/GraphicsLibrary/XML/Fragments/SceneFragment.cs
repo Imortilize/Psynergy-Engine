@@ -106,9 +106,9 @@ namespace Psynergy.Graphics
                     }
                 }
 
-                if (newObject.GetType().IsSubclassOf(typeof(Node)))
+                if (newObject.GetType().IsSubclassOf(typeof(GameObject)))
                 {
-                    Node newNode = (newObject as Node);
+                    GameObject newNode = newObject;
 
                     // Check if a parent name was set
                     if ((newNode.ParentName != null) && (newNode.ParentName != ""))
@@ -117,7 +117,7 @@ namespace Psynergy.Graphics
                             m_ParentNode.AddChild(newNode);
                         else
                         {
-                            Node parentNode = m_ParentNode.FindChild(newNode.ParentName);
+                            GameObject parentNode = m_ParentNode.FindChild(newNode.ParentName);
 
                             if (parentNode != null)
                                 parentNode.AddChild(newNode);

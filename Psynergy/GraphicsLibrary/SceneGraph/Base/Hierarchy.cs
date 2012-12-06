@@ -15,11 +15,8 @@ namespace Psynergy.Graphics
 {
     public class Hierarchy : GameObject
     {
-        private Node m_BaseNode = new Node("Base");
+        private GameObject m_RootNode = new GameObject("Root");
         private bool m_Loaded = false;
-
-        private bool m_Update = true;
-        private bool m_Render = true;
 
         public Hierarchy() : base("")
         {
@@ -32,12 +29,12 @@ namespace Psynergy.Graphics
         public override void Initialise()
         {
             // Initialise the hierarchy
-            InitialiseHierarchy(m_BaseNode);
+            InitialiseHierarchy(m_RootNode);
 
             base.Initialise();
         }
 
-        private void InitialiseHierarchy(Node node)
+        private void InitialiseHierarchy(GameObject node)
         {
             for (int i = 0; i < node.Children.Count; i++)
             {
@@ -54,14 +51,14 @@ namespace Psynergy.Graphics
             if (!m_Loaded)
             {
                 // Load all data for all nodes in this hierarchy
-                LoadHierarchy(m_BaseNode);
+                LoadHierarchy(m_RootNode);
 
                 // Set to loaded
                 m_Loaded = true;
             }
         }
 
-        private void LoadHierarchy(Node node)
+        private void LoadHierarchy(GameObject node)
         {
             for (int i = 0; i < node.Children.Count; i++)
             {
@@ -77,10 +74,10 @@ namespace Psynergy.Graphics
             base.Reset();
 
             // Load all data for all nodes in this hierarchy
-            ResetHierarchy(m_BaseNode);
+            ResetHierarchy(m_RootNode);
         }
 
-        private void ResetHierarchy(Node node)
+        private void ResetHierarchy(GameObject node)
         {
             for (int i = 0; i < node.Children.Count; i++)
             {
@@ -97,14 +94,14 @@ namespace Psynergy.Graphics
             if (m_Loaded)
             {
                 // UnLoad all data for all nodes in this hierarchy
-                UnLoadHierarchy(m_BaseNode);
+                UnLoadHierarchy(m_RootNode);
 
                 // Set to not loaded
                 m_Loaded = false;
             }
         }
 
-        private void UnLoadHierarchy(Node node)
+        private void UnLoadHierarchy(GameObject node)
         {
             for (int i = 0; i < node.Children.Count; i++)
             {
@@ -117,14 +114,14 @@ namespace Psynergy.Graphics
 
         public override void Update( GameTime deltaTime )
         {
-            if ( m_Update )
+            if ( Active )
             {
                 // Update hierarchy
-                UpdateHierarchy(m_BaseNode, deltaTime);
+                UpdateHierarchy(m_RootNode, deltaTime);
             }
         }
 
-        private void UpdateHierarchy(Node node, GameTime deltaTime)
+        private void UpdateHierarchy(GameObject node, GameTime deltaTime)
         {
             for (int i = 0; i < node.Children.Count; i++)
             {
@@ -139,14 +136,14 @@ namespace Psynergy.Graphics
 
         public override void Render(GameTime deltaTime)
         {
-            if (m_Render)
+            if (ActiveRender)
             {
                 // Update hierarchy
-                RenderHierarchy(m_BaseNode, deltaTime);
+                RenderHierarchy(m_RootNode, deltaTime);
             }
         }
 
-        private void RenderHierarchy(Node node, GameTime deltaTime)
+        private void RenderHierarchy(GameObject node, GameTime deltaTime)
         {
             for (int i = 0; i < node.Children.Count; i++)
             {
@@ -159,59 +156,35 @@ namespace Psynergy.Graphics
                 node.Render(deltaTime);
         }
 
-        public List<Node> FindAllModels()
+        public List<T> FindAll<T>() where T : GameObject
         {
-            Node startNode = RootNode;
-
-            return NodeChildren(startNode, typeof(ModelNode));
+            return NodeChildren<T>(RootNode);
         }
 
-        public List<Node> FindAllRenderNodes()
+        private List<T> NodeChildren<T>(GameObject node) where T : GameObject
         {
-            Node startNode = RootNode;
+            List<T> toRet = new List<T>();
 
-            return NodeChildren(startNode, typeof(RenderNode));
-        }
-
-        public List<Node> FindAllTerrainNodes()
-        {
-            Node startNode = RootNode;
-
-            return NodeChildren(startNode, typeof(TerrainNode));
-        }
-
-        public List<Node> FindAllLights()
-        {
-            Node startNode = RootNode;
-
-            return NodeChildren(startNode, typeof(Light));
-        }
-
-        private List<Node> NodeChildren(Node node, Type nodeType)
-        {
-            List<Node> toRet = new List<Node>();
-
-            foreach (Node child in node.Children)
+            foreach (GameObject child in node.Children)
             {
                 // If this child has children then process them first
                 if (child.Children.Count > 0)
-                    toRet.AddRange(NodeChildren(child, nodeType));
+                    toRet.AddRange(NodeChildren<T>(child));
 
                 // Check whether the child is of a model or not
-                if ((child.GetType() == nodeType) || (child.InheritsFrom(nodeType)))
-                    toRet.Add(child);
+                if (child.InheritsFrom<T>())
+                    toRet.Add(child as T);
             }
 
             return toRet;
         }
 
-        public void AppendChildToTop( Node node )
+        public void AppendChildToTop( GameObject node )
         {
             // Try to append the child to the top
             RootNode.AppendChildToTop( node );
         }
 
-        public Node RootNode { get { return m_BaseNode; } }
-        public bool Active { get { return m_Update; } set { m_Update = value; } }
+        public GameObject RootNode { get { return m_RootNode; } }
     }
 }

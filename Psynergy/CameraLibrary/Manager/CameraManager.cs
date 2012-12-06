@@ -167,7 +167,7 @@ namespace Psynergy.Camera
         {
             if (m_ActiveCamera != null)
             {
-                Node focusObject = message.FocusObject;
+                GameObject focusObject = message.FocusObject;
 
                 if (focusObject != null)
                     m_ActiveCamera.SetFocus(focusObject);

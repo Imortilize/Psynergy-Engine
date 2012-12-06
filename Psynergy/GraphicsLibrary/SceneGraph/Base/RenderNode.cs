@@ -15,7 +15,7 @@ using Psynergy.Camera;
 
 namespace Psynergy.Graphics
 {
-    public class RenderNode : Node
+    public class RenderNode : GameObject
     {
         #region Factory Property setting
         protected override void ClassProperties(Factory factory)
@@ -164,15 +164,16 @@ namespace Psynergy.Graphics
             base.Render(deltaTime);
         }
 
-        public override bool RemoveChild(Node child)
+        // When a child is removed, check to see if it should be removed from the renderer as well
+        protected override void OnChildRemoved(GameObject child, bool result)
         {
-            bool result = base.RemoveChild(child);
+            base.OnChildRemoved(child, result);
 
             // No longer has a parent or siblings
             if (result)
             {
                 // If it is a render node, attempt to remove it from the render node list
-                if (child.InheritsFrom(typeof(RenderNode)))
+                if (child.InheritsFrom<RenderNode>())
                 {
                     RenderNode renderNode = (child as RenderNode);
 
@@ -181,8 +182,6 @@ namespace Psynergy.Graphics
                     renderer.RemoveRenderNode(renderNode);
                 }
             }
-
-            return result;
         }
 
         #region Scene Control

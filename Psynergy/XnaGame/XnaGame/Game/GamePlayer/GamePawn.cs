@@ -55,7 +55,9 @@ namespace XnaGame
             RenderGroupName = "skinned";
 
             ModelName = "Models/FBX/Skinned/GamePawn/pawn_pose";
-            Scale *= 0.05f;
+
+            // Set game pawn scale
+            transform.Scale *= 0.05f;
 
             base.Initialise();
 
@@ -64,30 +66,29 @@ namespace XnaGame
             controller.MovementSpeed = 50.0f;
             controller.MaxVelocity = 30.0f;
             controller.RotationVelocity = 2.5f;
-            controller.TerrainHeightOffset = 0.0f;
 
             // Save the controller
             Controller = controller;
 
             // Set position
-            SetPosition(new Vector3(0, 0, 50));
+            Controller.SetPosition(new Vector3(0, 0, 50));
 
             // Create the spline
             m_Spline = new SplineAsset(("Player" + (int)m_PlayerIndex + "Spline"), true);
             m_Spline.Loop = false;
 
             // Don't use parent scale
-            m_UseParentScale = false;
+            transform.UseParentScale = false;
         }
 
         public override void Reset()
         {
             base.Reset();
 
-            if (Spline != null)
+            if ((Controller != null) && (Spline != null))
             {
                 // Stop any movement
-                StopMovement();
+                Controller.StopMovement();
 
                 // Make sure spline is cleared
                 Spline.ClearSpline();
@@ -98,7 +99,7 @@ namespace XnaGame
                 m_CurrentSquare = m_GameBoard.GetBoardSquare("Start");
 
                 if (m_CurrentSquare != null)
-                    Position = m_CurrentSquare.EnterSquare(this);
+                    transform.Position = m_CurrentSquare.EnterSquare(this);
             }
         }
 
@@ -151,8 +152,8 @@ namespace XnaGame
 
         public void EndOfTurn()
         {
-            if (m_Controller != null)
-                m_Controller.Reset();
+            if (Controller != null)
+                Controller.Reset();
  
             // Change to idle anim
             ShowIdle();
@@ -180,8 +181,11 @@ namespace XnaGame
                             Spline.ClearSpline();
                             Spline.AddControlPoints(trailPoints, null);
 
-                            // Set desired position to first point in the trail
-                            SetDesiredPosition(Spline.GetNextControlPointPosition(Position));
+                            if (Controller != null)
+                            {
+                                // Set desired position to first point in the trail
+                                Controller.SetDesiredPosition(Spline.GetNextControlPointPosition(transform.Position));
+                            }
 
                             // Leave current square
                             m_CurrentSquare.LeaveSquare(this);
@@ -219,7 +223,7 @@ namespace XnaGame
                     for (int i = 0; i < trailPoints.Count; i++ )
                     {
                         Vector3 point = trailPoints[i];
-                        trailPoints[i] = new Vector3(point.X, PosY, point.Z);
+                        trailPoints[i] = new Vector3(point.X, transform.Position.Y, point.Z);
                     }
 
                     if (trailPoints.Count > 0)
@@ -232,8 +236,11 @@ namespace XnaGame
                             Spline.ClearSpline();
                             Spline.AddControlPoints(trailPoints, null);
 
-                            // Set desired position to first point in the trail
-                            SetDesiredPosition(Spline.GetNextControlPointPosition(Position));
+                            if ( Controller != null )
+                            {
+                                // Set desired position to first point in the trail
+                                Controller.SetDesiredPosition(Spline.GetNextControlPointPosition(transform.Position));
+                            }
 
                             // Set the current square as the selected next square
                             m_CurrentSquare = nextSquare;
@@ -440,7 +447,7 @@ namespace XnaGame
         {
             if (m_TrailEffect != null)
             {
-                Vector3 trailPos = (Position + new Vector3(0, 4, 0));
+                Vector3 trailPos = (transform.Position + new Vector3(0, 4, 0));
 
                 // Trigger trail effect
                 m_TrailEffect.Trigger(trailPos);
@@ -451,7 +458,7 @@ namespace XnaGame
         {
             if (m_SelectedEffect != null)
             {
-                Vector3 pos = (Position + new Vector3(0, 6, 0));
+                Vector3 pos = (transform.Position + new Vector3(0, 6, 0));
 
                 // Trigger effect
                 m_SelectedEffect.Trigger(pos);

@@ -137,7 +137,19 @@ namespace Psynergy.Graphics
         }
 
         #region Set / Gets
-        public float SkySize { get { return m_SkySize; } set { m_SkySize = value; m_Scale.X = value; m_Scale.Y = value; m_Scale.Z = value; } }
+        public float SkySize
+        {
+            get { return m_SkySize; }
+            set
+            {
+                // Save sky size
+                m_SkySize = value; 
+                
+                // Set scale
+                transform.Scale = new Vector3(value);
+            }
+        }
+
         public String SkyTextureName { get { return m_SkyTextureName; } set { m_SkyTextureName = value; } }
         #endregion
     }

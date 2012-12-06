@@ -97,9 +97,9 @@ namespace Middleware
                         // Get the heightmap data
                         m_HeightMap.GetData(heightMapColours);
 
-                        float x = Position.X;
-                        float y = Position.Y;
-                        float z = Position.Z;
+                        float x = transform.Position.X;
+                        float y = transform.Position.Y;
+                        float z = transform.Position.Z;
                         float maxX = (x + m_QuadTree.TerrainInfo.TopSize);
 
                         for (int i = 0; i < m_QuadTree.TerrainInfo.VertexCount; i++)
@@ -107,17 +107,20 @@ namespace Middleware
                             if (x > maxX)
                             {
                                 // Reset row position
-                                x = Position.X;
+                                x = transform.Position.X;
                                 z++;
                             }
 
-                            y = Position.Y + (heightMapColours[i].R * 0.2f);
+                            y = transform.Position.Y + (heightMapColours[i].R * 0.2f);
+
+                            // Get scale
+                            Vector3 scale = transform.Scale;
 
                             // Create vertex
-                            VertexPositionNormalTexture vert = new VertexPositionNormalTexture(new Vector3((x * ScaleX), (y * ScaleY), (z * ScaleZ)), Vector3.Zero, Vector2.Zero);
+                            VertexPositionNormalTexture vert = new VertexPositionNormalTexture(new Vector3((x * scale.X), (y * scale.Y), (z * scale.Z)), Vector3.Zero, Vector2.Zero);
                             
                             // Work out UV mapping
-                            vert.TextureCoordinate = new Vector2(((vert.Position.X - Position.X) / m_QuadTree.TerrainInfo.TopSize), ((vert.Position.Z - Position.Z) / m_QuadTree.TerrainInfo.TopSize));
+                            vert.TextureCoordinate = new Vector2(((vert.Position.X - transform.Position.X) / m_QuadTree.TerrainInfo.TopSize), ((vert.Position.Z - transform.Position.Z) / m_QuadTree.TerrainInfo.TopSize));
 
                             // Save created vert
                             m_TexturedVertices[i] = vert;

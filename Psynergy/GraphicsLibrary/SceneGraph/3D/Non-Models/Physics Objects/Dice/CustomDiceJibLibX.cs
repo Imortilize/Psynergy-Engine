@@ -50,17 +50,17 @@ namespace Psynergy.Graphics
                 // custom dice as a primitive to the collision skin
                 if (m_Skin != null)
                 {
-                    Box box = new Box(Vector3.Zero, Matrix.Identity, Scale);
+                    Box box = new Box(Vector3.Zero, Matrix.Identity, transform.Scale);
                     m_Skin.AddPrimitive(box, (int)MaterialTable.MaterialID.BouncyNormal);
 
                     // Set mass
                     m_Mass = SetMass(1.0f);
 
                     // Move the body to correct position initially
-                    m_Body.MoveTo(Position, Matrix.Identity);
+                    m_Body.MoveTo(transform.Position, Matrix.Identity);
 
                     // Apply transform to skin
-                    m_Skin.ApplyLocalTransform(new Transform(-m_Mass, Matrix.Identity));
+                    m_Skin.ApplyLocalTransform(new JigLibX.Math.Transform(-m_Mass, Matrix.Identity));
 
                     // Enable body
                     EnableBody();

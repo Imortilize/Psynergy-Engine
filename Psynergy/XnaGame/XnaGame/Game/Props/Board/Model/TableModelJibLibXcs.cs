@@ -74,10 +74,10 @@ namespace XnaGame
                     m_Mass = SetMass(1.0f);
 
                     // Move the body to correct position initially
-                    m_Body.MoveTo((Position + new Vector3(0, (sideLengths.Y * 0.5f), 0)), Matrix.Identity);
+                    m_Body.MoveTo((transform.Position + new Vector3(0, (sideLengths.Y * 0.5f), 0)), Matrix.Identity);
 
                     // Apply transform to skin
-                    m_Skin.ApplyLocalTransform(new Transform(-m_Mass, Matrix.Identity));
+                    m_Skin.ApplyLocalTransform(new JigLibX.Math.Transform(-m_Mass, Matrix.Identity));
 
                     // Enable it 
                     Enable();

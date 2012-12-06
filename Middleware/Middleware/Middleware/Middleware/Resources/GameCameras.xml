@@ -5,8 +5,8 @@
 		<property maxrotationy="1" />
 		<property minpitch="300" />
 		<property maxpitch="345" />
-		<property mindistance="1" />
-		<property maxdistance="1" />
+		<property mindistance="12" />
+		<property maxdistance="350" />
 		<property heightoffset="20" />
 	</ArcBallCamera>
   <!--<IsometricCamera id="IsometricCamera" >

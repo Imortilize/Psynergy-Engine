@@ -18,7 +18,7 @@ using Psynergy.Input;
 
 namespace XnaGame
 {
-    class Player2D : SpriteNode, IFocusable
+    class Player2D : SpriteNode
     {
         private float m_Acceleration = 15.0f;
         private float m_JumpAcceleration = -5.0f;
@@ -54,9 +54,14 @@ namespace XnaGame
         {
             base.Load();
 
+            Vector3 pos = transform.Position;
+
             // After loading
-            if ((PosY + Height) > 0)
-                PosY = (0 - Height);
+            if ((pos.Y + Height) > 0)
+                pos.Y = (0 - Height);
+
+            // Set pot back
+            transform.Position = pos;
         }
 
         public override void Update(GameTime deltaTime)
@@ -114,10 +119,10 @@ namespace XnaGame
             ClampMovementSpeed();
 
             // Set player position
-            Vector3 newPos = (Position + m_MovementSpeed);
+            Vector3 newPos = (transform.Position + m_MovementSpeed);
 
             // Set the position
-            Position = newPos;
+            transform.Position = newPos;
         }
 
         private void ClampMovementSpeed()
@@ -148,15 +153,21 @@ namespace XnaGame
             if (m_MovementSpeed.Y < GRAVITY)
                 m_MovementSpeed.Y += (GRAVITY * m_Weight * (float)deltaTime.ElapsedGameTime.TotalSeconds);
 
+            // Get pos 
+            Vector3 pos = transform.Position;
+
             // Check if the player has hit any obstacles free falling
-            if ((PosY + Height) > 0)
+            if ((pos.Y + Height) > 0)
             {
-                PosY = (0 - Height);
+                pos.Y = (0 - Height);
 
                 m_MovementSpeed.Y = 0;
                 m_MovementAcceleration.Y = 0;
                 m_CanJump = true;
             }
+
+            // Save pos back
+            transform.Position = pos;
         }
 
         private void ApplyDrag(GameTime deltaTime)

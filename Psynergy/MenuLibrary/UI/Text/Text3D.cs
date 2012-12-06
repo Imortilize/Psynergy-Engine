@@ -27,8 +27,8 @@ namespace Psynergy.Menus
             Viewport viewPort = RenderManager.Instance.GraphicsDevice.Viewport;
             m_RenderTarget = new RenderTarget2D(RenderManager.Instance.GraphicsDevice, viewPort.Width, viewPort.Height);
 
-            Position = position3D;
-            Position2D = RenderManager.Instance.Project3DTo2D(Position, Matrix.Identity);
+            transform.Position = position3D;
+            Position2D = RenderManager.Instance.Project3DTo2D(transform.Position, Matrix.Identity);
             m_Effect = new UIObjectEffectRiseUp(5.0f);
             m_Effect.SetUIObject(this);
             m_SpriteBatch = RenderManager.Instance.SpriteBatch;
@@ -43,8 +43,8 @@ namespace Psynergy.Menus
             if (m_Font != null)
             {
                 Vector2 fontSize = m_Font.MeasureString(m_Text);
-                
-                Position2D = RenderManager.Instance.Project3DTo2D(Position, Matrix.Identity);
+
+                Position2D = RenderManager.Instance.Project3DTo2D(transform.Position, Matrix.Identity);
                 //Position2D.X -= (fontSize.X * 0.5f);
                 //Position2D.Y -= (fontSize.Y * 0.5f);
             }

@@ -26,13 +26,13 @@ namespace Psynergy.Camera
         public FreeCamera(String name, Vector3 startPositon, Quaternion startRotation) : base(name)
         {
             // Position
-            m_Position = startPositon;
+            transform.Position = startPositon;
 
             // Rotation
             Pitch = startRotation.X;
             Yaw = startRotation.Y;
             Roll = startRotation.Z;
-            m_Rotation = Quaternion.CreateFromYawPitchRoll(Yaw, Pitch, Roll);
+            transform.Rotation = startRotation;
         }
 
         public override void Initialise()
@@ -86,13 +86,13 @@ namespace Psynergy.Camera
         protected override void GenerateViewMatrix(GameTime deltaTime)
         {
             // Fetch the rotation matrix;
-            Matrix rotation = Matrix.CreateFromQuaternion(Rotation);
+            Matrix rotation = Matrix.CreateFromQuaternion(transform.Rotation);
 
             // Offset the position and reset the translation
             m_Translation = Vector3.Transform(m_Translation, rotation);
 
             // Set the new position
-            Position = (CurrentTargetPosition + m_Translation);
+            transform.Position = (CurrentTargetPosition + m_Translation);
             m_Translation = Vector3.Zero;
 
             // Calculate the new target
@@ -105,7 +105,7 @@ namespace Psynergy.Camera
             // Calculate the view matrix
             //View = Matrix.CreateLookAt(Position, target, up);
 
-            Transform = Matrix.CreateFromQuaternion(Rotation) * Matrix.CreateTranslation(Position);
+            View = Matrix.CreateFromQuaternion(transform.Rotation) * Matrix.CreateTranslation(transform.Position);
         }
     }
 }

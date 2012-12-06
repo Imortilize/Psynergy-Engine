@@ -16,9 +16,9 @@ namespace Psynergy.Camera
 {
     public class CameraFocusEvent : IEvent
     {
-        private Node m_FocusObject;
+        private GameObject m_FocusObject;
 
-        public CameraFocusEvent(Node focusObject)
+        public CameraFocusEvent(GameObject focusObject)
         {
             m_FocusObject = focusObject;
         }
@@ -28,6 +28,6 @@ namespace Psynergy.Camera
             EventManager.Instance.SendMessage(this);
         }
 
-        public Node FocusObject { get { return m_FocusObject; } }
+        public GameObject FocusObject { get { return m_FocusObject; } }
     }
 }

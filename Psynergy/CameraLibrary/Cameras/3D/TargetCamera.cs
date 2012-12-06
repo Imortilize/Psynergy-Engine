@@ -35,11 +35,11 @@ namespace Psynergy.Camera
 
             if ( Focus != null )
             {
-                Vector3 forward = (Focus.Position - Position);
+                Vector3 forward = (Focus.transform.Position - transform.Position);
                 Vector3 side = Vector3.Cross(forward, Vector3.Up);
                 Vector3 up = Vector3.Cross(forward, side);
 
-                Transform = Matrix.CreateLookAt(Position, Target, up);
+                View = Matrix.CreateLookAt(transform.Position, Target, up);
             }
         }
     }

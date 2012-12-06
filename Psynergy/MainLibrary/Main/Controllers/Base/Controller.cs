@@ -23,7 +23,7 @@ namespace Psynergy
         }
         #endregion
 
-        protected Node m_ObjReference;
+        protected GameObject m_ObjReference;
 
         // Movement variables
         protected bool m_Movement = false;
@@ -40,7 +40,7 @@ namespace Psynergy
             //m_Vision = new VisionNode((m_ObjReference as Node3D));
         }
 
-        public Controller(Node objReference) //: base(objReference)
+        public Controller(GameObject objReference) //: base(objReference)
         {
             Debug.Assert(objReference != null, "Controller object cannot be null!");
 
@@ -79,7 +79,7 @@ namespace Psynergy
                 if (m_Movement)
                 {
                     // Used for moving a model to a desired location
-                    UpdateMovement(deltaTime, m_ObjReference.Position);
+                    UpdateMovement(deltaTime, m_ObjReference.transform.Position);
                 }
 
                 // Update model rotation values
@@ -102,7 +102,7 @@ namespace Psynergy
             }
 
             // Update the position using the velocity
-            m_ObjReference.Position += m_Velocity;
+            m_ObjReference.transform.Position += m_Velocity;
 
             // Velocity is no longer dirty
             m_VelocityDirty = false;
@@ -136,7 +136,7 @@ namespace Psynergy
         public virtual Vector3 SetPosition(Vector3 position)
         {
             if (m_ObjReference != null)
-                m_ObjReference.Position = position;
+                m_ObjReference.transform.Position = position;
 
             // Return the new position
             return position;
@@ -156,12 +156,12 @@ namespace Psynergy
         #region Factory class registers
         public override void OnClassSet(GameObject invokeNode)
         {
-            ObjectReference = (invokeNode as Node);
+            ObjectReference = invokeNode;
         }
         #endregion
 
         #region Property Set/Gets
-        public Node ObjectReference { get { return m_ObjReference; } set { m_ObjReference = value; } }
+        public GameObject ObjectReference { get { return m_ObjReference; } set { m_ObjReference = value; } }
         public bool Movement { get { return m_Movement; } set { m_Movement = value; } }
         public float MovementSpeed { get { return m_MovementSpeed; } set { m_MovementSpeed = value; } }
 

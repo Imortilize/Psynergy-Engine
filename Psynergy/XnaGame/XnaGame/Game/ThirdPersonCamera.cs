@@ -25,7 +25,7 @@ using Psynergy.Graphics;
 
 namespace XnaGame
 {
-    public class ThirdPersonCamera : ArcBallCamera, IListener<TerrainSetEvent>, IRegister<ThirdPersonCamera>
+    public class ThirdPersonCamera : ArcBallCamera, IRegister<ThirdPersonCamera>
     {
         #region Factory Property setting
         protected override void ClassProperties(Factory factory)
@@ -38,12 +38,6 @@ namespace XnaGame
 
             base.ClassProperties(factory);
         }
-        #endregion
-
-        #region TerrainReferences
-        protected float m_TerrainHeightOffset = 0.0f;
-        protected TerrainNode m_TerrainReference = null;
-        private bool m_OnTerrain = false;
         #endregion
 
         private float m_PreviousPitch = 0.0f;
@@ -91,8 +85,6 @@ namespace XnaGame
         public override void Reset()
         {
             base.Reset();
-
-            m_OnTerrain = false;
 
             // Clamp the distance to within the min and max distance values
             m_DesiredDistance = MathHelper.Clamp(m_DesiredDistance, m_MinDistance, m_MaxDistance);
@@ -171,43 +163,10 @@ namespace XnaGame
             m_PreviousPitch = m_Pitch;
             m_PreviousYaw = m_Yaw;
             m_PreviousRoll = m_Roll;
-            m_PreviousRotation = Rotation;
+            m_PreviousRotation = transform.Rotation;
 
             // Now commit rotations
             base.Rotate(deltaTime);
-        }
-
-        protected override Vector3 PositionChecks(Vector3 pos)
-        {
-            m_OnTerrain = false;
-
-            if (m_TerrainReference != null)
-            {
-                float yPos = m_TerrainReference.GetHeight(pos);
-
-                // Cap to at least the yPosition of the terrain
-                if (pos.Y < (yPos + m_TerrainHeightOffset))
-                {
-                    pos.Y = (yPos + m_TerrainHeightOffset);
-
-                    // Is on the terrain
-                    m_OnTerrain = true;
-                }
-            }
-
-            // Return position
-            return pos;
-        }
-
-        protected override void Clamp()
-        {
-            if (m_OnTerrain)
-            {
-                // Clamp pitch to within the boundaries specified
-                m_Pitch = MathHelper.Clamp(m_Pitch, MathHelper.ToRadians(m_MinPitch), m_PreviousPitch);
-            }
-            else
-                base.Clamp();
         }
 
         public override void SetInstantFocus(IFocusable focus)
@@ -226,14 +185,16 @@ namespace XnaGame
         public override void OnChangedTo(BaseCamera previousCamera)
         {
             base.OnChangedTo(previousCamera);
-
-            Position = previousCamera.Position;
+            
+            // Set camera transform to previous camera transform
+            transform = previousCamera.transform;
 
             if ((previousCamera.GetType() == typeof(Camera3D)) || (previousCamera.GetType().IsSubclassOf(typeof(Camera3D))))
             {
                 Camera3D preCamera3D = (previousCamera as Camera3D);
 
-                Rotation = preCamera3D.Rotation;
+                // Set rotation from previous camera
+                transform.Rotation = preCamera3D.transform.Rotation;
 
                 // Set new focus if previous camera had one
                 if (preCamera3D.Focus != null)
@@ -245,18 +206,9 @@ namespace XnaGame
         #endregion
 
         #region event handlers
-        public virtual void Handle(TerrainSetEvent message)
-        {
-            TerrainNode terrain = message.Terrain;
-
-            if (terrain != null)
-                m_TerrainReference = terrain;
-        }
         #endregion
 
         #region Set / Gets
-        public TerrainNode TerrainReference { get { return m_TerrainReference; } set { m_TerrainReference = value; } }
-        public float TerrainHeightOffset { get { return m_TerrainHeightOffset; } set { m_TerrainHeightOffset = value; } }
         public float DesiredDistance { get { return m_DesiredDistance; } set { m_DesiredDistance = value; } }
         #endregion
     }

@@ -217,6 +217,13 @@ namespace Psynergy.Graphics
             }
         }
 
+        #region Render Detection
+        public override bool ObjectsToRender()
+        {
+            return (m_Meshes.Count > 0);
+        }
+        #endregion
+
         #region SetGBuffer
         private void SetGBuffer()
         {
@@ -324,7 +331,7 @@ namespace Psynergy.Graphics
             //DebugRender.Instance.AddTexture2D(m_ColorTarget, new Vector2(100, 0), spritescaler);
             //DebugRender.Instance.AddTexture2D(m_ReflectionTarget, new Vector2(100 + (m_ColorTarget.Width * spritescaler), 0), spritescaler);
             //DebugRender.Instance.AddTexture2D(m_RefractionTarget, new Vector2((100 + (m_ColorTarget.Width * spritescaler) + (m_NormalTarget.Width * spritescaler)), 0), spritescaler);
-            DebugRender.Instance.AddTexture2D(m_SecondaryDepthTarget, new Vector2((100 + (m_ColorTarget.Width * spritescaler) + (m_NormalTarget.Width * spritescaler) + (m_DepthTarget.Width * spritescaler)), 0), spritescaler);
+            //DebugRender.Instance.AddTexture2D(m_SecondaryDepthTarget, new Vector2((100 + (m_ColorTarget.Width * spritescaler) + (m_NormalTarget.Width * spritescaler) + (m_DepthTarget.Width * spritescaler)), 0), spritescaler);
         }
         #endregion
 
@@ -491,42 +498,45 @@ namespace Psynergy.Graphics
         {
             if (GraphicsDevice != null)
             {
-                // Set light map target
-                GraphicsDevice.SetRenderTargets(m_LightTarget);
-
-                // Clear screen
-                GraphicsDevice.Clear(Color.Transparent);
-
-                // Set Blend State
-                GraphicsDevice.BlendState = BlendState.AlphaBlend;
-                GraphicsDevice.DepthStencilState = DepthStencilState.None;
-                GraphicsDevice.RasterizerState = RasterizerState.CullCounterClockwise;
-
-                // Go through the lights
-                foreach (Light light in m_Lights)
+                if (m_Lights.Count > 0)
                 {
-                    Type lightType = light.GetType();
+                    // Set light map target
+                    GraphicsDevice.SetRenderTargets(m_LightTarget);
 
-                    if (lightType == typeof(DirectionalLight))
+                    // Clear screen
+                    GraphicsDevice.Clear(Color.Transparent);
+
+                    // Set Blend State
+                    GraphicsDevice.BlendState = BlendState.AlphaBlend;
+                    GraphicsDevice.DepthStencilState = DepthStencilState.None;
+                    GraphicsDevice.RasterizerState = RasterizerState.CullCounterClockwise;
+
+                    // Go through the lights
+                    foreach (Light light in m_Lights)
                     {
-                        DirectionalLight directionalLight = (light as DirectionalLight);
+                        Type lightType = light.GetType();
 
-                        // Update Parameters
-                        directionalLight.ViewProjection = (m_ShadowView * m_ShadowProjection);
+                        if (lightType == typeof(DirectionalLight))
+                        {
+                            DirectionalLight directionalLight = (light as DirectionalLight);
+
+                            // Update Parameters
+                            directionalLight.ViewProjection = (m_ShadowView * m_ShadowProjection);
+                        }
+                        else if (lightType == typeof(PointLight))
+                        {
+                            PointLight pointLight = (light as PointLight);
+
+                            // NO UPDATE PARAMETERS ATM =]
+                        }
+
+                        // Draw Light
+                        light.Draw(deltaTime);
                     }
-                    else if (lightType == typeof(PointLight))
-                    {
-                        PointLight pointLight = (light as PointLight);
 
-                        // NO UPDATE PARAMETERS ATM =]
-                    }
-
-                    // Draw Light
-                    light.Draw(deltaTime);
+                    // Clear target
+                    GraphicsDevice.SetRenderTarget(null);
                 }
-
-                // Clear target
-                GraphicsDevice.SetRenderTarget(null);
             }
         }
 
@@ -711,7 +721,7 @@ namespace Psynergy.Graphics
 
             if (camera != null)
             {
-                toRet = camera.Transform;
+                toRet = camera.transform.WorldMatrix;
 
                 // Matrix with that will rotate in points the direction of the light
                 Matrix lightRotation = Matrix.CreateLookAt(Vector3.Zero,

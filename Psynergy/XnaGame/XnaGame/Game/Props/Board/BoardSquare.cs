@@ -96,15 +96,16 @@ namespace XnaGame
 
             m_ModelName = "Models/FBX/cubemodel";
 
-            Scale = new Vector3(5, 0.1f, 5);
+            // Set scale
+            transform.Scale = new Vector3(5, 0.1f, 5);
 
             float spacing = 5;
 
             // Add position
-            m_PawnPositions.Add(Position + new Vector3(-spacing, 0, spacing));
-            m_PawnPositions.Add(Position + new Vector3(-spacing, 0, -spacing));
-            m_PawnPositions.Add(Position + new Vector3(spacing, 0, spacing));
-            m_PawnPositions.Add(Position + new Vector3(spacing, 0, -spacing));
+            m_PawnPositions.Add(transform.Position + new Vector3(-spacing, 0, spacing));
+            m_PawnPositions.Add(transform.Position + new Vector3(-spacing, 0, -spacing));
+            m_PawnPositions.Add(transform.Position + new Vector3(spacing, 0, spacing));
+            m_PawnPositions.Add(transform.Position + new Vector3(spacing, 0, -spacing));
 
             // If this square is a question square, add a particle effect for it
             if (m_QuestionSquare)
@@ -128,7 +129,8 @@ namespace XnaGame
             Matrix newRot = Matrix.CreateRotationY(MathHelper.ToRadians(180));
             rot *= newRot;
 
-            m_Rotation = Quaternion.CreateFromRotationMatrix(rot);
+            // Store rotation
+            transform.Rotation = Quaternion.CreateFromRotationMatrix(rot);
         }
 
         protected override void LoadTextures()
@@ -228,7 +230,7 @@ namespace XnaGame
             if (m_QuestionSquare && (m_FirstQuestionSquare || m_FirstQuestionPassed))
             {
                 if (m_QuestionEffect != null)
-                    m_QuestionEffect.Trigger(Position);
+                    m_QuestionEffect.Trigger(transform.Position);
             }
         }
 
@@ -285,7 +287,7 @@ namespace XnaGame
         {
             Debug.Assert(pawn != null, "Game pawn should not be null!");
 
-            Vector3 toRet = Position;
+            Vector3 toRet = transform.Position;
 
             if (pawn != null)
             {

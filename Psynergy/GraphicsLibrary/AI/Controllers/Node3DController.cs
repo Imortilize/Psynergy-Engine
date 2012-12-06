@@ -16,7 +16,7 @@ using Psynergy.AI;
 
 namespace Psynergy.Graphics
 {
-    public class Node3DController : Controller, IRegister<Node3DController>, IListener<TerrainSetEvent>, IListener<TerrainLoadedEvent>
+    public class Node3DController : Controller, IRegister<Node3DController>
     {
         #region Factory Property setting
         protected override void ClassProperties(Factory factory)
@@ -38,11 +38,6 @@ namespace Psynergy.Graphics
 
         protected Quaternion m_RotationOnSet = Quaternion.Identity;
         protected Quaternion m_DesiredRotation = Quaternion.Identity;
-        #endregion
-
-        #region TerrainReferences
-        protected float m_TerrainHeightOffset = 0.0f;
-        protected TerrainNode m_TerrainReference = null;
         #endregion
 
         #region Vision
@@ -81,8 +76,8 @@ namespace Psynergy.Graphics
             if (node != null)
             {
                 // Reset movement variables
-                m_DesiredPosition = node.Position;
-                m_DesiredRotation = node.Rotation;
+                m_DesiredPosition = node.transform.Position;
+                m_DesiredRotation = node.transform.Rotation;
             }
             else
             {
@@ -117,20 +112,17 @@ namespace Psynergy.Graphics
             {
                 if (m_Movement)
                 {
-                    Vector3 directionVec = (m_DesiredPosition - node.Position);                    // Direction from current position to desired position
+                    Vector3 directionVec = (m_DesiredPosition - node.transform.Position);                    // Direction from current position to desired position
                     float distance = directionVec.Length();                                     // Distance from desired position
                     float originalDistance = (m_DesiredPosition - m_PositionOnSet).Length();    // Original distance when position was set
-                    float currentDistance = (node.Position - m_PositionOnSet).Length();            // Distance from the original point
+                    float currentDistance = (node.transform.Position - m_PositionOnSet).Length();            // Distance from the original point
 
                     if (currentDistance >= originalDistance)
                     {
-                        if (m_TerrainReference != null)
-                            m_DesiredPosition.Y = (m_TerrainReference.GetHeight(m_DesiredPosition) + m_TerrainHeightOffset);
-
-                        node.Position = m_DesiredPosition;
+                        node.transform.Position = m_DesiredPosition;
 
                         // Set the desired rotation to be what it currently is
-                        SetDesiredRotation(node.Position, node.Position);
+                        SetDesiredRotation(node.transform.Position, node.transform.Position);
                     }
                     else
                     {
@@ -153,28 +145,13 @@ namespace Psynergy.Graphics
                             //float originalHeight = node.PosY;
 
                             // What the new position will be after this update
-                            Vector3 newPos = node.Position + (directionVec * (m_Velocity * (float)deltaTime.ElapsedGameTime.TotalSeconds));
-
-                            // Calculate the height at which the soldier should be at on the terrain
-                            // If the distance of the object from the original point is greater than the original calculated value then cap the position to 
-                            // the stated desired position
-                            float height = 0.0f;
-
-                            if (m_TerrainReference != null)
-                            {
-                                height = m_TerrainReference.GetHeight(node.Position);
-
-                                // Set the new position according to the terrain height
-                                newPos.Y = (height + m_TerrainHeightOffset);
-                            }
-                            //else
-                            //  newPos.Y = originalHeight;
+                            Vector3 newPos = node.transform.Position + (directionVec * (m_Velocity * (float)deltaTime.ElapsedGameTime.TotalSeconds));
 
                             // Set the desired rotation
-                            SetDesiredRotation(node.Position, newPos);
+                            SetDesiredRotation(node.transform.Position, newPos);
 
                             // Use the directionVec * velocity to move towards point accordingly.
-                            node.Position = newPos;
+                            node.transform.Position = newPos;
                         }
                     }
 
@@ -191,7 +168,7 @@ namespace Psynergy.Graphics
 
             if (m_ObjReference != null)
             {
-                if (m_ObjReference.GetType().IsSubclassOf(typeof(Node)))
+                if (m_ObjReference.InheritsFrom<Node3D>())
                 {
                     Node3D node = (m_ObjReference as Node3D);
                     toRet = node.SetNextPosition(deltaTime);
@@ -209,12 +186,7 @@ namespace Psynergy.Graphics
             {
                 Node3D node = (m_ObjReference as Node3D);
 
-                node.Rotation = Quaternion.Slerp(node.Rotation, m_DesiredRotation, (m_RotationVelocity * (float)deltaTime.ElapsedGameTime.TotalSeconds));
-
-                // increase rotation
-                node.OrbitalPitch += (node.OrbitalPitchSpeed * (float)deltaTime.ElapsedGameTime.TotalSeconds);
-                node.OrbitalYaw += (node.OrbitalYawSpeed * (float)deltaTime.ElapsedGameTime.TotalSeconds);
-                node.OrbitalRoll += (node.OrbitalRollSpeed * (float)deltaTime.ElapsedGameTime.TotalSeconds);
+                node.transform.Rotation = Quaternion.Slerp(node.transform.Rotation, m_DesiredRotation, (m_RotationVelocity * (float)deltaTime.ElapsedGameTime.TotalSeconds));
             }
         }
 
@@ -238,13 +210,10 @@ namespace Psynergy.Graphics
 
         public override Vector3 SetPosition(Vector3 position)
         {
-            if (m_TerrainReference != null)
-                position.Y = m_TerrainReference.GetHeight(position);
-
             m_DesiredPosition = position;
 
             if ( m_ObjReference != null )
-                m_ObjReference.Position = position;
+                m_ObjReference.transform.Position = position;
     
             // Return the new position
             return position;
@@ -252,26 +221,23 @@ namespace Psynergy.Graphics
 
         public override void SetDesiredPosition(Vector3 desiredPos)
         {
-            if (m_TerrainReference != null)
-                desiredPos.Y = m_TerrainReference.GetHeight(desiredPos);
-
             //Position = m_DesiredPosition;
             m_DesiredPosition = desiredPos;
 
             // Set the position this object is at when having its desired position set 
             // This is so we can smoothly move along the point
-            m_PositionOnSet = m_ObjReference.Position;
+            m_PositionOnSet = m_ObjReference.transform.Position;
 
             // Set that there is no movement
             m_Movement = true;
 
             // Set the rotation to follow it in
-            SetDesiredRotation(m_ObjReference.Position, desiredPos);
+            SetDesiredRotation(m_ObjReference.transform.Position, desiredPos);
         }
 
         public override void StopMovement()
         {
-            m_DesiredPosition = m_ObjReference.Position;
+            m_DesiredPosition = m_ObjReference.transform.Position;
             m_Movement = false;
             //m_Velocity = 0.0f;
         }
@@ -301,42 +267,17 @@ namespace Psynergy.Graphics
             if (m_ObjReference != null)
             {
                 // Override the start position
-                m_ObjReference.StartPosition = SetPosition(m_ObjReference.Position);
+                m_ObjReference.startTransform.Position = SetPosition(m_ObjReference.transform.Position);
             }
         }
 
         #region event handlers
-        public virtual void Handle(TerrainSetEvent message)
-        {
-            TerrainNode terrain = message.Terrain;
-
-            if (terrain != null)
-                m_TerrainReference = terrain;
-        }
-
-        public virtual void Handle(TerrainLoadedEvent message)
-        {
-            TerrainNode terrain = (message.Terrain as TerrainNode);
-            Node3D node = (m_ObjReference as Node3D);
-
-            if (m_TerrainReference != null)
-            {
-                // If this objects sphere is hit then select it
-                if ((terrain == m_TerrainReference) && (terrain != node))
-                {
-                    // Run on terrain loaded.
-                    OnTerrainLoaded();
-                }
-            }
-        }
         #endregion
 
         #region Property Set/Gets
         public float Velocity { get { return m_Velocity; } set { m_Velocity = value; } }
         public float MaxVelocity { get { return m_MaxVelocity; } set { m_MaxVelocity = value; } }
         public float RotationVelocity { get { return m_RotationVelocity; } set { m_RotationVelocity = value; } }
-        public TerrainNode TerrainReference { get { return m_TerrainReference; } set { m_TerrainReference = value; } }
-        public float TerrainHeightOffset { get { return m_TerrainHeightOffset; } set { m_TerrainHeightOffset = value; } }
 
         public VisionNode Vision { get { return m_Vision; } set { m_Vision = value; } }
         public bool RenderVision { get { return m_RenderVision; } set { m_RenderVision = value; } }

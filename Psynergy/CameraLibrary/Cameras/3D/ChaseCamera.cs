@@ -50,13 +50,13 @@ namespace Psynergy.Camera
             Debug.Assert( Focus != null, "[Warning] - Focus is null in Chase Camera '" + Name + "'.");
 
             if (Focus != null)
-                FollowTargetPosition = Focus.WorldMatrix.Translation;
+                FollowTargetPosition = Focus.transform.WorldMatrix.Translation;
         }
 
         protected override void Rotate(GameTime deltaTime)
         {
             if (Focus != null)
-                FollowTargetRotation = Focus.Rotation;
+                FollowTargetRotation = Focus.transform.Rotation;
         }
 
         protected override void GenerateViewMatrix(GameTime deltaTime)
@@ -75,13 +75,13 @@ namespace Psynergy.Camera
                 Vector3 target = (FollowTargetPosition + Vector3.Transform(TargetOffset, rotation));
 
                 // Interpolate between the current position and the desired position 
-                Position = Vector3.Lerp(Position, desiredPosition, Springiness);
+                transform.Position = Vector3.Lerp(transform.Position, desiredPosition, Springiness);
 
                 // Obtain the up vector from the matrix
                 Vector3 up = Vector3.Transform(Vector3.Up, rotation);
 
                 // Recalculate the view matrix
-                Transform = Matrix.CreateLookAt(Position, target, up);
+                View = Matrix.CreateLookAt(transform.Position, target, up);
             }
         }
 

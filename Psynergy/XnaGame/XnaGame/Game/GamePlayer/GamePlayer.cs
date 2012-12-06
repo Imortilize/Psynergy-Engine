@@ -98,13 +98,12 @@ namespace XnaGame
             Node3DController controller = new Node3DController(this);
             controller.MovementSpeed = 8.0f;
             controller.MaxVelocity = 20.0f;
-            controller.TerrainHeightOffset = 0.0f;
 
             // Save controller reference
             Controller = controller;
 
             // Set position
-            SetPosition(new Vector3(0, 0, 50));
+            Controller.SetPosition(new Vector3(0, 0, 50));
 
             // Create the spline
             m_Spline = new SplineAsset(("Player" + (int)m_PlayerIndex + "Spline"), true);
@@ -364,9 +363,9 @@ namespace XnaGame
                 if (camera != null)
                 {
                     // Find a set distance in front of the camera 
-                    Vector3 camPos = camera.Position;
-                    Vector3 upVec = camera.Transform.Up;
-                    Vector3 forwardVec = camera.Transform.Forward;
+                    Vector3 camPos = camera.transform.WorldMatrix.Translation;
+                    Vector3 upVec = camera.transform.WorldMatrix.Up;
+                    Vector3 forwardVec = camera.transform.WorldMatrix.Forward;
                     upVec.Normalize();
                     forwardVec.Normalize();
 
@@ -378,14 +377,14 @@ namespace XnaGame
                     Vector3 startDicePos = camPos + (forwardVec * 100) + (upVec * 10);
 
                     // Set position
-                    m_Dice.Position = startDicePos;
+                    m_Dice.transform.Position = startDicePos;
 
                     // Apply impulse
                     Vector3 impulse = (forwardVec * 350);
                     m_Dice.ApplyImpulse(impulse);
 
                     // Set start rot
-                    Matrix diceRot = Matrix.CreateFromQuaternion(m_Dice.Rotation);
+                    Matrix diceRot = Matrix.CreateFromQuaternion(m_Dice.transform.Rotation);
                     diceRot *= Matrix.CreateRotationZ(MathHelper.ToRadians(45));
                     m_Dice.Body.Orientation = diceRot;
 
@@ -541,7 +540,7 @@ namespace XnaGame
                         m_CameraModifier = 2.0f;
 
                     if ( ActivePawn != null )
-                        m_CameraModifier *= ActivePawn.Rotation.Y;
+                        m_CameraModifier *= ActivePawn.transform.Rotation.Y;
                 }
             }
             else
@@ -556,7 +555,7 @@ namespace XnaGame
                         m_CameraModifier = 6.0f;
 
                     if (ActivePawn != null)
-                        m_CameraModifier *= ActivePawn.Rotation.Y;
+                        m_CameraModifier *= ActivePawn.transform.Rotation.Y;
                 }
             }
         }

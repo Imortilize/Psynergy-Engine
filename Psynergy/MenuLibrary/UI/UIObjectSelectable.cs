@@ -178,8 +178,8 @@ namespace Psynergy.Menus
         {
             if (m_SelectedTexture != null)
             {
-                m_BoundingArea.Min = new Vector3(PosX, PosY, 0);
-                m_BoundingArea.Max = new Vector3((PosX + m_SelectedTexture.Width), (PosY + m_SelectedTexture.Height), 0);
+                m_BoundingArea.Min = new Vector3(transform.Position.X, transform.Position.Y, 0);
+                m_BoundingArea.Max = new Vector3((transform.Position.X + m_SelectedTexture.Width), (transform.Position.Y + m_SelectedTexture.Height), 0);
             }
         }
 

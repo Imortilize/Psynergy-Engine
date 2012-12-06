@@ -126,6 +126,14 @@ namespace Psynergy.Graphics
                 m_CameraManager.Update(deltaTime);
         }
 
+        #region Render Detection
+        public virtual bool ObjectsToRender()
+        {
+            return false;
+        }
+        #endregion
+
+        #region Render Loop
         public virtual void Begin()
         {
             if (m_Graphics != null)
@@ -201,6 +209,7 @@ namespace Psynergy.Graphics
                 }
             }
         }
+        #endregion
 
         protected void SetRenderOptions()
         {
@@ -214,7 +223,7 @@ namespace Psynergy.Graphics
 
             if (activeCamera != null)
             {
-                if (activeCamera.InheritsFrom(typeof(Camera3D)))
+                if (activeCamera.InheritsFrom<Camera3D>())
                 {
                     Camera3D camera3D = (activeCamera as Camera3D);
                     camera3D.CullMode = m_CullMode;

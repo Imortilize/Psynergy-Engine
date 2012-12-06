@@ -104,7 +104,7 @@ namespace XnaGame
                                     colorText += "text";
 
                                     // Add text
-                                    UIManager.Instance.AddText3DObject(colorText, rollText, (player.ActivePawn.Position + new Vector3(0, +10, 0)), textColor, 1.5f);
+                                    UIManager.Instance.AddText3DObject(colorText, rollText, (player.ActivePawn.transform.Position + new Vector3(0, +10, 0)), textColor, 1.5f);
                                     //UIManager.Instance.AddText3DObject(colorText + "outline", rollText, (player.ActivePawn.Position + new Vector3(-0.05f, +10, -0.05f)), Color.White, 2.05f); 
 
                                     // Generate a new camera modifier

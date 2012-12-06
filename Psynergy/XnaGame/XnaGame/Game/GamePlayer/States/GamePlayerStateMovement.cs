@@ -65,7 +65,7 @@ namespace XnaGame
                 }
 
                 // Set the next soldier spline position
-                if (player.ActivePawn.Spline.IsEndReached(player.Position))
+                if (player.ActivePawn.Spline.IsEndReached(player.transform.Position))
                 {
                     // Empty the spline
                     player.ActivePawn.Spline.ClearSpline();

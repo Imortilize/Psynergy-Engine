@@ -54,7 +54,7 @@ namespace Psynergy.Graphics
             base.SetEffectParameters(effect);
 
             if (effect.Parameters["xLightPosition"] != null)
-                effect.Parameters["xLightPosition"].SetValue(Position);
+                effect.Parameters["xLightPosition"].SetValue(transform.Position);
 
             if (effect.Parameters["xLightDirection"] != null)
                 effect.Parameters["xLightDirection"].SetValue(LightDirection);
@@ -75,8 +75,8 @@ namespace Psynergy.Graphics
 
                 if (camera != null)
                 {
-                    m_Effect.Parameters["xCameraPosition"].SetValue(camera.Position);
-                    m_Effect.Parameters["xCameraTransform"].SetValue(camera.Transform);
+                    m_Effect.Parameters["xCameraPosition"].SetValue(camera.transform.Position);
+                    m_Effect.Parameters["xCameraTransform"].SetValue(camera.transform.WorldMatrix);
                     m_Effect.Parameters["xInvertViewProjection"].SetValue(Matrix.Invert(camera.ViewProjection));
                 }
 

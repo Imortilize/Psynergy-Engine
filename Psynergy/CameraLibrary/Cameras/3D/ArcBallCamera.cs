@@ -229,7 +229,7 @@ namespace Psynergy.Camera
             if (Focus != null)
             {
              	// Calculate the rotation matrix
-	            Matrix rotation = Matrix.CreateFromQuaternion(Rotation);
+                Matrix rotation = Matrix.CreateFromQuaternion(transform.Rotation);
 	
 	            // Translate down the Z axis by the desired distance between the camera and object, then rotate that
 	            // vector to find the camera offset from the target.
@@ -243,10 +243,10 @@ namespace Psynergy.Camera
 	            newPos = PositionChecks(newPos);
 	
 	            // Set the new position
-	            Position = newPos;
-	
-	
-	            Transform = Matrix.CreateFromQuaternion(Rotation) * Matrix.CreateTranslation(Position);
+                transform.Position = newPos;
+
+                // Create Arc Ball camera matrix
+                View = Matrix.CreateFromQuaternion(transform.Rotation) * Matrix.CreateTranslation(transform.Position);
 
                 // Calculate the rotation matrix
                 /*Matrix rotation = Matrix.CreateFromQuaternion(Rotation);

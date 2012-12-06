@@ -83,7 +83,7 @@ namespace Psynergy.Graphics
                     newTree.Load();
 
                     // Position the tree
-                    newTree.Position = position;
+                    newTree.transform.Position = position;
                 }
             }
 

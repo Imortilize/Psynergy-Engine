@@ -109,10 +109,10 @@ namespace XnaGame
                     m_Mass = SetMass(7.0f);
 
                     // Move the body to correct position initially
-                    m_Body.MoveTo(Position, Matrix.Identity);
+                    m_Body.MoveTo(transform.Position, Matrix.Identity);
 
                     // Apply transform to skin
-                    m_Skin.ApplyLocalTransform(new Transform(-m_Mass, Matrix.Identity));
+                    m_Skin.ApplyLocalTransform(new JigLibX.Math.Transform(-m_Mass, Matrix.Identity));
 
                     // make sure it isn't in the scene and is disabled
                     Disable();
@@ -131,7 +131,7 @@ namespace XnaGame
             if ((m_Body != null) && ( m_Skin != null ))
             {
                 Vector3 newPos = m_Body.Position;
-                Quaternion newRot = Rotation;
+                Quaternion newRot = transform.Rotation;
 
                 Primitive primitive = m_Skin.GetPrimitiveLocal(0);
 
@@ -139,8 +139,8 @@ namespace XnaGame
                     newRot = Quaternion.CreateFromRotationMatrix(primitive.Transform.Orientation * m_Body.Orientation);
 
                 // Set position and rotation accordingly
-                m_Position = newPos;
-                m_Rotation = newRot;
+                transform.Position = newPos;
+                transform.Rotation = newRot;
             }
 
             base.Update(deltaTime);  
@@ -156,7 +156,12 @@ namespace XnaGame
             base.Enable();
 
             if (m_Body != null)
+            {
                 m_Body.EnableBody();
+
+                // Set intial body position
+                m_Body.Position = transform.Position;
+            }
 
             // Add to Scene ( if one exists )
             AddToScene(SceneManager.Instance.CurrentScene);
@@ -208,22 +213,6 @@ namespace XnaGame
         }
 
         #region Property Set / Gets
-        public override Vector3 Position
-        {
-            get
-            {
-                return base.Position;
-            }
-            set
-            {
-                base.Position = value;
-
-                // Set body position
-                if (m_Body != null)
-                    m_Body.Position = value;
-            }
-        }
-
         public Body Body { get { return m_Body; } }
         public CollisionSkin Skin { get { return m_Skin; } }
         #endregion

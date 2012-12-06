@@ -80,14 +80,14 @@ namespace XnaGame
 
                 if (answer == true)
                 {
-                    UIManager.Instance.AddText3DObject("correcttext", "Correct", (player.ActivePawn.Position + new Vector3(0, +15, 0)), Color.ForestGreen, 1.5f);
+                    UIManager.Instance.AddText3DObject("correcttext", "Correct", (player.ActivePawn.transform.Position + new Vector3(0, +15, 0)), Color.ForestGreen, 1.5f);
 
                     // Set player to move two spaces forward
                     player.Data = new BoardSquare.DecisionData(m_BonusMoveSquares);
                 }
                 else
                 {
-                    UIManager.Instance.AddText3DObject("incorrecttext", "Incorrect", (player.ActivePawn.Position + new Vector3(0, +15, 0)), Color.OrangeRed, 1.5f);
+                    UIManager.Instance.AddText3DObject("incorrecttext", "Incorrect", (player.ActivePawn.transform.Position + new Vector3(0, +15, 0)), Color.OrangeRed, 1.5f);
 
                     // Set player to move to spaces backwards
                     player.Data = new BoardSquare.DecisionData(m_BonusMoveSquares);
